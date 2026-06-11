@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/2026-06-11-source-02.md",
+                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-11-source-02"
+              "title": "Chapitre 13 — MVP demo brief de Norma Core"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/2026-06-11-source-02.md",
+                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-06-11-source-02"
+              "title": "Backlinks for Chapitre 13 — MVP demo brief de Norma Core"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/2026-06-11-source-02.md",
+                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-06-11-source-02"
+              "title": "Outgoing links from Chapitre 13 — MVP demo brief de Norma Core"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/2026-06-11-source-02.md",
+                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-06-11-source-02"
+              "title": "Outline of Chapitre 13 — MVP demo brief de Norma Core"
             }
           },
           {
@@ -194,19 +194,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "90c25905a0e2a7fa",
+  "active": "411bc4a9f2d0f766",
   "lastOpenFiles": [
+    "diffs/summary.md",
+    "audit/hybrid-audit-report.md",
+    "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
+    "raw/Chapitre 12 Norma Core Global Spec v0.1.md",
+    "raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md",
+    "raw/# Bible des ratios et règles harmoniques — Norma.md",
+    "wiki/sources/2026-06-11-source-07.md",
+    "wiki/strategy/mvp-pr-roadmap.md",
+    "wiki/sources/2026-06-11-source-03.md",
+    "wiki/sources/2026-06-11-source-02.md",
     "wiki/sources/2026-06-11-source-01.md",
     "wiki/concepts/harmonic-ratio-bible.md",
     "rawinput/Chapitre 14 — Roadmap MVP de Norma Core.md",
-    "wiki/sources/2026-06-11-source-07.md",
     "raw/Chapitre 14 — Roadmap MVP de Norma Core.md",
-    "wiki/sources/2026-06-11-source-02.md",
-    "wiki/sources/2026-06-11-source-03.md",
     "wiki/sources/2026-06-11-source-04.md",
     "wiki/sources/2026-06-11-source-05.md",
     "wiki/sources/2026-06-11-source-06.md",
-    "wiki/strategy/mvp-pr-roadmap.md",
     "rawinput/# Bible des ratios et règles harmoniques — Norma.md",
     "wiki/meta/pr0-governance-checklist.md",
     "wiki/product/mvp-demo-brief.md",
@@ -215,12 +221,6 @@
     "raw/PR 0-2.md",
     "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core-2.md",
     "raw/Chapitre 13 — MVP demo brief de Norma Core-2.md",
-    "raw/Chapitre 12 Norma Core Global Spec v0.1-2.md",
-    "raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core-2.md",
-    "raw/# Bible des ratios et règles harmoniques — Norma-3.md",
-    "raw/PR 0-1.md",
-    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core-1.md",
-    "raw/Chapitre 13 — MVP demo brief de Norma Core-1.md",
-    "raw/Chapitre 12 Norma Core Global Spec v0.1-1.md"
+    "raw/Chapitre 12 Norma Core Global Spec v0.1-2.md"
   ]
 }
