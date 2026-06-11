@@ -24,9 +24,9 @@ WIKI_DIRS = [
     "tech",
 ]
 
-VAULT_LLMS = """# Pagecraft Vault
+VAULT_LLMS = """# Norma Core Vault
 
-> This vault uses Pagecraft for LLM-active memory, durable knowledge, and careful agent-driven mutations.
+> This vault uses Norma Core for LLM-active memory, durable knowledge, and careful agent-driven mutations.
 
 This file is an agent discovery entrypoint for the initialized vault. It is not the write-time source of truth.
 
@@ -113,7 +113,7 @@ def init_vault(target: Path, with_sample: bool) -> None:
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- This vault uses Pagecraft: read `wiki/index.md`, then only the relevant canonical pages.
+- This vault uses Norma Core: read `wiki/index.md`, then only the relevant canonical pages.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -134,7 +134,7 @@ Active memory cache for agents. Keep this page under 500 words.
             "overview",
             """# Overview
 
-This vault was initialized with Pagecraft.
+This vault was initialized with Norma Core.
 
 ## Current State
 Add the durable project summary here after the first ingest or direct update.
@@ -174,7 +174,7 @@ No outputs yet.
             f"""# Log
 
 ## {date.today().isoformat()}
-- Initialized Pagecraft vault structure.
+- Initialized Norma Core vault structure.
 """,
         ),
     )
@@ -189,10 +189,10 @@ Drop new source files here, then ask an agent to run the `ingest-wiki` ingest wo
 
     if with_sample:
         write_if_missing(
-            target / "rawinput" / "pagecraft-sample.md",
-            """# Pagecraft Sample Source
+            target / "rawinput" / "norma-core-sample.md",
+            """# Norma Core Sample Source
 
-Pagecraft should make wiki retrieval cheap enough that agents check the vault before asking broad context questions.
+Norma Core should make wiki retrieval cheap enough that agents check the vault before asking broad context questions.
 
 Key points:
 - `wiki/hot.md` is the first active-memory read.
@@ -205,7 +205,7 @@ Key points:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Initialize a Pagecraft-compatible wiki vault."
+        description="Initialize a Norma Core-compatible wiki vault."
     )
     parser.add_argument("target", help="Target vault directory to create or update.")
     parser.add_argument(
@@ -217,7 +217,7 @@ def main() -> int:
 
     target = Path(args.target).expanduser().resolve()
     init_vault(target, args.with_sample)
-    print(f"Initialized Pagecraft vault at {target}")
+    print(f"Initialized Norma Core vault at {target}")
     return 0
 
 

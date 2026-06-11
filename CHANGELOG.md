@@ -8,7 +8,7 @@
 - `AGENTS.md` compatibility shim for agents that bootstrap from `AGENTS.md`.
 - `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` files expected by the validator.
 - README agent prompt for using the wiki as memory.
-- `scripts/init_vault.py` to initialize a Pagecraft-compatible vault and optional sample source.
+- `scripts/init_vault.py` to initialize a Norma Core-compatible vault and optional sample source.
 - `llms.txt` as a compact discovery map for generic LLM agents.
 
 ### Changed

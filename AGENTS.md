@@ -1,4 +1,4 @@
-# AGENTS.md - Pagecraft compatibility shim
+# AGENTS.md - Norma Core compatibility shim
 
 This repository keeps its canonical write-time contract in `CLAUDE.md`.
 

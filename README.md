@@ -1,4 +1,4 @@
-# Pagecraft
+# Norma Core
 
 A portable hybrid wiki contract for LLM-active memory, durable knowledge bases, and careful agent-driven mutations.
 
@@ -9,11 +9,11 @@ This package is built from two source systems:
 - **twoweeks-wiki**: strong at durable knowledge architecture, ingest/lint/save-output workflows, index/log discipline, and retrieval order
 - **forrestchang/andrej-karpathy-skills**: strong at behavioral execution — think before coding, simplicity first, surgical changes, and goal-driven verification
 
-Pagecraft keeps the twoweeks control plane, adds the Karpathy behavior shim, and introduces a lightweight active-memory entrypoint through `wiki/hot.md`.
+Norma Core keeps the twoweeks control plane, adds the Karpathy behavior shim, and introduces a lightweight active-memory entrypoint through `wiki/hot.md`.
 
 ## Start here
 
-When installing Pagecraft into a vault:
+When installing Norma Core into a vault:
 
 1. Initialize a vault:
 
@@ -29,13 +29,13 @@ When installing Pagecraft into a vault:
 Smoke-test a new vault with a staged markdown file:
 
 ```bash
-python3 scripts/init_vault.py /tmp/pagecraft-vault --with-sample
+python3 scripts/init_vault.py /tmp/norma-core-vault --with-sample
 ```
 
 Then ask your agent:
 
 ```text
-Use the ingest-wiki skill. Ingest rawinput/pagecraft-sample.md into this vault.
+Use the ingest-wiki skill. Ingest rawinput/norma-core-sample.md into this vault.
 ```
 
 Agent prompt:
@@ -46,7 +46,7 @@ Use the wiki as memory. For project context, check wiki/hot.md first, then wiki/
 
 ## Agent-ready entrypoints
 
-Pagecraft ships one compact entrypoint per agent family:
+Norma Core ships one compact entrypoint per agent family:
 
 | Agent | Start file | Purpose |
 | --- | --- | --- |
@@ -59,7 +59,7 @@ Vaults initialized with `scripts/init_vault.py` receive a vault-specific `llms.t
 
 ## Minimal vault shape
 
-Pagecraft is a contract package, not a pre-filled vault. A user vault should contain:
+Norma Core is a contract package, not a pre-filled vault. A user vault should contain:
 
 ```text
 vault/
@@ -106,7 +106,7 @@ The two source projects solve different problems:
 - `llms.txt` — compact discovery map for generic LLM agents
 - `WIKI_SCHEMA.md` — neutral discovery contract
 - `skills/ingest-wiki/SKILL.md` — upgraded skill with explicit preflight and verification
-- `scripts/init_vault.py` — initializes a clean Pagecraft-compatible vault
+- `scripts/init_vault.py` — initializes a clean Norma Core-compatible vault
 - `EXAMPLES.md` — hybrid examples adapted to wiki mutations
 - `.claude-plugin/` — plugin metadata for portability
 - `audit/` — benchmark matrix, audit report, validation output

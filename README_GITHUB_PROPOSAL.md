@@ -1,14 +1,14 @@
-# Pagecraft
+# Norma Core
 
-Pagecraft turns a local Markdown vault into active memory for LLM agents.
+Norma Core turns a local Markdown vault into active memory for LLM agents.
 
 It gives Codex, Claude Code, and other agents a small, repeatable way to find project context, keep durable knowledge organized, and avoid duplicating pages.
 
-## Why Pagecraft Exists
+## Why Norma Core Exists
 
 LLM agents are most useful when they can read the right project facts quickly. Most Markdown vaults are too expensive to scan blindly.
 
-Pagecraft adds a small operating contract:
+Norma Core adds a small operating contract:
 
 - `wiki/hot.md` is the short active-memory cache agents read first in an initialized vault.
 - `wiki/index.md` is the canonical retrieval map.
@@ -22,8 +22,8 @@ The goal is simple: make the wiki cheap enough that agents use it by default.
 ## 60-Second Start
 
 ```bash
-git clone https://github.com/panamini/Pagecraft.git
-cd Pagecraft
+git clone https://github.com/panamini/Norma Core.git
+cd Norma Core
 python3 scripts/init_vault.py /path/to/my-vault
 ```
 
@@ -67,6 +67,6 @@ The agent should create or reuse source pages, update durable pages, move the ra
 
 ## Status
 
-Pagecraft is intentionally small. It is not an Obsidian plugin, vector database, MCP server, or auto-commit system.
+Norma Core is intentionally small. It is not an Obsidian plugin, vector database, MCP server, or auto-commit system.
 
 It is a portable contract for agent-readable Markdown memory.

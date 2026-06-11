@@ -1,6 +1,6 @@
-# Pagecraft
+# Norma Core
 
-> Pagecraft is a portable hybrid wiki contract for LLM-active memory, durable knowledge bases, and careful agent-driven mutations.
+> Norma Core is a portable hybrid wiki contract for LLM-active memory, durable knowledge bases, and careful agent-driven mutations.
 
 This file is an agent discovery entrypoint. It is not the write-time source of truth.
 
@@ -28,7 +28,7 @@ Keep the write path simple:
 ## Commands
 
 - Initialize a vault: `python3 scripts/init_vault.py /path/to/vault`
-- Initialize with sample input: `python3 scripts/init_vault.py /tmp/pagecraft-vault --with-sample`
+- Initialize with sample input: `python3 scripts/init_vault.py /tmp/norma-core-vault --with-sample`
 - Validate this package: `python3 scripts/validate_hybrid.py`
 
 ## Optional
