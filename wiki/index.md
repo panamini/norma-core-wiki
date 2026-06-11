@@ -39,12 +39,16 @@ updated: 2026-06-11
 - `wiki/sources/2026-06-11-source-05.md`
 - `wiki/sources/2026-06-11-source-06.md`
 - `wiki/sources/2026-06-11-source-07.md`
+- `wiki/sources/2026-06-11-source-08.md`
+- `wiki/sources/2026-06-11-source-09.md`
+- `wiki/sources/2026-06-11-source-10.md`
+- `wiki/sources/2026-06-11-source-11.md`
 
 ## Outputs
 No outputs yet.
 
 ## Ingest Report
 - Completed source ingest promotion from rawinput into raw.
-- Created 7 source pages in `wiki/sources`.
+- Created 11 source pages in `wiki/sources`.
 - Added source-based roadmap details from `rawinput/Chapitre 14 — Roadmap MVP de Norma Core.md`.
 - Promoted source summaries into durable pages under `wiki/product`, `wiki/tech`, `wiki/strategy`, `wiki/meta`, and `wiki/concepts`.

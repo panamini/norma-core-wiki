@@ -11,6 +11,7 @@ tags:
 sources:
   - wiki/sources/2026-06-11-source-01.md
   - raw/# Bible des ratios et règles harmoniques — Norma.md
+  - wiki/sources/2026-06-11-source-08.md
 ---
 
 # Harmonic Ratio Bible

@@ -39,3 +39,11 @@ updated: 2026-06-11
 - Verified rawinput staging after Chapter 14 ingest:
   - `rawinput/` documents were present in `raw/` and `wiki/sources/` before cleanup.
   - deleted ingested staging documents from `rawinput/` (except `rawinput/README.md`).
+- Additional ingest from `rawinput/`:
+  - added source pages:
+    - `wiki/sources/2026-06-11-source-08.md`
+    - `wiki/sources/2026-06-11-source-09.md`
+    - `wiki/sources/2026-06-11-source-10.md`
+    - `wiki/sources/2026-06-11-source-11.md`
+  - copied staged `GLOSSARY_CORE.md`, `MVP_GUARDRAILS.md`, `PR_REVIEW_CHECKLIST.md`, `SPEC_FREEZE.md` to `raw/`
+  - deleted ingested documents from `rawinput/` (except `rawinput/README.md`)

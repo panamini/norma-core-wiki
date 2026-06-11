@@ -11,6 +11,9 @@ tags:
 sources:
   - wiki/sources/2026-06-11-source-03.md
   - raw/Chapitre 12 Norma Core Global Spec v0.1.md
+  - wiki/sources/2026-06-11-source-09.md
+  - wiki/sources/2026-06-11-source-10.md
+  - wiki/sources/2026-06-11-source-11.md
 ---
 
 # Norma Core Spec v0.1

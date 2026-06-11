@@ -11,6 +11,7 @@ tags:
 sources:
   - wiki/sources/2026-06-11-source-04.md
   - raw/Chapitre 13 — MVP demo brief de Norma Core.md
+  - wiki/sources/2026-06-11-source-11.md
 ---
 
 # MVP Demo Brief

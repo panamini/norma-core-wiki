@@ -11,6 +11,10 @@ tags:
 sources:
   - wiki/sources/2026-06-11-source-06.md
   - raw/PR 0.md
+  - wiki/sources/2026-06-11-source-08.md
+  - wiki/sources/2026-06-11-source-09.md
+  - wiki/sources/2026-06-11-source-10.md
+  - wiki/sources/2026-06-11-source-11.md
 ---
 
 # PR0 Governance and Checklist

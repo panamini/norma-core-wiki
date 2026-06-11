@@ -24,6 +24,15 @@ Active memory cache for agents. Keep this page under 500 words.
 
 ## Latest ingest
 - Ingested 7 files from rawinput into raw (immutable copies only), excluding `rawinput/README.md`.
+- Added 4 additional source pages and moved rawinput files:
+  - `wiki/sources/2026-06-11-source-08.md`
+  - `wiki/sources/2026-06-11-source-09.md`
+  - `wiki/sources/2026-06-11-source-10.md`
+  - `wiki/sources/2026-06-11-source-11.md`
+  - `GLOSSARY_CORE.md`
+  - `MVP_GUARDRAILS.md`
+  - `PR_REVIEW_CHECKLIST.md`
+  - `SPEC_FREEZE.md`
 - Created 7 source pages: `wiki/sources/2026-06-11-source-01.md` to `wiki/sources/2026-06-11-source-07.md`.
 - Promoted durable pages:
   - `wiki/concepts/harmonic-ratio-bible.md`
