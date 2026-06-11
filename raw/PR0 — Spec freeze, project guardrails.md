@@ -1,6 +1,6 @@
-Base utilisée : plan PR du Chapitre 15 après verrouillage de la spec Norma Core.
 
-# PR0 — Spec freeze / project guardrails
+
+# 
 
 ## 1. Scope exact de PR0
 

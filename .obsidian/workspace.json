@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
+                "file": "raw/PR0 — Spec freeze, project guardrails.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapitre 13 — MVP demo brief de Norma Core"
+              "title": "PR0 — Spec freeze, project guardrails"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
+                "file": "raw/PR0 — Spec freeze, project guardrails.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Chapitre 13 — MVP demo brief de Norma Core"
+              "title": "Backlinks for PR0 — Spec freeze, project guardrails"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
+                "file": "raw/PR0 — Spec freeze, project guardrails.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Chapitre 13 — MVP demo brief de Norma Core"
+              "title": "Outgoing links from PR0 — Spec freeze, project guardrails"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
+                "file": "raw/PR0 — Spec freeze, project guardrails.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Chapitre 13 — MVP demo brief de Norma Core"
+              "title": "Outline of PR0 — Spec freeze, project guardrails"
             }
           },
           {
@@ -194,11 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "411bc4a9f2d0f766",
+  "active": "90c25905a0e2a7fa",
   "lastOpenFiles": [
+    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md",
+    "raw/PR0 — Spec freeze, project guardrails.md",
+    "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
     "diffs/summary.md",
     "audit/hybrid-audit-report.md",
-    "raw/Chapitre 13 — MVP demo brief de Norma Core.md",
     "raw/Chapitre 12 Norma Core Global Spec v0.1.md",
     "raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md",
     "raw/# Bible des ratios et règles harmoniques — Norma.md",
@@ -219,8 +221,6 @@
     "wiki/tech/core-spec-v0-1.md",
     "wiki/tech/core-interface-boundary.md",
     "raw/PR 0-2.md",
-    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core-2.md",
-    "raw/Chapitre 13 — MVP demo brief de Norma Core-2.md",
-    "raw/Chapitre 12 Norma Core Global Spec v0.1-2.md"
+    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core-2.md"
   ]
 }
