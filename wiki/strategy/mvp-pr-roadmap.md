@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-13
 tags:
   - execution
   - roadmap
@@ -12,6 +12,8 @@ sources:
   - wiki/sources/2026-06-11-source-05.md
   - wiki/sources/2026-06-11-source-06.md
   - wiki/sources/2026-06-11-source-07.md
+  - wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md
+  - wiki/sources/2026-06-13-pr-agent.md
   - raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md
   - raw/PR 0.md
   - wiki/sources/2026-06-11-source-09.md
@@ -26,6 +28,7 @@ Execution plan to keep implementation in sequence and avoid MVP drift.
 ## Current state
 
 The roadmap is now split into strict phases that separate architecture lock, core build, and ecosystem growth.
+It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and explicit gating before broadening scope.
 
 ## Details
 
@@ -91,6 +94,17 @@ The roadmap is now split into strict phases that separate architecture lock, cor
 - keep source-of-truth split: runtime code only in core PRs
 - preserve provenance from PR1/PR2 onward
 - delay feature surfaces (SDK/API/MCP, plugins, full visual products) until after core delivery
+
+### Readiness extension (post-PR25)
+
+- Current execution plan is now post-PR25 and proceeds through PR27–PR46 with explicit gates:
+  - PR27–PR29: local CLI and release checkpoint
+  - PR30–PR32: package readiness and publish governance
+  - PR33–PR35: MCP contract and local MCP implementation
+  - PR36–PR39: threat model and API contract
+  - PR40–PR43: user-facing product requirements and read-only viewer
+  - PR44–PR46: onboarding, beta readiness, and launch checks
+- PR0 governance and core sequencing remain the hard baseline for all expansion.
 
 ## Sources
 

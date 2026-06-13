@@ -3,10 +3,22 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-13
 ---
 
 # Log
+
+## 2026-06-13
+- Ingested 2 markdown files from `rawinput/` into `raw/`:
+  - `rawinput/Norma Core Business Readiness Roadmap.md`
+  - `rawinput/pr agent.md`
+- Added source pages:
+  - `wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md`
+  - `wiki/sources/2026-06-13-pr-agent.md`
+- Updated canonical pages:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/meta/pr0-governance-checklist.md`
+- Removed ingested documents from `rawinput/` (except `rawinput/README.md`).
 
 ## 2026-06-11
 - Initialized Norma Core vault structure.

@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-13
 ---
 
 # Hot Cache
@@ -11,7 +11,7 @@ updated: 2026-06-11
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- This vault uses Norma Core: read `wiki/index.md` and open durable pages for implementation context.
+- This vault tracks the post-PR25 readiness roadmap sequence (PR27–PR46) and PR0 governance updates before broader product expansion.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -23,22 +23,13 @@ Active memory cache for agents. Keep this page under 500 words.
 - Update durable pages first; update this page only to keep near-term retrieval cheap.
 
 ## Latest ingest
-- Ingested 7 files from rawinput into raw (immutable copies only), excluding `rawinput/README.md`.
-- Added 4 additional source pages and moved rawinput files:
-  - `wiki/sources/2026-06-11-source-08.md`
-  - `wiki/sources/2026-06-11-source-09.md`
-  - `wiki/sources/2026-06-11-source-10.md`
-  - `wiki/sources/2026-06-11-source-11.md`
-  - `GLOSSARY_CORE.md`
-  - `MVP_GUARDRAILS.md`
-  - `PR_REVIEW_CHECKLIST.md`
-  - `SPEC_FREEZE.md`
-- Created 7 source pages: `wiki/sources/2026-06-11-source-01.md` to `wiki/sources/2026-06-11-source-07.md`.
-- Promoted durable pages:
-  - `wiki/concepts/harmonic-ratio-bible.md`
-  - `wiki/tech/core-interface-boundary.md`
-  - `wiki/tech/core-spec-v0-1.md`
-  - `wiki/product/mvp-demo-brief.md`
+- Ingested 2 files from rawinput into raw on 2026-06-13:
+  - `Norma Core Business Readiness Roadmap.md`
+  - `pr agent.md`
+- Created 2 source pages:
+  - `wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md`
+  - `wiki/sources/2026-06-13-pr-agent.md`
+- Updated canonical target pages:
   - `wiki/strategy/mvp-pr-roadmap.md`
   - `wiki/meta/pr0-governance-checklist.md`
-- Removed ingested documents from `rawinput/` after verification.
+- Removed staged markdown files from `rawinput/` (kept `rawinput/README.md`).

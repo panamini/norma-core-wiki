@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "3149bc4c8ba8523a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "rawinput/pr agent.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "pr agent"
-            }
-          },
-          {
             "id": "0f46e7646c0c8850",
             "type": "leaf",
             "state": {
@@ -50,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,8 +211,13 @@
   },
   "active": "0f46e7646c0c8850",
   "lastOpenFiles": [
-    "rawinput/pr agent.md",
+    "rawinput/Norma Core Business Readiness Roadmap.md",
+    "raw/pr agent.md",
+    "raw/Norma Core Business Readiness Roadmap.md",
+    "wiki/sources/2026-06-13-pr-agent.md",
+    "wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md",
     "Reusable Codex prompt after PR26.md",
+    "rawinput/pr agent.md",
     "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md",
     "docs/SPEC_FREEZE.md",
     "docs/PR_REVIEW_CHECKLIST.md",
@@ -246,11 +237,6 @@
     "rawinput/MVP_GUARDRAILS.md",
     "rawinput/GLOSSARY_CORE.md",
     "SPEC_FREEZE.md",
-    "PR_REVIEW_CHECKLIST.md",
-    "MVP_GUARDRAILS.md",
-    "GLOSSARY_CORE.md",
-    "raw/PR0 — Spec freeze, project guardrails.md",
-    "docs",
-    "raw/Chapitre 13 — MVP demo brief de Norma Core.md"
+    "docs"
   ]
 }

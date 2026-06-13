@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-13
 ---
 
 # Index
@@ -43,12 +43,17 @@ updated: 2026-06-11
 - `wiki/sources/2026-06-11-source-09.md`
 - `wiki/sources/2026-06-11-source-10.md`
 - `wiki/sources/2026-06-11-source-11.md`
+- `wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md`
+- `wiki/sources/2026-06-13-pr-agent.md`
 
 ## Outputs
 No outputs yet.
 
 ## Ingest Report
 - Completed source ingest promotion from rawinput into raw.
-- Created 11 source pages in `wiki/sources`.
-- Added source-based roadmap details from `rawinput/Chapitre 14 — Roadmap MVP de Norma Core.md`.
-- Promoted source summaries into durable pages under `wiki/product`, `wiki/tech`, `wiki/strategy`, `wiki/meta`, and `wiki/concepts`.
+- Added source pages:
+  - `wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md`
+  - `wiki/sources/2026-06-13-pr-agent.md`
+- Updated canonical strategy and governance pages from rawinput planning content:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/meta/pr0-governance-checklist.md`
