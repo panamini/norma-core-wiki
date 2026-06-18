@@ -3,10 +3,22 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 # Log
+
+## 2026-06-17
+- Copied the attached Norma Core endgame prompt into `raw/`:
+  - `raw/Norma Core Endgame Plan.md`
+- Added source page:
+  - `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
+- Added roadmap context for the PR66–PR70 local viewer continuation path:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+- Updated retrieval/control pages:
+  - `wiki/overview.md`
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-13
 - Ingested 2 markdown files from `rawinput/` into `raw/`:

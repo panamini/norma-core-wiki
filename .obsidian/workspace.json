@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reusable Codex prompt after PR26.md",
+                "file": "rawinput/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reusable Codex prompt after PR26"
+              "title": "Untitled"
             }
           }
         ],
@@ -211,32 +211,32 @@
   },
   "active": "0f46e7646c0c8850",
   "lastOpenFiles": [
-    "rawinput/Norma Core Business Readiness Roadmap.md",
-    "raw/pr agent.md",
     "raw/Norma Core Business Readiness Roadmap.md",
+    "rawinput/Untitled.md",
+    "wiki/sources/2026-06-17-norma-core-endgame-plan.md",
+    "raw/Norma Core Endgame Plan.md",
+    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md",
+    "raw/SPEC_FREEZE.md",
+    "raw/PR0 — Spec freeze, project guardrails.md",
+    "raw/PR_REVIEW_CHECKLIST.md",
+    "raw/pr agent.md",
+    "raw/GLOSSARY_CORE.md",
+    "Reusable Codex prompt after PR26.md",
+    "rawinput/Norma Core Business Readiness Roadmap.md",
     "wiki/sources/2026-06-13-pr-agent.md",
     "wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md",
-    "Reusable Codex prompt after PR26.md",
     "rawinput/pr agent.md",
-    "raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md",
     "docs/SPEC_FREEZE.md",
     "docs/PR_REVIEW_CHECKLIST.md",
     "docs/MVP_GUARDRAILS.md",
     "docs/GLOSSARY_CORE.md",
     "wiki/sources/2026-06-11-source-01.md",
-    "raw/SPEC_FREEZE.md",
-    "raw/PR_REVIEW_CHECKLIST.md",
     "raw/MVP_GUARDRAILS.md",
-    "raw/GLOSSARY_CORE.md",
     "wiki/sources/2026-06-11-source-11.md",
     "wiki/sources/2026-06-11-source-10.md",
     "wiki/sources/2026-06-11-source-09.md",
     "wiki/sources/2026-06-11-source-08.md",
     "rawinput/SPEC_FREEZE.md",
-    "rawinput/PR_REVIEW_CHECKLIST.md",
-    "rawinput/MVP_GUARDRAILS.md",
-    "rawinput/GLOSSARY_CORE.md",
-    "SPEC_FREEZE.md",
     "docs"
   ]
 }

@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 # Hot Cache
@@ -11,7 +11,7 @@ updated: 2026-06-13
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- This vault tracks the post-PR25 readiness roadmap sequence (PR27–PR46) and PR0 governance updates before broader product expansion.
+- This vault tracks the post-PR25 readiness roadmap sequence (PR27–PR46) and now also carries a PR66–PR70 local viewer continuation prompt for follow-on retrieval.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -23,6 +23,16 @@ Active memory cache for agents. Keep this page under 500 words.
 - Update durable pages first; update this page only to keep near-term retrieval cheap.
 
 ## Latest ingest
+- Ingested the attached Norma Core endgame prompt into raw on 2026-06-17:
+  - `/Users/pana/.codex/attachments/35b6aeac-0d2c-4206-baa9-ba58e9fb4444/pasted-text.txt`
+- Created 1 source page:
+  - `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
+- Updated roadmap context:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+- Refreshed retrieval pages:
+  - `wiki/overview.md`
+  - `wiki/index.md`
+  - `wiki/log.md`
 - Ingested 2 files from rawinput into raw on 2026-06-13:
   - `Norma Core Business Readiness Roadmap.md`
   - `pr agent.md`

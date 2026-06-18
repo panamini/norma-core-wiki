@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-13
+updated: 2026-06-17
 tags:
   - execution
   - roadmap
@@ -103,8 +103,14 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
   - PR33–PR35: MCP contract and local MCP implementation
   - PR36–PR39: threat model and API contract
   - PR40–PR43: user-facing product requirements and read-only viewer
-  - PR44–PR46: onboarding, beta readiness, and launch checks
+- PR44–PR46: onboarding, beta readiness, and launch checks
 - PR0 governance and core sequencing remain the hard baseline for all expansion.
+
+### Local viewer endgame prompt
+
+- A later continuation prompt adds a PR66–PR70 local viewer path focused on implementation after the approval stages.
+- The sequence covers local viewer UI approval, a read-only viewer model, a static viewer, real fixtures, and final demo readiness.
+- Treat that prompt as a planning artifact for retrieval and scoping, not as a replacement for the canonical roadmap.
 
 ## Sources
 
@@ -113,6 +119,7 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - `wiki/sources/2026-06-11-source-05.md`
 - `wiki/sources/2026-06-11-source-06.md`
 - `wiki/sources/2026-06-11-source-07.md`
+- `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
 
 ## Related
 
