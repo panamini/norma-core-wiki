@@ -1,4 +1,4 @@
-# Norma — Vision produit, UX cible et architecture d’intégration
+# 
 
 **Statut : brouillon de cadrage à corriger**  
 **Objet : définir l’expérience voulue avant de poursuivre les PR d’implémentation**

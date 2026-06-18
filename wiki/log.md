@@ -3,10 +3,26 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 # Log
+
+## 2026-06-19
+- Ingested the product vision and integration draft from `rawinput/` into `raw/`:
+  - `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
+- Added source page:
+  - `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
+- Added planned product page:
+  - `wiki/product/norma-product-vision.md`
+- Updated canonical pages for boundary and roadmap routing:
+  - `wiki/product/norma-product-vision.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+- Refreshed retrieval/control pages:
+  - `wiki/overview.md`
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-17
 - Copied the attached Norma Core endgame prompt into `raw/`:

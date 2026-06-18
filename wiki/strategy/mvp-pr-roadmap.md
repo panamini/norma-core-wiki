@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-17
+updated: 2026-06-19
 tags:
   - execution
   - roadmap
@@ -19,6 +19,8 @@ sources:
   - wiki/sources/2026-06-11-source-09.md
   - wiki/sources/2026-06-11-source-10.md
   - wiki/sources/2026-06-11-source-11.md
+  - raw/Norma — Vision produit, UX cible et architecture d’intégration.md
+  - wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md
 ---
 
 # MVP PR Roadmap
@@ -112,6 +114,12 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - The sequence covers local viewer UI approval, a read-only viewer model, a static viewer, real fixtures, and final demo readiness.
 - Treat that prompt as a planning artifact for retrieval and scoping, not as a replacement for the canonical roadmap.
 
+### PR71 vision and UX freeze
+
+- The new product vision prompt is a documentation-only planning artifact for PR71.
+- PR71 should capture product vision, UX flows, integration architecture, and the post-MVP adapter family without broadening MVP core scope.
+- Keep it separate from implementation sequencing so the roadmap stays anchored on the current PR27–PR46 execution plan.
+
 ## Sources
 
 - `raw/Chapitre 15 — Plan PR, plan développeur de Norma Core.md`
@@ -120,9 +128,12 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - `wiki/sources/2026-06-11-source-06.md`
 - `wiki/sources/2026-06-11-source-07.md`
 - `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
+- `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
+- `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
 
 ## Related
 
 - `wiki/tech/core-spec-v0-1.md`
 - `wiki/product/mvp-demo-brief.md`
 - `wiki/meta/pr0-governance-checklist.md`
+- `wiki/product/norma-product-vision.md`

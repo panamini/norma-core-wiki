@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 # Hot Cache
@@ -11,7 +11,7 @@ updated: 2026-06-17
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- This vault tracks the post-PR25 readiness roadmap sequence (PR27–PR46) and now also carries a PR66–PR70 local viewer continuation prompt for follow-on retrieval.
+- This vault tracks the post-PR25 readiness roadmap sequence (PR27–PR46) and now also carries a PR66–PR70 local viewer continuation prompt plus a PR71 product-vision freeze note for follow-on retrieval.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -23,6 +23,18 @@ Active memory cache for agents. Keep this page under 500 words.
 - Update durable pages first; update this page only to keep near-term retrieval cheap.
 
 ## Latest ingest
+- Ingested the product vision and integration draft from `rawinput/` into `raw/` on 2026-06-19:
+  - `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
+- Created 1 source page:
+  - `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
+- Created 1 planned product page:
+  - `wiki/product/norma-product-vision.md`
+- Refreshed architecture and roadmap routing:
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+  - `wiki/index.md`
+  - `wiki/log.md`
 - Ingested the attached Norma Core endgame prompt into raw on 2026-06-17:
   - `/Users/pana/.codex/attachments/35b6aeac-0d2c-4206-baa9-ba58e9fb4444/pasted-text.txt`
 - Created 1 source page:

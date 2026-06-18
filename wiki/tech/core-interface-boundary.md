@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-19
 tags:
   - architecture
   - adapters
@@ -11,6 +11,8 @@ tags:
 sources:
   - wiki/sources/2026-06-11-source-02.md
   - raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md
+  - raw/Norma — Vision produit, UX cible et architecture d’intégration.md
+  - wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -48,6 +50,14 @@ Adapters should map external shapes to structured inputs and report conversion l
 - CLI / SDK / API / MCP / plugin / camera / CAD adapter / design adapter / agent skill
 - each interface type can change *how* Norma is called, never *what* Norma computes
 
+### Perception provider split
+
+- Normalize every visual or exact-geometry input into a structured observation before it reaches core.
+- OpenAI Vision is the fastest first provider for image perception.
+- Norma Vision is the later precision path for camera and repeatability.
+- CAD adapters can supply exact geometry without perception loss.
+- Core must never depend on which provider was used.
+
 ### Adapter contract
 
 1. Convert external representations to structured inputs.
@@ -72,10 +82,13 @@ Adapters should map external shapes to structured inputs and report conversion l
 ## Sources
 
 - `raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md`
+- `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
 - `wiki/sources/2026-06-11-source-02.md`
+- `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
 
 ## Related
 
 - `wiki/tech/core-spec-v0-1.md`
 - `wiki/strategy/mvp-pr-roadmap.md`
 - `wiki/product/mvp-demo-brief.md`
+- `wiki/product/norma-product-vision.md`
