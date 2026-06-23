@@ -34,7 +34,26 @@ updated: 2026-06-23
 
 ## Sources
 ### Source pages
+- `wiki/sources/2026-06-11-source-01.md`
+- `wiki/sources/2026-06-11-source-02.md`
+- `wiki/sources/2026-06-11-source-03.md`
+- `wiki/sources/2026-06-11-source-04.md`
+- `wiki/sources/2026-06-11-source-05.md`
+- `wiki/sources/2026-06-11-source-06.md`
+- `wiki/sources/2026-06-11-source-07.md`
+- `wiki/sources/2026-06-11-source-08.md`
+- `wiki/sources/2026-06-11-source-09.md`
+- `wiki/sources/2026-06-11-source-10.md`
+- `wiki/sources/2026-06-11-source-11.md`
+- `wiki/sources/2026-06-13-norma-core-business-readiness-roadmap.md`
+- `wiki/sources/2026-06-13-pr-agent.md`
+- `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
+- `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
 - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
 
 ## Outputs
 No outputs yet.
+
+## Recent Additions
+- `wiki/tech/norma-orchestrator.md`
+- `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
