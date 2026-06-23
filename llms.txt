@@ -23,6 +23,7 @@ Keep the write path simple:
 - [AGENTS.md](AGENTS.md): compatibility shim for Codex and other AGENTS-aware agents.
 - [CLAUDE.md](CLAUDE.md): canonical write-time operating contract.
 - [skills/ingest-wiki/SKILL.md](skills/ingest-wiki/SKILL.md): reusable ingest, direct-update, lint, and save-output workflow.
+- [wiki/tech/norma-orchestrator.md](wiki/tech/norma-orchestrator.md): current trust contract for the merged Norma Core PR96 orchestrator.
 - [README.md](README.md): install and smoke-test instructions.
 
 ## Commands
