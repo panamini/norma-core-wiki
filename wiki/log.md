@@ -3,10 +3,19 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-19
+updated: 2026-06-23
 ---
 
 # Log
+
+## 2026-06-23
+- Added PR96 orchestrator wiki context:
+  - `wiki/tech/norma-orchestrator.md`
+  - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
+  - `rawinput/2026-06-23-pr96-norma-orchestrator-v0.md`
+- Updated retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-19
 - Ingested the product vision and integration draft from `rawinput/` into `raw/`:
@@ -46,13 +55,13 @@ updated: 2026-06-19
 - Updated canonical pages:
   - `wiki/strategy/mvp-pr-roadmap.md`
   - `wiki/meta/pr0-governance-checklist.md`
-- Removed ingested documents from `rawinput/` (except `rawinput/README.md`).
+- Removed ingested documents from `rawinput/` except `rawinput/README.md`.
 
 ## 2026-06-11
 - Initialized Norma Core vault structure.
 
 ## 2026-06-11
-- Ingested 6 markdown files from rawinput/ into raw/ (copied, not moved).
+- Ingested 6 markdown files from rawinput/ into raw/.
 - Source page: wiki/sources/2026-06-11-source-01.md
 - Source page: wiki/sources/2026-06-11-source-02.md
 - Source page: wiki/sources/2026-06-11-source-03.md
@@ -76,9 +85,7 @@ updated: 2026-06-19
   - strategy page updated: `wiki/strategy/mvp-pr-roadmap.md`
 
 ## 2026-06-11
-- Verified rawinput staging after Chapter 14 ingest:
-  - `rawinput/` documents were present in `raw/` and `wiki/sources/` before cleanup.
-  - deleted ingested staging documents from `rawinput/` (except `rawinput/README.md`).
+- Verified rawinput staging after Chapter 14 ingest and deleted ingested staging documents except `rawinput/README.md`.
 - Additional ingest from `rawinput/`:
   - added source pages:
     - `wiki/sources/2026-06-11-source-08.md`
@@ -86,4 +93,4 @@ updated: 2026-06-19
     - `wiki/sources/2026-06-11-source-10.md`
     - `wiki/sources/2026-06-11-source-11.md`
   - copied staged `GLOSSARY_CORE.md`, `MVP_GUARDRAILS.md`, `PR_REVIEW_CHECKLIST.md`, `SPEC_FREEZE.md` to `raw/`
-  - deleted ingested documents from `rawinput/` (except `rawinput/README.md`)
+  - deleted ingested documents from `rawinput/` except `rawinput/README.md`
