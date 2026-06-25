@@ -3,12 +3,45 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-23
+updated: 2026-06-25
 ---
 
 # Log
 
+## 2026-06-25
+- Added R6D ChatGPT `_meta` connector checkpoint:
+  - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- Updated durable pages with current-main PR113 / R6D smoke state and next-step sequencing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
+## 2026-06-24
+- Added post-PR6 ChatGPT Secure MCP Tunnel checkpoint:
+  - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
+- Updated durable pages with post-PR6 status and boundary guidance:
+  - `wiki/tech/norma-orchestrator.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 ## 2026-06-23
+- Ingested Norma Core PR execution map v1:
+  - `raw/🧭 NORMA CORE — PR EXECUTION MAP v1.md`
+  - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
+- Updated deterministic PR sequencing and layer-boundary context:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added PR96 orchestrator wiki context:
   - `wiki/tech/norma-orchestrator.md`
   - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`

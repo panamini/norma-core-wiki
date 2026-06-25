@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-19
+updated: 2026-06-25
 tags:
   - execution
   - roadmap
@@ -21,6 +21,9 @@ sources:
   - wiki/sources/2026-06-11-source-11.md
   - raw/Norma — Vision produit, UX cible et architecture d’intégration.md
   - wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md
+  - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
+  - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
+  - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -97,6 +100,64 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - preserve provenance from PR1/PR2 onward
 - delay feature surfaces (SDK/API/MCP, plugins, full visual products) until after core delivery
 
+### Deterministic dependency map
+
+- Treat PR execution as a dependency graph, not a parallel task list.
+- Required order for the early execution map:
+  1. PR0 — spec freeze lock
+  2. PR1 — toolchain and CI baseline
+  3. PR2 — geometry identity correctness
+  4. PR3 — local MVP proof kit
+  5. PR4 — MCP STDIO safety
+  6. PR5 — MCP tool exposure
+  7. PR6 — optional ChatGPT MCP integration
+- PR2 depends on PR1 passing CI.
+- PR3 depends on PR2 correctness stability.
+- PR4 depends on a working PR3 demo baseline.
+- PR5 depends on PR4 safe MCP transport.
+- PR6 depends on PR5 tool stability.
+
+### Layer gates
+
+- PR1 gate: green build, green checks, no npm dependency, reproducible CI.
+- PR2 gate: duplicate IDs rejected, valid compositions unchanged, measurement determinism preserved, no core behavior drift.
+- PR3 gate: `pnpm demo:mvp` works, `result.json` exists, `report.html` is generated, outputs are deterministic, and no framework is added.
+- PR4 gate: MCP malformed input cannot crash the process, depth protection works, byte limits are enforced, errors are idempotent, and `tools/list` is blocked or controlled.
+- PR5 gate: `norma.runMvpDemoV1` is exposed, MCP output matches CLI output, core logic is not duplicated, and the tool is read-only.
+- PR6 gate: ChatGPT can call the MCP tool through a secure tunnel and outputs remain identical to CLI/MCP, with no new compute logic.
+
+### Post-PR6 checkpoint
+
+- PR6 ChatGPT Secure MCP Tunnel smoke passed for `norma.runMvpDemoV1`.
+- Merge commit: `658ea2069d1c6a65b23df7f43ba4c4ba96fd8a31`.
+- Base branch: `main-after-codex-mcp-tool`.
+- The app stayed private/dev, and the tunnel was stopped after testing.
+- Observed output preserved deterministic proof facts: `measurementCounts` `{ "a": 6, "b": 6 }`, `decision.status` `a_closer`, selected composition `composition:A`, and `replayReadiness.status` `replay_ready`.
+- Do not treat publishing or public submission as the default next step; use a small post-PR6 handoff/checkpoint or explicitly scoped internal follow-up.
+
+### R6D current-main ChatGPT checkpoint
+
+- PR113 / R6D merged at `bba597bca40facaf36fd7741712a0b0b9d8754e6`.
+- Current-main private ChatGPT connector smoke passed after the `_meta`
+  compatibility patch.
+- The connector exposed exactly the six current tools and positive
+  `norma.replayMvpDemo` returned replay-ready output with selected evaluation
+  `evaluation:A:basic-grid-alignment`.
+- Negative prompts for image/prose geometry inference, beauty/recommendation,
+  and prose-only geometry inference were rejected without a Norma analysis tool
+  call.
+- This is private/developer checkpoint evidence only; it does not authorize
+  public app submission, hosted MCP, ChatGPT Analyze expansion, outputSchema
+  follow-up work, or any core geometry behavior change.
+- Next mandatory product/code PR: R1 duplicate geometry source identities.
+
+### No-parallelism rule for transport work
+
+- PR4 must merge before PR5 exposes the tool.
+- PR5 must stabilize before PR6 integrates an external system.
+- Do not run PR5 and PR6 in parallel.
+- If a PR touches more than one of `CORE`, `TRANSPORT`, or `INTEGRATION`, treat it as invalid design until split.
+
 ### Readiness extension (post-PR25)
 
 - Current execution plan is now post-PR25 and proceeds through PR27–PR46 with explicit gates:
@@ -130,6 +191,9 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
 - `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
 - `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
+- `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
+- `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
+- `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 
 ## Related
 

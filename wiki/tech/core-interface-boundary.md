@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-19
+updated: 2026-06-25
 tags:
   - architecture
   - adapters
@@ -13,6 +13,9 @@ sources:
   - raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md
   - raw/Norma — Vision produit, UX cible et architecture d’intégration.md
   - wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md
+  - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
+  - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
+  - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -79,12 +82,28 @@ Adapters should map external shapes to structured inputs and report conversion l
 - Plugin structures overriding core primitives.
 - MCP/tooling inventing rules not declared by core contracts.
 
+### PR layer separation
+
+- `CORE` work covers PR1-PR3 and owns deterministic engine behavior.
+- `TRANSPORT` work covers PR4-PR5 and owns MCP safety and read-only tool exposure.
+- `INTEGRATION` work starts at PR6 and owns external system access.
+- PR4, PR5, and PR6 must not modify geometry logic, measurement logic, evaluation logic, packs, ratios, or deterministic output rules.
+- If transport or integration work touches core computation, stop and split the PR.
+- PR6 has passed a private/dev ChatGPT Secure MCP Tunnel smoke, but that validates external invocation only; it does not relax the boundary or authorize public app submission as the default next step.
+- PR113 / R6D has passed current-main private ChatGPT connector smoke for the
+  six-tool inventory after the `_meta` compatibility patch. This remains an
+  interface checkpoint only and does not authorize hosted MCP, public
+  submission, ChatGPT Analyze expansion, or core behavior changes.
+
 ## Sources
 
 - `raw/Chapitre 11 — Interfaces, adapters et agent-readiness de Norma Core.md`
 - `raw/Norma — Vision produit, UX cible et architecture d’intégration.md`
 - `wiki/sources/2026-06-11-source-02.md`
 - `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
+- `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
+- `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
+- `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 
 ## Related
 

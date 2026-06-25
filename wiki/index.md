@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-23
+updated: 2026-06-25
 ---
 
 # Index
@@ -50,10 +50,15 @@ updated: 2026-06-23
 - `wiki/sources/2026-06-17-norma-core-endgame-plan.md`
 - `wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md`
 - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
+- `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
-No outputs yet.
+- `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/tech/norma-orchestrator.md`
 - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
+- `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
