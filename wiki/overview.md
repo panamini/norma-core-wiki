@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-27
 ---
 
 # Overview
@@ -19,4 +19,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - A later continuation prompt now exists for the PR66–PR70 local viewer path, but it is still only a planning artifact.
 - A new planned product-vision page captures the ChatGPT, Camera, CAD, and renderer adapter family plus the hybrid perception split.
 - PR6 proved private/dev ChatGPT Secure MCP Tunnel invocation through `norma.runMvpDemoV1`; the app was not published, the tunnel was stopped after testing, and deterministic output facts were preserved in a checkpoint output.
-- PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch; the next mandatory product/code PR is R1 duplicate geometry source identities.
+- PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch.
+- Current code state is post-PR #135 / R14 at merge commit `dcb113cb2abfcafbf1155b47a2a7c41d2fd50974`.
+- R10 through R14 locked deterministic Structured Analyze behavior, public contracts, MCP boundary, ratio-pack pass-through, and the local static report dashboard.
+- Current operating model remains local, private, and manual. No hosted MCP, public app submission, package publication, remote API runtime, image/vision/CAD/provider runtime, or recommendation behavior is approved.
+- Next implementation rail: R16 local demo/onboarding smoke for the Structured Analyze report workflow.
