@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-27
 ---
 
 # Hot Cache
@@ -11,12 +11,17 @@ updated: 2026-06-25
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Norma Core now has merged PR96 local orchestration tooling.
+- Norma Core is current through PR #135 / R14, merged at `dcb113cb2abfcafbf1155b47a2a7c41d2fd50974`.
+- R10-R14 locked Structured Analyze determinism, public contracts, MCP boundary, ratio-pack pass-through, and the local static report dashboard.
+- Current operating model remains local, private, and manual.
+- `result.json` remains canonical Norma truth; `report.html` is a derived read-only inspection artifact.
+- Next implementation rail: R16 local demo/onboarding smoke for the Structured Analyze report workflow.
+- Do not start hosted MCP, public app submission, public package publishing, remote API runtime, image/vision/CAD/provider work, or recommendation/optimization/beauty scoring without a later explicit checkpoint.
+- Norma Core has merged PR96 local orchestration tooling.
 - Use `wiki/tech/norma-orchestrator.md` for the current trust contract.
 - Treat the orchestrator as `L1_ADVISORY`: useful for context, doctor checks, validation planning, dry-run evidence, and PR support, but not yet a primary autonomous driver.
 - PR6 ChatGPT Secure MCP Tunnel smoke passed and merged at `658ea2069d1c6a65b23df7f43ba4c4ba96fd8a31` on `main-after-codex-mcp-tool`; the app stayed private/dev and the tunnel was stopped after testing.
 - PR113 / R6D merged at `bba597bca40facaf36fd7741712a0b0b9d8754e6`; current-main private ChatGPT connector smoke passed with the six-tool inventory, `_meta` compatibility, positive replay, and negative prompt guardrails.
-- Next mandatory product/code PR: R1 duplicate geometry source identities. Do not start outputSchema, ChatGPT Analyze expansion, hosting, or publishing first.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -34,6 +39,10 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Synced post-R14 roadmap state on 2026-06-27:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+  - removed stale R1-as-next guidance from active retrieval
 - Added R6D ChatGPT `_meta` connector checkpoint on 2026-06-25:
   - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

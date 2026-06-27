@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-27
 tags:
   - execution
   - roadmap
@@ -32,8 +32,30 @@ Execution plan to keep implementation in sequence and avoid MVP drift.
 
 ## Current state
 
-The roadmap is now split into strict phases that separate architecture lock, core build, and ecosystem growth.
-It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and explicit gating before broadening scope.
+Norma Core is current through PR #135 / R14.
+
+The recent Structured Analyze protection and inspection rail is complete:
+
+- R10 protected deterministic pipeline behavior.
+- R11 froze public API and package export contracts.
+- R12 locked the MCP protocol contract and execution boundary.
+- R13 locked ratio-pack authoring, registry, and strict pass-through behavior.
+- R14 upgraded local `report.html` into a static read-only Structured Analyze inspection dashboard.
+
+The roadmap remains split into strict phases that separate architecture lock,
+core build, local/private workflow, and ecosystem growth. Current execution
+stays local, private, and manual. `result.json` remains canonical Norma truth;
+report and viewer artifacts are derived inspection surfaces only.
+
+Next implementation rail: R16 local demo/onboarding smoke for the Structured
+Analyze report workflow. R16 should prove a local user can run the Geometry
+Harmony example, generate the five-file report bundle, inspect `report.html`,
+and understand `result.json` as canonical truth.
+
+Do not start hosted MCP, public app submission, public package publishing,
+remote API runtime, image/vision/CAD/camera/provider work, or recommendation /
+optimization / beauty-scoring behavior before a later explicit checkpoint
+approves that scope.
 
 ## Details
 
@@ -149,7 +171,24 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - This is private/developer checkpoint evidence only; it does not authorize
   public app submission, hosted MCP, ChatGPT Analyze expansion, outputSchema
   follow-up work, or any core geometry behavior change.
-- Next mandatory product/code PR: R1 duplicate geometry source identities.
+- Historical next step after this checkpoint was R1 duplicate geometry source
+  identities. That work has since been completed and must not be treated as the
+  current next step.
+
+### Post-R14 checkpoint
+
+- PR #135 / R14 merged at
+  `dcb113cb2abfcafbf1155b47a2a7c41d2fd50974`.
+- Head merged: `b3e4349edabbb438c70087a80f662a8255762278`.
+- Local Structured Analyze `report.html` is now a static read-only inspection
+  dashboard.
+- `result.json` remains canonical Norma truth.
+- The current operating model remains local, private, and manual.
+- No hosted MCP, public app submission, package publication, package export
+  expansion, remote API runtime, image/vision/CAD/camera/provider runtime, or
+  recommendation/optimization/beauty-scoring behavior is approved.
+- Next implementation rail: R16 local demo/onboarding smoke for the Structured
+  Analyze report workflow.
 
 ### No-parallelism rule for transport work
 
@@ -168,6 +207,15 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
   - PR40–PR43: user-facing product requirements and read-only viewer
 - PR44–PR46: onboarding, beta readiness, and launch checks
 - PR0 governance and core sequencing remain the hard baseline for all expansion.
+
+### Current near-term sequence
+
+1. R15 - post-R14 roadmap and wiki source-of-truth sync.
+2. R16 - local demo/onboarding smoke for the Structured Analyze report workflow.
+3. R17 - package/local consumer readiness refresh, only if a real gap remains
+   after R16.
+4. R18+ - broader product, package, remote, or public-surface gates only after
+   explicit checkpoint approval.
 
 ### Local viewer endgame prompt
 

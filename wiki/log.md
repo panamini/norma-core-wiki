@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-27
 ---
 
 # Log
+
+## 2026-06-27
+- Synced roadmap state after Norma Core PR #135 / R14:
+  - PR #135 merge commit `dcb113cb2abfcafbf1155b47a2a7c41d2fd50974`
+  - R10-R14 recorded as complete for Structured Analyze determinism, public contracts, MCP boundary, ratio-pack pass-through, and local report dashboard
+  - next implementation rail set to R16 local demo/onboarding smoke
+- Updated durable/control pages:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+  - `wiki/hot.md`
+  - `wiki/index.md`
 
 ## 2026-06-25
 - Added R6D ChatGPT `_meta` connector checkpoint:
