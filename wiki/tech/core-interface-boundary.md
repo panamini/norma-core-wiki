@@ -104,9 +104,8 @@ Adapters should map external shapes to structured inputs and report conversion l
 - PR #145 / R23, PR #146 / R24, and PR #147 / R25 continued this local
   inspection/protection rail through onboarding, scenario regression, and static
   safety guards.
-- PR #148 / R26 is open as a docs/test-only roadmap truth-sync candidate. It
-  does not authorize runtime changes while open, and it must not be treated as
-  merged until GitHub records a merge commit.
+- PR #148 / R26 merged as a docs/test-only roadmap truth sync. It does not
+  authorize runtime changes.
 - R22-R26 do not authorize execution, recomputation, source-truth creation,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,

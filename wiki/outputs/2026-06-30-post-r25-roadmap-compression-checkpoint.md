@@ -18,16 +18,16 @@ It is a wiki state checkpoint, not a product approval and not a runtime change.
 
 ## Result
 
-- Latest merged Norma Core checkpoint: PR #147 / R25.
+- Latest merged Norma Core checkpoint: PR #148 / R26.
 - PR #147 title: `R25: local inspection surface static safety guard`.
 - PR #147 merge commit: `3889cf84d6df41391996d9d16cb76b5c48638a2d`.
 - R26 core PR: PR #148, `R26: post-R25 roadmap truth sync`.
 - PR #148 head at sync time: `67be4b4376a5f22272a3179b99c35e799aacb847`.
-- PR #148 state at sync time: open, not merged.
+- PR #148 merge commit: `5d57a6fb51c94aaf2222e84ce67bcd22e0635c16`.
+- PR #148 merged at: `2026-06-29T23:32:57Z`.
 
-The wiki should treat PR #148 as the current roadmap-compression candidate until
-it merges. After PR #148 merges, the wiki can update this checkpoint with the
-merge commit or supersede it with a merged-state checkpoint.
+The wiki should treat PR #148 / R26 as the current roadmap-compression
+checkpoint.
 
 ## Current Roadmap Model
 
@@ -50,8 +50,7 @@ The current operating model is:
 
 Use gates instead of numbered PR chains:
 
-- `local-structured-analyze`: complete through R25, with R26 docs truth sync in
-  review.
+- `local-structured-analyze`: complete through R26, including docs truth sync.
 - `regression-and-safety`: ongoing only for real invariant gaps or bug fixes.
 - `scenario-system`: one evolving deterministic suite, not separate artificial
   roadmap layers.

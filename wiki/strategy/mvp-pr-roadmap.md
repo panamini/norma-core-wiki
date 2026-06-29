@@ -34,9 +34,7 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #147 / R25. PR #148 / R26 is the open
-roadmap truth-sync candidate and must not be treated as merged until GitHub
-records a merge commit.
+Norma Core is current through PR #148 / R26.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -50,7 +48,7 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R23 added local inspection surface onboarding fixture and workflow polish.
 - R24 added the Structured Analyze scenario regression harness.
 - R25 added the local inspection surface static safety guard.
-- R26, if merged, is docs/test-only roadmap truth sync and does not change runtime behavior.
+- R26 merged as docs/test-only roadmap truth sync and does not change runtime behavior.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -225,8 +223,9 @@ execution queue.
 
 Current gate:
 
-- R26 post-R25 roadmap truth sync is open as PR #148 and should be merged or
-  revised before choosing the next core PR.
+- The roadmap truth-sync gate is complete through PR #148 / R26. Choose the next
+  PR as one isolated change from a current gap, not from a speculative numbered
+  queue.
 
 Allowed ongoing tracks after R26:
 

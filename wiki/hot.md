@@ -11,9 +11,9 @@ updated: 2026-06-30
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #147 / R25 at `3889cf84d6df41391996d9d16cb76b5c48638a2d`.
+- Latest merged Norma Core state is PR #148 / R26 at `5d57a6fb51c94aaf2222e84ce67bcd22e0635c16`.
 - R22-R25 completed the local Structured Analyze inspection/protection rail: read-only viewer inspection, onboarding fixture, scenario regression harness, and static safety guard.
-- PR #148 / R26 is open as the post-R25 roadmap truth-sync candidate at `67be4b4376a5f22272a3179b99c35e799aacb847`; it is not merged yet.
+- R26 completed the post-R25 roadmap truth sync and demoted old PR ladders to historical/gated context.
 - Direct engine output and `result.json` remain canonical truth; report/viewer artifacts are derived inspection only.
 - The active roadmap model is gate-based, not a PR27-PR46 execution queue. Pick one isolated PR from current gaps.
 - Package publication, hosted MCP, remote API, public product/web surface, public ChatGPT submission, image/vision/CAD/provider input, recommendation, optimization, and beauty scoring remain blocked until explicit approval.

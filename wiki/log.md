@@ -11,7 +11,7 @@ updated: 2026-06-30
 ## 2026-06-30
 - Added post-R25 roadmap compression checkpoint:
   - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
-- Updated durable pages with PR #147 / R25 merged state and PR #148 / R26 open-state routing:
+- Updated durable pages with PR #148 / R26 merged-state routing:
   - `wiki/strategy/mvp-pr-roadmap.md`
   - `wiki/tech/core-interface-boundary.md`
   - `wiki/meta/pr0-governance-checklist.md`
