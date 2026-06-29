@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 # Hot Cache
@@ -11,12 +11,12 @@ updated: 2026-06-29
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
-- Current local static read-only viewer can inspect existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
-- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
-- Current recommended next PR: `R23: local inspection surface onboarding fixture and workflow polish`.
-- R23 must stay local-only, static, read-only, docs/tests backed, and must not change engine behavior, package exports, package metadata, lockfiles, CLI runtime, MCP runtime, report-kit runtime, hosted/remote behavior, SDK/API behavior, public package readiness, public app submission, or source-truth rules.
-- R14/R16/R18/R19/R20/R21 are historical context now, not current next-step instructions.
+- Latest merged Norma Core state is PR #148 / R26 at `5d57a6fb51c94aaf2222e84ce67bcd22e0635c16`.
+- R22-R25 completed the local Structured Analyze inspection/protection rail: read-only viewer inspection, onboarding fixture, scenario regression harness, and static safety guard.
+- R26 completed the post-R25 roadmap truth sync and demoted old PR ladders to historical/gated context.
+- Direct engine output and `result.json` remain canonical truth; report/viewer artifacts are derived inspection only.
+- The active roadmap model is gate-based, not a PR27-PR46 execution queue. Pick one isolated PR from current gaps.
+- Package publication, hosted MCP, remote API, public product/web surface, public ChatGPT submission, image/vision/CAD/provider input, recommendation, optimization, and beauty scoring remain blocked until explicit approval.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -24,6 +24,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Mutation history: `wiki/log.md`
 - Orchestrator: `wiki/tech/norma-orchestrator.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
+- Post-R25 roadmap checkpoint: `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - R22 checkpoint and R23 prompt: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - Post-PR6 checkpoint: `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - R6D checkpoint: `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
@@ -35,6 +36,11 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Synced post-R25 roadmap compression state on 2026-06-30:
+  - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+  - updated `wiki/strategy/mvp-pr-roadmap.md`
+  - updated `wiki/tech/core-interface-boundary.md`
+  - updated `wiki/meta/pr0-governance-checklist.md`
 - Added R22 local Structured Analyze inspection checkpoint on 2026-06-29:
   - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

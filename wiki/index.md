@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 # Index
@@ -53,11 +53,15 @@ updated: 2026-06-29
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R25 roadmap compression sync
+- `wiki/meta/pr0-governance-checklist.md` post-R25 no-ladder execution discipline
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-R14 and post-R22 roadmap sync
 - `wiki/overview.md` post-R14 and post-R22 current-state sync
