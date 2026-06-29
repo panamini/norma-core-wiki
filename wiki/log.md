@@ -3,10 +3,22 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 # Log
+
+## 2026-06-30
+- Added post-R25 roadmap compression checkpoint:
+  - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+- Updated durable pages with PR #147 / R25 merged state and PR #148 / R26 open-state routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/meta/pr0-governance-checklist.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-29
 - Added R22 local Structured Analyze inspection checkpoint and R23 prompt:

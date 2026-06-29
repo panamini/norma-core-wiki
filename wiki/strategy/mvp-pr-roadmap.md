@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-06-30
 tags:
   - execution
   - roadmap
@@ -25,15 +25,18 @@ sources:
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
 ---
 
 # MVP PR Roadmap
 
-Execution plan to keep implementation in sequence and avoid MVP drift.
+Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #144 / R22.
+Norma Core is current through PR #147 / R25. PR #148 / R26 is the open
+roadmap truth-sync candidate and must not be treated as merged until GitHub
+records a merge commit.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -44,16 +47,18 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R14 upgraded local `report.html` into a static read-only Structured Analyze inspection dashboard.
 - R16, R18, R19, R20, R21, and R22 continued the local/private Structured Analyze inspection path.
 - R22 added local-only, static, read-only inspection for existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
+- R23 added local inspection surface onboarding fixture and workflow polish.
+- R24 added the Structured Analyze scenario regression harness.
+- R25 added the local inspection surface static safety guard.
+- R26, if merged, is docs/test-only roadmap truth sync and does not change runtime behavior.
 
-The roadmap remains split into strict phases that separate architecture lock,
-core build, local/private workflow, and ecosystem growth. Current execution
-stays local, private, and manual. `result.json` remains canonical Norma truth;
-report and viewer artifacts are derived inspection surfaces only.
+Current execution stays local, private, and manual. `result.json` remains
+canonical Norma truth; report and viewer artifacts are derived inspection
+surfaces only.
 
-Next implementation rail: R23 local inspection surface onboarding fixture and
-workflow polish. R23 should help a local user inspect existing Structured
-Analyze result JSON or completed MCP output with the static viewer, without
-changing engine behavior or widening any public/runtime surface.
+The active roadmap model is now gate-based, not a speculative PR-number ladder.
+Future PRs must be selected one at a time from real gaps. R labels may still be
+used as local PR names, but they must not imply a pre-approved R26-R40 chain.
 
 Do not start hosted MCP, public app submission, public package publishing,
 remote API runtime, image/vision/CAD/camera/provider work, or recommendation /
@@ -213,46 +218,40 @@ approves that scope.
   correction, recommendation, optimization, scoring, prompt inference, or source
   truth creation.
 
-### Current recommended next PR after R22
+### Post-R25 compressed execution gates
 
-```text
-R23: local inspection surface onboarding fixture and workflow polish
-```
+The PR27-PR46 readiness ladder is historical/gated context, not the current
+execution queue.
 
-R23 should remain local-only, static, read-only, documentation/test backed, and
-focused on helping a local user inspect existing Structured Analyze result JSON
-or completed MCP output with the static viewer.
+Current gate:
 
-R23 should not change engine behavior, package exports, package metadata,
-lockfiles, CLI runtime, MCP runtime, report-kit runtime, SDK behavior, API
-runtime, hosted/remote behavior, public package readiness, public app
-submission, source-truth creation, prompt inference, image/vision/CAD/provider
-input, correction, recommendation, optimization, scoring, or beauty judgment.
+- R26 post-R25 roadmap truth sync is open as PR #148 and should be merged or
+  revised before choosing the next core PR.
+
+Allowed ongoing tracks after R26:
+
+- regression and safety work for real invariant gaps or bug fixes;
+- one evolving deterministic scenario suite;
+- light local inspection UX polish that remains static, read-only, and derived.
+
+Blocked by default:
+
+- package publication;
+- hosted or remote MCP;
+- remote API runtime;
+- public web/product surface;
+- public ChatGPT app submission;
+- image, vision, CAD, camera, plugin, provider, file-path, URL, or media input;
+- recommendation, optimization, correction, beauty scoring, prompt inference,
+  or source-truth creation.
 
 ### No-parallelism rule for transport work
 
-- PR4 must merge before PR5 exposes the tool.
-- PR5 must stabilize before PR6 integrates an external system.
-- Do not run PR5 and PR6 in parallel.
-- If a PR touches more than one of `CORE`, `TRANSPORT`, or `INTEGRATION`, treat it as invalid design until split.
-
-### Readiness extension (post-PR25)
-
-- Current execution plan is now post-PR25 and proceeds through PR27–PR46 with explicit gates:
-  - PR27–PR29: local CLI and release checkpoint
-  - PR30–PR32: package readiness and publish governance
-  - PR33–PR35: MCP contract and local MCP implementation
-  - PR36–PR39: threat model and API contract
-  - PR40–PR43: user-facing product requirements and read-only viewer
-- PR44–PR46: onboarding, beta readiness, and launch checks
-- PR0 governance and core sequencing remain the hard baseline for all expansion.
-
-### Current near-term sequence
-
-1. R23 - local inspection surface onboarding fixture and workflow polish.
-2. Later package publication decision only if maintainers explicitly choose publication.
-3. Product/UI/dashboard work only after a separate product-scope approval.
-4. Hosted/remote MCP only after explicit threat-model and deployment approval.
+- Transport and integration work must not run in parallel with core or
+  source-truth changes.
+- Hosted/remote MCP must wait for explicit threat-model and deployment approval.
+- If a PR touches more than one of `CORE`, `TRANSPORT`, or `INTEGRATION`, treat
+  it as invalid design until split.
 
 ### Local viewer endgame prompt
 
@@ -264,7 +263,8 @@ input, correction, recommendation, optimization, scoring, or beauty judgment.
 
 - The new product vision prompt is a documentation-only planning artifact for PR71.
 - PR71 should capture product vision, UX flows, integration architecture, and the post-MVP adapter family without broadening MVP core scope.
-- Keep it separate from implementation sequencing so the roadmap stays anchored on the current PR27–PR46 execution plan.
+- Keep it separate from implementation sequencing so the roadmap stays anchored
+  on the current gate-based execution model.
 
 ## Sources
 

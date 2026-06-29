@@ -3,7 +3,7 @@ title: "PR0 Governance and Checklist"
 category: meta
 status: current
 created: 2026-06-11
-updated: 2026-06-13
+updated: 2026-06-30
 tags:
   - governance
   - review
@@ -45,14 +45,14 @@ PR0 defines the non-functional constraints for all future PRs and protects the M
 
 ### PR sequencing and execution discipline (post-PR25)
 
-- PR execution now tracks the post-PR25 sequence:
-  - PR27–PR29: thin local CLI + release checkpoint
-  - PR30–PR32: package readiness and publish governance
-  - PR33–PR35: MCP contract and local MCP
-  - PR36–PR39: API threat model and contract work
-  - PR40–PR43: product requirements and read-only result viewer
-  - PR44–PR46: onboarding and launch-readiness package
-- PRs must state scope/non-scope and include the corresponding validation commands for each phase.
+- Post-R25 execution no longer follows a speculative PR27-PR46 queue.
+- Each PR must be one real isolated change selected from the current gap.
+- PR labels may use R numbers for local continuity, but labels do not create a
+  pre-approved roadmap chain.
+- Package publication, hosted MCP, remote API runtime, public product surface,
+  and business launch readiness remain blocked until explicit approval.
+- PRs must state scope/non-scope and include validation commands for the actual
+  change, not for an invented future phase.
 
 ### Review checklist used as default for later PRs
 

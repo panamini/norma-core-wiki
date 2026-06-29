@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-06-30
 tags:
   - architecture
   - adapters
@@ -17,6 +17,7 @@ sources:
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -100,7 +101,13 @@ Adapters should map external shapes to structured inputs and report conversion l
   `norma.analyzeStructuredCompositionV1` MCP responses. This is an inspection
   surface only: direct engine output and `result.json` remain canonical truth,
   and viewer output remains derived display data.
-- R22 does not authorize execution, recomputation, source-truth creation,
+- PR #145 / R23, PR #146 / R24, and PR #147 / R25 continued this local
+  inspection/protection rail through onboarding, scenario regression, and static
+  safety guards.
+- PR #148 / R26 is open as a docs/test-only roadmap truth-sync candidate. It
+  does not authorize runtime changes while open, and it must not be treated as
+  merged until GitHub records a merge commit.
+- R22-R26 do not authorize execution, recomputation, source-truth creation,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
   correction, recommendation, optimization, scoring, or inference.
@@ -115,6 +122,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 
 ## Related
 
