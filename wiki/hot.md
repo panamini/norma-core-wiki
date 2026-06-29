@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-29
 ---
 
 # Hot Cache
@@ -11,12 +11,12 @@ updated: 2026-06-25
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Norma Core now has merged PR96 local orchestration tooling.
-- Use `wiki/tech/norma-orchestrator.md` for the current trust contract.
-- Treat the orchestrator as `L1_ADVISORY`: useful for context, doctor checks, validation planning, dry-run evidence, and PR support, but not yet a primary autonomous driver.
-- PR6 ChatGPT Secure MCP Tunnel smoke passed and merged at `658ea2069d1c6a65b23df7f43ba4c4ba96fd8a31` on `main-after-codex-mcp-tool`; the app stayed private/dev and the tunnel was stopped after testing.
-- PR113 / R6D merged at `bba597bca40facaf36fd7741712a0b0b9d8754e6`; current-main private ChatGPT connector smoke passed with the six-tool inventory, `_meta` compatibility, positive replay, and negative prompt guardrails.
-- Next mandatory product/code PR: R1 duplicate geometry source identities. Do not start outputSchema, ChatGPT Analyze expansion, hosting, or publishing first.
+- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
+- Current local static read-only viewer can inspect existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
+- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
+- Current recommended next PR: `R23: local inspection surface onboarding fixture and workflow polish`.
+- R23 must stay local-only, static, read-only, docs/tests backed, and must not change engine behavior, package exports, package metadata, lockfiles, CLI runtime, MCP runtime, report-kit runtime, hosted/remote behavior, SDK/API behavior, public package readiness, public app submission, or source-truth rules.
+- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md` for current R22/R23 context.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -24,6 +24,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Mutation history: `wiki/log.md`
 - Orchestrator: `wiki/tech/norma-orchestrator.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
+- R22 checkpoint and R23 prompt: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - Post-PR6 checkpoint: `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - R6D checkpoint: `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 
@@ -34,6 +35,10 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Added R22 local Structured Analyze inspection checkpoint on 2026-06-29:
+  - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+  - updated `wiki/strategy/mvp-pr-roadmap.md`
+  - updated `wiki/tech/core-interface-boundary.md`
 - Added R6D ChatGPT `_meta` connector checkpoint on 2026-06-25:
   - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

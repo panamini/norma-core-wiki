@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-29
 tags:
   - execution
   - roadmap
@@ -24,6 +24,7 @@ sources:
   - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
+  - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -149,7 +150,45 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - This is private/developer checkpoint evidence only; it does not authorize
   public app submission, hosted MCP, ChatGPT Analyze expansion, outputSchema
   follow-up work, or any core geometry behavior change.
-- Next mandatory product/code PR: R1 duplicate geometry source identities.
+- Historical next step after R6D: R1 duplicate geometry source identities.
+  R1 and the later R7/R18/R19/R20/R21/R22 rail have since landed; do not treat
+  this R6D note as the current next instruction.
+
+### R22 local Structured Analyze inspection checkpoint
+
+- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
+- Checkpoint: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`.
+- The local static read-only viewer can inspect existing Structured Analyze
+  result JSON and completed `norma.analyzeStructuredCompositionV1` MCP
+  responses.
+- Direct engine output and `result.json` remain canonical truth; viewer output
+  is derived inspection only.
+- The viewer preserves measurements, evaluations, diagnostics, warnings,
+  errors, refs, provenance, replay readiness, comparison, decision,
+  serialization details, and inert unknown fields.
+- Pasted unrelated large JSON still uses the existing body-size rejection before
+  parsing. Structured Analyze fallback remains marker-gated and bounded by
+  structural depth, array, and string limits.
+- R22 does not authorize hosted dashboard, public webapp, SDK, API runtime,
+  public npm publication, hosted or remote MCP, image/vision/CAD/provider input,
+  correction, recommendation, optimization, scoring, prompt inference, or source
+  truth creation.
+
+### Current recommended next PR after R22
+
+```text
+R23: local inspection surface onboarding fixture and workflow polish
+```
+
+R23 should remain local-only, static, read-only, documentation/test backed, and
+focused on helping a local user inspect existing Structured Analyze result JSON
+or completed MCP output with the static viewer.
+
+R23 should not change engine behavior, package exports, package metadata,
+lockfiles, CLI runtime, MCP runtime, report-kit runtime, SDK behavior, API
+runtime, hosted/remote behavior, public package readiness, public app
+submission, source-truth creation, prompt inference, image/vision/CAD/provider
+input, correction, recommendation, optimization, scoring, or beauty judgment.
 
 ### No-parallelism rule for transport work
 
@@ -194,6 +233,7 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 
 ## Related
 
