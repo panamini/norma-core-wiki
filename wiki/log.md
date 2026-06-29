@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-27
+updated: 2026-06-29
 ---
 
 # Log
+
+## 2026-06-29
+- Added R22 local Structured Analyze inspection checkpoint and R23 prompt:
+  - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- Updated durable pages with PR #144 merge state and current next-step routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-27
 - Synced roadmap state after Norma Core PR #135 / R14:

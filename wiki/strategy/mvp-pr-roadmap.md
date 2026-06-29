@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-27
+updated: 2026-06-29
 tags:
   - execution
   - roadmap
@@ -24,6 +24,7 @@ sources:
   - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
+  - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -32,7 +33,7 @@ Execution plan to keep implementation in sequence and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #135 / R14.
+Norma Core is current through PR #144 / R22.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -41,16 +42,18 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R12 locked the MCP protocol contract and execution boundary.
 - R13 locked ratio-pack authoring, registry, and strict pass-through behavior.
 - R14 upgraded local `report.html` into a static read-only Structured Analyze inspection dashboard.
+- R16, R18, R19, R20, R21, and R22 continued the local/private Structured Analyze inspection path.
+- R22 added local-only, static, read-only inspection for existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
 
 The roadmap remains split into strict phases that separate architecture lock,
 core build, local/private workflow, and ecosystem growth. Current execution
 stays local, private, and manual. `result.json` remains canonical Norma truth;
 report and viewer artifacts are derived inspection surfaces only.
 
-Next implementation rail: R16 local demo/onboarding smoke for the Structured
-Analyze report workflow. R16 should prove a local user can run the Geometry
-Harmony example, generate the five-file report bundle, inspect `report.html`,
-and understand `result.json` as canonical truth.
+Next implementation rail: R23 local inspection surface onboarding fixture and
+workflow polish. R23 should help a local user inspect existing Structured
+Analyze result JSON or completed MCP output with the static viewer, without
+changing engine behavior or widening any public/runtime surface.
 
 Do not start hosted MCP, public app submission, public package publishing,
 remote API runtime, image/vision/CAD/camera/provider work, or recommendation /
@@ -172,8 +175,8 @@ approves that scope.
   public app submission, hosted MCP, ChatGPT Analyze expansion, outputSchema
   follow-up work, or any core geometry behavior change.
 - Historical next step after this checkpoint was R1 duplicate geometry source
-  identities. That work has since been completed and must not be treated as the
-  current next step.
+  identities. R1 and the later R7/R18/R19/R20/R21/R22 rail have since landed;
+  do not treat this R6D note as the current next instruction.
 
 ### Post-R14 checkpoint
 
@@ -189,6 +192,42 @@ approves that scope.
   recommendation/optimization/beauty-scoring behavior is approved.
 - Next implementation rail: R16 local demo/onboarding smoke for the Structured
   Analyze report workflow.
+
+### R22 local Structured Analyze inspection checkpoint
+
+- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
+- Checkpoint: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`.
+- The local static read-only viewer can inspect existing Structured Analyze
+  result JSON and completed `norma.analyzeStructuredCompositionV1` MCP
+  responses.
+- Direct engine output and `result.json` remain canonical truth; viewer output
+  is derived inspection only.
+- The viewer preserves measurements, evaluations, diagnostics, warnings,
+  errors, refs, provenance, replay readiness, comparison, decision,
+  serialization details, and inert unknown fields.
+- Pasted unrelated large JSON still uses the existing body-size rejection before
+  parsing. Structured Analyze fallback remains marker-gated and bounded by
+  structural depth, array, and string limits.
+- R22 does not authorize hosted dashboard, public webapp, SDK, API runtime,
+  public npm publication, hosted or remote MCP, image/vision/CAD/provider input,
+  correction, recommendation, optimization, scoring, prompt inference, or source
+  truth creation.
+
+### Current recommended next PR after R22
+
+```text
+R23: local inspection surface onboarding fixture and workflow polish
+```
+
+R23 should remain local-only, static, read-only, documentation/test backed, and
+focused on helping a local user inspect existing Structured Analyze result JSON
+or completed MCP output with the static viewer.
+
+R23 should not change engine behavior, package exports, package metadata,
+lockfiles, CLI runtime, MCP runtime, report-kit runtime, SDK behavior, API
+runtime, hosted/remote behavior, public package readiness, public app
+submission, source-truth creation, prompt inference, image/vision/CAD/provider
+input, correction, recommendation, optimization, scoring, or beauty judgment.
 
 ### No-parallelism rule for transport work
 
@@ -210,12 +249,10 @@ approves that scope.
 
 ### Current near-term sequence
 
-1. R15 - post-R14 roadmap and wiki source-of-truth sync.
-2. R16 - local demo/onboarding smoke for the Structured Analyze report workflow.
-3. R17 - package/local consumer readiness refresh, only if a real gap remains
-   after R16.
-4. R18+ - broader product, package, remote, or public-surface gates only after
-   explicit checkpoint approval.
+1. R23 - local inspection surface onboarding fixture and workflow polish.
+2. Later package publication decision only if maintainers explicitly choose publication.
+3. Product/UI/dashboard work only after a separate product-scope approval.
+4. Hosted/remote MCP only after explicit threat-model and deployment approval.
 
 ### Local viewer endgame prompt
 
@@ -242,6 +279,7 @@ approves that scope.
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 
 ## Related
 

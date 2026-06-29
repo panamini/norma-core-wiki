@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-25
+updated: 2026-06-29
 tags:
   - architecture
   - adapters
@@ -16,6 +16,7 @@ sources:
   - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
+  - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -94,6 +95,15 @@ Adapters should map external shapes to structured inputs and report conversion l
   six-tool inventory after the `_meta` compatibility patch. This remains an
   interface checkpoint only and does not authorize hosted MCP, public
   submission, ChatGPT Analyze expansion, or core behavior changes.
+- PR #144 / R22 has merged the local-only, static, read-only Structured Analyze
+  inspection surface for existing result JSON and completed
+  `norma.analyzeStructuredCompositionV1` MCP responses. This is an inspection
+  surface only: direct engine output and `result.json` remain canonical truth,
+  and viewer output remains derived display data.
+- R22 does not authorize execution, recomputation, source-truth creation,
+  prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
+  SDK, API runtime, public package readiness, public app submission, remote MCP,
+  correction, recommendation, optimization, scoring, or inference.
 
 ## Sources
 
@@ -104,6 +114,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 
 ## Related
 
