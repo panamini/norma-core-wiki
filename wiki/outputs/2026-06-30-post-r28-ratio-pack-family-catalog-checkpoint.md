@@ -57,7 +57,7 @@ together, and the engine validates that input.
 The active roadmap remains compressed and gate-based. The old PR27-PR46 ladder
 stays historical/gated context, not the active queue.
 
-Recommended next direction: Track 3 can continue with explicit runnable family
+Recommended next direction: the current gate can select explicit runnable family
 examples or a demo workflow in `panamini/norma-core`, but only as a separate PR
 selected from current gaps.
 

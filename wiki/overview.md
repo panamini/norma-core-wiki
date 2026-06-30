@@ -15,7 +15,9 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - Norma Core is treated as a deterministic proportional engine with immutable structured inputs.
 - Interfaces/adapters are clients of the engine; they must not change geometric rule semantics.
 - MVP is gated to V1 deterministic composition evaluation.
-- PR roadmap remains sequence-based: spec freeze → core skeleton → contracts → geometry → pack/rules → construction → measurements → evaluation/comparison → artifacts → replay envelope → demo harness.
+- The historical MVP sequence remains reference context only; current roadmap
+  execution is gate-based and track-based, with one isolated PR selected from
+  real current gaps.
 - A later continuation prompt now exists for the PR66–PR70 local viewer path, but it is still only a planning artifact.
 - A new planned product-vision page captures the ChatGPT, Camera, CAD, and renderer adapter family plus the hybrid perception split.
 - PR6 proved private/dev ChatGPT Secure MCP Tunnel invocation through `norma.runMvpDemoV1`; the app was not published, the tunnel was stopped after testing, and deterministic output facts were preserved in a checkpoint output.
@@ -26,4 +28,13 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #146 / R24 added the Structured Analyze scenario regression harness.
 - PR #147 / R25 added the local inspection surface static safety guard.
 - PR #148 / R26 merged the post-R25 roadmap truth sync.
+- PR #149 / R27 completed family ratio-pack meaning and local report visibility
+  smoke coverage.
+- PR #150 / R28 completed the documentation-only ratio-pack family catalog
+  boundary.
+- The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
+  `norma.root-two-harmonics@0.1.0`.
+- The family catalog is not a runtime registry, not a package export, and not
+  selection logic; authored fixtures enter execution only through explicit
+  structured input.
 - Current roadmap model is gate-based: no speculative PR27-PR46 execution queue, one isolated PR per real gap, with package/public/exposure/product layers blocked until explicit approval.

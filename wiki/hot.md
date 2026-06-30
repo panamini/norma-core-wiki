@@ -44,6 +44,7 @@ Active memory cache for agents. Keep this page under 500 words.
   - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`
   - updated `wiki/concepts/harmonic-ratio-bible.md`
+  - updated `wiki/overview.md`
 - Synced post-R25 roadmap compression state on 2026-06-30:
   - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

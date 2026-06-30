@@ -273,7 +273,7 @@ Blocked by default:
   export, not runtime selection, and not engine/MCP/CLI/viewer behavior change.
 - The executable boundary remains explicit structured input plus engine
   validation of that input.
-- Track 3 can continue with explicit runnable family examples or a demo
+- The current gate can select explicit runnable family examples or a demo
   workflow in Norma Core, but only as a separate PR selected from the current
   gap set.
 

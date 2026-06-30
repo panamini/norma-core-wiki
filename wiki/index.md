@@ -63,6 +63,7 @@ updated: 2026-06-30
 - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-R28 ratio-pack family catalog sync
 - `wiki/concepts/harmonic-ratio-bible.md` current authored fixture families
+- `wiki/overview.md` post-R28 current-state sync
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-R25 roadmap compression sync
 - `wiki/meta/pr0-governance-checklist.md` post-R25 no-ladder execution discipline

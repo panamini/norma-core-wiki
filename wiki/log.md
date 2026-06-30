@@ -15,6 +15,7 @@ updated: 2026-06-30
   - `wiki/strategy/mvp-pr-roadmap.md`
   - `wiki/concepts/harmonic-ratio-bible.md`
 - Refreshed retrieval/control pages:
+  - `wiki/overview.md`
   - `wiki/index.md`
   - `wiki/hot.md`
 
