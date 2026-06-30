@@ -53,12 +53,16 @@ updated: 2026-06-30
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R28 ratio-pack family catalog sync
+- `wiki/concepts/harmonic-ratio-bible.md` current authored fixture families
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-R25 roadmap compression sync
 - `wiki/meta/pr0-governance-checklist.md` post-R25 no-ladder execution discipline
