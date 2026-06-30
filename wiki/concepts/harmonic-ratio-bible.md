@@ -3,7 +3,7 @@ title: "Harmonic Ratio Bible"
 category: concept
 status: current
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-06-30
 tags:
   - ratio governance
   - harmonic rules
@@ -12,6 +12,7 @@ sources:
   - wiki/sources/2026-06-11-source-01.md
   - raw/# Bible des ratios et règles harmoniques — Norma.md
   - wiki/sources/2026-06-11-source-08.md
+  - wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md
 ---
 
 # Harmonic Ratio Bible
@@ -22,6 +23,9 @@ Source-first catalog of how Norma must classify ratios, constants, and geometric
 
 The ratio set is organized as discovery knowledge first, then candidate engineering knowledge.
 This page summarizes the strict boundaries and tagging model used by the team today.
+
+Current authored fixture families in Norma Core are harmonic triads and root-two
+harmonics. They are authored fixture examples only, not runtime registry entries.
 
 ## Details
 
@@ -76,11 +80,30 @@ The bible separates at least:
 - Keep numeric collisions explicit (e.g., near-equal constants).
 - Do not force speculative matches into engine constraints.
 - Do not apply ratios directly to product behavior without validation flow.
+- Do not treat authored fixture families as runtime registry entries.
+- Do not choose, infer, rank, recommend, optimize, score, correct, or
+  auto-select ratio families in Norma Core.
+
+### 5) Current authored fixture examples
+
+As of PR #150 / R28, Norma Core documents these authored fixture examples:
+
+- `norma.harmonic-triads@0.1.0` in
+  `tests/fixtures/ratio-packs/norma-harmonic-triads-0.1.0.json`, representing
+  harmonic triads with rule set `surface-harmonic-triads`.
+- `norma.root-two-harmonics@0.1.0` in
+  `tests/fixtures/ratio-packs/norma-root-two-harmonics-0.1.0.json`,
+  representing root-two harmonics with rule set `surface-root-two-section`.
+
+These examples are supplied by explicit structured input. They do not authorize
+runtime discovery, registry lookup, scoring, correction, recommendation,
+optimization, inference, beauty scoring, or automatic family selection.
 
 ## Sources
 
 - `raw/# Bible des ratios et règles harmoniques — Norma.md` (immutable copy)
 - `wiki/sources/2026-06-11-source-01.md`
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 
 ## Related
 

@@ -26,6 +26,7 @@ sources:
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -34,7 +35,7 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #148 / R26.
+Norma Core is current through PR #150 / R28.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -49,14 +50,25 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R24 added the Structured Analyze scenario regression harness.
 - R25 added the local inspection surface static safety guard.
 - R26 merged as docs/test-only roadmap truth sync and does not change runtime behavior.
+- R27 is complete and added family ratio-pack meaning plus local report
+  visibility smoke coverage.
+- R28 is complete and added the ratio-pack family catalog boundary.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
 surfaces only.
 
-The active roadmap model is now gate-based, not a speculative PR-number ladder.
+The current ratio-pack family catalog boundary is documentation-only. It is not
+a runtime registry, not a package export, and not selection logic. The catalog
+documents authored fixture examples that are supplied by explicit structured
+input.
+
+The active roadmap model is now gate-based and track-based, not a speculative
+PR-number ladder.
 Future PRs must be selected one at a time from real gaps. R labels may still be
-used as local PR names, but they must not imply a pre-approved R26-R40 chain.
+used as local PR names, but old PR27-PR46 sequencing remains historical/gated
+context, not the active queue. Next core work should be chosen from real current
+gaps, not old numbering.
 
 Do not start hosted MCP, public app submission, public package publishing,
 remote API runtime, image/vision/CAD/camera/provider work, or recommendation /
@@ -223,7 +235,7 @@ execution queue.
 
 Current gate:
 
-- The roadmap truth-sync gate is complete through PR #148 / R26. Choose the next
+- The roadmap truth-sync gate is complete through PR #150 / R28. Choose the next
   PR as one isolated change from a current gap, not from a speculative numbered
   queue.
 
@@ -243,6 +255,27 @@ Blocked by default:
 - image, vision, CAD, camera, plugin, provider, file-path, URL, or media input;
 - recommendation, optimization, correction, beauty scoring, prompt inference,
   or source-truth creation.
+
+### Post-R28 ratio-pack family catalog checkpoint
+
+- PR #149 / R27 merged at `2228c0b2756464f02abb9a8c92b95011f63cc23b`.
+- PR #150 / R28 merged at `3236fc5733a670689639d1cea8b92cc37643ae76`.
+- R27 is complete.
+- R28 is complete.
+- Current authored fixture families:
+  - `norma.harmonic-triads@0.1.0` in
+    `tests/fixtures/ratio-packs/norma-harmonic-triads-0.1.0.json`, with rule
+    set `surface-harmonic-triads`.
+  - `norma.root-two-harmonics@0.1.0` in
+    `tests/fixtures/ratio-packs/norma-root-two-harmonics-0.1.0.json`, with
+    rule set `surface-root-two-section`.
+- The catalog is documentation-only: not a runtime registry, not a package
+  export, not runtime selection, and not engine/MCP/CLI/viewer behavior change.
+- The executable boundary remains explicit structured input plus engine
+  validation of that input.
+- The current gate can select explicit runnable family examples or a demo
+  workflow in Norma Core, but only as a separate PR selected from the current
+  gap set.
 
 ### No-parallelism rule for transport work
 
@@ -279,6 +312,7 @@ Blocked by default:
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 
 ## Related
 

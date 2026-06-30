@@ -9,6 +9,16 @@ updated: 2026-06-30
 # Log
 
 ## 2026-06-30
+- Added post-R28 ratio-pack family catalog checkpoint:
+  - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
+- Updated durable pages with PR #149 / R27 and PR #150 / R28 merged-state routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/concepts/harmonic-ratio-bible.md`
+- Refreshed retrieval/control pages:
+  - `wiki/overview.md`
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added post-R25 roadmap compression checkpoint:
   - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - Updated durable pages with PR #148 / R26 merged-state routing:
