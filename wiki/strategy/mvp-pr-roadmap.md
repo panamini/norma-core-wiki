@@ -28,6 +28,7 @@ sources:
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
   - wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md
   - wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -36,7 +37,7 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #151 / R29.
+Norma Core is current through PR #152 / R30.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -56,6 +57,8 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R28 is complete and added the ratio-pack family catalog boundary.
 - R29 is complete and added runnable local Structured Analyze examples for the
   authored ratio-pack families plus deterministic report smoke coverage.
+- R30 is complete and added the local Structured Analyze demo workflow smoke for
+  the existing family example path.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -66,10 +69,10 @@ a runtime registry, not a package export, and not selection logic. The catalog
 documents authored fixture examples that are supplied by explicit structured
 input.
 
-R29 adds explicit local example inputs for `norma.harmonic-triads@0.1.0` and
-`norma.root-two-harmonics@0.1.0`. These are test/demo inputs only, not a new API
-surface. The existing report path still treats `result.json` as canonical Norma
-truth and report artifacts as derived local inspection output.
+R30 stitches the existing local workflow: existing family example input,
+existing local report entrypoint, output directory, `result.json` as canonical
+Norma truth, and optional derived inspection artifacts. This is a local
+developer smoke path only, not a new API surface or report-kit contract.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -243,7 +246,7 @@ execution queue.
 
 Current gate:
 
-- The roadmap truth-sync gate is complete through PR #151 / R29. Choose the next
+- The roadmap truth-sync gate is complete through PR #152 / R30. Choose the next
   PR as one isolated change from a current gap, not from a speculative numbered
   queue.
 
@@ -306,6 +309,28 @@ Blocked by default:
   inspection artifacts.
 - Next work should remain one isolated local/private gap unless a later
   checkpoint explicitly approves public exposure or adapter scope.
+
+### Post-R30 local Structured Analyze demo workflow checkpoint
+
+- PR #152 / R30 merged at
+  `210e8e3f13edbb9fd7e4db9874c94b1114b081ea`.
+- PR #152 head commit:
+  `bd87aaf2ffdaa6fa7098503b99e87992c0ee202a`.
+- R30 is complete.
+- R30 added `docs/examples/local-structured-analyze-demo-workflow.md`,
+  `tests/local-structured-analyze-demo-workflow.test.mjs`, and changed-file
+  guard coverage.
+- R30 stitches the existing local workflow: family example input, existing local
+  report entrypoint, output directory, `result.json` as canonical Norma truth,
+  and optional derived inspection artifacts.
+- R30 does not change engine behavior, report-kit behavior, CLI behavior, MCP
+  behavior, viewer behavior, ratio-pack validation, package exports, or
+  dependencies.
+- The next code candidate may be one realistic structured layout usecase demo,
+  but only as local/private/manual explicit geometry. It must not add
+  image/CAD/GPT adapters, webapp/dashboard scope, hosted MCP/API scope, package
+  publishing, recommendation, optimization, beauty scoring, correction,
+  inference, or automatic family selection.
 
 ### No-parallelism rule for transport work
 
