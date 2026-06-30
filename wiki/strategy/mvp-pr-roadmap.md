@@ -27,6 +27,7 @@ sources:
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
   - wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -35,7 +36,7 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #150 / R28.
+Norma Core is current through PR #151 / R29.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -53,6 +54,8 @@ The recent Structured Analyze protection and inspection rail is complete:
 - R27 is complete and added family ratio-pack meaning plus local report
   visibility smoke coverage.
 - R28 is complete and added the ratio-pack family catalog boundary.
+- R29 is complete and added runnable local Structured Analyze examples for the
+  authored ratio-pack families plus deterministic report smoke coverage.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -62,6 +65,11 @@ The current ratio-pack family catalog boundary is documentation-only. It is not
 a runtime registry, not a package export, and not selection logic. The catalog
 documents authored fixture examples that are supplied by explicit structured
 input.
+
+R29 adds explicit local example inputs for `norma.harmonic-triads@0.1.0` and
+`norma.root-two-harmonics@0.1.0`. These are test/demo inputs only, not a new API
+surface. The existing report path still treats `result.json` as canonical Norma
+truth and report artifacts as derived local inspection output.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -235,7 +243,7 @@ execution queue.
 
 Current gate:
 
-- The roadmap truth-sync gate is complete through PR #150 / R28. Choose the next
+- The roadmap truth-sync gate is complete through PR #151 / R29. Choose the next
   PR as one isolated change from a current gap, not from a speculative numbered
   queue.
 
@@ -277,6 +285,28 @@ Blocked by default:
   workflow in Norma Core, but only as a separate PR selected from the current
   gap set.
 
+### Post-R29 runnable ratio-pack family examples checkpoint
+
+- PR #151 / R29 merged at
+  `aead866ef0a659a9352a88b88d2143eb676112a6`.
+- R29 is complete.
+- R29 added explicit runnable local Structured Analyze examples:
+  - `examples/structured-analyze/families/harmonic-triads-basic.json` for
+    `norma.harmonic-triads@0.1.0` with rule set
+    `surface-harmonic-triads`.
+  - `examples/structured-analyze/families/root-two-harmonics-basic.json` for
+    `norma.root-two-harmonics@0.1.0` with rule set
+    `surface-root-two-section`.
+- R29 added `docs/examples/ratio-pack-family-workflow.md` and deterministic
+  smoke coverage in `tests/ratio-pack-family-examples.test.mjs`.
+- The examples are local test/demo inputs only, not a runtime registry, package
+  export, API surface, adapter, hosted dashboard, or product runtime.
+- The report path remains derived: `result.json` is canonical Norma truth;
+  `summary.json`, `summary.md`, `visual.svg`, and `report.html` are local
+  inspection artifacts.
+- Next work should remain one isolated local/private gap unless a later
+  checkpoint explicitly approves public exposure or adapter scope.
+
 ### No-parallelism rule for transport work
 
 - Transport and integration work must not run in parallel with core or
@@ -313,6 +343,7 @@ Blocked by default:
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
 
 ## Related
 
