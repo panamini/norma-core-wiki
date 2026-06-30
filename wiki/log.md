@@ -9,6 +9,15 @@ updated: 2026-06-30
 # Log
 
 ## 2026-06-30
+- Added post-R29 runnable ratio-pack family examples checkpoint:
+  - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
+- Updated durable pages with PR #151 / R29 merged-state routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added post-R28 ratio-pack family catalog checkpoint:
   - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 - Updated durable pages with PR #149 / R27 and PR #150 / R28 merged-state routing:
