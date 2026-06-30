@@ -53,6 +53,7 @@ updated: 2026-06-30
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
@@ -61,6 +62,9 @@ updated: 2026-06-30
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R30 local demo workflow sync
+- `wiki/overview.md` post-R30 current-state sync
 - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-R29 runnable family examples sync
 - `wiki/overview.md` post-R29 current-state sync

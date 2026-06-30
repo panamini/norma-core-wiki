@@ -34,10 +34,14 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   boundary.
 - PR #151 / R29 added runnable local Structured Analyze examples and
   deterministic report smoke coverage for the authored ratio-pack families.
+- PR #152 / R30 added the local Structured Analyze demo workflow smoke.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
   `examples/structured-analyze/families/` for both authored families.
+- The local demo workflow stitches an existing family example input, the
+  existing local report entrypoint, an output directory, `result.json` as
+  canonical truth, and optional derived inspection artifacts.
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.

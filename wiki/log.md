@@ -9,6 +9,15 @@ updated: 2026-06-30
 # Log
 
 ## 2026-06-30
+- Added post-R30 local Structured Analyze demo workflow checkpoint:
+  - `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
+- Updated durable pages with PR #152 / R30 merged-state routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added post-R29 runnable ratio-pack family examples checkpoint:
   - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
 - Updated durable pages with PR #151 / R29 merged-state routing:
