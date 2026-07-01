@@ -1,9 +1,11 @@
 ---
 title: "PR85 Endgame Roadmap Status"
 category: output
-status: current
+status: archived
 created: 2026-07-01
 updated: 2026-07-01
+valid_until: 2026-07-01
+superseded_by: "wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md"
 tags:
   - roadmap
   - endgame
@@ -14,6 +16,9 @@ related:
 ---
 
 # PR85 Endgame Roadmap Status
+
+This page records the pre-merge PR85 endgame snapshot. Current state is
+superseded by `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`.
 
 ## Context
 

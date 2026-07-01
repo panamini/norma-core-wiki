@@ -9,6 +9,16 @@ updated: 2026-07-01
 # Log
 
 ## 2026-07-01
+- Added PR86 normalization metric-policy checkpoint:
+  - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- Updated durable roadmap, boundary, and overview with PR #165 and PR #166 merged state:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added PR85 endgame roadmap status:
   - `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
 - Updated durable roadmap and overview with PR #163, PR #164, and open PR #165 state:
