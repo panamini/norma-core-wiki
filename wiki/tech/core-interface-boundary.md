@@ -119,8 +119,8 @@ Adapters should map external shapes to structured inputs and report conversion l
   PR #162 / PR82 added synthetic test-only proof that mapped accepted geometry
   can reach Structured Analyze after explicit normalization, while unsupported
   primitives stop at the mapper.
-- R22-R26 and PR81-PR82 do not authorize execution, recomputation,
-  source-truth creation,
+- R22-R26 and PR81-PR82 do not authorize adapter/viewer/source-truth execution,
+  recomputation outside the package-private PR82 test bridge,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
   correction, recommendation, optimization, scoring, or inference.
