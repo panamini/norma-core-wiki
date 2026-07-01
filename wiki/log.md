@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-30
+updated: 2026-07-01
 ---
 
 # Log
+
+## 2026-07-01
+- Added post-PR82 accepted geometry Structured Analyze bridge checkpoint:
+  - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
+- Updated durable pages with PR #153 through PR #162 merged-state routing:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-30
 - Added post-R30 local Structured Analyze demo workflow checkpoint:
