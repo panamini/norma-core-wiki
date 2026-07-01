@@ -46,6 +46,10 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #161 fixed PR81 mapper review findings.
 - PR #162 / PR82 proved the synthetic accepted geometry to Structured Analyze
   bridge.
+- PR #163 / PR83 synced the in-repo roadmap after PR82.
+- PR #164 / PR84 hardened accepted-geometry integration determinism.
+- PR #165 / PR85 is the only open code PR; it is draft, mergeable, and green,
+  and adds the package-private shared-unit-surface normalizer.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -53,11 +57,15 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The local demo workflow stitches an existing family example input, the
   existing local report entrypoint, an output directory, `result.json` as
   canonical truth, and optional derived inspection artifacts.
-- The accepted-geometry mapper is package-private. PR82 proves deterministic
-  synthetic bridge reachability only; unsupported primitives stop at the mapper,
-  and no provider, image, OpenAI, ChatGPT, CLI, MCP, UI, package, dependency, or
-  public export scope is approved.
+- The accepted-geometry mapper and PR85 normalizer are package-private. PR82
+  proves deterministic synthetic bridge reachability only; PR84 hardens
+  determinism coverage; PR85 is the remaining open PR for the current
+  local/private accepted-geometry rail. No provider, image, OpenAI, ChatGPT,
+  CLI, MCP, UI, package, dependency, or public export scope is approved.
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.
-- Current roadmap model is gate-based: no speculative PR27-PR46 execution queue, one isolated PR per real gap, with package/public/exposure/product layers blocked until explicit approval.
+- Current roadmap model is gate-based: one open code PR remains for the current
+  accepted-geometry/local-private rail, no speculative PR27-PR46 execution
+  queue remains, and package/public/exposure/product layers stay blocked until
+  explicit approval.

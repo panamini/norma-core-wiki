@@ -9,6 +9,15 @@ updated: 2026-07-01
 # Log
 
 ## 2026-07-01
+- Added PR85 endgame roadmap status:
+  - `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
+- Updated durable roadmap and overview with PR #163, PR #164, and open PR #165 state:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added post-PR82 accepted geometry Structured Analyze bridge checkpoint:
   - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 - Updated durable pages with PR #153 through PR #162 merged-state routing:

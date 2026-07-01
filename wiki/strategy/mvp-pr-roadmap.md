@@ -30,6 +30,7 @@ sources:
   - wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md
   - wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
+  - wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md
 ---
 
 # MVP PR Roadmap
@@ -38,7 +39,18 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #162 / PR82.
+Norma Core `origin/main` is current through PR #164 / PR84 at
+`1adb4cb535f0f5ab238bdc2c5f18233e29919584`.
+
+PR #165 / PR85 is the only open Norma Core PR. It is a draft PR, currently
+mergeable, with GitHub checks green at head
+`7a7973a638390e30f7fa1e7926bf2432476c0643`.
+
+For the current local/private accepted-geometry bridge rail, there is one open
+code PR left to close: PR85. After PR85 merges, there is no mandatory numbered
+PR ladder left. A small post-PR85 roadmap/wiki truth sync may still be useful,
+but any new package, public, hosted, adapter, or product track requires an
+explicit approval checkpoint before it becomes a counted PR queue.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -69,6 +81,11 @@ The recent Structured Analyze protection and inspection rail is complete:
   mapper.
 - PR82 is complete and proved the synthetic accepted geometry to Structured
   Analyze bridge.
+- PR83 is complete and synced the roadmap after PR82.
+- PR84 is complete and hardened the accepted-geometry integration determinism
+  proof.
+- PR85 is open and adds a package-private synthetic shared-unit-surface
+  normalization helper for mapped accepted-geometry pairs.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -84,13 +101,13 @@ existing local report entrypoint, output directory, `result.json` as canonical
 Norma truth, and optional derived inspection artifacts. This is a local
 developer smoke path only, not a new API surface or report-kit contract.
 
-PR81 and PR82 are accepted-geometry bridge checkpoints. The mapper is
-package-private. PR82 maps synthetic rectangle-only `AcceptedGeometry@1`
-payloads through the mapper, performs an explicit synthetic shared-unit-surface
-normalization step, feeds the result into `analyzeStructuredCompositionV1`, and
-proves unsupported primitives stop at the mapper. This is not provider
-ingestion, image analysis, OpenAI/ChatGPT runtime behavior, public export, or
-product scope.
+PR81 through PR85 are accepted-geometry bridge checkpoints. The mapper and
+normalizer are package-private. PR82 maps synthetic rectangle-only
+`AcceptedGeometry@1` payloads through the mapper and proves bridge reachability.
+PR84 hardens fresh-clone determinism coverage. PR85 makes the synthetic
+shared-unit-surface normalization step explicit and package-private. This is
+not provider ingestion, image analysis, OpenAI/ChatGPT runtime behavior, public
+export, or product scope.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -345,6 +362,36 @@ Blocked by default:
   because the in-repo roadmap is still synced only through R31. Keep it limited
   to roadmap docs, a decision/checkpoint doc, focused doc tests, and exact
   changed-file guard maintenance.
+
+### Post-PR84 and PR85 endgame status
+
+- PR #163 / PR83 merged at
+  `8b5cc2fd15d9991ead85a7f27afec17868078893`.
+- PR #164 / PR84 merged at
+  `1adb4cb535f0f5ab238bdc2c5f18233e29919584`.
+- PR #165 / PR85 is open, draft, mergeable, and green at
+  `7a7973a638390e30f7fa1e7926bf2432476c0643`.
+
+PR83 recorded the post-PR82 roadmap truth. PR84 hardened accepted-geometry
+integration determinism in fresh-clone style tests. PR85 adds the
+package-private normalization helper that places mapped accepted-geometry
+compositions onto one explicit synthetic unit surface before Structured Analyze.
+
+Current count:
+
+- 1 open code PR remains for the active accepted-geometry/local-private rail:
+  PR85.
+- 0 mandatory historical ladder PRs remain after PR85.
+- 1 optional post-PR85 truth-sync/checkpoint PR may be useful after merge if the
+  code repo roadmap should record the new end state.
+
+Close-to-end interpretation:
+
+- If "end" means local/private deterministic Core plus the accepted-geometry
+  synthetic bridge, the project is effectively one PR from closeout.
+- If "end" means public npm, hosted MCP, API, public ChatGPT app, image/vision
+  adapters, or product UI, that is a different unapproved track and should not
+  be counted until a dedicated approval PR creates the queue.
 
 ### Post-R30 local Structured Analyze demo workflow checkpoint
 
