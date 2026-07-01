@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-30
+updated: 2026-07-01
 tags:
   - execution
   - roadmap
@@ -29,6 +29,7 @@ sources:
   - wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md
   - wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md
   - wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md
+  - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -37,7 +38,7 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core is current through PR #152 / R30.
+Norma Core is current through PR #162 / PR82.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -59,6 +60,15 @@ The recent Structured Analyze protection and inspection rail is complete:
   authored ratio-pack families plus deterministic report smoke coverage.
 - R30 is complete and added the local Structured Analyze demo workflow smoke for
   the existing family example path.
+- R31 is complete and added a realistic structured layout demo.
+- R32 synced the in-repo roadmap after R31 and added local inspection demo smoke
+  coverage for the real-usecase fixture.
+- R33-R36 consolidated local truth projection, added a local real-usecase demo
+  command, hardened that command, and froze the local CLI report boundary.
+- PR81 is complete and added the package-private accepted geometry to Core
+  mapper.
+- PR82 is complete and proved the synthetic accepted geometry to Structured
+  Analyze bridge.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -73,6 +83,14 @@ R30 stitches the existing local workflow: existing family example input,
 existing local report entrypoint, output directory, `result.json` as canonical
 Norma truth, and optional derived inspection artifacts. This is a local
 developer smoke path only, not a new API surface or report-kit contract.
+
+PR81 and PR82 are accepted-geometry bridge checkpoints. The mapper is
+package-private. PR82 maps synthetic rectangle-only `AcceptedGeometry@1`
+payloads through the mapper, performs an explicit synthetic shared-unit-surface
+normalization step, feeds the result into `analyzeStructuredCompositionV1`, and
+proves unsupported primitives stop at the mapper. This is not provider
+ingestion, image analysis, OpenAI/ChatGPT runtime behavior, public export, or
+product scope.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -246,9 +264,9 @@ execution queue.
 
 Current gate:
 
-- The roadmap truth-sync gate is complete through PR #152 / R30. Choose the next
-  PR as one isolated change from a current gap, not from a speculative numbered
-  queue.
+- The local/private checkpoint rail is complete through PR #162 / PR82. Choose
+  the next PR as one isolated change from a current gap, not from a speculative
+  numbered queue.
 
 Allowed ongoing tracks after R26:
 
@@ -310,6 +328,24 @@ Blocked by default:
 - Next work should remain one isolated local/private gap unless a later
   checkpoint explicitly approves public exposure or adapter scope.
 
+### Post-PR82 accepted geometry Structured Analyze bridge checkpoint
+
+- PR #160 / PR81 merged at
+  `645d0f0636b4f7a98fc77c48f1aa90d37768b0be`.
+- PR #161 merged at
+  `d16d16c74155d90171fb9d36d077a59e56b86eda`.
+- PR #162 / PR82 merged at
+  `6537b3a59fedd348d693a12e319e910a6a7283dd`.
+- PR82 is complete.
+- PR82 is test-only bridge proof for synthetic accepted geometry and Structured
+  Analyze. It does not add provider input, image/vision/CAD/OpenAI/ChatGPT
+  behavior, UI/dashboard behavior, MCP behavior, CLI behavior, package metadata,
+  lockfiles, dependencies, package publication, or public package exports.
+- The next code candidate is a docs/tests-only post-PR82 roadmap truth sync,
+  because the in-repo roadmap is still synced only through R31. Keep it limited
+  to roadmap docs, a decision/checkpoint doc, focused doc tests, and exact
+  changed-file guard maintenance.
+
 ### Post-R30 local Structured Analyze demo workflow checkpoint
 
 - PR #152 / R30 merged at
@@ -326,11 +362,9 @@ Blocked by default:
 - R30 does not change engine behavior, report-kit behavior, CLI behavior, MCP
   behavior, viewer behavior, ratio-pack validation, package exports, or
   dependencies.
-- The next code candidate may be one realistic structured layout usecase demo,
-  but only as local/private/manual explicit geometry. It must not add
-  image/CAD/GPT adapters, webapp/dashboard scope, hosted MCP/API scope, package
-  publishing, recommendation, optimization, beauty scoring, correction,
-  inference, or automatic family selection.
+- Historical note: the next candidate after R30 was one realistic structured
+  layout usecase demo. R31 has since landed, so do not treat this as current
+  next-step guidance.
 
 ### No-parallelism rule for transport work
 

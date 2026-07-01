@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-30
+updated: 2026-07-01
 ---
 
 # Overview
@@ -35,6 +35,17 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #151 / R29 added runnable local Structured Analyze examples and
   deterministic report smoke coverage for the authored ratio-pack families.
 - PR #152 / R30 added the local Structured Analyze demo workflow smoke.
+- PR #153 / R31 added the real-usecase Structured Analyze layout demo.
+- PR #154 / R32 synced the in-repo roadmap after R31.
+- PR #155 / R32 added the real-usecase local inspection demo smoke.
+- PR #156 / R33 consolidated local truth projection smoke coverage.
+- PR #157 / R34 added the local real-usecase demo command.
+- PR #158 / R35 hardened the local real-usecase demo command.
+- PR #159 / R36 froze the local CLI report boundary.
+- PR #160 / PR81 added the package-private accepted geometry to Core mapper.
+- PR #161 fixed PR81 mapper review findings.
+- PR #162 / PR82 proved the synthetic accepted geometry to Structured Analyze
+  bridge.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -42,6 +53,10 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The local demo workflow stitches an existing family example input, the
   existing local report entrypoint, an output directory, `result.json` as
   canonical truth, and optional derived inspection artifacts.
+- The accepted-geometry mapper is package-private. PR82 proves deterministic
+  synthetic bridge reachability only; unsupported primitives stop at the mapper,
+  and no provider, image, OpenAI, ChatGPT, CLI, MCP, UI, package, dependency, or
+  public export scope is approved.
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.

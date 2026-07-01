@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-30
+updated: 2026-07-01
 tags:
   - architecture
   - adapters
@@ -18,6 +18,7 @@ sources:
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
+  - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -28,6 +29,11 @@ Defines strict ownership for what computes, what calls, and what displays.
 
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
+
+Accepted geometry remains explicit structured input after acceptance. The
+current accepted-geometry mapper is package-private and deterministic; it is not
+a provider, perception layer, public export, package API, or source-truth
+shortcut.
 
 ## Details
 
@@ -106,7 +112,15 @@ Adapters should map external shapes to structured inputs and report conversion l
   safety guards.
 - PR #148 / R26 merged as a docs/test-only roadmap truth sync. It does not
   authorize runtime changes.
-- R22-R26 do not authorize execution, recomputation, source-truth creation,
+- PR #153 through PR #159 extended local/private real-usecase demo, inspection,
+  and CLI report boundary proof around explicit structured input and existing
+  report surfaces.
+- PR #160 / PR81 added the package-private accepted geometry to Core mapper.
+  PR #162 / PR82 added synthetic test-only proof that mapped accepted geometry
+  can reach Structured Analyze after explicit normalization, while unsupported
+  primitives stop at the mapper.
+- R22-R26 and PR81-PR82 do not authorize execution, recomputation,
+  source-truth creation,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
   correction, recommendation, optimization, scoring, or inference.
@@ -122,6 +136,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+- `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 
 ## Related
 
