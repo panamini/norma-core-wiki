@@ -31,6 +31,7 @@ sources:
   - wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
   - wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md
+  - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -39,18 +40,18 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #164 / PR84 at
-`1adb4cb535f0f5ab238bdc2c5f18233e29919584`.
+Norma Core `origin/main` is current through PR #166 / PR86 at
+`2a2152c1bf90768a5540141f8d91196c32239735`.
 
-PR #165 / PR85 is the only open Norma Core PR. It is a draft PR, currently
-mergeable, with GitHub checks green at head
-`7a7973a638390e30f7fa1e7926bf2432476c0643`.
+PR #165 / PR85 merged the package-private synthetic shared-unit-surface
+normalization helper. PR #166 / PR86 preserved metric policy through that helper
+and closed the current local/private accepted-geometry bridge rail.
 
-For the current local/private accepted-geometry bridge rail, there is one open
-code PR left to close: PR85. After PR85 merges, there is no mandatory numbered
-PR ladder left. A small post-PR85 roadmap/wiki truth sync may still be useful,
-but any new package, public, hosted, adapter, or product track requires an
-explicit approval checkpoint before it becomes a counted PR queue.
+There is no mandatory numbered PR ladder left. The next safest Norma Core PR is
+a docs/tests-only post-PR86 roadmap truth sync because the in-repo roadmap still
+says it is synced through PR82. Any new package, public, hosted, adapter, or
+product track requires an explicit approval checkpoint before it becomes a
+counted PR queue.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -84,8 +85,10 @@ The recent Structured Analyze protection and inspection rail is complete:
 - PR83 is complete and synced the roadmap after PR82.
 - PR84 is complete and hardened the accepted-geometry integration determinism
   proof.
-- PR85 is open and adds a package-private synthetic shared-unit-surface
+- PR85 is complete and added a package-private synthetic shared-unit-surface
   normalization helper for mapped accepted-geometry pairs.
+- PR86 is complete and preserved metric policy through the normalizer, including
+  surface-only metric policies on normalized output compositions.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -101,13 +104,14 @@ existing local report entrypoint, output directory, `result.json` as canonical
 Norma truth, and optional derived inspection artifacts. This is a local
 developer smoke path only, not a new API surface or report-kit contract.
 
-PR81 through PR85 are accepted-geometry bridge checkpoints. The mapper and
+PR81 through PR86 are accepted-geometry bridge checkpoints. The mapper and
 normalizer are package-private. PR82 maps synthetic rectangle-only
 `AcceptedGeometry@1` payloads through the mapper and proves bridge reachability.
 PR84 hardens fresh-clone determinism coverage. PR85 makes the synthetic
-shared-unit-surface normalization step explicit and package-private. This is
-not provider ingestion, image analysis, OpenAI/ChatGPT runtime behavior, public
-export, or product scope.
+shared-unit-surface normalization step explicit and package-private. PR86 keeps
+metric policy coherent across the synthetic shared surface and normalized
+compositions. This is not provider ingestion, image analysis, OpenAI/ChatGPT
+runtime behavior, public export, or product scope.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -363,32 +367,36 @@ Blocked by default:
   to roadmap docs, a decision/checkpoint doc, focused doc tests, and exact
   changed-file guard maintenance.
 
-### Post-PR84 and PR85 endgame status
+### Post-PR86 accepted-geometry bridge closeout status
 
 - PR #163 / PR83 merged at
   `8b5cc2fd15d9991ead85a7f27afec17868078893`.
 - PR #164 / PR84 merged at
   `1adb4cb535f0f5ab238bdc2c5f18233e29919584`.
-- PR #165 / PR85 is open, draft, mergeable, and green at
-  `7a7973a638390e30f7fa1e7926bf2432476c0643`.
+- PR #165 / PR85 merged at
+  `665d896162be7a6fa553499ef3a656f04aaaaf86`.
+- PR #166 / PR86 merged at
+  `2a2152c1bf90768a5540141f8d91196c32239735`.
 
 PR83 recorded the post-PR82 roadmap truth. PR84 hardened accepted-geometry
-integration determinism in fresh-clone style tests. PR85 adds the
+integration determinism in fresh-clone style tests. PR85 added the
 package-private normalization helper that places mapped accepted-geometry
 compositions onto one explicit synthetic unit surface before Structured Analyze.
+PR86 preserved metric policy through that helper, including surface-only metric
+policies, so the synthetic shared surface and normalized output compositions
+remain coherent for downstream Structured Analyze operation contexts.
 
 Current count:
 
-- 1 open code PR remains for the active accepted-geometry/local-private rail:
-  PR85.
-- 0 mandatory historical ladder PRs remain after PR85.
-- 1 optional post-PR85 truth-sync/checkpoint PR may be useful after merge if the
-  code repo roadmap should record the new end state.
+- 0 open code PRs remain for the active accepted-geometry/local-private rail.
+- 0 mandatory historical ladder PRs remain after PR86.
+- 1 recommended post-PR86 docs/tests-only truth-sync PR remains if the code repo
+  roadmap should record the merged PR85/PR86 end state.
 
 Close-to-end interpretation:
 
 - If "end" means local/private deterministic Core plus the accepted-geometry
-  synthetic bridge, the project is effectively one PR from closeout.
+  synthetic bridge, the project is at closeout pending only roadmap truth sync.
 - If "end" means public npm, hosted MCP, API, public ChatGPT app, image/vision
   adapters, or product UI, that is a different unapproved track and should not
   be counted until a dedicated approval PR creates the queue.
@@ -450,6 +458,8 @@ Close-to-end interpretation:
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
+- `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
+- `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 
 ## Related
 

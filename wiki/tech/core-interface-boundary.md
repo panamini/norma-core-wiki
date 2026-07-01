@@ -19,6 +19,7 @@ sources:
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
+  - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -31,9 +32,9 @@ Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
 
 Accepted geometry remains explicit structured input after acceptance. The
-current accepted-geometry mapper is package-private and deterministic; it is not
-a provider, perception layer, public export, package API, or source-truth
-shortcut.
+current accepted-geometry mapper and shared-unit-surface normalizer are
+package-private and deterministic; they are not providers, perception layers,
+public exports, package APIs, or source-truth shortcuts.
 
 ## Details
 
@@ -119,7 +120,11 @@ Adapters should map external shapes to structured inputs and report conversion l
   PR #162 / PR82 added synthetic test-only proof that mapped accepted geometry
   can reach Structured Analyze after explicit normalization, while unsupported
   primitives stop at the mapper.
-- R22-R26 and PR81-PR82 do not authorize adapter/viewer/source-truth execution,
+- PR #165 / PR85 added the package-private shared-unit-surface normalizer.
+  PR #166 / PR86 preserved metric policy through that normalizer so the
+  synthetic shared surface and normalized output compositions remain coherent
+  for downstream Structured Analyze operation contexts.
+- R22-R26 and PR81-PR86 do not authorize adapter/viewer/source-truth execution,
   recomputation outside the package-private PR82 test bridge,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
@@ -137,6 +142,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
+- `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 
 ## Related
 
