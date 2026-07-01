@@ -53,6 +53,7 @@ updated: 2026-07-01
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
 - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
@@ -63,6 +64,9 @@ updated: 2026-07-01
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
+- `wiki/strategy/mvp-pr-roadmap.md` PR85 endgame count and current-state sync
+- `wiki/overview.md` PR83-PR85 current-state sync
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR82 accepted geometry bridge sync
 - `wiki/tech/core-interface-boundary.md` accepted geometry mapper boundary sync
