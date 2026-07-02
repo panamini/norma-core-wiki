@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-01
+updated: 2026-07-02
 tags:
   - execution
   - roadmap
@@ -32,6 +32,7 @@ sources:
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
   - wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md
   - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
+  - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -40,18 +41,19 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #166 / PR86 at
-`2a2152c1bf90768a5540141f8d91196c32239735`.
+Norma Core `origin/main` is current through PR #173 / PR93 at
+`e1c74d2d67a73a84fedd8397acf0132f9cdf43b3`.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
 and closed the current local/private accepted-geometry bridge rail.
 
 There is no mandatory numbered PR ladder left. The next safest Norma Core PR is
-a docs/tests-only post-PR86 roadmap truth sync because the in-repo roadmap still
-says it is synced through PR82. Any new package, public, hosted, adapter, or
-product track requires an explicit approval checkpoint before it becomes a
-counted PR queue.
+PR94: local guided inspection consumer proof. It should prove a local,
+package-private caller can consume the existing guided demo output envelope and
+canonical `result.json` through the package-private artifact contract. Any new
+package public export, publication, hosted, adapter, or product track requires
+an explicit approval checkpoint before it becomes a counted PR queue.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -89,6 +91,14 @@ The recent Structured Analyze protection and inspection rail is complete:
   normalization helper for mapped accepted-geometry pairs.
 - PR86 is complete and preserved metric policy through the normalizer, including
   surface-only metric policies on normalized output compositions.
+- PR88 is complete and approved gated integration unlock contracts without
+  implementing hosted, connector, adapter, provider, or package runtime scope.
+- PR89 is complete and added the local guided inspection demo surface.
+- PR90 is complete and defined the guided inspection package/API readiness gate.
+- PR91 is complete and added the package-private guided inspection artifact
+  contract helper.
+- PR92 is complete and wired the guided inspection demo through that helper.
+- PR93 is complete and synced the code roadmap after PR92.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -112,6 +122,13 @@ shared-unit-surface normalization step explicit and package-private. PR86 keeps
 metric policy coherent across the synthetic shared surface and normalized
 compositions. This is not provider ingestion, image analysis, OpenAI/ChatGPT
 runtime behavior, public export, or product scope.
+
+PR88 through PR93 are guided inspection package/API readiness checkpoints.
+`result.json` remains canonical machine-consumable Norma truth. `guide.html`,
+`report.html`, `visual.svg`, `summary.json`, and `summary.md` are derived local
+inspection artifacts only. The package-private artifact contract is a structural
+local boundary, not a package-root export, package publication path, hosted MCP
+runtime, ChatGPT connector runtime, provider call, or adapter implementation.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -401,6 +418,31 @@ Close-to-end interpretation:
   adapters, or product UI, that is a different unapproved track and should not
   be counted until a dedicated approval PR creates the queue.
 
+### Post-PR93 guided inspection package/API checkpoint
+
+- PR #168 / PR88 merged at `f571e3257dba2fc9f055abead15e6b524789da01`.
+- PR #169 / PR89 merged at `f064ed96a173494090a86ffbfd54523b87fe83ea`.
+- PR #170 / PR90 merged at `a0b4f50109a581b0bf9106ac17c505021567b70e`.
+- PR #171 / PR91 merged at `427121f61bf5bda2effe02bdf93b5d5c4c0d9fca`.
+- PR #172 / PR92 merged at `2a897b2e7c41a54081a80aa50f0c72b5f6341aa7`.
+- PR #173 / PR93 merged at `e1c74d2d67a73a84fedd8397acf0132f9cdf43b3`.
+
+PR88 unlocked integration tracks only behind explicit gates. PR89 added the
+local guided inspection demo. PR90 defined the package/API readiness gate. PR91
+added the package-private guided inspection artifact contract helper. PR92 wired
+the guided demo through that package-private contract. PR93 synced the code
+roadmap after PR92.
+
+Next implementation: PR94 local guided inspection consumer proof.
+
+PR94 should prove a local/package-private caller can consume the existing guided
+demo output envelope and canonical `result.json` through the package-private
+artifact contract. It must not add package-root exports, package metadata,
+lockfiles, dependencies, package publication, hosted MCP runtime, ChatGPT
+connector runtime, OpenAI/provider calls, image/CAD/Figma/provider adapter
+implementation, prompt-derived source truth, recommendation, optimization,
+correction, beauty scoring, or automatic family selection.
+
 ### Post-R30 local Structured Analyze demo workflow checkpoint
 
 - PR #152 / R30 merged at
@@ -460,6 +502,7 @@ Close-to-end interpretation:
 - `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 
 ## Related
 

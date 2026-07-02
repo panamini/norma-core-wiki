@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-01
+updated: 2026-07-02
 tags:
   - architecture
   - adapters
@@ -20,6 +20,7 @@ sources:
   - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
   - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
+  - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -35,6 +36,11 @@ Accepted geometry remains explicit structured input after acceptance. The
 current accepted-geometry mapper and shared-unit-surface normalizer are
 package-private and deterministic; they are not providers, perception layers,
 public exports, package APIs, or source-truth shortcuts.
+
+Guided inspection remains local and package-private. The package-private guided
+inspection artifact contract may structure the local demo envelope, but
+`result.json` remains canonical Norma truth and derived files remain inspection
+artifacts only.
 
 ## Details
 
@@ -124,8 +130,13 @@ Adapters should map external shapes to structured inputs and report conversion l
   PR #166 / PR86 preserved metric policy through that normalizer so the
   synthetic shared surface and normalized output compositions remain coherent
   for downstream Structured Analyze operation contexts.
-- R22-R26 and PR81-PR86 do not authorize adapter/viewer/source-truth execution,
-  recomputation outside the package-private PR82 test bridge,
+- PR #168 / PR88 through PR #173 / PR93 moved guided inspection package/API
+  readiness from blocked future language into a local, package-private proof
+  rail: PR89 added the local guided inspection demo, PR90 defined the readiness
+  gate, PR91 added the package-private artifact contract helper, PR92 wired the
+  demo through it, and PR93 synced the roadmap.
+- R22-R26, PR81-PR86, and PR88-PR93 do not authorize adapter/viewer/source-truth
+  execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
   correction, recommendation, optimization, scoring, or inference.
@@ -143,6 +154,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 
 ## Related
 

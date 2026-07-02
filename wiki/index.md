@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # Index
@@ -53,6 +53,7 @@ updated: 2026-07-01
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
@@ -65,6 +66,10 @@ updated: 2026-07-01
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR93 guided inspection package/API routing
+- `wiki/tech/core-interface-boundary.md` post-PR93 local/package-private guided inspection boundary
+- `wiki/overview.md` post-PR93 current-state sync
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` PR86 accepted-geometry closeout and next truth-sync routing
 - `wiki/tech/core-interface-boundary.md` PR86 package-private normalizer boundary
