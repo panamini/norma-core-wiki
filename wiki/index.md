@@ -53,6 +53,7 @@ updated: 2026-07-02
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
@@ -66,6 +67,10 @@ updated: 2026-07-02
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR95 guided inspection package-root V1 API export routing
+- `wiki/tech/core-interface-boundary.md` post-PR95 package API export boundary
+- `wiki/overview.md` post-PR95 current-state sync
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR93 guided inspection package/API routing
 - `wiki/tech/core-interface-boundary.md` post-PR93 local/package-private guided inspection boundary
