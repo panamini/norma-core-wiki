@@ -11,22 +11,20 @@ updated: 2026-07-03
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #178 / PR98 at `c4eae7db94c2412078da3db2681168ccd1b036ec`.
-- PR #176 / PR96 implemented the approved guided inspection package-root V1 exports.
-- PR #177 / PR97 proved local package-root consumer compatibility for those exports.
-- PR #178 / PR98 defined the guided inspection package publication readiness gate without publishing, package metadata changes, export widening, package-level `bin`, dependencies, release workflow, npm auth, tags, versions, provenance setup, or release mechanics.
-- R22-R36 completed the local Structured Analyze inspection, authored-family examples, local demo workflow, and report-boundary rails.
-- PR81 added a package-private accepted geometry to Core mapper; PR82 proved the synthetic accepted geometry to Structured Analyze bridge; PR84 hardened determinism; PR85 added the normalizer; PR86 preserved metric-policy coherence.
+- Latest merged Norma Core state is PR #179 / PR99 at `82b125d52e16760e58fb7db6928702269d03bb19`.
+- PR99 prepared the local `@norma/core` package tarball boundary and proved local packed-tarball install/import.
+- Package state remains pre-publication: `private: true`, version `0.1.0`, package-root export only, and minimal `files` allowlist: `dist/src/**/*.d.ts`, `dist/src/**/*.js`, `README.md`.
 - Direct engine output and `result.json` remain canonical truth; `guide.html`, `report.html`, `visual.svg`, `summary.json`, and `summary.md` are derived local inspection artifacts only.
-- Current count: no open code PRs. The next safe repo PR is PR99: package tarball contents and metadata approval contract.
-- The family catalog/examples are not a runtime registry, not a package export, and not selection logic; authored fixtures enter execution only through explicit structured input.
-- Package publication, hosted MCP, remote API, public product/web, ChatGPT connector runtime, OpenAI/provider calls, image/vision/CAD/Figma adapters, recommendation, optimization, inference, correction, automatic family selection, and beauty scoring remain blocked.
+- PR99 did not publish, tag, release, configure npm auth, set provenance, add a release workflow, change dependencies or lockfiles, add package-level `bin`, or unlock hosted MCP, ChatGPT connector runtime, providers, adapters, or runtime behavior.
+- Current recommended next Norma Core PR: PR100 finalize the package publication candidate without publishing.
+- Actual npm publication still requires explicit maintainer approval and a separate operation.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
 - Canonical page catalog: `wiki/index.md`
 - Mutation history: `wiki/log.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
+- Post-PR99 package tarball checkpoint: `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - Post-PR98 publication gate checkpoint: `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - Post-PR95 package API export checkpoint: `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 - Post-PR93 guided inspection checkpoint: `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
@@ -44,6 +42,11 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Added post-PR99 package tarball local install checkpoint on 2026-07-03:
+  - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+  - updated `wiki/strategy/mvp-pr-roadmap.md`
+  - updated `wiki/tech/core-interface-boundary.md`
+  - updated `wiki/overview.md`
 - Added post-PR98 guided inspection package publication gate checkpoint on 2026-07-03:
   - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

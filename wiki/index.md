@@ -53,6 +53,7 @@ updated: 2026-07-03
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
@@ -68,6 +69,10 @@ updated: 2026-07-03
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
+- `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary
+- `wiki/overview.md` post-PR99 current-state sync
 - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR98 guided inspection package publication gate routing
 - `wiki/tech/core-interface-boundary.md` post-PR98 package publication boundary

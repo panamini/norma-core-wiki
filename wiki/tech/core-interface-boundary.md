@@ -23,6 +23,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -46,6 +47,10 @@ PR96 implemented those package-root V1 exports. PR97 proved local package-root
 consumer compatibility. PR98 defined the package publication readiness gate
 without publishing or changing package metadata. `result.json` remains
 canonical Norma truth and derived files remain inspection artifacts only.
+PR99 prepared the local package tarball boundary and local packed-tarball
+install/import proof while keeping `@norma/core` private at version `0.1.0`.
+The package metadata implementation remains limited to the built declaration,
+built JavaScript, and `README.md` `files` allowlist.
 
 ## Details
 
@@ -145,7 +150,14 @@ Adapters should map external shapes to structured inputs and report conversion l
   approved only the future package-root V1 API export contract for PR96, PR96
   implemented those exports, PR97 proved local package-root consumer
   compatibility, and PR98 defined the package publication readiness gate.
-- R22-R26, PR81-PR86, and PR88-PR98 do not authorize adapter/viewer/source-truth
+- PR #179 / PR99 prepared the local `@norma/core` package tarball boundary and
+  proved local packed-tarball install/import. It kept `private: true`, version
+  `0.1.0`, and the minimal `files` allowlist
+  `dist/src/**/*.d.ts`, `dist/src/**/*.js`, and `README.md`; it did not
+  publish, tag, release, configure npm auth, set provenance, add release
+  workflow mechanics, change dependencies or lockfiles, or add package-level
+  `bin`.
+- R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, package publication, public app submission, remote MCP,
@@ -168,6 +180,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 
 ## Related
 
