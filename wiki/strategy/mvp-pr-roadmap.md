@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-02
+updated: 2026-07-03
 tags:
   - execution
   - roadmap
@@ -34,6 +34,7 @@ sources:
   - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -42,18 +43,17 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #175 / PR95 at
-`35326bdd813f0002d310600f83c6405112880527`.
+Norma Core `origin/main` is current through PR #178 / PR98 at
+`c4eae7db94c2412078da3db2681168ccd1b036ec`.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
 and closed the current local/private accepted-geometry bridge rail.
 
 There is no mandatory numbered PR ladder left. The next safest Norma Core PR is
-PR96: implement only the PR95-approved guided inspection package-root V1 API
-exports. PR96 should wire the approved structural package-root names and types
-without widening package metadata, publication, hosted/runtime, provider,
-adapter, product, or source-truth scope.
+PR99: package tarball contents and metadata approval contract. PR99 should
+remain a package contract PR unless explicitly approved otherwise, and it should
+not publish, version, tag, configure npm auth, or run registry mutations.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -103,6 +103,13 @@ The recent Structured Analyze protection and inspection rail is complete:
   proof.
 - PR95 is complete and approved only the future guided inspection package-root
   V1 API export contract.
+- PR96 is complete and implemented the approved package-root guided inspection
+  V1 exports.
+- PR97 is complete and proved local package-root consumer compatibility for the
+  PR96 guided inspection V1 exports.
+- PR98 is complete and defined the guided inspection package publication
+  readiness gate without publishing, changing package metadata, widening
+  exports, adding package-level `bin`, or implementing release mechanics.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -127,16 +134,20 @@ metric policy coherent across the synthetic shared surface and normalized
 compositions. This is not provider ingestion, image analysis, OpenAI/ChatGPT
 runtime behavior, public export, or product scope.
 
-PR88 through PR95 are guided inspection package/API readiness checkpoints.
+PR88 through PR98 are guided inspection package/API and package publication
+readiness checkpoints.
 `result.json` remains canonical machine-consumable Norma truth. `guide.html`,
 `report.html`, `visual.svg`, `summary.json`, and `summary.md` are derived local
 inspection artifacts only. PR94 proved package-private local consumption of the
 guided inspection demo envelope. PR95 approved only the future package-root V1
-API export contract; it did not implement exports, publish a package, change
-package metadata, add package-level `bin`, expand dependencies, or unlock
-hosted MCP runtime, ChatGPT connector runtime, provider calls, adapters, CLI,
-MCP, viewer, examples, inference, recommendation, optimization, correction,
-scoring, automatic family selection, or artifact-derived source truth.
+API export contract. PR96 implemented those package-root V1 exports. PR97
+proved local package-root consumer compatibility. PR98 defined the package
+publication readiness gate. The rail still does not approve package
+publication, package metadata changes, package-level `bin`, dependency
+expansion, hosted MCP runtime, ChatGPT connector runtime, provider calls,
+adapters, CLI, MCP, viewer, examples, inference, recommendation, optimization,
+correction, scoring, automatic family selection, or artifact-derived source
+truth.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
