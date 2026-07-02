@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # Log
+
+## 2026-07-02
+- Added post-PR93 guided inspection package/API checkpoint:
+  - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- Updated durable roadmap, boundary, and overview with PR #168 through PR #173 merged state:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-07-01
 - Added PR86 normalization metric-policy checkpoint:

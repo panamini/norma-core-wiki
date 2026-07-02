@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-01
+updated: 2026-07-02
 ---
 
 # Overview
@@ -51,6 +51,14 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #165 / PR85 added the package-private shared-unit-surface normalizer.
 - PR #166 / PR86 preserved metric policy through the normalizer and closed the
   accepted-geometry bridge rail.
+- PR #168 / PR88 approved gated integration unlock contracts.
+- PR #169 / PR89 added the local guided inspection demo surface.
+- PR #170 / PR90 defined the guided inspection package/API readiness gate.
+- PR #171 / PR91 added the package-private guided inspection artifact contract
+  helper.
+- PR #172 / PR92 wired the guided inspection demo through that helper.
+- PR #173 / PR93 synced the code roadmap after PR92 and named PR94 as the next
+  local guided inspection consumer proof.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -58,6 +66,11 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The local demo workflow stitches an existing family example input, the
   existing local report entrypoint, an output directory, `result.json` as
   canonical truth, and optional derived inspection artifacts.
+- The guided inspection package/API rail is current through PR93. `result.json`
+  is still canonical truth; `guide.html`, `report.html`, `visual.svg`,
+  `summary.json`, and `summary.md` are derived local inspection artifacts only.
+  PR94 should prove a local/package-private consumer can consume the existing
+  guided demo envelope without adding public exports or external surfaces.
 - The accepted-geometry mapper and PR85/PR86 normalizer path are
   package-private. PR82 proves deterministic synthetic bridge reachability only;
   PR84 hardens determinism coverage; PR85 adds the package-private normalizer;
@@ -68,6 +81,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   selection logic; authored fixtures enter execution only through explicit
   structured input.
 - Current roadmap model is gate-based: no open code PR remains for the current
-  accepted-geometry/local-private rail, the next safe repo PR is a docs/tests
-  post-PR86 truth sync, no speculative PR27-PR46 execution queue remains, and
-  package/public/exposure/product layers stay blocked until explicit approval.
+  guided inspection package/API rail, the next safe repo PR is PR94 local
+  guided inspection consumer proof, no speculative PR27-PR46 execution queue
+  remains, and package/public/exposure/product layers stay blocked until
+  explicit approval.
