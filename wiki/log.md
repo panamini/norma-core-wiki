@@ -9,6 +9,16 @@ updated: 2026-07-03
 # Log
 
 ## 2026-07-03
+- Added post-PR99 package tarball local install checkpoint:
+  - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- Updated durable roadmap, boundary, and overview with PR #179 merged state:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added post-PR98 guided inspection package publication gate checkpoint:
   - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - Updated durable roadmap, boundary, and overview with PR #176 through PR #178 merged state:

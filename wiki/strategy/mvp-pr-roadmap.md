@@ -35,6 +35,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -43,17 +44,17 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #178 / PR98 at
-`c4eae7db94c2412078da3db2681168ccd1b036ec`.
+Norma Core `origin/main` is current through PR #179 / PR99 at
+`82b125d52e16760e58fb7db6928702269d03bb19`.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
 and closed the current local/private accepted-geometry bridge rail.
 
-There is no mandatory numbered PR ladder left. The next safest Norma Core PR is
-PR99: package tarball contents and metadata approval contract. PR99 should
-remain a package contract PR unless explicitly approved otherwise, and it should
-not publish, version, tag, configure npm auth, or run registry mutations.
+There is no mandatory numbered PR ladder left. PR99 prepared the local
+`@norma/core` package tarball boundary and proved local packed-tarball
+install/import without publishing. The next compressed Norma Core code PR is
+PR100: finalize the package publication candidate without publishing.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -110,6 +111,11 @@ The recent Structured Analyze protection and inspection rail is complete:
 - PR98 is complete and defined the guided inspection package publication
   readiness gate without publishing, changing package metadata, widening
   exports, adding package-level `bin`, or implementing release mechanics.
+- PR99 is complete and prepared the local `@norma/core` package tarball
+  boundary plus local packed-tarball install/import proof. Package metadata
+  still keeps `private: true`, version `0.1.0`, and the only package metadata
+  implementation is the minimal `files` allowlist:
+  `dist/src/**/*.d.ts`, `dist/src/**/*.js`, and `README.md`.
 
 Current execution stays local, private, and manual. `result.json` remains
 canonical Norma truth; report and viewer artifacts are derived inspection
@@ -134,7 +140,7 @@ metric policy coherent across the synthetic shared surface and normalized
 compositions. This is not provider ingestion, image analysis, OpenAI/ChatGPT
 runtime behavior, public export, or product scope.
 
-PR88 through PR98 are guided inspection package/API and package publication
+PR88 through PR99 are guided inspection package/API and package publication
 readiness checkpoints.
 `result.json` remains canonical machine-consumable Norma truth. `guide.html`,
 `report.html`, `visual.svg`, `summary.json`, and `summary.md` are derived local
@@ -142,12 +148,15 @@ inspection artifacts only. PR94 proved package-private local consumption of the
 guided inspection demo envelope. PR95 approved only the future package-root V1
 API export contract. PR96 implemented those package-root V1 exports. PR97
 proved local package-root consumer compatibility. PR98 defined the package
-publication readiness gate. The rail still does not approve package
-publication, package metadata changes, package-level `bin`, dependency
-expansion, hosted MCP runtime, ChatGPT connector runtime, provider calls,
-adapters, CLI, MCP, viewer, examples, inference, recommendation, optimization,
-correction, scoring, automatic family selection, or artifact-derived source
-truth.
+publication readiness gate. PR99 prepared the local package tarball boundary,
+kept `private: true` and version `0.1.0`, and limited package metadata
+implementation to the `files` allowlist for built declarations, built JS, and
+`README.md`. The rail still does not approve actual npm publication, tags,
+releases, npm auth, provenance, release workflows, package-level `bin`,
+dependency or lockfile changes, hosted MCP runtime, ChatGPT connector runtime,
+provider calls, adapters, CLI, MCP, viewer, examples, inference,
+recommendation, optimization, correction, scoring, automatic family selection,
+or artifact-derived source truth.
 
 The active roadmap model is now gate-based and track-based, not a speculative
 PR-number ladder.
@@ -470,6 +479,31 @@ behavior changes, viewer behavior changes, examples changes, inference,
 recommendation, optimization, correction, scoring, automatic family selection,
 or artifact-derived source truth.
 
+### Post-PR99 package tarball local install checkpoint
+
+- PR #179 / PR99 merged at
+  `82b125d52e16760e58fb7db6928702269d03bb19`.
+- PR99 head was
+  `97d1d255ab1fcc7b039524ac8ca819a31b11543a`.
+- Checkpoint:
+  `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`.
+- PR99 prepared the local `@norma/core` package tarball boundary and proved
+  local packed-tarball install/import.
+- `package.json` still has `private: true` and version `0.1.0`.
+- The only package metadata implementation is the minimal `files` allowlist:
+  `dist/src/**/*.d.ts`, `dist/src/**/*.js`, and `README.md`.
+- `result.json` remains canonical Norma truth; `guide.html`, `report.html`,
+  `visual.svg`, `summary.json`, and `summary.md` remain derived local
+  inspection artifacts only.
+- PR99 did not publish, tag, release, configure npm auth, set provenance, add a
+  release workflow, change dependencies or lockfiles, add package-level `bin`,
+  or unlock hosted MCP, ChatGPT connector runtime, provider calls, API runtime,
+  or adapters.
+- Next compressed code PR: PR100 finalize the package publication candidate
+  without publishing.
+- Actual npm publication still requires explicit maintainer approval and a
+  separate operation.
+
 ### Post-R30 local Structured Analyze demo workflow checkpoint
 
 - PR #152 / R30 merged at
@@ -531,6 +565,7 @@ or artifact-derived source truth.
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 
 ## Related
 
