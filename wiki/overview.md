@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-02
+updated: 2026-07-03
 ---
 
 # Overview
@@ -62,6 +62,13 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #174 / PR94 added the package-private guided inspection consumer proof.
 - PR #175 / PR95 approved only the future guided inspection package-root V1 API
   export contract.
+- PR #176 / PR96 implemented the approved guided inspection package-root V1 API
+  exports.
+- PR #177 / PR97 proved local package-root consumer compatibility for the PR96
+  guided inspection exports.
+- PR #178 / PR98 defined the guided inspection package publication readiness
+  gate without publishing, changing package metadata, widening exports, or
+  implementing release mechanics.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -69,13 +76,16 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The local demo workflow stitches an existing family example input, the
   existing local report entrypoint, an output directory, `result.json` as
   canonical truth, and optional derived inspection artifacts.
-- The guided inspection package/API rail is current through PR95. `result.json`
+- The guided inspection package/API rail is current through PR98. `result.json`
   is still canonical truth; `guide.html`, `report.html`, `visual.svg`,
   `summary.json`, and `summary.md` are derived local inspection artifacts only.
   PR94 proved local/package-private guided inspection consumption. PR95
-  approved only the future package-root V1 API export contract; it did not
-  implement exports, package publication, package metadata changes, hosted MCP,
-  ChatGPT connector runtime, provider calls, adapters, or runtime behavior.
+  approved only the future package-root V1 API export contract. PR96
+  implemented the approved package-root V1 exports. PR97 proved local
+  package-root consumer compatibility. PR98 defined the publication readiness
+  gate and still did not approve package publication, package metadata changes,
+  hosted MCP, ChatGPT connector runtime, provider calls, adapters, or runtime
+  behavior.
 - The accepted-geometry mapper and PR85/PR86 normalizer path are
   package-private. PR82 proves deterministic synthetic bridge reachability only;
   PR84 hardens determinism coverage; PR85 adds the package-private normalizer;
@@ -86,7 +96,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   selection logic; authored fixtures enter execution only through explicit
   structured input.
 - Current roadmap model is gate-based: no open code PR remains for the current
-  guided inspection package/API rail, the next safe repo PR is PR96 implement
-  only the PR95-approved guided inspection package-root V1 API exports, no
-  speculative PR27-PR46 execution queue remains, and package publication,
-  hosted/provider/adapter/product layers stay blocked until explicit approval.
+  guided inspection package/API rail, the next safe repo PR is PR99 package
+  tarball contents and metadata approval contract, no speculative PR27-PR46
+  execution queue remains, and package publication, hosted/provider/adapter/
+  product layers stay blocked until explicit approval.

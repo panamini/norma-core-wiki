@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-02
+updated: 2026-07-03
 tags:
   - architecture
   - adapters
@@ -22,6 +22,7 @@ sources:
   - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -40,10 +41,11 @@ public exports, package APIs, or source-truth shortcuts.
 
 Guided inspection remains structural and truth-bounded. PR94 proved local
 package-private consumption of the guided inspection demo envelope. PR95
-approved only future package-root V1 API exports for that structural contract;
-it did not implement exports or approve package publication, hosted runtime,
-provider, adapter, or product scope. `result.json` remains canonical Norma truth
-and derived files remain inspection artifacts only.
+approved only future package-root V1 API exports for that structural contract.
+PR96 implemented those package-root V1 exports. PR97 proved local package-root
+consumer compatibility. PR98 defined the package publication readiness gate
+without publishing or changing package metadata. `result.json` remains
+canonical Norma truth and derived files remain inspection artifacts only.
 
 ## Details
 
@@ -133,14 +135,17 @@ Adapters should map external shapes to structured inputs and report conversion l
   PR #166 / PR86 preserved metric policy through that normalizer so the
   synthetic shared surface and normalized output compositions remain coherent
   for downstream Structured Analyze operation contexts.
-- PR #168 / PR88 through PR #175 / PR95 moved guided inspection package/API
+- PR #168 / PR88 through PR #178 / PR98 moved guided inspection package/API
   readiness from blocked future language into a local, package-private proof
-  rail plus an approved future package-root V1 export contract: PR89 added the
+  rail, approved and implemented package-root V1 exports, and defined a package
+  publication readiness gate: PR89 added the
   local guided inspection demo, PR90 defined the readiness gate, PR91 added the
   package-private artifact contract helper, PR92 wired the demo through it, PR93
-  synced the roadmap, PR94 added the package-private consumer proof, and PR95
-  approved only the future package-root V1 API export contract for PR96.
-- R22-R26, PR81-PR86, and PR88-PR95 do not authorize adapter/viewer/source-truth
+  synced the roadmap, PR94 added the package-private consumer proof, PR95
+  approved only the future package-root V1 API export contract for PR96, PR96
+  implemented those exports, PR97 proved local package-root consumer
+  compatibility, and PR98 defined the package publication readiness gate.
+- R22-R26, PR81-PR86, and PR88-PR98 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, package publication, public app submission, remote MCP,
