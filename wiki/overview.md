@@ -59,6 +59,9 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #172 / PR92 wired the guided inspection demo through that helper.
 - PR #173 / PR93 synced the code roadmap after PR92 and named PR94 as the next
   local guided inspection consumer proof.
+- PR #174 / PR94 added the package-private guided inspection consumer proof.
+- PR #175 / PR95 approved only the future guided inspection package-root V1 API
+  export contract.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -66,11 +69,13 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The local demo workflow stitches an existing family example input, the
   existing local report entrypoint, an output directory, `result.json` as
   canonical truth, and optional derived inspection artifacts.
-- The guided inspection package/API rail is current through PR93. `result.json`
+- The guided inspection package/API rail is current through PR95. `result.json`
   is still canonical truth; `guide.html`, `report.html`, `visual.svg`,
   `summary.json`, and `summary.md` are derived local inspection artifacts only.
-  PR94 should prove a local/package-private consumer can consume the existing
-  guided demo envelope without adding public exports or external surfaces.
+  PR94 proved local/package-private guided inspection consumption. PR95
+  approved only the future package-root V1 API export contract; it did not
+  implement exports, package publication, package metadata changes, hosted MCP,
+  ChatGPT connector runtime, provider calls, adapters, or runtime behavior.
 - The accepted-geometry mapper and PR85/PR86 normalizer path are
   package-private. PR82 proves deterministic synthetic bridge reachability only;
   PR84 hardens determinism coverage; PR85 adds the package-private normalizer;
@@ -81,7 +86,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   selection logic; authored fixtures enter execution only through explicit
   structured input.
 - Current roadmap model is gate-based: no open code PR remains for the current
-  guided inspection package/API rail, the next safe repo PR is PR94 local
-  guided inspection consumer proof, no speculative PR27-PR46 execution queue
-  remains, and package/public/exposure/product layers stay blocked until
-  explicit approval.
+  guided inspection package/API rail, the next safe repo PR is PR96 implement
+  only the PR95-approved guided inspection package-root V1 API exports, no
+  speculative PR27-PR46 execution queue remains, and package publication,
+  hosted/provider/adapter/product layers stay blocked until explicit approval.

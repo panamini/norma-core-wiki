@@ -21,6 +21,7 @@ sources:
   - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
   - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
   - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
+  - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -37,10 +38,12 @@ current accepted-geometry mapper and shared-unit-surface normalizer are
 package-private and deterministic; they are not providers, perception layers,
 public exports, package APIs, or source-truth shortcuts.
 
-Guided inspection remains local and package-private. The package-private guided
-inspection artifact contract may structure the local demo envelope, but
-`result.json` remains canonical Norma truth and derived files remain inspection
-artifacts only.
+Guided inspection remains structural and truth-bounded. PR94 proved local
+package-private consumption of the guided inspection demo envelope. PR95
+approved only future package-root V1 API exports for that structural contract;
+it did not implement exports or approve package publication, hosted runtime,
+provider, adapter, or product scope. `result.json` remains canonical Norma truth
+and derived files remain inspection artifacts only.
 
 ## Details
 
@@ -130,16 +133,20 @@ Adapters should map external shapes to structured inputs and report conversion l
   PR #166 / PR86 preserved metric policy through that normalizer so the
   synthetic shared surface and normalized output compositions remain coherent
   for downstream Structured Analyze operation contexts.
-- PR #168 / PR88 through PR #173 / PR93 moved guided inspection package/API
+- PR #168 / PR88 through PR #175 / PR95 moved guided inspection package/API
   readiness from blocked future language into a local, package-private proof
-  rail: PR89 added the local guided inspection demo, PR90 defined the readiness
-  gate, PR91 added the package-private artifact contract helper, PR92 wired the
-  demo through it, and PR93 synced the roadmap.
-- R22-R26, PR81-PR86, and PR88-PR93 do not authorize adapter/viewer/source-truth
+  rail plus an approved future package-root V1 export contract: PR89 added the
+  local guided inspection demo, PR90 defined the readiness gate, PR91 added the
+  package-private artifact contract helper, PR92 wired the demo through it, PR93
+  synced the roadmap, PR94 added the package-private consumer proof, and PR95
+  approved only the future package-root V1 API export contract for PR96.
+- R22-R26, PR81-PR86, and PR88-PR95 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
-  SDK, API runtime, public package readiness, public app submission, remote MCP,
-  correction, recommendation, optimization, scoring, or inference.
+  SDK, API runtime, package publication, public app submission, remote MCP,
+  hosted MCP, ChatGPT connector runtime, OpenAI/provider calls, image/CAD/Figma
+  adapters, correction, recommendation, optimization, scoring, automatic family
+  selection, or inference.
 
 ## Sources
 
@@ -155,6 +162,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
 - `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 
 ## Related
 
