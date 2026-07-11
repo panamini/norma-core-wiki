@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-11
 ---
 
 # Hot Cache
@@ -11,12 +11,12 @@ updated: 2026-06-29
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
-- Current local static read-only viewer can inspect existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
-- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
-- Current recommended next PR: `R23: local inspection surface onboarding fixture and workflow polish`.
-- R23 must stay local-only, static, read-only, docs/tests backed, and must not change engine behavior, package exports, package metadata, lockfiles, CLI runtime, MCP runtime, report-kit runtime, hosted/remote behavior, SDK/API behavior, public package readiness, public app submission, or source-truth rules.
-- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md` for current R22/R23 context.
+- GitHub PR #214 merged the PR132 validation hardening checkpoint at `643fc88af508efe271741c23249807b62bc577ed`.
+- Current local visual candidate review and selection surface is PR131/PR132; selection intent is non-authoritative.
+- Existing PR129 `--resume` remains the only path to AcceptedGeometry, Core / Structured Analyze, and canonical `result.json`.
+- logical PR134 is the next implementation contract, but it remains blocked until the exact loopback/local-only MCP orchestration contract is separately approved.
+- Private/dev ChatGPT + MCP visual pilot is selected as the next external track, but connector/runtime/hosting/auth/provider/public surfaces remain unapproved.
+- Use `wiki/outputs/2026-07-11-pr214-validation-hardening-checkpoint.md` for the current durable checkpoint.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -24,7 +24,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Mutation history: `wiki/log.md`
 - Orchestrator: `wiki/tech/norma-orchestrator.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
-- R22 checkpoint and R23 prompt: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- PR214 checkpoint: `wiki/outputs/2026-07-11-pr214-validation-hardening-checkpoint.md`
 - Post-PR6 checkpoint: `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - R6D checkpoint: `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 
@@ -35,6 +35,12 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Added PR214 validation hardening checkpoint on 2026-07-11:
+  - `wiki/outputs/2026-07-11-pr214-validation-hardening-checkpoint.md`
+  - updated `wiki/strategy/mvp-pr-roadmap.md`
+  - updated `wiki/tech/core-interface-boundary.md`
+  - updated `wiki/product/norma-product-vision.md`
+  - updated `wiki/overview.md`
 - Added R22 local Structured Analyze inspection checkpoint on 2026-06-29:
   - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`

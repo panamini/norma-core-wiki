@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-11
 tags:
   - execution
   - roadmap
@@ -22,6 +22,7 @@ sources:
   - raw/Norma — Vision produit, UX cible et architecture d’intégration.md
   - wiki/sources/2026-06-19-norma-product-vision-ux-flows-and-integration-architecture-prompt.md
   - wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md
+  - wiki/outputs/2026-07-11-pr214-validation-hardening-checkpoint.md
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
@@ -33,8 +34,15 @@ Execution plan to keep implementation in sequence and avoid MVP drift.
 
 ## Current state
 
-The roadmap is now split into strict phases that separate architecture lock, core build, and ecosystem growth.
-It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and explicit gating before broadening scope.
+The roadmap now resolves to the post-PR214 checkpoint chain: PR131 selected the local visual candidate review surface, PR132 implemented the local static PNG/candidate review plus non-authoritative selection intent, PR133 selected the private/dev ChatGPT + MCP visual pilot as the next external track, and PR214 hardened the operator validation checkpoint. PR134 is the next implementation contract to write, but it remains blocked until the exact HIGH-risk loopback/local-only MCP orchestration contract is separately approved.
+
+### Post-PR214 gate
+
+- Selection intent is non-authoritative.
+- Existing PR129 `--resume` remains the only path to AcceptedGeometry, Core / Structured Analyze, and canonical `result.json`.
+- Hosted/remote MCP, ChatGPT App/public submission, OAuth/auth, deployment, provider calls, uploads, production or real-user data, CAD/Figma, npm publication, public exports, billing, and public launch remain unapproved.
+
+The sections below are retained as historical roadmap context and are not the current next-step instruction.
 
 ## Details
 
@@ -152,7 +160,7 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
   follow-up work, or any core geometry behavior change.
 - Historical next step after R6D: R1 duplicate geometry source identities.
   R1 and the later R7/R18/R19/R20/R21/R22 rail have since landed; do not treat
-  this R6D note as the current next instruction.
+  this R6D note as the next instruction.
 
 ### R22 local Structured Analyze inspection checkpoint
 
@@ -174,7 +182,9 @@ It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and
   correction, recommendation, optimization, scoring, prompt inference, or source
   truth creation.
 
-### Current recommended next PR after R22
+### Historical R23 recommendation after R22
+
+This is historical retrieval context, not the current next step.
 
 ```text
 R23: local inspection surface onboarding fixture and workflow polish
@@ -197,9 +207,9 @@ input, correction, recommendation, optimization, scoring, or beauty judgment.
 - Do not run PR5 and PR6 in parallel.
 - If a PR touches more than one of `CORE`, `TRANSPORT`, or `INTEGRATION`, treat it as invalid design until split.
 
-### Readiness extension (post-PR25)
+### Historical readiness extension (post-PR25)
 
-- Current execution plan is now post-PR25 and proceeds through PR27–PR46 with explicit gates:
+- Historical execution plan after PR25 proceeds through PR27–PR46 with explicit gates:
   - PR27–PR29: local CLI and release checkpoint
   - PR30–PR32: package readiness and publish governance
   - PR33–PR35: MCP contract and local MCP implementation
@@ -208,17 +218,17 @@ input, correction, recommendation, optimization, scoring, or beauty judgment.
 - PR44–PR46: onboarding, beta readiness, and launch checks
 - PR0 governance and core sequencing remain the hard baseline for all expansion.
 
-### Local viewer endgame prompt
+### Historical local viewer endgame prompt
 
 - A later continuation prompt adds a PR66–PR70 local viewer path focused on implementation after the approval stages.
 - The sequence covers local viewer UI approval, a read-only viewer model, a static viewer, real fixtures, and final demo readiness.
 - Treat that prompt as a planning artifact for retrieval and scoping, not as a replacement for the canonical roadmap.
 
-### PR71 vision and UX freeze
+### Historical PR71 vision and UX freeze
 
 - The new product vision prompt is a documentation-only planning artifact for PR71.
 - PR71 should capture product vision, UX flows, integration architecture, and the post-MVP adapter family without broadening MVP core scope.
-- Keep it separate from implementation sequencing so the roadmap stays anchored on the current PR27–PR46 execution plan.
+- Keep it separate from implementation sequencing so the roadmap stays anchored on the historical PR27–PR46 execution plan.
 
 ## Sources
 
