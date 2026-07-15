@@ -517,8 +517,8 @@ or artifact-derived source truth.
   release workflow, change dependencies or lockfiles, add package-level `bin`,
   or unlock hosted MCP, ChatGPT connector runtime, provider calls, API runtime,
   or adapters.
-- Next compressed code PR: PR100 finalize the package publication candidate
-  without publishing.
+- Historical post-PR99 routing named PR100 as a package publication-candidate
+  follow-up. It is not the active visual-harmony gate.
 - Actual npm publication still requires explicit maintainer approval and a
   separate operation.
 
