@@ -11,7 +11,7 @@ updated: 2026-07-15
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #231 at `9d49d15286d9be854243dc7cb4ca350d10073695`.
+- Latest merged Norma Core state is PR #232 at `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
 - PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
 - PR #223 added the deterministic shadow pixel-refinement kernel and synthetic corpus.
 - PR #224 synchronized repository documentation and guards without runtime behavior change.
@@ -21,9 +21,10 @@ Active memory cache for agents. Keep this page under 500 words.
 - PR #228 added explicit opt-in triangles from exactly three stable parented vertices, with canonical identity, fail-closed validation, and no Core authority.
 - PR #229 added explicit rotated ellipses with stable canonical identity, rotated rendering and line relations, legacy axis-aligned compatibility, and no Core authority.
 - PR #230 added their bounded deterministic shadow-refinement kernel; PR #231 integrated disabled-by-default separate proposals with explicit adoption before separate confirmation.
-- Exact-head evidence is green: build, focused tests 297/297, historical changed-file guards, full suite 1672/1672, desktop/mobile local widget smoke, 3/3 remote checks, empty threads, and fresh Codex review; the bounded post-merge rail passed build and five integration regressions.
-- Full live ChatGPT hydration/write proof is `UNVERIFIED`: the bounded temporary private app attempt produced no request at the exact-main server.
-- Next gate: controlled same-image refinement A/B once full-write entitlement permits it. After non-regressive validation, the smallest product candidate is one opt-in derived median-construction slice; bisectors and triangle centers remain later.
+- PR #232 recorded a non-regressive controlled same-image `LOCAL_UI_AB_PASS` without runtime change: both supported rotated cases reached zero annotated perimeter error, while weak and competing-orientation cases abstained.
+- PR #232 evidence is green: build, full suite 1673/1673, 3/3 remote checks, empty threads, fresh exact-head Codex review, and a 70/70 post-merge regression rail.
+- The private app creates and connects to exact-main. `LIVE_CHATGPT_AB_PASS` remains unverified until file-URL access is enabled for the ChatGPT Chrome extension.
+- Next gate: repeat the exact same-image A/B live after that upload permission. Only then does one opt-in derived median-construction slice become the smallest candidate; bisectors and triangle centers remain later.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -50,5 +51,5 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #231.
-- Updated roadmap, interface boundary, overview, index, and log with PR230-231 truth, the controlled live A/B gate, and the narrow median-construction candidate.
+- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #232.
+- Updated roadmap, overview, index, and log with the local A/B pass, precise live upload gate, and still-deferred median candidate.

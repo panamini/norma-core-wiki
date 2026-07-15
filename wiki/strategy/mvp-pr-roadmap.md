@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #231 at
-`9d49d15286d9be854243dc7cb4ca350d10073695`.
+Norma Core `origin/main` is current through PR #232 at
+`c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -72,22 +72,37 @@ bounded deterministic shadow-refinement kernel, including hard evaluation and
 displacement limits plus fail-closed ambiguity and near-circle rules. PR #231
 integrated that kernel into the private widget as a disabled-by-default,
 separate proposal with explicit adoption before separate confirmation.
+PR #232 recorded the controlled exact-main local A/B and its fail-closed
+changed-file guard without changing runtime behavior.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
 (1672/1672), desktop/mobile local widget smoke, three remote checks, empty
 review threads, and a fresh Codex review with no major issues on exact final
 head `7fcbfa34e34a14d745bc961a573df1da7fb6044e`. A bounded post-merge rail
-passed build and five integration regressions. A prior bounded temporary
-private ChatGPT attempt did not send the image request to the exact-main
-server, so full live hydration/write proof remains `UNVERIFIED`.
+passed build and five integration regressions.
 
-The current validation gate is a controlled same-image refinement A/B once the
-ChatGPT entitlement supports the full write path. The next product candidate
-after non-regressive validation is one opt-in median-construction slice from an
-explicit confirmed triangle, preserving parent provenance and non-Core
-authority. Angle/perpendicular bisectors, centers, rhythm, and harmonic
-interpretation remain deferred.
+The controlled same-image local A/B is non-regressive. For the strong full-
+perimeter and nearby tangent/crossing-line cases, mean annotated perimeter
+error fell from `1.657733384665 px` to `0 px`; edge-support gains were
+`0.344880478434` and `0.312733108616`. Weak and competing-orientation cases
+abstained deterministically. Desktop/mobile widget smoke preserved the
+disabled default, separate original/proposal geometry, explicit adoption,
+separate confirmation, and zero Core calls before confirmation. PR #232 then
+passed build, full suite 1673/1673, three remote checks, empty review threads,
+and fresh Codex review on exact head
+`eb8214c5f150b2488f859b66ba303d60a6932972`.
+
+The private ChatGPT app now creates, connects, and discovers the exact-main MCP
+surface, so entitlement is no longer the observed blocker. The remaining live
+validation gate is enabling file-URL access for the ChatGPT Chrome extension,
+then repeating the exact same-image A/B through the write-enabled private app.
+The local result is `LOCAL_UI_AB_PASS`; `LIVE_CHATGPT_AB_PASS` remains
+unverified. Only after that non-regressive live gate does the next product
+candidate become one opt-in median-construction slice from an explicit
+confirmed triangle, preserving parent provenance and non-Core authority.
+Angle/perpendicular bisectors, centers, rhythm, and harmonic interpretation
+remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

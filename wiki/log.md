@@ -9,6 +9,18 @@ updated: 2026-07-15
 # Log
 
 ## 2026-07-15
+- Updated the personal visual-harmony checkpoint through application PR #232.
+- Recorded the controlled same-image `LOCAL_UI_AB_PASS`, exact supported-case
+  error/support gains, deterministic abstentions, unchanged authority gates,
+  and the separate `LIVE_CHATGPT_AB_PASS` upload prerequisite.
+- Kept triangle medians deferred until the non-regressive live A/B gate:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Updated the personal visual-harmony checkpoint through application PR #231.
 - Updated durable pages with the bounded rotated-ellipse refinement kernel,
   disabled-by-default widget proposals, explicit adoption and separate

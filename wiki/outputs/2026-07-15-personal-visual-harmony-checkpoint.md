@@ -17,6 +17,7 @@ sources:
   - https://github.com/panamini/norma-core/pull/229
   - https://github.com/panamini/norma-core/pull/230
   - https://github.com/panamini/norma-core/pull/231
+  - https://github.com/panamini/norma-core/pull/232
 related:
   - wiki/strategy/mvp-pr-roadmap.md
   - wiki/tech/core-interface-boundary.md
@@ -26,8 +27,8 @@ related:
 
 ## Context
 
-Norma Core `main` is current through PR #231 at merge commit
-`9d49d15286d9be854243dc7cb4ca350d10073695`.
+Norma Core `main` is current through PR #232 at merge commit
+`c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
 
 ## Result
 
@@ -80,6 +81,8 @@ Norma Core `main` is current through PR #231 at merge commit
   Hydration now refreshes refinement controls immediately, while tolerant
   canonical-envelope validation preserves stale-payload rejection across the
   widget/server precision boundary.
+- PR #232 synchronized the controlled same-image local A/B evidence and its
+  exact changed-file guard. It does not change runtime behavior.
 
 The PR #231 exact-head gate passed the build, focused rotated-refinement and
 visual-harmony coverage (297/297), historical changed-file guards, and the
@@ -90,10 +93,27 @@ widget smokes passed without console errors or horizontal overflow. The
 exact-main desktop flow proved disabled-by-default refinement, a distinct
 `REFINED` proposal, explicit adoption, no Core call before separate
 confirmation, and a later verified Core result. The merge commit then passed
-the build and five bounded integration regressions. Full live ChatGPT
-hydration/write proof is still `UNVERIFIED`: the earlier temporary private app
-attempt produced no request at the exact-main server, so this is not a live
-ChatGPT pass.
+the build and five bounded integration regressions.
+
+The controlled exact-main local A/B at
+`9d49d15286d9be854243dc7cb4ca350d10073695` reused the same annotated
+luminance rasters and starting candidates. The strong full-perimeter case
+reduced mean annotated perimeter error from `1.657733384665 px` to `0 px` and
+raised edge support from `0.486165660084` to `0.831046138518`. The nearby
+tangent/crossing-line case reduced the same error to `0 px` and raised edge
+support from `0.470385665047` to `0.783118773663`. Weak and competing-
+orientation negatives abstained deterministically. Desktop/mobile local widget
+smokes preserved original/proposal separation, explicit adoption, separate
+confirmation, and zero Core calls before confirmation. This is
+`LOCAL_UI_AB_PASS`.
+
+The current private-app path can create and connect a temporary ChatGPT app to
+the exact-main MCP server. Full same-image live A/B remains `UNVERIFIED`
+because the Chrome automation boundary cannot upload the synthetic fixture
+until file-URL access is enabled for the ChatGPT Chrome extension. No provider
+or model API call was made. The temporary app, server, and tunnel were removed;
+two inert temporary DNS aliases remain cleanup debt pending Cloudflare browser
+reauthentication.
 
 ## Authority boundary
 
@@ -125,10 +145,11 @@ not confirm geometry or execute Core.
 
 ## Next gate
 
-Repeat the same-image disabled/enabled refinement A/B when the available
-ChatGPT entitlement supports the full write path. Keep `LOCAL_UI_PASS` and
-`LIVE_CHATGPT_PASS` separate and require non-regression in confirmation,
-identity, cache, and Core output when a proposal is not adopted.
+Enable file-URL access for the ChatGPT Chrome extension, then repeat the exact
+same-image disabled/enabled refinement A/B through the connected private app.
+Keep `LOCAL_UI_AB_PASS` and `LIVE_CHATGPT_AB_PASS` separate and require
+non-regression in confirmation, identity, cache, and Core output when a
+proposal is not adopted.
 
 After that validation gate, the smallest dependency-correct geometry
 candidate is an opt-in derived median construction from one explicit confirmed
@@ -156,5 +177,7 @@ inference, and harmonic interpretation remain deferred.
   `7eb6179972ea1f472c04256f6dcc90ee1ba6dcea`
 - Application main after PR #231:
   `9d49d15286d9be854243dc7cb4ca350d10073695`
+- Application main after PR #232:
+  `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`
 - Provider/model calls: zero
 - Public deployment or app submission: none
