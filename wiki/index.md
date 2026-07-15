@@ -70,10 +70,10 @@ updated: 2026-07-15
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
-- `wiki/strategy/mvp-pr-roadmap.md` current PR221-224 visual-harmony gate
-- `wiki/tech/core-interface-boundary.md` widget, pixel proposal, and Core authority boundary
-- `wiki/overview.md` current main and local-versus-live evidence sync
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #226
+- `wiki/strategy/mvp-pr-roadmap.md` PR225-226 local capability and junction-angle next gate
+- `wiki/tech/core-interface-boundary.md` pixel proposal and observed/derived construction authority boundary
+- `wiki/overview.md` PR225-226 exact merge and verification sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary
