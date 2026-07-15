@@ -86,9 +86,15 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #226 merged support-line extensions and format diagonals at
   `f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`; all are opt-in image-plane
   constructions with observed/derived provenance and no Core authority.
-- Exact-head local evidence passes build, focused tests (59/59), full suite
-  (1635/1635), the static widget harness, and local MCP smoke. The bounded
-  post-merge rail passes build and 76/76 personal visual-harmony/MCP tests.
+- PR #227 merged opt-in junction-angle measurements at
+  `25810e39a01a65f9f2453f000d459633376c3419`; they require support-line
+  extensions, preserve participant and observed-extent provenance, and remain
+  outside Core authority.
+- Exact-head evidence passes build, focused visual-harmony and changed-file
+  tests (269/269), historical exact-guard regressions (347/347), full suite
+  (1642/1642), the static widget harness, local MCP smoke, three remote checks,
+  and fresh Codex review. The bounded post-merge rail passes build and 65/65
+  personal visual-harmony/MCP tests.
   Full live ChatGPT
   hydration/write proof remains `UNVERIFIED` because the bounded temporary
   app attempt produced no request at the exact-main server.
@@ -123,8 +129,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   selection logic; authored fixtures enter execution only through explicit
   structured input.
 - Current roadmap model is gate-based. The active product gate is one
-  deterministic junction-angle analysis slice over confirmed observed lines
-  and explicitly enabled derived constructions. Triangle construction and
-  bisectors follow only after that relation contract is stable. Package
+  opt-in triangle-construction slice from three explicit confirmed or
+  deterministically derived image-plane vertices. Medians, bisectors, centers,
+  rhythm, and harmonic interpretation remain later gates. Package
   publication and full live ChatGPT write/A-B validation remain separate later
   gates.

@@ -12,6 +12,7 @@ sources:
   - https://github.com/panamini/norma-core/pull/224
   - https://github.com/panamini/norma-core/pull/225
   - https://github.com/panamini/norma-core/pull/226
+  - https://github.com/panamini/norma-core/pull/227
 related:
   - wiki/strategy/mvp-pr-roadmap.md
   - wiki/tech/core-interface-boundary.md
@@ -21,8 +22,8 @@ related:
 
 ## Context
 
-Norma Core `main` is current through PR #226 at merge commit
-`f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`.
+Norma Core `main` is current through PR #227 at merge commit
+`25810e39a01a65f9f2453f000d459633376c3419`.
 
 ## Result
 
@@ -45,11 +46,20 @@ Norma Core `main` is current through PR #226 at merge commit
   geometry; its frame-clipped infinite support line and both corner-to-corner
   frame diagonals are deterministic derived constructions with no Core
   authority.
+- PR #227 added a disabled-by-default junction-angle layer over confirmed
+  support lines, enabled format diagonals, and confirmed frame edges. It
+  reports deterministic pixel-scaled smaller and supplementary image-plane
+  angles, participant provenance, and whether a support-line crossing lies
+  within the originally observed segment. The layer requires support-line
+  extensions and never becomes Core-authoritative geometry.
 
-The PR #226 exact-head gate passed the build, focused personal visual-harmony
-tests (59/59), the full repository suite (1635/1635), the static widget
-harness, and a local Streamable HTTP MCP smoke. The post-merge bounded rail
-passed the build and 76/76 personal visual-harmony/MCP tests. A temporary
+The PR #227 exact-head gate passed the build, focused visual-harmony and
+changed-file tests (269/269), historical exact-guard regressions (347/347),
+the full repository suite (1642/1642), the static widget harness, and a local
+Streamable HTTP MCP smoke. All three remote checks passed and a fresh Codex
+review found no major issues on exact head
+`721b2d5716f3707d84e0fd85d1517ce62c165b8d`. The post-merge bounded rail
+passed the build and 65/65 personal visual-harmony/MCP tests. A temporary
 private ChatGPT app and tunnel reached the current app
 management flow, but the image prompt produced no request at the exact-main
 server and never reached the widget, confirmation, or Core result. Full live
@@ -67,16 +77,19 @@ Pixel-refined geometry is a separate proposal/evidence object, disabled by
 default and adopted by a distinct explicit user action. It never replaces
 original ChatGPT geometry, confirms a candidate, or runs Core automatically.
 Observed line segments, derived support-line extensions, and derived format
-diagonals also retain distinct provenance and authority.
+diagonals also retain distinct provenance and authority. Junction angles are
+derived measurements over those bounded constructions; they do not make an
+invisible extension observed, infer intent, or authorize Core input.
 
 ## Next gate
 
-Add one deterministic junction-angle analysis slice over explicitly confirmed
-observed lines and enabled derived constructions. Keep projected/image-plane
-angles provenance-labelled and outside Core authority; leave triangle
-construction, bisectors, rhythm, vanishing-point inference, and harmonic
-interpretation deferred. Repeat the same-image disabled/enabled refinement A/B
-when the available ChatGPT entitlement supports the full write path.
+Add one opt-in triangle-construction slice from three explicit confirmed or
+deterministically derived image-plane vertices after validating distinct
+vertices, non-zero area, stable ordering, and parent provenance. Keep triangle
+construction outside Core authority and leave medians, bisectors, centers,
+rhythm, vanishing-point inference, and harmonic interpretation deferred.
+Repeat the same-image disabled/enabled refinement A/B when the available
+ChatGPT entitlement supports the full write path.
 
 ## Verification
 
@@ -88,5 +101,7 @@ when the available ChatGPT entitlement supports the full write path.
   `02c344246f51207fe15dcc96f4b6e0d09c017b30`
 - Application main after PR #226:
   `f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`
+- Application main after PR #227:
+  `25810e39a01a65f9f2453f000d459633376c3419`
 - Provider/model calls: zero
 - Public deployment or app submission: none
