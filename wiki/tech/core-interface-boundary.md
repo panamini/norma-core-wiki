@@ -90,6 +90,15 @@ stable. The triangle, its vertex provenance, and its basic image-plane metrics
 remain `sourceTruth=false`, `coreAuthority=false`, and do not enumerate,
 confirm, or send geometry to Core.
 
+PR #229 accepts an explicit ellipse orientation at the same typed
+image-plane boundary. Equivalent axis swaps and modulo-pi rotations
+canonicalize to one stable representation, while circles and near-circles use
+an orientation-degenerate identity rule. Rotated rendering and line-contact
+measurements are deterministic derived output. They do not infer a physical
+circle, perspective, intention, or Core authority. The widget and server both
+fail closed rather than applying the existing axis-aligned pixel refiner to an
+explicitly rotated ellipse.
+
 Local exact-main evidence is green, but the 2026-07-15 temporary private
 ChatGPT attempt produced no server request. Full live hydration/write behavior
 remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence

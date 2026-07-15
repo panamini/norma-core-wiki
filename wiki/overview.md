@@ -95,11 +95,16 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   vertices canonicalize to one derived identity and basic image-plane metrics,
   with invalid, stale, ambiguous, unsupported, or degenerate inputs rejected
   fail-closed and no Core authority.
-- Exact-head evidence passes build, focused visual-harmony/MCP tests (72/72),
-  historical guard regressions (420/420), full suite (1650/1650), desktop and
-  mobile local widget smoke on the immediate predecessor head, three remote
-  checks, resolved threads, and fresh Codex review on the exact final head. The
-  bounded post-merge rail passes build and 72/72 tests.
+- PR #229 merged explicit rotated-ellipse support at
+  `26cba06d76d8a6eeb56c0dd0035b0be24e47a388`; equivalent rotations and axis
+  swaps canonicalize deterministically, legacy axis-aligned meaning and
+  identity remain stable, rotated overlays and line relations are supported,
+  and the guides remain outside Core authority.
+- Exact-head evidence passes build, focused visual-harmony/MCP tests (75/75),
+  changed-file guard (206/206), historical guard regressions, full suite
+  (1656/1656), desktop and mobile local widget smoke, three remote checks,
+  resolved threads, and fresh Codex review on the exact final head. The
+  bounded post-merge rail passes build and 75/75 tests.
   Full live ChatGPT
   hydration/write proof remains `UNVERIFIED` because the bounded temporary
   app attempt produced no request at the exact-main server.
@@ -133,9 +138,10 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.
-- Current roadmap model is gate-based. The active product gate is one opt-in
-  rotated-ellipse slice with explicit orientation, stable canonicalization,
-  and rotation-aware image-plane rendering and line relations. Medians,
-  bisectors, triangle centers, rhythm, and harmonic interpretation remain later gates. Package
+- Current roadmap model is gate-based. The active product gate is one bounded,
+  disabled-by-default rotated-ellipse pixel-refinement shadow slice with
+  separate original/proposed geometry, fail-closed abstention, and explicit
+  adoption. Medians, bisectors, triangle centers, rhythm, and harmonic
+  interpretation remain later gates. Package
   publication and full live ChatGPT write/A-B validation remain separate later
   gates.
