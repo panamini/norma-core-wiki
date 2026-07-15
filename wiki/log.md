@@ -9,6 +9,18 @@ updated: 2026-07-15
 # Log
 
 ## 2026-07-15
+- Updated the personal visual-harmony checkpoint through application PR #227.
+- Updated durable pages with the opt-in junction-angle layer, its exact-head
+  local/CI/review evidence, unchanged live-write limitation, and the minimal
+  triangle-construction next gate:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Updated the personal visual-harmony checkpoint through application PR #226.
 - Updated durable pages with PR #225's disabled-by-default pixel proposal
   integration, PR #226's support-line/format-diagonal constructions, exact

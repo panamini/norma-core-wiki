@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #226 at
-`f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`.
+Norma Core `origin/main` is current through PR #227 at
+`25810e39a01a65f9f2453f000d459633376c3419`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -55,17 +55,23 @@ PR #224 synchronized repository documentation and guards without runtime
 change. PR #225 integrated the kernel through bounded, disabled-by-default
 widget proposals with explicit adoption before the separate confirmation
 gate. PR #226 added opt-in support-line extensions and format diagonals as
-derived, frame-clipped image-plane constructions outside Core authority.
+derived, frame-clipped image-plane constructions outside Core authority. PR
+#227 added an opt-in junction-angle layer with deterministic pixel-scaled
+smaller and supplementary angles, participant provenance, observed-extent
+flags, and no Core authority.
 
-The PR #226 exact-head local gate is green: build, focused tests (59/59), full
-suite (1635/1635), static widget harness, and local MCP smoke. A bounded
-post-merge rail passed build and 76/76 personal visual-harmony/MCP tests. A
-bounded temporary private ChatGPT
+The PR #227 exact-head gate is green: build, focused visual-harmony and
+changed-file tests (269/269), historical exact-guard regressions (347/347),
+full suite (1642/1642), static widget harness, local MCP smoke, three remote
+checks, and a fresh Codex review with no major issues. A bounded post-merge
+rail passed build and 65/65 personal visual-harmony/MCP tests. A bounded
+temporary private ChatGPT
 attempt did not send the image request to the exact-main server, so full live
 hydration/write proof remains `UNVERIFIED`. The current next product changeset
-is one deterministic junction-angle analysis slice over confirmed observed
-lines and explicitly enabled derived constructions. Triangle construction and
-bisectors remain later gates.
+is one opt-in triangle-construction slice from three explicit confirmed or
+deterministically derived image-plane vertices. It must validate distinct
+vertices, non-zero area, stable ordering, and parent provenance while keeping
+medians, bisectors, centers, rhythm, and harmonic interpretation deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

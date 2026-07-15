@@ -73,6 +73,14 @@ frame vertices. These optional image-plane constructions retain derived
 provenance, never claim that invisible extensions were observed, and have no
 Core authority.
 
+PR #227 derives junction measurements only after the support-line layer is
+explicitly enabled. Each junction preserves participant kind and provenance,
+records whether a support-line crossing lies within the observed finite
+segment, and reports deterministic pixel-scaled smaller and supplementary
+angles. Junctions remain image-plane derived measurements with
+`sourceTruth=false`, `coreAuthority=false`, and no independent confirmation or
+Core execution authority.
+
 Local exact-main evidence is green, but the 2026-07-15 temporary private
 ChatGPT attempt produced no server request. Full live hydration/write behavior
 remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence
@@ -190,7 +198,8 @@ Adapters should map external shapes to structured inputs and report conversion l
   kernel. PR #224 synchronized documentation and guards only. PR #225 added
   the disabled-by-default proposal/adoption integration. PR #226 added opt-in
   support-line and format-diagonal constructions while preserving the
-  rectangle-only Core boundary.
+  rectangle-only Core boundary. PR #227 added opt-in junction-angle
+  measurements without promoting their participants or results to Core input.
 - R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
