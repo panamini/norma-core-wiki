@@ -81,6 +81,15 @@ angles. Junctions remain image-plane derived measurements with
 `sourceTruth=false`, `coreAuthority=false`, and no independent confirmation or
 Core execution authority.
 
+PR #228 derives a triangle only from one bounded explicit request containing
+exactly three stable parented vertices. Parents must resolve to confirmed
+observed endpoints or deterministic admitted junctions; frame-edge-only,
+missing, stale, ambiguous, duplicate, out-of-bound, and degenerate inputs fail
+closed. Canonical winding and starting vertex make permutations identity-
+stable. The triangle, its vertex provenance, and its basic image-plane metrics
+remain `sourceTruth=false`, `coreAuthority=false`, and do not enumerate,
+confirm, or send geometry to Core.
+
 Local exact-main evidence is green, but the 2026-07-15 temporary private
 ChatGPT attempt produced no server request. Full live hydration/write behavior
 remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence
@@ -200,6 +209,9 @@ Adapters should map external shapes to structured inputs and report conversion l
   support-line and format-diagonal constructions while preserving the
   rectangle-only Core boundary. PR #227 added opt-in junction-angle
   measurements without promoting their participants or results to Core input.
+  PR #228 added an explicit opt-in triangle construction with stable parent
+  provenance and deterministic identity, still outside the rectangle-only Core
+  boundary.
 - R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,

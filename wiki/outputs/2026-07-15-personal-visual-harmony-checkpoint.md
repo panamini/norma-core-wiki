@@ -13,6 +13,7 @@ sources:
   - https://github.com/panamini/norma-core/pull/225
   - https://github.com/panamini/norma-core/pull/226
   - https://github.com/panamini/norma-core/pull/227
+  - https://github.com/panamini/norma-core/pull/228
 related:
   - wiki/strategy/mvp-pr-roadmap.md
   - wiki/tech/core-interface-boundary.md
@@ -22,8 +23,8 @@ related:
 
 ## Context
 
-Norma Core `main` is current through PR #227 at merge commit
-`25810e39a01a65f9f2453f000d459633376c3419`.
+Norma Core `main` is current through PR #228 at merge commit
+`22f4732fb4ce78347040285c956d283da8884eff`.
 
 ## Result
 
@@ -52,14 +53,22 @@ Norma Core `main` is current through PR #227 at merge commit
   angles, participant provenance, and whether a support-line crossing lies
   within the originally observed segment. The layer requires support-line
   extensions and never becomes Core-authoritative geometry.
+- PR #228 added a disabled-by-default triangle-construction layer for an
+  explicit request containing exactly three stable, parented image-plane
+  vertices. It canonicalizes winding and starting vertex, returns stable
+  identity plus basic area/side/angle measurements, and fails closed on
+  missing or stale parents, ambiguous or unsupported junctions, duplicates,
+  bounds violations, and normalized or pixel-space degeneracy. Triangles are
+  derived constructions only and never become source truth or Core input.
 
-The PR #227 exact-head gate passed the build, focused visual-harmony and
-changed-file tests (269/269), historical exact-guard regressions (347/347),
-the full repository suite (1642/1642), the static widget harness, and a local
-Streamable HTTP MCP smoke. All three remote checks passed and a fresh Codex
-review found no major issues on exact head
-`721b2d5716f3707d84e0fd85d1517ce62c165b8d`. The post-merge bounded rail
-passed the build and 65/65 personal visual-harmony/MCP tests. A temporary
+The PR #228 exact-head gate passed the build, focused visual-harmony/MCP tests
+(72/72), historical guard regressions (420/420), and the full repository suite
+(1650/1650). All three remote checks passed, all review threads were resolved,
+and a fresh Codex review found no major issues on exact head
+`2b1e78c6663b1d506861d0c74df3218f137fdaeb`. Desktop and mobile local widget
+smokes passed on the immediate predecessor head; the final delta only added a
+fail-closed normalizer guard and its test. The merge commit then passed the
+build and 72/72 bounded personal visual-harmony/MCP tests. A temporary
 private ChatGPT app and tunnel reached the current app
 management flow, but the image prompt produced no request at the exact-main
 server and never reached the widget, confirmation, or Core result. Full live
@@ -79,15 +88,19 @@ original ChatGPT geometry, confirms a candidate, or runs Core automatically.
 Observed line segments, derived support-line extensions, and derived format
 diagonals also retain distinct provenance and authority. Junction angles are
 derived measurements over those bounded constructions; they do not make an
-invisible extension observed, infer intent, or authorize Core input.
+invisible extension observed, infer intent, or authorize Core input. An
+explicit triangle preserves the stable provenance of each of its three
+vertices, remains derived/non-authoritative, and does not enumerate other
+triangles or introduce harmonic classification.
 
 ## Next gate
 
-Add one opt-in triangle-construction slice from three explicit confirmed or
-deterministically derived image-plane vertices after validating distinct
-vertices, non-zero area, stable ordering, and parent provenance. Keep triangle
-construction outside Core authority and leave medians, bisectors, centers,
-rhythm, vanishing-point inference, and harmonic interpretation deferred.
+Add one opt-in rotated-ellipse slice that extends the current axis-aligned
+ellipse contract with explicit rotation, deterministic canonicalization, and
+rotation-aware image-plane rendering/line relations while preserving the same
+confirmation and non-Core authority boundaries. Keep medians, bisectors,
+triangle centers, rhythm, vanishing-point inference, and harmonic
+interpretation deferred.
 Repeat the same-image disabled/enabled refinement A/B when the available
 ChatGPT entitlement supports the full write path.
 
@@ -103,5 +116,7 @@ ChatGPT entitlement supports the full write path.
   `f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`
 - Application main after PR #227:
   `25810e39a01a65f9f2453f000d459633376c3419`
+- Application main after PR #228:
+  `22f4732fb4ce78347040285c956d283da8884eff`
 - Provider/model calls: zero
 - Public deployment or app submission: none

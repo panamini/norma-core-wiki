@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #227 at
-`25810e39a01a65f9f2453f000d459633376c3419`.
+Norma Core `origin/main` is current through PR #228 at
+`22f4732fb4ce78347040285c956d283da8884eff`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -58,20 +58,25 @@ gate. PR #226 added opt-in support-line extensions and format diagonals as
 derived, frame-clipped image-plane constructions outside Core authority. PR
 #227 added an opt-in junction-angle layer with deterministic pixel-scaled
 smaller and supplementary angles, participant provenance, observed-extent
-flags, and no Core authority.
+flags, and no Core authority. PR #228 added an explicit, opt-in triangle layer
+from exactly three stable parented vertices with deterministic canonical
+identity and basic image-plane geometry. It fails closed on stale, ambiguous,
+unsupported, duplicate, out-of-bound, or degenerate inputs and remains derived
+evidence outside Core authority.
 
-The PR #227 exact-head gate is green: build, focused visual-harmony and
-changed-file tests (269/269), historical exact-guard regressions (347/347),
-full suite (1642/1642), static widget harness, local MCP smoke, three remote
-checks, and a fresh Codex review with no major issues. A bounded post-merge
-rail passed build and 65/65 personal visual-harmony/MCP tests. A bounded
-temporary private ChatGPT
+The PR #228 exact-head gate is green: build, focused visual-harmony/MCP tests
+(72/72), historical guard regressions (420/420), full suite (1650/1650),
+desktop/mobile local widget smoke on the immediate predecessor head, three
+remote checks, resolved review threads, and a fresh Codex review with no major
+issues on exact final head. A bounded post-merge rail passed build and 72/72
+personal visual-harmony/MCP tests. A bounded temporary private ChatGPT
 attempt did not send the image request to the exact-main server, so full live
 hydration/write proof remains `UNVERIFIED`. The current next product changeset
-is one opt-in triangle-construction slice from three explicit confirmed or
-deterministically derived image-plane vertices. It must validate distinct
-vertices, non-zero area, stable ordering, and parent provenance while keeping
-medians, bisectors, centers, rhythm, and harmonic interpretation deferred.
+is one opt-in rotated-ellipse slice with an explicit orientation contract,
+stable canonicalization, and rotation-aware image-plane rendering and line
+relations. It must preserve explicit confirmation, observed/derived
+provenance, and non-Core authority while keeping medians, bisectors, triangle
+centers, rhythm, and harmonic interpretation deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
