@@ -9,6 +9,20 @@ updated: 2026-07-15
 # Log
 
 ## 2026-07-15
+- Updated the personal visual-harmony checkpoint through application PR #231.
+- Updated durable pages with the bounded rotated-ellipse refinement kernel,
+  disabled-by-default widget proposals, explicit adoption and separate
+  confirmation, exact-head local/CI/review evidence, unchanged live-write
+  limitation, controlled A/B validation gate, and median construction as the
+  next product candidate:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Updated the personal visual-harmony checkpoint through application PR #229.
 - Updated durable pages with explicit rotated ellipses, stable legacy and
   canonical identity behavior, rotation-aware image-plane rendering and line

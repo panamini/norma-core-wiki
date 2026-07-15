@@ -15,6 +15,8 @@ sources:
   - https://github.com/panamini/norma-core/pull/227
   - https://github.com/panamini/norma-core/pull/228
   - https://github.com/panamini/norma-core/pull/229
+  - https://github.com/panamini/norma-core/pull/230
+  - https://github.com/panamini/norma-core/pull/231
 related:
   - wiki/strategy/mvp-pr-roadmap.md
   - wiki/tech/core-interface-boundary.md
@@ -24,8 +26,8 @@ related:
 
 ## Context
 
-Norma Core `main` is current through PR #229 at merge commit
-`26cba06d76d8a6eeb56c0dd0035b0be24e47a388`.
+Norma Core `main` is current through PR #231 at merge commit
+`9d49d15286d9be854243dc7cb4ca350d10073695`.
 
 ## Result
 
@@ -66,20 +68,32 @@ Norma Core `main` is current through PR #229 at merge commit
   rotated overlay rendering, and rotation-aware image-plane line relations.
   Legacy axis-aligned inputs keep their established meaning and identity.
   Rotated ellipses remain confirmed image-plane guides outside Core authority,
-  and rotated-ellipse pixel refinement remains disabled and deferred.
+  and remain non-authoritative.
+- PR #230 added the bounded deterministic rotated-ellipse refinement kernel.
+  It searches center, axes, and orientation over immutable local luminance
+  evidence, preserves the original ellipse separately, caps work at 214
+  evaluations, and abstains fail-closed for weak, ambiguous, or
+  orientation-degenerate evidence.
+- PR #231 integrated that kernel into the private widget path. Refinement is
+  disabled by default, the proposal has distinct rendering and identity, and
+  adoption, confirmation, and Core execution remain separate explicit gates.
+  Hydration now refreshes refinement controls immediately, while tolerant
+  canonical-envelope validation preserves stale-payload rejection across the
+  widget/server precision boundary.
 
-The PR #229 exact-head gate passed the build, focused visual-harmony/MCP tests
-(75/75), changed-file guard (206/206), historical guard regressions, and the
-full repository suite (1656/1656). All three remote checks passed, both review
-findings were fixed and resolved, and a fresh Codex review found no major
-issues on exact final head
-`cf73965aad200616d80fac666a5196db5d75570b`. Desktop and mobile local widget
-smokes passed without console errors or horizontal overflow. The merge commit
-then passed the build and 75/75 bounded personal visual-harmony/MCP tests. A
-temporary private ChatGPT app and tunnel reached the current app
-management flow, but the image prompt produced no request at the exact-main
-server and never reached the widget, confirmation, or Core result. Full live
-ChatGPT hydration/write proof is therefore `UNVERIFIED`, not a live pass.
+The PR #231 exact-head gate passed the build, focused rotated-refinement and
+visual-harmony coverage (297/297), historical changed-file guards, and the
+full repository suite (1672/1672). All three remote checks passed, review
+threads were empty, and a fresh Codex review found no major issues on exact
+final head `7fcbfa34e34a14d745bc961a573df1da7fb6044e`. Desktop and mobile local
+widget smokes passed without console errors or horizontal overflow. The
+exact-main desktop flow proved disabled-by-default refinement, a distinct
+`REFINED` proposal, explicit adoption, no Core call before separate
+confirmation, and a later verified Core result. The merge commit then passed
+the build and five bounded integration regressions. Full live ChatGPT
+hydration/write proof is still `UNVERIFIED`: the earlier temporary private app
+attempt produced no request at the exact-main server, so this is not a live
+ChatGPT pass.
 
 ## Authority boundary
 
@@ -102,16 +116,25 @@ triangles or introduce harmonic classification. Explicit ellipse orientation
 changes only deterministic image-plane geometry; it does not make an ellipse
 source truth, physical-world evidence, or Core-authoritative input.
 
+Rotated-ellipse pixel refinement uses the same canonical major/minor-axis and
+modulo-pi convention as confirmed ellipse geometry. Its bounded raster search
+returns candidate evidence only with `sourceTruth=false` and no Core
+authority. Near-circles preserve their admitted orientation or abstain; weak
+or competing orientations fail closed. Proposal generation and adoption do
+not confirm geometry or execute Core.
+
 ## Next gate
 
-Add one bounded, disabled-by-default rotated-ellipse pixel-refinement shadow
-slice. It must keep original and proposed ellipses separate, abstain on weak or
-orientation-degenerate evidence, require an explicit adoption action, and
-remain unable to confirm geometry or run Core. Keep medians, bisectors,
-triangle centers, rhythm, vanishing-point inference, and harmonic
-interpretation deferred.
 Repeat the same-image disabled/enabled refinement A/B when the available
-ChatGPT entitlement supports the full write path.
+ChatGPT entitlement supports the full write path. Keep `LOCAL_UI_PASS` and
+`LIVE_CHATGPT_PASS` separate and require non-regression in confirmation,
+identity, cache, and Core output when a proposal is not adopted.
+
+After that validation gate, the smallest dependency-correct geometry
+candidate is an opt-in derived median construction from one explicit confirmed
+triangle. Medians must preserve triangle/vertex provenance and remain outside
+Core authority. Angle/perpendicular bisectors, centers, rhythm, vanishing-point
+inference, and harmonic interpretation remain deferred.
 
 ## Verification
 
@@ -129,5 +152,9 @@ ChatGPT entitlement supports the full write path.
   `22f4732fb4ce78347040285c956d283da8884eff`
 - Application main after PR #229:
   `26cba06d76d8a6eeb56c0dd0035b0be24e47a388`
+- Application main after PR #230:
+  `7eb6179972ea1f472c04256f6dcc90ee1ba6dcea`
+- Application main after PR #231:
+  `9d49d15286d9be854243dc7cb4ca350d10073695`
 - Provider/model calls: zero
 - Public deployment or app submission: none
