@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 tags:
   - execution
   - roadmap
@@ -36,6 +36,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
+  - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -44,8 +45,22 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #179 / PR99 at
-`82b125d52e16760e58fb7db6928702269d03bb19`.
+Norma Core `origin/main` is current through PR #224 at
+`998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2`.
+
+PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
+hardened exact-file hydration and stale-payload safety. PR #223 added a
+deterministic shadow pixel-refinement kernel with synthetic regression
+coverage, but that kernel has no widget or candidate-preparation caller and is
+not live. PR #224 synchronized repository documentation and guards without
+changing runtime behavior.
+
+The exact-main local gate is green: build, focused tests (39/39), full suite
+(1608/1608), and static widget harness. A bounded temporary private ChatGPT
+attempt did not send the image request to the exact-main server, so full live
+hydration/write proof remains `UNVERIFIED`. The current next product changeset
+is one disabled-by-default, opt-in shadow pixel-refinement integration with a
+separate explicit adoption action and no automatic Core run.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
@@ -53,8 +68,8 @@ and closed the current local/private accepted-geometry bridge rail.
 
 There is no mandatory numbered PR ladder left. PR99 prepared the local
 `@norma/core` package tarball boundary and proved local packed-tarball
-install/import without publishing. The next compressed Norma Core code PR is
-PR100: finalize the package publication candidate without publishing.
+install/import without publishing. Its former PR100 publication-candidate
+routing is historical and is not the active visual-harmony gate.
 
 The recent Structured Analyze protection and inspection rail is complete:
 
@@ -165,10 +180,13 @@ used as local PR names, but old PR27-PR46 sequencing remains historical/gated
 context, not the active queue. Next core work should be chosen from real current
 gaps, not old numbering.
 
-Do not start hosted MCP, public app submission, public package publishing,
-remote API runtime, image/vision/CAD/camera/provider work, or recommendation /
-optimization / beauty-scoring behavior before a later explicit checkpoint
-approves that scope.
+The personal visual-harmony rail is an explicitly approved private adapter
+track: ChatGPT supplies typed candidates, the widget hydrates the exact file,
+the server does not inspect raster bytes, and only confirmed structured
+geometry reaches Core. It does not approve hosted MCP, public app submission,
+public package publishing, paid provider work, automatic recommendation,
+optimization, beauty scoring, physical-plane inference, or artistic-intent
+inference.
 
 ## Details
 

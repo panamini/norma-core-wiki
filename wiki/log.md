@@ -3,10 +3,22 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 ---
 
 # Log
+
+## 2026-07-15
+- Added the personal visual-harmony checkpoint through application PR #224:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+- Updated durable pages with PR221-224 capabilities, authority boundaries,
+  local evidence, live-write limitation, and the opt-in shadow next gate:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-07-03
 - Added post-PR99 package tarball local install checkpoint:

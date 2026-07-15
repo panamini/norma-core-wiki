@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 ---
 
 # Hot Cache
@@ -11,19 +11,21 @@ updated: 2026-07-03
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #179 / PR99 at `82b125d52e16760e58fb7db6928702269d03bb19`.
-- PR99 prepared the local `@norma/core` package tarball boundary and proved local packed-tarball install/import.
-- Package state remains pre-publication: `private: true`, version `0.1.0`, package-root export only, and minimal `files` allowlist: `dist/src/**/*.d.ts`, `dist/src/**/*.js`, `README.md`.
-- Direct engine output and `result.json` remain canonical truth; `guide.html`, `report.html`, `visual.svg`, `summary.json`, and `summary.md` are derived local inspection artifacts only.
-- PR99 did not publish, tag, release, configure npm auth, set provenance, add a release workflow, change dependencies or lockfiles, add package-level `bin`, or unlock hosted MCP, ChatGPT connector runtime, providers, adapters, or runtime behavior.
-- Current recommended next Norma Core PR: PR100 finalize the package publication candidate without publishing.
-- Actual npm publication still requires explicit maintainer approval and a separate operation.
+- Latest merged Norma Core state is PR #224 at `998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2`.
+- PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
+- PR #223 added a deterministic shadow pixel-refinement kernel, but it has no widget or candidate-preparation caller and is not live.
+- PR #224 synchronized repository documentation and guards without runtime behavior change.
+- Exact-main local evidence is green: build, focused tests 39/39, full suite 1608/1608, and static widget harness.
+- Full live ChatGPT hydration/write proof is `UNVERIFIED`: the bounded temporary private app attempt produced no request at the exact-main server.
+- Next gate: one disabled-by-default, opt-in shadow integration with bounded pixels, deterministic abstention, original/proposed separation, explicit adoption, and no automatic Core run.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
 - Canonical page catalog: `wiki/index.md`
 - Mutation history: `wiki/log.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
+- Personal visual-harmony checkpoint: `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+- Core/interface authority boundary: `wiki/tech/core-interface-boundary.md`
 - Post-PR99 package tarball checkpoint: `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - Post-PR98 publication gate checkpoint: `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - Post-PR95 package API export checkpoint: `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
@@ -41,24 +43,6 @@ Active memory cache for agents. Keep this page under 500 words.
 - For orchestrator usage, trust code, tests, CI, durable wiki pages, and explicit user direction over generated run evidence.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
-## Latest ingest
-- Added post-PR99 package tarball local install checkpoint on 2026-07-03:
-  - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-  - updated `wiki/overview.md`
-- Added post-PR98 guided inspection package publication gate checkpoint on 2026-07-03:
-  - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-  - updated `wiki/overview.md`
-- Added post-PR95 guided inspection package API export checkpoint on 2026-07-02:
-  - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-  - updated `wiki/overview.md`
-- Added post-PR93 guided inspection package/API checkpoint on 2026-07-02:
-  - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-  - updated `wiki/overview.md`
+## Latest update
+- Added `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`.
+- Updated roadmap, interface boundary, overview, index, and log with the PR221-224 truth and next gate.

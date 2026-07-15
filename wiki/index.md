@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 ---
 
 # Index
@@ -53,6 +53,7 @@ updated: 2026-07-03
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
@@ -69,6 +70,10 @@ updated: 2026-07-03
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` current PR221-224 visual-harmony gate
+- `wiki/tech/core-interface-boundary.md` widget, pixel proposal, and Core authority boundary
+- `wiki/overview.md` current main and local-versus-live evidence sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary
