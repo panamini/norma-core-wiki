@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #228 at
-`22f4732fb4ce78347040285c956d283da8884eff`.
+Norma Core `origin/main` is current through PR #229 at
+`26cba06d76d8a6eeb56c0dd0035b0be24e47a388`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -63,20 +63,27 @@ from exactly three stable parented vertices with deterministic canonical
 identity and basic image-plane geometry. It fails closed on stale, ambiguous,
 unsupported, duplicate, out-of-bound, or degenerate inputs and remains derived
 evidence outside Core authority.
+PR #229 added explicit rotated ellipses with stable major/minor-axis,
+modulo-pi, and near-circle canonicalization; rotation-aware overlay rendering;
+and deterministic rotated ellipse/line relations. Legacy axis-aligned inputs
+retain their established meaning and identity. Rotated ellipses remain
+confirmed image-plane guides outside Core authority, and rotated pixel
+refinement remains disabled.
 
-The PR #228 exact-head gate is green: build, focused visual-harmony/MCP tests
-(72/72), historical guard regressions (420/420), full suite (1650/1650),
-desktop/mobile local widget smoke on the immediate predecessor head, three
-remote checks, resolved review threads, and a fresh Codex review with no major
-issues on exact final head. A bounded post-merge rail passed build and 72/72
-personal visual-harmony/MCP tests. A bounded temporary private ChatGPT
+The PR #229 exact-head gate is green: build, focused visual-harmony/MCP tests
+(75/75), changed-file guard (206/206), historical guard regressions, full
+suite (1656/1656), desktop/mobile local widget smoke, three remote checks,
+resolved review threads, and a fresh Codex review with no major issues on exact
+final head `cf73965aad200616d80fac666a5196db5d75570b`. A bounded post-merge
+rail passed build and 75/75 personal visual-harmony/MCP tests. A bounded
+temporary private ChatGPT
 attempt did not send the image request to the exact-main server, so full live
 hydration/write proof remains `UNVERIFIED`. The current next product changeset
-is one opt-in rotated-ellipse slice with an explicit orientation contract,
-stable canonicalization, and rotation-aware image-plane rendering and line
-relations. It must preserve explicit confirmation, observed/derived
-provenance, and non-Core authority while keeping medians, bisectors, triangle
-centers, rhythm, and harmonic interpretation deferred.
+is one bounded, disabled-by-default rotated-ellipse pixel-refinement shadow
+slice. It must keep original and proposed geometry separate, fail closed or
+abstain on weak or orientation-degenerate evidence, and require explicit
+adoption without confirming geometry or running Core. Medians, bisectors,
+triangle centers, rhythm, and harmonic interpretation remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

@@ -9,6 +9,19 @@ updated: 2026-07-15
 # Log
 
 ## 2026-07-15
+- Updated the personal visual-harmony checkpoint through application PR #229.
+- Updated durable pages with explicit rotated ellipses, stable legacy and
+  canonical identity behavior, rotation-aware image-plane rendering and line
+  relations, exact-head local/CI/review evidence, unchanged live-write
+  limitation, and rotated-ellipse shadow refinement as the next gate:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Updated the personal visual-harmony checkpoint through application PR #228.
 - Updated durable pages with the explicit opt-in triangle-construction layer,
   its parent-provenance/non-Core boundary, exact-head local/CI/review evidence,
