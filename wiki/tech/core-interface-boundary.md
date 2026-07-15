@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 tags:
   - architecture
   - adapters
@@ -24,6 +24,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
+  - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -51,6 +52,25 @@ PR99 prepared the local package tarball boundary and local packed-tarball
 install/import proof while keeping `@norma/core` private at version `0.1.0`.
 The package metadata implementation remains limited to the built declaration,
 built JavaScript, and `README.md` `files` allowlist.
+
+The personal visual-harmony adapter preserves the same ownership split. The
+widget owns the exact hydrated ChatGPT image and typed candidate overlay; the
+server intentionally does not download image bytes. Core receives only the
+final explicitly selected and confirmed structured geometry. Rectangle Core
+results and deterministic quadrilateral or ellipse/supporting-line image-plane
+measurements remain distinct result families.
+
+PR #223's pixel-refinement kernel is package-private shadow evidence with no
+caller in the widget or candidate-preparation path. A future integration must
+keep original and proposed geometry separate, stay disabled by default, fail
+closed on weak evidence, and require a distinct explicit adoption action. A
+family toggle, candidate confirmation, or cache reload must not silently adopt
+a proposal or run Core.
+
+Local exact-main evidence is green, but the 2026-07-15 temporary private
+ChatGPT attempt produced no server request. Full live hydration/write behavior
+remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence
+that the local deterministic contracts passed live.
 
 ## Details
 
@@ -157,6 +177,11 @@ Adapters should map external shapes to structured inputs and report conversion l
   publish, tag, release, configure npm auth, set provenance, add release
   workflow mechanics, change dependencies or lockfiles, or add package-level
   `bin`.
+- PR #221 added the private personal visual-harmony widget/MCP foundation,
+  explicit confirmation path, rectangle Core mapping, and deterministic
+  image-plane guide measurements. PR #222 hardened hydration identity and
+  stale-payload behavior. PR #223 added an unintegrated shadow pixel-refinement
+  kernel. PR #224 synchronized documentation and guards only.
 - R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
@@ -181,6 +206,7 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
 
 ## Related
 

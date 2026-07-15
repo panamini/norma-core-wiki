@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-03
+updated: 2026-07-15
 ---
 
 # Overview
@@ -72,6 +72,17 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #179 / PR99 prepared the local `@norma/core` package tarball boundary and
   proved local packed-tarball install/import at merge commit
   `82b125d52e16760e58fb7db6928702269d03bb19`.
+- PR #221 merged the private personal ChatGPT visual-harmony foundation at
+  `6a061dbb43496b6147f8ad2e35c8c8ffd8375c67`; PR #222 hardened exact-file
+  hydration and stale-payload behavior; PR #223 added a deterministic shadow
+  pixel-refinement kernel that is not called by the live widget path.
+- PR #224 merged the visual-harmony repository truth sync at
+  `998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2` without changing runtime
+  behavior.
+- Exact-main local evidence passes build, focused tests (39/39), full suite
+  (1608/1608), and the static widget harness. Full live ChatGPT
+  hydration/write proof remains `UNVERIFIED` because the bounded temporary
+  app attempt produced no request at the exact-main server.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -102,8 +113,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.
-- Current roadmap model is gate-based: no open code PR remains for the current
-  guided inspection package/API rail, the next compressed code PR is PR100
-  finalize the package publication candidate without publishing, no speculative
-  PR27-PR46 execution queue remains, and actual npm publication plus hosted,
-  provider, adapter, and product layers stay blocked until explicit approval.
+- Current roadmap model is gate-based. The active product gate is one
+  disabled-by-default, opt-in shadow pixel-refinement integration that keeps
+  original/proposed geometry separate and requires explicit adoption before
+  final confirmation. Package publication and full live ChatGPT write/A-B
+  validation remain separate later gates.
