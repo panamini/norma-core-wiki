@@ -11,16 +11,17 @@ updated: 2026-07-15
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #227 at `25810e39a01a65f9f2453f000d459633376c3419`.
+- Latest merged Norma Core state is PR #228 at `22f4732fb4ce78347040285c956d283da8884eff`.
 - PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
 - PR #223 added the deterministic shadow pixel-refinement kernel and synthetic corpus.
 - PR #224 synchronized repository documentation and guards without runtime behavior change.
 - PR #225 integrated bounded, disabled-by-default pixel proposals with explicit adoption before confirmation.
 - PR #226 added opt-in support-line extensions and format diagonals as derived image-plane constructions outside Core authority.
 - PR #227 added opt-in junction-angle measurements with participant provenance and observed-extent flags, still outside Core authority.
-- Exact-head evidence is green: build, focused tests 269/269, historical guard tests 347/347, full suite 1642/1642, static widget harness, local MCP smoke, 3/3 remote checks, and fresh Codex review; the bounded post-merge rail passed build and 65/65 tests.
+- PR #228 added explicit opt-in triangles from exactly three stable parented vertices, with canonical identity, fail-closed validation, and no Core authority.
+- Exact-head evidence is green: build, focused tests 72/72, historical guard tests 420/420, full suite 1650/1650, desktop/mobile local widget smoke on the immediate predecessor head, 3/3 remote checks, resolved threads, and fresh Codex review; the bounded post-merge rail passed build and 72/72 tests.
 - Full live ChatGPT hydration/write proof is `UNVERIFIED`: the bounded temporary private app attempt produced no request at the exact-main server.
-- Next gate: one opt-in triangle construction from three explicit confirmed or deterministically derived image-plane vertices; medians, bisectors, and centers remain later.
+- Next gate: one opt-in rotated-ellipse slice with explicit orientation and rotation-aware image-plane rendering/line relations; medians, bisectors, and triangle centers remain later.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -47,5 +48,5 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #227.
-- Updated roadmap, interface boundary, overview, index, and log with PR227 truth and the minimal triangle-construction next gate.
+- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #228.
+- Updated roadmap, interface boundary, overview, index, and log with PR228 truth and the minimal rotated-ellipse next gate.
