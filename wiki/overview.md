@@ -75,7 +75,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #221 merged the private personal ChatGPT visual-harmony foundation at
   `6a061dbb43496b6147f8ad2e35c8c8ffd8375c67`; PR #222 hardened exact-file
   hydration and stale-payload behavior; PR #223 added a deterministic shadow
-  pixel-refinement kernel that is not called by the live widget path.
+  pixel-refinement kernel that, at that checkpoint, had no widget caller.
 - PR #224 merged the visual-harmony repository truth sync at
   `998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2` without changing runtime
   behavior.
