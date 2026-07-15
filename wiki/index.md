@@ -70,10 +70,10 @@ updated: 2026-07-15
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #231
-- `wiki/strategy/mvp-pr-roadmap.md` PR230-231 rotated-refinement completion, live A/B gate, and median candidate
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #232 and controlled local A/B
+- `wiki/strategy/mvp-pr-roadmap.md` local A/B pass, precise live upload gate, and deferred median candidate
 - `wiki/tech/core-interface-boundary.md` rotated-refinement proposal/adoption and non-Core authority boundary
-- `wiki/overview.md` PR230-231 exact merges and verification sync
+- `wiki/overview.md` PR232 exact merge and local/live proof-level sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary

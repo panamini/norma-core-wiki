@@ -107,14 +107,20 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #231 merged the disabled-by-default private-widget integration at
   `9d49d15286d9be854243dc7cb4ca350d10073695`; rotated proposals render
   separately and require explicit adoption before separate confirmation.
+- PR #232 merged the controlled local A/B truth sync at
+  `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08` without runtime behavior change.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
   empty review threads, and fresh Codex review on exact final head
   `7fcbfa34e34a14d745bc961a573df1da7fb6044e`. The bounded post-merge rail
-  passes build and five integration regressions. Full live ChatGPT
-  hydration/write proof remains `UNVERIFIED` because the bounded temporary
-  app attempt produced no request at the exact-main server.
+  passes build and five integration regressions. The controlled same-image
+  local A/B is `LOCAL_UI_AB_PASS`: both supported rotated cases reduce mean
+  annotated perimeter error from `1.657733384665 px` to `0 px`, while weak and
+  competing-orientation cases abstain. PR #232 passes full suite 1673/1673,
+  three remote checks, empty threads, and exact-head Codex review. The private
+  app can now connect to exact-main; `LIVE_CHATGPT_AB_PASS` remains unverified
+  until file-URL upload is enabled for the ChatGPT Chrome extension.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -147,9 +153,10 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   structured input.
 - Current roadmap model is gate-based. Rotated-ellipse shadow refinement is
   complete locally through PR #231 with separate original/proposed geometry,
-  fail-closed abstention, explicit adoption, and no Core authority. The active
-  validation gate is the controlled full-write ChatGPT A/B. After a
-  non-regressive result, one derived median-construction slice is the smallest
-  product candidate; angle/perpendicular bisectors, centers, rhythm, and
-  harmonic interpretation remain later gates. Package publication remains a
-  separate gate.
+  fail-closed abstention, explicit adoption, and no Core authority. The
+  controlled local A/B is non-regressive; the active validation gate is the
+  same-image live ChatGPT A/B after enabling Chrome-extension file uploads.
+  After a non-regressive live result, one derived median-construction slice is
+  the smallest product candidate; angle/perpendicular bisectors, centers,
+  rhythm, and harmonic interpretation remain later gates. Package publication
+  remains a separate gate.
