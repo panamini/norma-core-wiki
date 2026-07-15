@@ -99,6 +99,22 @@ circle, perspective, intention, or Core authority. The widget and server both
 fail closed rather than applying the existing axis-aligned pixel refiner to an
 explicitly rotated ellipse.
 
+PR #230 extends the deterministic local raster kernel to explicit rotated
+ellipses without changing that authority boundary. The immutable original and
+the canonical refined proposal remain separate. Center, semi-axes, and
+orientation search are locally bounded, the evaluation count is capped at
+214, displacement is capped, and weak, ambiguous, or near-circular orientation
+evidence abstains fail-closed. Kernel output is candidate evidence only with
+`sourceTruth=false` and no Core authority.
+
+PR #231 admits that proposal through the private widget path only when the
+disabled-by-default refinement control is explicitly enabled. The proposal is
+rendered separately and requires a dedicated adoption action; adoption still
+does not confirm geometry or run Core. Cache and stale guards bind the full
+canonical rotated-ellipse and payload identities. A narrow numeric envelope
+tolerance bridges widget display precision to server canonical precision
+without admitting changed metadata, primitive identity, or stale payloads.
+
 Local exact-main evidence is green, but the 2026-07-15 temporary private
 ChatGPT attempt produced no server request. Full live hydration/write behavior
 remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence

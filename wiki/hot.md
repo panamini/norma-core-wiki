@@ -11,7 +11,7 @@ updated: 2026-07-15
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #229 at `26cba06d76d8a6eeb56c0dd0035b0be24e47a388`.
+- Latest merged Norma Core state is PR #231 at `9d49d15286d9be854243dc7cb4ca350d10073695`.
 - PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
 - PR #223 added the deterministic shadow pixel-refinement kernel and synthetic corpus.
 - PR #224 synchronized repository documentation and guards without runtime behavior change.
@@ -20,9 +20,10 @@ Active memory cache for agents. Keep this page under 500 words.
 - PR #227 added opt-in junction-angle measurements with participant provenance and observed-extent flags, still outside Core authority.
 - PR #228 added explicit opt-in triangles from exactly three stable parented vertices, with canonical identity, fail-closed validation, and no Core authority.
 - PR #229 added explicit rotated ellipses with stable canonical identity, rotated rendering and line relations, legacy axis-aligned compatibility, and no Core authority.
-- Exact-head evidence is green: build, focused tests 75/75, changed-file guard 206/206, historical guards, full suite 1656/1656, desktop/mobile local widget smoke, 3/3 remote checks, resolved threads, and fresh Codex review; the bounded post-merge rail passed build and 75/75 tests.
+- PR #230 added their bounded deterministic shadow-refinement kernel; PR #231 integrated disabled-by-default separate proposals with explicit adoption before separate confirmation.
+- Exact-head evidence is green: build, focused tests 297/297, historical changed-file guards, full suite 1672/1672, desktop/mobile local widget smoke, 3/3 remote checks, empty threads, and fresh Codex review; the bounded post-merge rail passed build and five integration regressions.
 - Full live ChatGPT hydration/write proof is `UNVERIFIED`: the bounded temporary private app attempt produced no request at the exact-main server.
-- Next gate: one bounded, disabled-by-default rotated-ellipse pixel-refinement shadow slice with separate proposals, fail-closed abstention, and explicit adoption; medians, bisectors, and triangle centers remain later.
+- Next gate: controlled same-image refinement A/B once full-write entitlement permits it. After non-regressive validation, the smallest product candidate is one opt-in derived median-construction slice; bisectors and triangle centers remain later.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -49,5 +50,5 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #229.
-- Updated roadmap, interface boundary, overview, index, and log with PR229 truth and the minimal rotated-ellipse shadow-refinement next gate.
+- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #231.
+- Updated roadmap, interface boundary, overview, index, and log with PR230-231 truth, the controlled live A/B gate, and the narrow median-construction candidate.

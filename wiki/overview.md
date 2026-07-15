@@ -100,12 +100,19 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   swaps canonicalize deterministically, legacy axis-aligned meaning and
   identity remain stable, rotated overlays and line relations are supported,
   and the guides remain outside Core authority.
-- Exact-head evidence passes build, focused visual-harmony/MCP tests (75/75),
-  changed-file guard (206/206), historical guard regressions, full suite
-  (1656/1656), desktop and mobile local widget smoke, three remote checks,
-  resolved threads, and fresh Codex review on the exact final head. The
-  bounded post-merge rail passes build and 75/75 tests.
-  Full live ChatGPT
+- PR #230 merged the bounded deterministic rotated-ellipse refinement kernel
+  at `7eb6179972ea1f472c04256f6dcc90ee1ba6dcea`; it preserves the original,
+  searches only a hard-bounded local parameter window, and abstains on weak,
+  ambiguous, or orientation-degenerate evidence.
+- PR #231 merged the disabled-by-default private-widget integration at
+  `9d49d15286d9be854243dc7cb4ca350d10073695`; rotated proposals render
+  separately and require explicit adoption before separate confirmation.
+- Exact-head evidence passes build, focused rotated-refinement and
+  visual-harmony tests (297/297), historical changed-file guards, full suite
+  (1672/1672), desktop and mobile local widget smoke, three remote checks,
+  empty review threads, and fresh Codex review on exact final head
+  `7fcbfa34e34a14d745bc961a573df1da7fb6044e`. The bounded post-merge rail
+  passes build and five integration regressions. Full live ChatGPT
   hydration/write proof remains `UNVERIFIED` because the bounded temporary
   app attempt produced no request at the exact-main server.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
@@ -138,10 +145,11 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - The family catalog is not a runtime registry, not a package export, and not
   selection logic; authored fixtures enter execution only through explicit
   structured input.
-- Current roadmap model is gate-based. The active product gate is one bounded,
-  disabled-by-default rotated-ellipse pixel-refinement shadow slice with
-  separate original/proposed geometry, fail-closed abstention, and explicit
-  adoption. Medians, bisectors, triangle centers, rhythm, and harmonic
-  interpretation remain later gates. Package
-  publication and full live ChatGPT write/A-B validation remain separate later
-  gates.
+- Current roadmap model is gate-based. Rotated-ellipse shadow refinement is
+  complete locally through PR #231 with separate original/proposed geometry,
+  fail-closed abstention, explicit adoption, and no Core authority. The active
+  validation gate is the controlled full-write ChatGPT A/B. After a
+  non-regressive result, one derived median-construction slice is the smallest
+  product candidate; angle/perpendicular bisectors, centers, rhythm, and
+  harmonic interpretation remain later gates. Package publication remains a
+  separate gate.
