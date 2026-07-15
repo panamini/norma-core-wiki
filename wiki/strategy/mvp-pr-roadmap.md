@@ -45,22 +45,27 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #224 at
-`998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2`.
+Norma Core `origin/main` is current through PR #226 at
+`f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
-hardened exact-file hydration and stale-payload safety. PR #223 added a
-deterministic shadow pixel-refinement kernel with synthetic regression
-coverage, but that kernel has no widget or candidate-preparation caller and is
-not live. PR #224 synchronized repository documentation and guards without
-changing runtime behavior.
+hardened exact-file hydration and stale-payload safety. PR #223 added the
+deterministic shadow pixel-refinement kernel and synthetic regression corpus.
+PR #224 synchronized repository documentation and guards without runtime
+change. PR #225 integrated the kernel through bounded, disabled-by-default
+widget proposals with explicit adoption before the separate confirmation
+gate. PR #226 added opt-in support-line extensions and format diagonals as
+derived, frame-clipped image-plane constructions outside Core authority.
 
-The exact-main local gate is green: build, focused tests (39/39), full suite
-(1608/1608), and static widget harness. A bounded temporary private ChatGPT
+The PR #226 exact-head local gate is green: build, focused tests (59/59), full
+suite (1635/1635), static widget harness, and local MCP smoke. A bounded
+post-merge rail passed build and 76/76 personal visual-harmony/MCP tests. A
+bounded temporary private ChatGPT
 attempt did not send the image request to the exact-main server, so full live
 hydration/write proof remains `UNVERIFIED`. The current next product changeset
-is one disabled-by-default, opt-in shadow pixel-refinement integration with a
-separate explicit adoption action and no automatic Core run.
+is one deterministic junction-angle analysis slice over confirmed observed
+lines and explicitly enabled derived constructions. Triangle construction and
+bisectors remain later gates.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

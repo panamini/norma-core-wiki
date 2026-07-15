@@ -75,12 +75,21 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR #221 merged the private personal ChatGPT visual-harmony foundation at
   `6a061dbb43496b6147f8ad2e35c8c8ffd8375c67`; PR #222 hardened exact-file
   hydration and stale-payload behavior; PR #223 added a deterministic shadow
-  pixel-refinement kernel that is not called by the live widget path.
+  pixel-refinement kernel that, at that checkpoint, had no widget caller.
 - PR #224 merged the visual-harmony repository truth sync at
   `998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2` without changing runtime
   behavior.
-- Exact-main local evidence passes build, focused tests (39/39), full suite
-  (1608/1608), and the static widget harness. Full live ChatGPT
+- PR #225 merged the bounded, disabled-by-default pixel-refinement proposal
+  integration at `02c344246f51207fe15dcc96f4b6e0d09c017b30`; original and
+  proposed geometry remain separate and require distinct adoption and
+  confirmation actions.
+- PR #226 merged support-line extensions and format diagonals at
+  `f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`; all are opt-in image-plane
+  constructions with observed/derived provenance and no Core authority.
+- Exact-head local evidence passes build, focused tests (59/59), full suite
+  (1635/1635), the static widget harness, and local MCP smoke. The bounded
+  post-merge rail passes build and 76/76 personal visual-harmony/MCP tests.
+  Full live ChatGPT
   hydration/write proof remains `UNVERIFIED` because the bounded temporary
   app attempt produced no request at the exact-main server.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
@@ -114,7 +123,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   selection logic; authored fixtures enter execution only through explicit
   structured input.
 - Current roadmap model is gate-based. The active product gate is one
-  disabled-by-default, opt-in shadow pixel-refinement integration that keeps
-  original/proposed geometry separate and requires explicit adoption before
-  final confirmation. Package publication and full live ChatGPT write/A-B
-  validation remain separate later gates.
+  deterministic junction-angle analysis slice over confirmed observed lines
+  and explicitly enabled derived constructions. Triangle construction and
+  bisectors follow only after that relation contract is stable. Package
+  publication and full live ChatGPT write/A-B validation remain separate later
+  gates.

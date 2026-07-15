@@ -60,12 +60,18 @@ final explicitly selected and confirmed structured geometry. Rectangle Core
 results and deterministic quadrilateral or ellipse/supporting-line image-plane
 measurements remain distinct result families.
 
-PR #223's pixel-refinement kernel is package-private shadow evidence with no
-caller in the widget or candidate-preparation path. A future integration must
-keep original and proposed geometry separate, stay disabled by default, fail
-closed on weak evidence, and require a distinct explicit adoption action. A
-family toggle, candidate confirmation, or cache reload must not silently adopt
-a proposal or run Core.
+PR #225 integrates PR #223's package-private pixel-refinement kernel as bounded
+shadow evidence. Original and proposed geometry remain separate, refinement is
+disabled by default, weak evidence abstains, and adoption requires a distinct
+explicit action. A family toggle, candidate confirmation, or cache reload does
+not silently adopt a proposal or run Core.
+
+PR #226 keeps a confirmed observed line segment distinct from its derived
+infinite support line, clips that support line only to the confirmed frame for
+rendering and measurement, and derives both format diagonals from confirmed
+frame vertices. These optional image-plane constructions retain derived
+provenance, never claim that invisible extensions were observed, and have no
+Core authority.
 
 Local exact-main evidence is green, but the 2026-07-15 temporary private
 ChatGPT attempt produced no server request. Full live hydration/write behavior
@@ -181,7 +187,10 @@ Adapters should map external shapes to structured inputs and report conversion l
   explicit confirmation path, rectangle Core mapping, and deterministic
   image-plane guide measurements. PR #222 hardened hydration identity and
   stale-payload behavior. PR #223 added an unintegrated shadow pixel-refinement
-  kernel. PR #224 synchronized documentation and guards only.
+  kernel. PR #224 synchronized documentation and guards only. PR #225 added
+  the disabled-by-default proposal/adoption integration. PR #226 added opt-in
+  support-line and format-diagonal constructions while preserving the
+  rectangle-only Core boundary.
 - R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
   execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,

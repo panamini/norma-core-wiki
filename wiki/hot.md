@@ -11,13 +11,15 @@ updated: 2026-07-15
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #224 at `998bc2fcd8aa81e51bcd08af7d2bd0ec9cbfd2d2`.
+- Latest merged Norma Core state is PR #226 at `f333c9a3ee6e7034b59b03401362a2aec6ffe5ad`.
 - PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
-- PR #223 added a deterministic shadow pixel-refinement kernel, but it has no widget or candidate-preparation caller and is not live.
+- PR #223 added the deterministic shadow pixel-refinement kernel and synthetic corpus.
 - PR #224 synchronized repository documentation and guards without runtime behavior change.
-- Exact-main local evidence is green: build, focused tests 39/39, full suite 1608/1608, and static widget harness.
+- PR #225 integrated bounded, disabled-by-default pixel proposals with explicit adoption before confirmation.
+- PR #226 added opt-in support-line extensions and format diagonals as derived image-plane constructions outside Core authority.
+- Exact-head local evidence is green: build, focused tests 59/59, full suite 1635/1635, static widget harness, and local MCP smoke; the bounded post-merge rail passed build and 76/76 tests.
 - Full live ChatGPT hydration/write proof is `UNVERIFIED`: the bounded temporary private app attempt produced no request at the exact-main server.
-- Next gate: one disabled-by-default, opt-in shadow integration with bounded pixels, deterministic abstention, original/proposed separation, explicit adoption, and no automatic Core run.
+- Next gate: deterministic junction-angle analysis over confirmed observed lines and explicitly enabled derived constructions; triangles and bisectors remain later.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -44,5 +46,5 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Added `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`.
-- Updated roadmap, interface boundary, overview, index, and log with the PR221-224 truth and next gate.
+- Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #226.
+- Updated roadmap, interface boundary, overview, index, and log with PR225-226 truth and the junction-angle next gate.

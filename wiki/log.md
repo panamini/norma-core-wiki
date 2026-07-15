@@ -9,6 +9,19 @@ updated: 2026-07-15
 # Log
 
 ## 2026-07-15
+- Updated the personal visual-harmony checkpoint through application PR #226.
+- Updated durable pages with PR #225's disabled-by-default pixel proposal
+  integration, PR #226's support-line/format-diagonal constructions, exact
+  local evidence, unchanged live-write limitation, and junction angles as the
+  next dependency gate:
+  - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
+
 - Added the personal visual-harmony checkpoint through application PR #224:
   - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
 - Updated durable pages with PR221-224 capabilities, authority boundaries,
