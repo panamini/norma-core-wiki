@@ -24,6 +24,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
+  - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
 ---
