@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Hot Cache
@@ -11,7 +11,7 @@ updated: 2026-07-15
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #232 at `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
+- Latest merged Norma Core state is PR #234 at `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.
 - PR #221 added the private personal ChatGPT visual-harmony foundation; PR #222 hardened exact-file hydration and stale-payload behavior.
 - PR #223 added the deterministic shadow pixel-refinement kernel and synthetic corpus.
 - PR #224 synchronized repository documentation and guards without runtime behavior change.
@@ -23,8 +23,9 @@ Active memory cache for agents. Keep this page under 500 words.
 - PR #230 added their bounded deterministic shadow-refinement kernel; PR #231 integrated disabled-by-default separate proposals with explicit adoption before separate confirmation.
 - PR #232 recorded a non-regressive controlled same-image `LOCAL_UI_AB_PASS` without runtime change: both supported rotated cases reached zero annotated perimeter error, while weak and competing-orientation cases abstained.
 - PR #232 evidence is green: build, full suite 1673/1673, 3/3 remote checks, empty threads, fresh exact-head Codex review, and a 70/70 post-merge regression rail.
-- The private app creates and connects to exact-main. `LIVE_CHATGPT_AB_PASS` remains unverified until file-URL access is enabled for the ChatGPT Chrome extension.
-- Next gate: repeat the exact same-image A/B live after that upload permission. Only then does one opt-in derived median-construction slice become the smallest candidate; bisectors and triangle centers remain later.
+- PR #234 adds exactly three opt-in median segments for one explicit canonical triangle, with parent provenance, `sourceTruth=false`, no centroid, and no Core authority. Build, 296/296 focused, 1678/1678 full, 3/3 CI, Codex review, and 84/84 post-merge regressions are green.
+- `LIVE_CHATGPT_AB_PASS` is recorded for desktop; `LOCAL_UI_PASS` covers desktop/mobile. Real mobile ChatGPT viewport remains unverified. Chrome file-URL access is restored to Off, and both named temporary DNS aliases return no authoritative records.
+- Next read-only assessment: choose among angle bisectors, perpendicular bisectors, altitudes, and a first triangle-center prerequisite; do not assume medians imply a centroid.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
@@ -52,4 +53,5 @@ Active memory cache for agents. Keep this page under 500 words.
 
 ## Latest update
 - Updated `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` through PR #232.
-- Updated roadmap, overview, index, and log with the local A/B pass, precise live upload gate, and still-deferred median candidate.
+- Updated roadmap, overview, index, and log through the merged PR #234 median
+  gate; the next primitive remains read-only assessment only.

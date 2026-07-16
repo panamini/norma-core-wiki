@@ -3,10 +3,24 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Log
+
+## 2026-07-16
+- Closed the median program after application PR #234 merged at
+  `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.
+- Recorded `LIVE_CHATGPT_AB_PASS` for the controlled desktop same-image run and
+  `LOCAL_UI_PASS` for desktop/mobile local widget smoke. Real mobile ChatGPT
+  viewport proof remains unverified.
+- Recorded exactly three opt-in vertex-to-opposite-side-midpoint medians from
+  one explicit canonical triangle, with stable parent provenance,
+  `sourceTruth=false`, no centroid/bisector/center, and no Core authority.
+- Restored ChatGPT extension `hehggadaopoacecdllhhajmbjkdcmajg` file-URL access
+  to disabled. Both named temporary DNS aliases returned no authoritative
+  records; parser.dasti.ai, Docker:8001, and unrelated tunnels were untouched.
+- Updated the checkpoint, roadmap, boundary, overview, index, and hot cache.
 
 ## 2026-07-15
 - Updated the personal visual-harmony checkpoint through application PR #232.

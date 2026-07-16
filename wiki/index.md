@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Index
@@ -70,8 +70,8 @@ updated: 2026-07-15
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #232 and controlled local A/B
-- `wiki/strategy/mvp-pr-roadmap.md` local A/B pass, precise live upload gate, and deferred median candidate
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #234, live desktop A/B, and median completion
+- `wiki/strategy/mvp-pr-roadmap.md` PR #234 median gate and next-primitive assessment
 - `wiki/tech/core-interface-boundary.md` rotated-refinement proposal/adoption and non-Core authority boundary
 - `wiki/overview.md` PR232 exact merge and local/live proof-level sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`

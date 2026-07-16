@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 tags:
   - architecture
   - adapters
@@ -115,10 +115,18 @@ canonical rotated-ellipse and payload identities. A narrow numeric envelope
 tolerance bridges widget display precision to server canonical precision
 without admitting changed metadata, primitive identity, or stale payloads.
 
-Local exact-main evidence is green, but the 2026-07-15 temporary private
-ChatGPT attempt produced no server request. Full live hydration/write behavior
-remains `UNVERIFIED`; this is an interface-entitlement boundary, not evidence
-that the local deterministic contracts passed live.
+The exact-main controlled same-image desktop run is `LIVE_CHATGPT_AB_PASS`.
+The local desktop/mobile widget run is `LOCAL_UI_PASS`; a true mobile ChatGPT
+viewport remains unverified. The live path kept original/proposed geometry
+separate, required explicit adoption before confirmation, and made no Core call
+before confirmation. The Chrome file-URL permission is restored to disabled after the
+run, and the two named temporary DNS aliases return no authoritative records.
+
+PR #234 adds exactly three opt-in medians for one explicit canonical triangle.
+Each median carries triangle/vertex/opposite-side parent provenance and remains
+`sourceTruth=false`, `candidateEvidenceOnly=true`, and `coreAuthority=false`.
+No centroid, bisector, center, automatic enumeration, adoption, confirmation,
+or Core execution is introduced.
 
 ## Details
 
