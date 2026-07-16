@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 tags:
   - execution
   - roadmap
@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #232 at
-`c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
+Norma Core `origin/main` is current through PR #234 at
+`d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -73,7 +73,12 @@ displacement limits plus fail-closed ambiguity and near-circle rules. PR #231
 integrated that kernel into the private widget as a disabled-by-default,
 separate proposal with explicit adoption before separate confirmation.
 PR #232 recorded the controlled exact-main local A/B and its fail-closed
-changed-file guard without changing runtime behavior.
+changed-file guard without changing runtime behavior. PR #234 then merged the
+opt-in triangle-median construction layer at
+`d53357b7142dd83658a2ceffbf6b2cb50268d5eb`: exactly one explicit canonical
+triangle produces exactly three vertex-to-opposite-side-midpoint segments with
+stable parent provenance, `sourceTruth=false`, no Core authority, and no
+centroid/bisector/center surface.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
@@ -93,16 +98,16 @@ passed build, full suite 1673/1673, three remote checks, empty review threads,
 and fresh Codex review on exact head
 `eb8214c5f150b2488f859b66ba303d60a6932972`.
 
-The private ChatGPT app now creates, connects, and discovers the exact-main MCP
-surface, so entitlement is no longer the observed blocker. The remaining live
-validation gate is enabling file-URL access for the ChatGPT Chrome extension,
-then repeating the exact same-image A/B through the write-enabled private app.
-The local result is `LOCAL_UI_AB_PASS`; `LIVE_CHATGPT_AB_PASS` remains
-unverified. Only after that non-regressive live gate does the next product
-candidate become one opt-in median-construction slice from an explicit
-confirmed triangle, preserving parent provenance and non-Core authority.
-Angle/perpendicular bisectors, centers, rhythm, and harmonic interpretation
-remain deferred.
+The private ChatGPT app creates, connects, and discovers the exact-main MCP
+surface. The controlled same-image desktop run is now
+`LIVE_CHATGPT_AB_PASS`; the local desktop/mobile widget run is
+`LOCAL_UI_PASS`. Real mobile ChatGPT viewport proof remains unverified. The
+Chrome file-URL permission was observed enabled for the live run and is being
+restored to disabled. The two named temporary DNS aliases return no
+authoritative records; parser.dasti.ai, Docker:8001, and unrelated tunnels were
+not changed. PR #234 is the completed median gate. Angle/perpendicular
+bisectors, altitudes, centers, rhythm, and harmonic interpretation remain
+deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

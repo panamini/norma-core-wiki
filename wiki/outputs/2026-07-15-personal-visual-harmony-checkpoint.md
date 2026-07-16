@@ -3,7 +3,7 @@ title: "Personal visual harmony checkpoint"
 category: output
 status: current
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 type: analysis
 sources:
   - https://github.com/panamini/norma-core/pull/221
@@ -18,6 +18,7 @@ sources:
   - https://github.com/panamini/norma-core/pull/230
   - https://github.com/panamini/norma-core/pull/231
   - https://github.com/panamini/norma-core/pull/232
+  - https://github.com/panamini/norma-core/pull/234
 related:
   - wiki/strategy/mvp-pr-roadmap.md
   - wiki/tech/core-interface-boundary.md
@@ -27,8 +28,8 @@ related:
 
 ## Context
 
-Norma Core `main` is current through PR #232 at merge commit
-`c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`.
+Norma Core `main` is current through PR #234 at merge commit
+`d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.
 
 ## Result
 
@@ -108,12 +109,14 @@ confirmation, and zero Core calls before confirmation. This is
 `LOCAL_UI_AB_PASS`.
 
 The current private-app path can create and connect a temporary ChatGPT app to
-the exact-main MCP server. Full same-image live A/B remains `UNVERIFIED`
-because the Chrome automation boundary cannot upload the synthetic fixture
-until file-URL access is enabled for the ChatGPT Chrome extension. No provider
-or model API call was made. The temporary app, server, and tunnel were removed;
-two inert temporary DNS aliases remain cleanup debt pending Cloudflare browser
-reauthentication.
+the exact-main MCP server. The controlled same-image desktop run is now
+`LIVE_CHATGPT_AB_PASS`; the local desktop/mobile widget run is
+`LOCAL_UI_PASS`. Real mobile ChatGPT viewport proof remains unverified. No
+provider or model API call was made. The temporary app, server, and tunnel were
+removed. The Chrome file-URL permission was observed enabled for the live run
+and is being restored to disabled. The two named temporary DNS aliases return no
+authoritative records; no unrelated tunnel, parser.dasti.ai route, or Docker
+service was changed.
 
 ## Authority boundary
 
@@ -143,19 +146,27 @@ authority. Near-circles preserve their admitted orientation or abstain; weak
 or competing orientations fail closed. Proposal generation and adoption do
 not confirm geometry or execute Core.
 
+## Median completion
+
+PR #234 is merged at `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`. One explicit
+canonical triangle derives exactly three opt-in vertex-to-opposite-side-midpoint
+segments. Each carries stable triangle/vertex/side parent provenance and
+`sourceTruth=false`; no centroid, bisector, center, automatic enumeration,
+adoption, confirmation, or Core authority is introduced.
+
+The median changeset passed build, 296/296 focused construction/MCP/HTTP/widget
+and guard tests, 1678/1678 full tests, 3/3 remote checks, exact-head Codex
+review, and 84/84 post-merge targeted regressions.
+
 ## Next gate
 
-Enable file-URL access for the ChatGPT Chrome extension, then repeat the exact
-same-image disabled/enabled refinement A/B through the connected private app.
-Keep `LOCAL_UI_AB_PASS` and `LIVE_CHATGPT_AB_PASS` separate and require
-non-regression in confirmation, identity, cache, and Core output when a
-proposal is not adopted.
+The live desktop same-image gate is complete. Keep `LOCAL_UI_PASS` and
+`LIVE_CHATGPT_AB_PASS` separate; require future runs to preserve confirmation,
+identity, cache, and Core output when a proposal is not adopted.
 
-After that validation gate, the smallest dependency-correct geometry
-candidate is an opt-in derived median construction from one explicit confirmed
-triangle. Medians must preserve triangle/vertex provenance and remain outside
-Core authority. Angle/perpendicular bisectors, centers, rhythm, vanishing-point
-inference, and harmonic interpretation remain deferred.
+The next primitive remains a separate read-only assessment decision. Angle and
+perpendicular bisectors, altitudes, triangle centers, rhythm, vanishing-point
+inference, and harmonic interpretation remain deferred until that assessment.
 
 ## Verification
 
@@ -179,5 +190,7 @@ inference, and harmonic interpretation remain deferred.
   `9d49d15286d9be854243dc7cb4ca350d10073695`
 - Application main after PR #232:
   `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08`
+- Application main after PR #234:
+  `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`
 - Provider/model calls: zero
 - Public deployment or app submission: none

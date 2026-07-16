@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 # Overview
@@ -109,6 +109,11 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   separately and require explicit adoption before separate confirmation.
 - PR #232 merged the controlled local A/B truth sync at
   `c3f04cdf4d7451b0c8818e2c1ddb9ebf46976b08` without runtime behavior change.
+- PR #234 merged the opt-in triangle-median construction layer at
+  `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`: one explicit canonical triangle
+  yields exactly three vertex-to-opposite-side-midpoint segments. Medians retain
+  triangle/vertex/side provenance, `sourceTruth=false`, and no Core authority;
+  no centroid, bisector, or center is surfaced.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
@@ -119,8 +124,12 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   annotated perimeter error from `1.657733384665 px` to `0 px`, while weak and
   competing-orientation cases abstain. PR #232 passes full suite 1673/1673,
   three remote checks, empty threads, and exact-head Codex review. The private
-  app can now connect to exact-main; `LIVE_CHATGPT_AB_PASS` remains unverified
-  until file-URL upload is enabled for the ChatGPT Chrome extension.
+  app can now connect to exact-main and the controlled same-image desktop run is
+  `LIVE_CHATGPT_AB_PASS`; the local desktop/mobile widget run is
+  `LOCAL_UI_PASS`. Real mobile ChatGPT viewport proof remains unverified. The
+  Chrome file-URL permission was observed enabled during the live run and is
+  being restored to disabled; the two named temporary DNS aliases currently
+  return no authoritative records.
 - The current authored fixture examples are `norma.harmonic-triads@0.1.0` and
   `norma.root-two-harmonics@0.1.0`.
 - Runnable local examples now exist under
@@ -155,8 +164,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   complete locally through PR #231 with separate original/proposed geometry,
   fail-closed abstention, explicit adoption, and no Core authority. The
   controlled local A/B is non-regressive; the active validation gate is the
-  same-image live ChatGPT A/B after enabling Chrome-extension file uploads.
-  After a non-regressive live result, one derived median-construction slice is
-  the smallest product candidate; angle/perpendicular bisectors, centers,
-  rhythm, and harmonic interpretation remain later gates. Package publication
-  remains a separate gate.
+  same-image live ChatGPT A/B is now non-regressive, and PR #234 provides the
+  derived median-construction slice. Angle/perpendicular bisectors, altitudes,
+  centers, rhythm, and harmonic interpretation remain later gates. Package
+  publication remains a separate gate.
