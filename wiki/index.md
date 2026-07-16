@@ -53,6 +53,8 @@ updated: 2026-07-16
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
 - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
@@ -70,10 +72,11 @@ updated: 2026-07-16
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #234, live desktop A/B, and median completion
-- `wiki/strategy/mvp-pr-roadmap.md` PR #235 perpendicular-bisector gate and next-primitive assessment
-- `wiki/tech/core-interface-boundary.md` rotated-refinement proposal/adoption and non-Core authority boundary
-- `wiki/overview.md` PR232 exact merge and local/live proof-level sync
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` live triangle construction pass, 13 derived constructions, and next-altitude dependency
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` current through PR #238, live desktop ChatGPT evidence, and next live gate order
+- `wiki/strategy/mvp-pr-roadmap.md` PR #238 internal-angle-bisector gate and triangle live-gate order
+- `wiki/tech/core-interface-boundary.md` triangle construction, support-line preservation, and non-Core authority boundary
+- `wiki/overview.md` PR #238 exact merge and 2026-07-16 checkpoint sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary

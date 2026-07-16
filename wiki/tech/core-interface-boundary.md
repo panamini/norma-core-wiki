@@ -25,6 +25,8 @@ sources:
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
+  - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -127,6 +129,27 @@ Each median carries triangle/vertex/opposite-side parent provenance and remains
 `sourceTruth=false`, `candidateEvidenceOnly=true`, and `coreAuthority=false`.
 No centroid, bisector, center, automatic enumeration, adoption, confirmation,
 or Core execution is introduced.
+
+PR #235 adds exactly three opt-in perpendicular-bisector constructions for the
+same explicit canonical triangle. Infinite support lines remain distinct from
+frame-clipped render segments; provenance, `sourceTruth=false`, no Core
+authority, and off-by-default controls are preserved.
+
+PR #236 closed the post-merge regression fixes for the perpendicular-bisector
+rail.
+
+PR #237 preserves unclamped/infinite perpendicular-bisector support-line
+geometry separately from clipped render geometry.
+
+PR #238 adds exactly three opt-in internal angle bisectors for that same
+explicit canonical triangle. Each bisector keeps stable parent provenance,
+remains `sourceTruth=false`, and introduces no Core authority, incenter,
+altitude, or center.
+
+The dedicated triangle construction gate later passed in a separate live run
+with 13 derived constructions total. Explicit triangle parents were preserved,
+constructions stayed `sourceTruth=false`, and the output remained outside Core
+authority.
 
 ## Details
 
@@ -269,7 +292,8 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
 - `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
-- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
 
 ## Related
 

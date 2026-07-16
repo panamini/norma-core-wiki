@@ -22,6 +22,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - A new planned product-vision page captures the ChatGPT, Camera, CAD, and renderer adapter family plus the hybrid perception split.
 - PR6 proved private/dev ChatGPT Secure MCP Tunnel invocation through `norma.runMvpDemoV1`; the app was not published, the tunnel was stopped after testing, and deterministic output facts were preserved in a checkpoint output.
 - PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch; that R6D-to-R1 sequencing is now historical.
+- The latest personal visual-harmony checkpoint is the 2026-07-16 live desktop run on `golden-split-poster.png`; it recorded pixel-proposal evidence and did not exercise explicit triangles, medians, perpendicular bisectors, or internal angle bisectors.
+- The dedicated triangle construction gate later passed in a separate live run with 13 derived constructions total; the next dependency is read-only triangle-altitude assessment/contract.
 - PR #135 / R14 completed the local static report dashboard checkpoint for Structured Analyze report inspection.
 - PR #144 / R22 merged the local-only, static, read-only Structured Analyze inspection surface for existing result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
 - PR #145 / R23 added local inspection surface onboarding fixture and workflow polish.
@@ -120,6 +122,17 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   Infinite support lines remain distinct from frame-clipped render segments;
   provenance, `sourceTruth=false`, no Core authority, and off-by-default controls
   are preserved.
+- PR #236 closed the post-merge regression fixes for the perpendicular-bisector
+  rail.
+- PR #237 preserved unclamped/infinite perpendicular-bisector support-line
+  geometry separately from clipped render geometry.
+- PR #238 merged exactly three opt-in internal angle bisectors for the same
+  explicit canonical triangle. They remain default off, keep stable parent
+  provenance, `sourceTruth=false`, and introduce no Core authority, incenter,
+  altitude, or center.
+- The triangle construction gate later passed in a separate live run with 13
+  derived constructions total, explicit triangle parents, and no Core
+  authority.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
@@ -171,6 +184,11 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   fail-closed abstention, explicit adoption, and no Core authority. The
   controlled local A/B is non-regressive; the active validation gate is the
   same-image live ChatGPT A/B is now non-regressive, and PR #234 provides the
-  derived median-construction slice. Angle/perpendicular bisectors, altitudes,
-  centers, rhythm, and harmonic interpretation remain later gates. Package
-  publication remains a separate gate.
+  derived median-construction slice. PR #235, PR #236, PR #237, and PR #238
+  extend the triangle-construction rail with perpendicular bisectors,
+  regression fixes, unclamped support-line preservation, and opt-in internal
+  angle bisectors. The dedicated triangle construction gate later passed in a
+  separate live run; the next dependency is read-only
+  triangle-altitude assessment/contract, while centers, rhythm, perspective,
+  and harmonic interpretation remain deferred.
+  Package publication remains a separate gate.

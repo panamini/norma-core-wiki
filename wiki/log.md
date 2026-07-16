@@ -8,6 +8,38 @@ updated: 2026-07-16
 
 # Log
 
+## 2026-07-16 — triangle-construction pass
+- Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live
+  gate. Enabled families were 1 triangle, 3 medians, 3 perpendicular bisectors,
+  3 internal angle bisectors, and 3 support-line extensions, for 13 derived
+  constructions total.
+- Core verified 0 harmonic reports, 0 quadrilateral measurements, and 0 visual
+  relations. Explicit triangle parents were preserved; constructions remained
+  derived, `sourceTruth=false`, and outside Core authority.
+- No Norma/widget/network failure occurred; the only warnings were unrelated
+  ChatGPT translation/localStorage/host warnings.
+- Created `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+  and advanced the next dependency to read-only triangle-altitude assessment/contract.
+
+## 2026-07-16 — internal-angle-bisector sync
+- Merged application PR #238 at `3be0086c456bf240e6214b9592450d7b0e26a990`
+  from reviewed head `0d7743c6085497a9f8413725e9fffc03e525f262`.
+- Recorded the live Personal Stable desktop test on `golden-split-poster.png`:
+  pixel proposals were explicitly enabled before Core; axis refined
+  `improved_edge_support`; ellipse abstained; chevron left refined
+  `improved_edge_support`; chevron right abstained; support-line extensions and
+  frame diagonals were enabled; 5 derived constructions were measured; core
+  result was `61.805% / 38.195%` with max delta `0.001 percentage point`.
+- The run did not exercise explicit triangles, medians, perpendicular
+  bisectors, or internal angle bisectors, so it does not claim triangle live
+  proof.
+- Created `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` and
+  updated durable pages plus the hot cache.
+- At the time of that sync, the next live gate remained a dedicated triangle
+  construction gate; the later separate triangle pass advanced the next
+  dependency to read-only triangle-altitude assessment/contract, while centers,
+  rhythm, perspective, and harmonic interpretation remain deferred.
+
 ## 2026-07-16 — perpendicular-bisector gate
 - Merged application PR #235 at `2f22b7a6363d397acca0d1faadf0b0c2429b08ce`.
 - Recorded exactly three opt-in deterministic perpendicular-bisector guides for
