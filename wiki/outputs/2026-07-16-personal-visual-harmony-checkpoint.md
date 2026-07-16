@@ -47,11 +47,13 @@ live gate; it does not claim triangle proof.
   internal angle bisectors.
 
 ## Next Step
-- Keep a dedicated live triangle construction gate next.
-- If that passes, do read-only assessment for triangle altitudes.
+- The dedicated live triangle construction gate later passed in a separate live
+  run.
+- The next dependency is read-only assessment/contract for triangle altitudes.
 - Keep centers, rhythm, perspective, and harmonic interpretation deferred.
 
 ## Related
 - `wiki/strategy/mvp-pr-roadmap.md`
 - `wiki/overview.md`
 - `wiki/tech/core-interface-boundary.md`
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`

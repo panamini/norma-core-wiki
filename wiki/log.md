@@ -8,6 +8,19 @@ updated: 2026-07-16
 
 # Log
 
+## 2026-07-16 — triangle-construction pass
+- Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live
+  gate. Enabled families were 1 triangle, 3 medians, 3 perpendicular bisectors,
+  3 internal angle bisectors, and 3 support-line extensions, for 13 derived
+  constructions total.
+- Core verified 0 harmonic reports, 0 quadrilateral measurements, and 0 visual
+  relations. Explicit triangle parents were preserved; constructions remained
+  derived, `sourceTruth=false`, and outside Core authority.
+- No Norma/widget/network failure occurred; the only warnings were unrelated
+  ChatGPT translation/localStorage/host warnings.
+- Created `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+  and advanced the next dependency to read-only triangle-altitude assessment/contract.
+
 ## 2026-07-16 — internal-angle-bisector sync
 - Merged application PR #238 at `3be0086c456bf240e6214b9592450d7b0e26a990`
   from reviewed head `0d7743c6085497a9f8413725e9fffc03e525f262`.
@@ -22,8 +35,9 @@ updated: 2026-07-16
   proof.
 - Created `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` and
   updated durable pages plus the hot cache.
-- The next live gate remains a dedicated triangle construction gate; after that
-  passes, read-only triangle-altitude assessment can follow, while centers,
+- At the time of that sync, the next live gate remained a dedicated triangle
+  construction gate; the later separate triangle pass advanced the next
+  dependency to read-only triangle-altitude assessment/contract, while centers,
   rhythm, perspective, and harmonic interpretation remain deferred.
 
 ## 2026-07-16 — perpendicular-bisector gate

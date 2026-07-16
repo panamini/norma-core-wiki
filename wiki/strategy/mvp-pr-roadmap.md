@@ -36,6 +36,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
+  - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
 ---
 
@@ -112,9 +113,10 @@ PR #237 preserved unclamped/infinite perpendicular-bisector support-line
 geometry separately from clipped render geometry. PR #238 adds exactly three
 opt-in internal angle bisectors with default-off controls, stable parent
 provenance, `sourceTruth=false`, no Core authority, and no incenter/altitude/center.
-The next live gate remains a dedicated triangle construction gate; after that
-passes, read-only triangle-altitude assessment can follow, while centers,
-rhythm, perspective, and harmonic interpretation remain deferred.
+The dedicated triangle construction gate later passed in a separate live run
+with 13 derived constructions total; the next dependency is read-only
+triangle-altitude assessment/contract, while centers, rhythm, perspective, and
+harmonic interpretation remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper

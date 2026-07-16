@@ -53,6 +53,7 @@ updated: 2026-07-16
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
 - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
@@ -71,6 +72,7 @@ updated: 2026-07-16
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` live triangle construction pass, 13 derived constructions, and next-altitude dependency
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` current through PR #238, live desktop ChatGPT evidence, and next live gate order
 - `wiki/strategy/mvp-pr-roadmap.md` PR #238 internal-angle-bisector gate and triangle live-gate order
 - `wiki/tech/core-interface-boundary.md` triangle construction, support-line preservation, and non-Core authority boundary
