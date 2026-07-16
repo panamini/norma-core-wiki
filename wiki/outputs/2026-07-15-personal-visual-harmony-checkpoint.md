@@ -114,7 +114,7 @@ the exact-main MCP server. The controlled same-image desktop run is now
 `LOCAL_UI_PASS`. Real mobile ChatGPT viewport proof remains unverified. No
 provider or model API call was made. The temporary app, server, and tunnel were
 removed. The Chrome file-URL permission was observed enabled for the live run
-and is being restored to disabled. The two named temporary DNS aliases return no
+and is restored to disabled. The two named temporary DNS aliases return no
 authoritative records; no unrelated tunnel, parser.dasti.ai route, or Docker
 service was changed.
 

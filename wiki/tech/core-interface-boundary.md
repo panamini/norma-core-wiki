@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-15
+updated: 2026-07-16
 tags:
   - architecture
   - adapters
@@ -119,7 +119,7 @@ The exact-main controlled same-image desktop run is `LIVE_CHATGPT_AB_PASS`.
 The local desktop/mobile widget run is `LOCAL_UI_PASS`; a true mobile ChatGPT
 viewport remains unverified. The live path kept original/proposed geometry
 separate, required explicit adoption before confirmation, and made no Core call
-before confirmation. The Chrome file-URL permission is being restored after the
+before confirmation. The Chrome file-URL permission is restored to disabled after the
 run, and the two named temporary DNS aliases return no authoritative records.
 
 PR #234 adds exactly three opt-in medians for one explicit canonical triangle.
