@@ -45,8 +45,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #234 at
-`d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.
+Norma Core `origin/main` is current through PR #235 at
+`2f22b7a6363d397acca0d1faadf0b0c2429b08ce`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -105,8 +105,10 @@ surface. The controlled same-image desktop run is now
 Chrome file-URL permission was observed enabled for the live run and is being
 restored to disabled. The two named temporary DNS aliases return no
 authoritative records; parser.dasti.ai, Docker:8001, and unrelated tunnels were
-not changed. PR #234 is the completed median gate. Angle/perpendicular
-bisectors, altitudes, centers, rhythm, and harmonic interpretation remain
+not changed. PR #234 is the completed median gate. PR #235 is the completed
+perpendicular-bisector gate: exactly three opt-in derived constructions with
+support-line versus clipped-segment separation, stable side/parent provenance,
+and no Core authority. Angle bisectors, altitudes, centers, rhythm, and harmonic interpretation remain
 deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface

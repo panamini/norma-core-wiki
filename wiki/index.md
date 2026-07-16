@@ -71,7 +71,7 @@ updated: 2026-07-16
 
 ## Recent Additions
 - `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md` current through PR #234, live desktop A/B, and median completion
-- `wiki/strategy/mvp-pr-roadmap.md` PR #234 median gate and next-primitive assessment
+- `wiki/strategy/mvp-pr-roadmap.md` PR #235 perpendicular-bisector gate and next-primitive assessment
 - `wiki/tech/core-interface-boundary.md` rotated-refinement proposal/adoption and non-Core authority boundary
 - `wiki/overview.md` PR232 exact merge and local/live proof-level sync
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`

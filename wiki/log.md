@@ -8,6 +8,16 @@ updated: 2026-07-16
 
 # Log
 
+## 2026-07-16 — perpendicular-bisector gate
+- Merged application PR #235 at `2f22b7a6363d397acca0d1faadf0b0c2429b08ce`.
+- Recorded exactly three opt-in deterministic perpendicular-bisector guides for
+  one explicit canonical triangle. Each is derived image-plane evidence with
+  stable side/parent provenance, frame-only clipping for rendering/measurement,
+  `sourceTruth=false`, and no Core authority.
+- Post-merge build and construction/MCP regression smoke passed. Desktop live A/B
+  and local desktop/mobile UI evidence remain as previously recorded; real mobile
+  ChatGPT viewport proof remains unverified.
+
 ## 2026-07-16
 - Closed the median program after application PR #234 merged at
   `d53357b7142dd83658a2ceffbf6b2cb50268d5eb`.

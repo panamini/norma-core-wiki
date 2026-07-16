@@ -114,6 +114,12 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   yields exactly three vertex-to-opposite-side-midpoint segments. Medians retain
   triangle/vertex/side provenance, `sourceTruth=false`, and no Core authority;
   no centroid, bisector, or center is surfaced.
+- PR #235 merged the opt-in perpendicular-bisector layer at
+  `2f22b7a6363d397acca0d1faadf0b0c2429b08ce`: exactly three deterministic
+  side-midpoint perpendicular constructions for that explicit canonical triangle.
+  Infinite support lines remain distinct from frame-clipped render segments;
+  provenance, `sourceTruth=false`, no Core authority, and off-by-default controls
+  are preserved.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
