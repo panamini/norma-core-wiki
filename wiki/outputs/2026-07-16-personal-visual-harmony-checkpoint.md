@@ -46,11 +46,25 @@ live gate; it does not claim triangle proof.
 - It did not exercise explicit triangles, medians, perpendicular bisectors, or
   internal angle bisectors.
 
-## Next Step
+## Recommendations
 - The dedicated live triangle construction gate later passed in a separate live
   run.
 - The next dependency is read-only assessment/contract for triangle altitudes.
 - Keep centers, rhythm, perspective, and harmonic interpretation deferred.
+
+## Verification
+- The live run used `Norma Visual Harmony — Personal Stable` in desktop ChatGPT
+  with `golden-split-poster.png`.
+- Pixel proposals were explicitly enabled before Core; the axis and left
+  chevron refinements were explicitly adopted, while the ellipse and right
+  chevron abstained with `no_material_improvement`.
+- Support-line extensions and frame diagonals were explicitly enabled, and the
+  completed widget reported `5` derived constructions.
+- The displayed Core split, maximum delta, and the three deterministic hashes
+  listed above were captured from the completed widget state.
+- This run did not exercise triangles, medians, perpendicular bisectors, or
+  internal angle bisectors; their later live proof is recorded in the related
+  triangle checkpoint.
 
 ## Related
 - `wiki/strategy/mvp-pr-roadmap.md`

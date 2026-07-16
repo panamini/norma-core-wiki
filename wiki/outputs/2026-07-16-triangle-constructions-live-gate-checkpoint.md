@@ -41,9 +41,25 @@ interpretation.
 - This run does not broaden into altitude analysis, centers, rhythm,
   perspective, or harmonic interpretation.
 
-## Next Step
+## Recommendations
 - Read-only assessment/contract for triangle altitudes.
 - Keep centers, rhythm, perspective, and harmonic interpretation deferred.
+
+## Verification
+- The live run used `Norma Visual Harmony — Personal Stable` in the ChatGPT
+  conversation linked above with a synthetic `1200 × 800` triangle image.
+- Before confirmation, the widget was `À CONFIRMER`; support-line extensions
+  were enabled first, followed by Triangles, Médianes, Médiatrices, and
+  Bissectrices in that order.
+- The confirmed widget reported `1` triangle, `3` medians, `3` perpendicular
+  bisectors, `3` internal angle bisectors, and `3` support-line extensions.
+- The displayed Core result and the three deterministic hashes were captured
+  after one explicit confirmation; Core reported no harmonic, quadrilateral,
+  or visual-relation result for this fixture.
+- The widget preserved explicit triangle parent provenance and kept every
+  construction derived, `sourceTruth=false`, and outside Core authority.
+- Browser inspection found no Norma, widget, or network failure; observed
+  translation, localStorage, and host warnings were unrelated to Norma.
 
 ## Related
 - `wiki/strategy/mvp-pr-roadmap.md`
