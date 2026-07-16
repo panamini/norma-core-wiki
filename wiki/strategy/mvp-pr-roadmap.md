@@ -36,7 +36,7 @@ sources:
   - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
   - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
-  - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -45,8 +45,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #235 at
-`2f22b7a6363d397acca0d1faadf0b0c2429b08ce`.
+Norma Core `origin/main` is current through PR #238 at
+`3be0086c456bf240e6214b9592450d7b0e26a990` with reviewed head
+`0d7743c6085497a9f8413725e9fffc03e525f262`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -103,13 +104,17 @@ surface. The controlled same-image desktop run is now
 `LIVE_CHATGPT_AB_PASS`; the local desktop/mobile widget run is
 `LOCAL_UI_PASS`. Real mobile ChatGPT viewport proof remains unverified. The
 Chrome file-URL permission was observed enabled for the live run and is being
-restored to disabled. The two named temporary DNS aliases return no
+restored to disabled. The two named temporary DNS aliases returned no
 authoritative records; parser.dasti.ai, Docker:8001, and unrelated tunnels were
 not changed. PR #234 is the completed median gate. PR #235 is the completed
-perpendicular-bisector gate: exactly three opt-in derived constructions with
-support-line versus clipped-segment separation, stable side/parent provenance,
-and no Core authority. Angle bisectors, altitudes, centers, rhythm, and harmonic interpretation remain
-deferred.
+perpendicular-bisector gate. PR #236 closed the post-merge regressions.
+PR #237 preserved unclamped/infinite perpendicular-bisector support-line
+geometry separately from clipped render geometry. PR #238 adds exactly three
+opt-in internal angle bisectors with default-off controls, stable parent
+provenance, `sourceTruth=false`, no Core authority, and no incenter/altitude/center.
+The next live gate remains a dedicated triangle construction gate; after that
+passes, read-only triangle-altitude assessment can follow, while centers,
+rhythm, perspective, and harmonic interpretation remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
