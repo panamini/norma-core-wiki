@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-17
 ---
 
 # Log
+
+## 2026-07-17
+- Added CC-20260717 Personal Main Live Acceptance v6 checkpoint:
+  - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
+- Updated durable pages with the exact-main live acceptance pass and the new held-out gate:
+  - `wiki/strategy/mvp-pr-roadmap.md`
+  - `wiki/tech/core-interface-boundary.md`
+  - `wiki/overview.md`
+- Refreshed retrieval/control pages:
+  - `wiki/index.md`
+  - `wiki/hot.md`
 
 ## 2026-06-29
 - Added R22 local Structured Analyze inspection checkpoint and R23 prompt:

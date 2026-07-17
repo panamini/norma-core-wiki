@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-17
 tags:
   - architecture
   - adapters
@@ -104,6 +104,15 @@ Adapters should map external shapes to structured inputs and report conversion l
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
   SDK, API runtime, public package readiness, public app submission, remote MCP,
   correction, recommendation, optimization, scoring, or inference.
+- PR #243 exact-main live acceptance closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6`.
+  It verified that the runtime can show the final triangle, three medians, and
+  centroid while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`,
+  and `coreAuthority=false`.
+- The centroid is implemented in the verified runtime, but other triangle
+  centers remain deferred and require separate contracts with explicit evidence.
+- `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1` is a held-out evaluation gate,
+  not a core boundary change; it must not be treated as permission to invent
+  new geometric rules.
 
 ## Sources
 

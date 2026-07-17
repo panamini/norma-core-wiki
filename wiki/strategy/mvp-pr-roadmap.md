@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-17
 tags:
   - execution
   - roadmap
@@ -35,6 +35,18 @@ Execution plan to keep implementation in sequence and avoid MVP drift.
 
 The roadmap is now split into strict phases that separate architecture lock, core build, and ecosystem growth.
 It is extended from post-PR25 planning with an explicit PR27–PR46 sequence and explicit gating before broadening scope.
+
+## Différé / nice-to-have après stabilisation de Norma
+
+Ces éléments restent différés et ne bloquent pas le MVP stable.
+Ils ne doivent être repris qu'après réussite de la matrice d'acceptation live.
+
+- Les rythmes et répétitions restent d'abord des mesures, puis une interprétation humaine.
+- La perspective physique, la rectification et l'homographie relèvent d'un contrat séparé, avec hypothèses et provenance explicites.
+- Les nouveaux centres triangulaires `circoncentre`, `incentre` et `orthocentre` ne passent que via des contrats bornés et des preuves; aucune inférence automatique.
+- Les triangles automatiques non explicitement défendables restent différés.
+- Les nouveaux rapports harmoniques restent après le gate live tenu à l'écart.
+- La prochaine lecture doit conserver le vocabulaire et le schéma existants, sans diluer la séparation entre preuve offline, preuve runtime et preuve live.
 
 ## Details
 
@@ -219,6 +231,18 @@ input, correction, recommendation, optimization, scoring, or beauty judgment.
 - The new product vision prompt is a documentation-only planning artifact for PR71.
 - PR71 should capture product vision, UX flows, integration architecture, and the post-MVP adapter family without broadening MVP core scope.
 - Keep it separate from implementation sequencing so the roadmap stays anchored on the current PR27–PR46 execution plan.
+
+### Next canonical live gate
+
+`PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`
+
+- Small held-out corpus: 3-4 images that were not used to design the last fixes.
+- Coverage: ellipse + large oblique + trapezoid/quadrilateral; poster/chevron refinement; architecture/design quadrilaterals; one ambiguous negative that must abstain.
+- Measure: missing/superfluous candidates, pixel error before and after refinement, human correction/adoption, abstention, hydration/confirmation/Core reliability, and relation accuracy.
+- Limit: one preparation and one confirmation/Core maximum per image.
+- Default: no code changes unless a bug is reproduced.
+- This gate replaces any other immediate triangle-center changeset.
+- After PASS, the next assessment may consider a bounded family of user-declared measurements on confirmed geometries.
 
 ## Sources
 

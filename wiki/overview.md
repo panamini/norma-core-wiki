@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-17
 ---
 
 # Overview
@@ -21,4 +21,5 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR6 proved private/dev ChatGPT Secure MCP Tunnel invocation through `norma.runMvpDemoV1`; the app was not published, the tunnel was stopped after testing, and deterministic output facts were preserved in a checkpoint output.
 - PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch; that R6D-to-R1 sequencing is now historical.
 - PR #144 / R22 merged the local-only, static, read-only Structured Analyze inspection surface for existing result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
-- Current recommended next PR is R23: local inspection surface onboarding fixture and workflow polish.
+- PR #243 exact-main replay closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS, showing the final triangle, three medians, and centroid while preserving boundary separation.
+- The next canonical gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`, not another immediate triangle-center changeset.

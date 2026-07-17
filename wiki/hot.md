@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-06-29
+updated: 2026-07-17
 ---
 
 # Hot Cache
@@ -11,19 +11,21 @@ updated: 2026-06-29
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- PR #144 / R22 merged at `b80a53d3d13863abd4dca4f944dcdc74aab6eaa3`.
-- Current local static read-only viewer can inspect existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
-- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
-- Current recommended next PR: `R23: local inspection surface onboarding fixture and workflow polish`.
-- R23 must stay local-only, static, read-only, docs/tests backed, and must not change engine behavior, package exports, package metadata, lockfiles, CLI runtime, MCP runtime, report-kit runtime, hosted/remote behavior, SDK/API behavior, public package readiness, public app submission, or source-truth rules.
-- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md` for current R22/R23 context.
+- PR #243 exact-main replay closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6`.
+- Final widget: `CORE + PLAN IMAGE VÉRIFIÉS`, with rectangle Core, 0 harmonic reports, 3 visual relations, derived triangle, 3 medians, and 1 centroid.
+- Authority remains separated: `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`.
+- The next canonical gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`; do not treat another triangle center as the immediate next changeset.
+- The held-out gate stays external to code unless a reproduced bug justifies a separate contract.
+- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` for current live-acceptance context.
 
 ## Retrieval Map
 - Project overview: `wiki/overview.md`
 - Canonical page catalog: `wiki/index.md`
 - Mutation history: `wiki/log.md`
+- Live acceptance checkpoint: `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
 - Orchestrator: `wiki/tech/norma-orchestrator.md`
 - PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
+- Core boundary: `wiki/tech/core-interface-boundary.md`
 - R22 checkpoint and R23 prompt: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - Post-PR6 checkpoint: `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - R6D checkpoint: `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
@@ -35,6 +37,14 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest ingest
+- Added CC-20260717 Personal Main Live Acceptance v6 on 2026-07-17:
+  - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
+  - updated `wiki/strategy/mvp-pr-roadmap.md`
+  - updated `wiki/tech/core-interface-boundary.md`
+  - updated `wiki/overview.md`
+  - updated `wiki/index.md`
+  - updated `wiki/log.md`
+  - updated `wiki/hot.md`
 - Added R22 local Structured Analyze inspection checkpoint on 2026-06-29:
   - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
   - updated `wiki/strategy/mvp-pr-roadmap.md`
