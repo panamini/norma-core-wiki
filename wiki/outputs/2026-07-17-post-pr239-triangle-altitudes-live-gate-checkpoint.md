@@ -1,5 +1,5 @@
 ---
-title: "Post PR239 Triangle Altitudes Live Gate Checkpoint"
+title: "Post PR240 Triangle Truth Checkpoint"
 category: output
 status: current
 created: 2026-07-17
@@ -7,14 +7,15 @@ updated: 2026-07-17
 type: runbook
 ---
 
-# Post PR239 Triangle Altitudes Live Gate Checkpoint
+# Post PR240 Triangle Truth Checkpoint
 
 ## Context
 Live triangle altitude evidence was recorded in ChatGPT after PR #239 merged
-and after the dedicated triangle construction gate. This checkpoint records the
-altitude gate pass and the current next dependency. It does not change core
-geometry or claim centroid, circumcenter, incenter, orthocenter, rhythm,
-perspective, physical rectification, or harmonic interpretation.
+and after the dedicated triangle construction gate. PR #240 then merged the
+bounded preparation diagnostic and this checkpoint records the deterministic
+post-merge truth. It does not claim a post-PR240 live smoke or change core
+geometry; it does not claim centroid, circumcenter, incenter, orthocenter,
+rhythm, perspective, physical rectification, or harmonic interpretation.
 
 ## Result
 - Status: `LIVE_TRIANGLE_ALTITUDES_PASS`
@@ -42,15 +43,21 @@ perspective, physical rectification, or harmonic interpretation.
   harmonic interpretation.
 
 ## Recommendations
-- The next immediate application leaf is a small diagnostic/runbook PR exposing
-  triangle request presence/count and missing prerequisites.
-- After that comes read-only assessment of triangle centers.
-- Centroid may be the first candidate only after that assessment.
+- PR #240 is complete; the next application leaf is the read-only triangle-center
+  assessment in core PR #241.
+- The centroid is the first safe candidate only after assessment, with a separate
+  overlay, `candidateEvidenceOnly=true`, `sourceTruth=false`,
+  `coreAuthority=false`, and fail-closed validation. No center is implemented.
 - Circumcenter, incenter, and orthocenter remain separate future decisions.
 - Keep rhythm, perspective, physical rectification, and harmonic interpretation
   deferred.
 - Real mobile ChatGPT and multiple live triangle-shape cases remain unverified
   but do not invalidate the passed gate.
+
+## Post-PR240 diagnostic and smoke status
+- Core merge: PR #240 at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb`; reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
+- Deterministic preparation proof: 0 requests report unavailable; 1 request with format-diagonal/junction reports the full conditional order; 2 requests report derived families unavailable; every pre-confirmation result has `coreRun=false`.
+- Private smoke: `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`. The existing runtime is detached at `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, does not expose `triangleRequestCount`, and no safe target SHA is available. No provider, retry, tunnel, key, app, or public deployment was used.
 
 ## Verification
 - The live run used the linked ChatGPT conversation with one explicit

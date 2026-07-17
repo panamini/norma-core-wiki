@@ -73,12 +73,12 @@ updated: 2026-07-17
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239 triangle altitude pass, 1 canonical triangle, exactly 3 altitudes, and next-step ordering
+- `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` historical live desktop ChatGPT evidence and pixel-proposal checkpoint
-- `wiki/strategy/mvp-pr-roadmap.md` PR #239 altitude gate and triangle next-step order
-- `wiki/tech/core-interface-boundary.md` triangle altitude completion, next diagnostic leaf, and non-Core authority boundary
-- `wiki/overview.md` PR #239 exact merge and 2026-07-17 checkpoint sync
+- `wiki/strategy/mvp-pr-roadmap.md` PR #240 preparation diagnostic and triangle-center assessment routing
+- `wiki/tech/core-interface-boundary.md` PR #240 diagnostic contract, non-Core authority boundary, and blocked smoke status
+- `wiki/overview.md` PR #240 exact merge and post-PR240 truth closure
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary

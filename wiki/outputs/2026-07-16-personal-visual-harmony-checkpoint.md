@@ -49,13 +49,18 @@ live gate; it does not claim triangle proof.
 ## Recommendations
 - The dedicated live triangle construction gate later passed in a separate live
   run.
-- PR #239 later completed the triangle-altitude gate, so the next immediate
-  application leaf is a small diagnostic/runbook PR exposing triangle request
-  presence/count and missing prerequisites.
-- After that comes read-only assessment of triangle centers; centroid is the
-  first candidate only after assessment. Circumcenter, incenter, orthocenter,
-  rhythm, perspective, physical rectification, and harmonic interpretation
-  remain deferred.
+- PR #239 later completed the triangle-altitude gate, and PR #240 merged the
+  bounded preparation diagnostic exposing triangle request presence/count and
+  conditional prerequisites.
+- The next application leaf is the read-only triangle-center assessment in core
+  PR #241; centroid is the first safe candidate only after assessment. Its
+  required boundary is candidate-only, `sourceTruth=false`, `coreAuthority=false`,
+  separate overlay, and fail-closed validation. No center is implemented.
+- Post-PR240 private smoke is `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`
+  because the existing runtime is detached before PR #240 and exposes no
+  verifiable target SHA. Circumcenter, incenter, orthocenter, rhythm,
+  perspective, physical rectification, and harmonic interpretation remain
+  deferred.
 
 ## Verification
 - The live run used `Norma Visual Harmony — Personal Stable` in desktop ChatGPT

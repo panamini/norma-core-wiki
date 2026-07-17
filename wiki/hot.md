@@ -11,20 +11,24 @@ updated: 2026-07-17
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #239 at `652574fb435c20233658c0c681a8f06f56ef80d1` from reviewed head `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`.
+- Latest merged Norma Core state is PR #240 at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb` from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
 - The latest personal visual-harmony checkpoint is `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`.
 - The dedicated triangle construction gate later passed in a separate live run
   with 13 derived constructions total.
-- PR #239 completed the altitude gate: one explicit canonical triangle now
-  yields exactly three derived altitudes, and the next immediate application
-  leaf is a small diagnostic/runbook PR exposing triangle request presence/
-  count and missing prerequisites. After that comes read-only triangle-center
-  assessment, with centroid as the first candidate only after assessment.
-  Circumcenter, incenter, orthocenter, rhythm, perspective, physical
-  rectification, and harmonic interpretation remain deferred.
+- PR #240 merged the bounded preparation diagnostic: it exposes
+  `triangleRequestCount` and the conditional order `Prolongements -> Diagonales
+  format (when required) -> Angles jonction (when required) -> Triangles`, with
+  derived families unavailable unless exactly one explicit request exists. The
+  next leaf is the read-only triangle-center assessment; the centroid is the
+  first safe candidate, not an implementation. Circumcenter, incenter,
+  orthocenter, rhythm, perspective, physical rectification, and harmonic
+  interpretation remain deferred.
+- Post-PR240 private smoke status is `LIVE_NOT_RUN / VERIFICATION_BLOCKED /
+  BLOCKED`: the existing runtime is detached at the pre-PR240 commit and no
+  target SHA can be proven without creating or changing a runtime boundary.
 - The local static read-only viewer still inspects existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
 - Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
-- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` for current truth.
+- Use `wiki/strategy/mvp-pr-roadmap.md`, `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`, and the current PR #241 assessment for current truth.
 
 ## Retrieval Map
 - Overview/index/log: `wiki/{overview,index,log}.md`
@@ -46,7 +50,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Added `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
   for the PR #239 altitude gate pass and next-step ordering.
 - Updated `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` through PR #238.
-- Updated roadmap, overview, index, log, and boundary through the merged PR #239
-  altitude gate; the dedicated triangle construction gate later passed in a
-  separate live run, and the next immediate application leaf is the diagnostic/
-  runbook PR exposing triangle request presence/count and missing prerequisites.
+- Updated roadmap, overview, index, log, and boundary through merged PR #240;
+  recorded the deterministic preparation proof and the honest blocked boundary
+  for a post-PR240 private smoke. The current application leaf is a read-only
+  triangle-center assessment; no center is implemented.

@@ -151,16 +151,18 @@ The dedicated triangle construction gate later passed in a separate live run
 with 13 derived constructions total. PR #239 completed the altitude gate:
 one explicit canonical triangle now yields exactly three derived altitudes
 with the same triangle parent, `derived-construction` provenance,
-`sourceTruth=false`, and no Core authority. The observed UI order was
-`Prolongements -> Triangles -> Hauteurs -> one explicit confirmation`; Core
-reported `HAUTEURS DÉRIVÉES / 3 droites`. The next immediate application leaf
-is a small diagnostic/runbook PR exposing triangle request presence/count and
-missing prerequisites; after that comes read-only assessment of triangle
-centers. Centroid may be the first candidate only after that assessment.
-Circumcenter, incenter, orthocenter, rhythm, perspective, physical
-rectification, and harmonic interpretation remain deferred. Real mobile
-ChatGPT and multiple live triangle-shape cases remain unverified but do not
-invalidate the passed gate.
+`sourceTruth=false`, and no Core authority. PR #240 then merged the bounded
+preparation diagnostic exposing `triangleRequestCount` and conditional
+prerequisites, while keeping derived families unavailable unless exactly one
+explicit request exists. Core PR #241 records a read-only centroid assessment
+only; no center is implemented. A future centroid must remain a separate
+derived overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
+`coreAuthority=false`, and fail-closed validation; it must never enter Core or
+be treated as observed geometry. Circumcenter, incenter, orthocenter, rhythm,
+perspective, physical rectification, and harmonic interpretation remain
+deferred. Post-PR240 private smoke is
+`LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no serving runtime
+target SHA is provable.
 
 ## Details
 

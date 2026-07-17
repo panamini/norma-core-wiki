@@ -48,9 +48,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #239 at
-`652574fb435c20233658c0c681a8f06f56ef80d1` with reviewed head
-`b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`.
+Norma Core `origin/main` is current through PR #240 at
+`1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb` with reviewed head
+`e097e5434902bf883f88720ab12c2a3b2102ae8e`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -119,16 +119,19 @@ The dedicated triangle construction gate later passed in a separate live run
 with 13 derived constructions total. PR #239 completed the altitude gate:
 one explicit canonical triangle now yields exactly three derived altitudes
 with the same triangle parent, `derived-construction` provenance,
-`sourceTruth=false`, and no Core authority. The observed UI order was
-`Prolongements -> Triangles -> Hauteurs -> one explicit confirmation`; Core
-reported `HAUTEURS DÉRIVÉES / 3 droites`. The next immediate application leaf
-is a small diagnostic/runbook PR exposing triangle request presence/count and
-missing prerequisites; after that comes read-only assessment of triangle
-centers. Centroid may be the first candidate only after that assessment.
-Circumcenter, incenter, orthocenter, rhythm, perspective, physical
-rectification, and harmonic interpretation remain deferred. Real mobile
-ChatGPT and multiple live triangle-shape cases remain unverified but do not
-invalidate the passed gate.
+`sourceTruth=false`, and no Core authority. PR #240 then merged the bounded
+preparation diagnostic: it exposes `triangleRequestCount`, emits conditional
+`Prolongements -> Diagonales format (when required) -> Angles jonction (when
+required) -> Triangles` guidance, and keeps derived families unavailable unless
+exactly one explicit request exists. Core PR #241 records a read-only
+triangle-center assessment selecting centroid as the first safe candidate; no
+center is implemented. Its future boundary is separate overlay,
+`candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and
+fail-closed validation. Circumcenter, incenter, orthocenter, rhythm,
+perspective, physical rectification, and harmonic interpretation remain
+deferred. Post-PR240 private smoke is
+`LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because the serving runtime
+target SHA is not provable.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
