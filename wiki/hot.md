@@ -11,24 +11,32 @@ updated: 2026-07-17
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- PR #243 exact-main replay closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6`.
-- Final widget: `CORE + PLAN IMAGE VÉRIFIÉS`, with rectangle Core, 0 harmonic reports, 3 visual relations, derived triangle, 3 medians, and 1 centroid.
-- Authority remains separated: `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`.
-- The next canonical gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`; do not treat another triangle center as the immediate next changeset.
-- The held-out gate stays external to code unless a reproduced bug justifies a separate contract.
-- Use `wiki/strategy/mvp-pr-roadmap.md` and `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` for current live-acceptance context.
+- Latest merged Norma Core state is PR #240 at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb` from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
+- The latest personal visual-harmony checkpoint is `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`.
+- The dedicated triangle construction gate later passed in a separate live run
+  with 13 derived constructions total.
+- PR #240 merged the bounded preparation diagnostic: it exposes
+  `triangleRequestCount` and the conditional order `Prolongements -> Diagonales
+  format (when required) -> Angles jonction (when required) -> Triangles`, with
+  derived families unavailable unless exactly one explicit request exists. The
+  next leaf is the read-only triangle-center assessment; the centroid is the
+  first safe candidate, not an implementation. Circumcenter, incenter,
+  orthocenter, rhythm, perspective, physical rectification, and harmonic
+  interpretation remain deferred.
+- Post-PR240 private smoke status is `LIVE_NOT_RUN / VERIFICATION_BLOCKED /
+  BLOCKED`: the existing runtime is detached at the pre-PR240 commit and no
+  target SHA can be proven without creating or changing a runtime boundary.
+- The local static read-only viewer still inspects existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
+- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
+- Use `wiki/strategy/mvp-pr-roadmap.md`, `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`, and the current PR #241 assessment for current truth.
 
 ## Retrieval Map
-- Project overview: `wiki/overview.md`
-- Canonical page catalog: `wiki/index.md`
-- Mutation history: `wiki/log.md`
-- Live acceptance checkpoint: `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
-- Orchestrator: `wiki/tech/norma-orchestrator.md`
-- PR roadmap and gates: `wiki/strategy/mvp-pr-roadmap.md`
-- Core boundary: `wiki/tech/core-interface-boundary.md`
-- R22 checkpoint and R23 prompt: `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
-- Post-PR6 checkpoint: `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
-- R6D checkpoint: `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
+- Overview/index/log: `wiki/{overview,index,log}.md`
+- Roadmap: `wiki/strategy/mvp-pr-roadmap.md`
+- Triangle altitude checkpoint: `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
+- Triangle gate checkpoint: `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- Visual-harmony checkpoint: `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
+- Authority boundary: `wiki/tech/core-interface-boundary.md`
 
 ## Guardrails
 - This page is a cache, not canonical truth.
@@ -36,34 +44,13 @@ Active memory cache for agents. Keep this page under 500 words.
 - For orchestrator usage, trust code, tests, CI, durable wiki pages, and explicit user direction over generated run evidence.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
-## Latest ingest
-- Added CC-20260717 Personal Main Live Acceptance v6 on 2026-07-17:
-  - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-  - updated `wiki/overview.md`
-  - updated `wiki/index.md`
-  - updated `wiki/log.md`
-  - updated `wiki/hot.md`
-- Added R22 local Structured Analyze inspection checkpoint on 2026-06-29:
-  - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-- Added R6D ChatGPT `_meta` connector checkpoint on 2026-06-25:
-  - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-- Updated durable pages from the post-PR6 ChatGPT Secure MCP Tunnel checkpoint on 2026-06-24:
-  - `wiki/tech/norma-orchestrator.md`
-  - `wiki/strategy/mvp-pr-roadmap.md`
-  - `wiki/tech/core-interface-boundary.md`
-- Ingested Norma Core PR execution map v1 on 2026-06-23:
-  - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
-  - updated `wiki/strategy/mvp-pr-roadmap.md`
-  - updated `wiki/tech/core-interface-boundary.md`
-- Added PR96 orchestrator retrieval context on 2026-06-23:
-  - `wiki/tech/norma-orchestrator.md`
-  - `wiki/sources/2026-06-23-pr96-norma-orchestrator-v0.md`
-- Ingested the product vision and integration draft from `rawinput/` into `raw/` on 2026-06-19.
-- Ingested the attached Norma Core endgame prompt into raw on 2026-06-17.
-- Ingested 2 files from rawinput into raw on 2026-06-13.
+## Latest update
+- Updated `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+  with the separate triangle gate pass and next dependency.
+- Added `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
+  for the PR #239 altitude gate pass and next-step ordering.
+- Updated `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` through PR #238.
+- Updated roadmap, overview, index, log, and boundary through merged PR #240;
+  recorded the deterministic preparation proof and the honest blocked boundary
+  for a post-PR240 private smoke. The current application leaf is a read-only
+  triangle-center assessment; no center is implemented.

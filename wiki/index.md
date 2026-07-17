@@ -53,14 +53,75 @@ updated: 2026-07-17
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
-- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
+- `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
+- `wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md`
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
+- `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
+- `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` historical live desktop ChatGPT evidence and pixel-proposal checkpoint
+- `wiki/strategy/mvp-pr-roadmap.md` PR #240 preparation diagnostic and triangle-center assessment routing
+- `wiki/tech/core-interface-boundary.md` PR #240 diagnostic contract, non-Core authority boundary, and blocked smoke status
+- `wiki/overview.md` PR #240 exact merge and post-PR240 truth closure
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
+- `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary
+- `wiki/overview.md` post-PR99 current-state sync
+- `wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR98 guided inspection package publication gate routing
+- `wiki/tech/core-interface-boundary.md` post-PR98 package publication boundary
+- `wiki/overview.md` post-PR98 current-state sync
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR95 guided inspection package-root V1 API export routing
+- `wiki/tech/core-interface-boundary.md` post-PR95 package API export boundary
+- `wiki/overview.md` post-PR95 current-state sync
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR93 guided inspection package/API routing
+- `wiki/tech/core-interface-boundary.md` post-PR93 local/package-private guided inspection boundary
+- `wiki/overview.md` post-PR93 current-state sync
+- `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` PR86 accepted-geometry closeout and next truth-sync routing
+- `wiki/tech/core-interface-boundary.md` PR86 package-private normalizer boundary
+- `wiki/overview.md` PR86 current-state sync
+- `wiki/outputs/2026-07-01-pr85-endgame-roadmap-status.md`
+- `wiki/strategy/mvp-pr-roadmap.md` PR85 endgame count and current-state sync
+- `wiki/overview.md` PR83-PR85 current-state sync
+- `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-PR82 accepted geometry bridge sync
+- `wiki/tech/core-interface-boundary.md` accepted geometry mapper boundary sync
+- `wiki/overview.md` post-PR82 current-state sync
+- `wiki/outputs/2026-06-30-post-r30-local-structured-analyze-demo-workflow-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R30 local demo workflow sync
+- `wiki/overview.md` post-R30 current-state sync
+- `wiki/outputs/2026-06-30-post-r29-runnable-ratio-pack-family-examples-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R29 runnable family examples sync
+- `wiki/overview.md` post-R29 current-state sync
+- `wiki/outputs/2026-06-30-post-r28-ratio-pack-family-catalog-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R28 ratio-pack family catalog sync
+- `wiki/concepts/harmonic-ratio-bible.md` current authored fixture families
+- `wiki/overview.md` post-R28 current-state sync
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R25 roadmap compression sync
+- `wiki/meta/pr0-governance-checklist.md` post-R25 no-ladder execution discipline
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- `wiki/strategy/mvp-pr-roadmap.md` post-R14 and post-R22 roadmap sync
+- `wiki/overview.md` post-R14 and post-R22 current-state sync
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/tech/norma-orchestrator.md`

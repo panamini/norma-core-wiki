@@ -17,6 +17,17 @@ sources:
   - wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md
   - wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md
   - wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md
+  - wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md
+  - wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md
+  - wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md
+  - wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md
+  - wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr98-guided-inspection-publication-gate-checkpoint.md
+  - wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md
+  - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
+  - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -27,6 +38,131 @@ Defines strict ownership for what computes, what calls, and what displays.
 
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
+
+Accepted geometry remains explicit structured input after acceptance. The
+current accepted-geometry mapper and shared-unit-surface normalizer are
+package-private and deterministic; they are not providers, perception layers,
+public exports, package APIs, or source-truth shortcuts.
+
+Guided inspection remains structural and truth-bounded. PR94 proved local
+package-private consumption of the guided inspection demo envelope. PR95
+approved only future package-root V1 API exports for that structural contract.
+PR96 implemented those package-root V1 exports. PR97 proved local package-root
+consumer compatibility. PR98 defined the package publication readiness gate
+without publishing or changing package metadata. `result.json` remains
+canonical Norma truth and derived files remain inspection artifacts only.
+PR99 prepared the local package tarball boundary and local packed-tarball
+install/import proof while keeping `@norma/core` private at version `0.1.0`.
+The package metadata implementation remains limited to the built declaration,
+built JavaScript, and `README.md` `files` allowlist.
+
+The personal visual-harmony adapter preserves the same ownership split. The
+widget owns the exact hydrated ChatGPT image and typed candidate overlay; the
+server intentionally does not download image bytes. Core receives only the
+final explicitly selected and confirmed structured geometry. Rectangle Core
+results and deterministic quadrilateral or ellipse/supporting-line image-plane
+measurements remain distinct result families.
+
+PR #225 integrates PR #223's package-private pixel-refinement kernel as bounded
+shadow evidence. Original and proposed geometry remain separate, refinement is
+disabled by default, weak evidence abstains, and adoption requires a distinct
+explicit action. A family toggle, candidate confirmation, or cache reload does
+not silently adopt a proposal or run Core.
+
+PR #226 keeps a confirmed observed line segment distinct from its derived
+infinite support line, clips that support line only to the confirmed frame for
+rendering and measurement, and derives both format diagonals from confirmed
+frame vertices. These optional image-plane constructions retain derived
+provenance, never claim that invisible extensions were observed, and have no
+Core authority.
+
+PR #227 derives junction measurements only after the support-line layer is
+explicitly enabled. Each junction preserves participant kind and provenance,
+records whether a support-line crossing lies within the observed finite
+segment, and reports deterministic pixel-scaled smaller and supplementary
+angles. Junctions remain image-plane derived measurements with
+`sourceTruth=false`, `coreAuthority=false`, and no independent confirmation or
+Core execution authority.
+
+PR #228 derives a triangle only from one bounded explicit request containing
+exactly three stable parented vertices. Parents must resolve to confirmed
+observed endpoints or deterministic admitted junctions; frame-edge-only,
+missing, stale, ambiguous, duplicate, out-of-bound, and degenerate inputs fail
+closed. Canonical winding and starting vertex make permutations identity-
+stable. The triangle, its vertex provenance, and its basic image-plane metrics
+remain `sourceTruth=false`, `coreAuthority=false`, and do not enumerate,
+confirm, or send geometry to Core.
+
+PR #229 accepts an explicit ellipse orientation at the same typed
+image-plane boundary. Equivalent axis swaps and modulo-pi rotations
+canonicalize to one stable representation, while circles and near-circles use
+an orientation-degenerate identity rule. Rotated rendering and line-contact
+measurements are deterministic derived output. They do not infer a physical
+circle, perspective, intention, or Core authority. The widget and server both
+fail closed rather than applying the existing axis-aligned pixel refiner to an
+explicitly rotated ellipse.
+
+PR #230 extends the deterministic local raster kernel to explicit rotated
+ellipses without changing that authority boundary. The immutable original and
+the canonical refined proposal remain separate. Center, semi-axes, and
+orientation search are locally bounded, the evaluation count is capped at
+214, displacement is capped, and weak, ambiguous, or near-circular orientation
+evidence abstains fail-closed. Kernel output is candidate evidence only with
+`sourceTruth=false` and no Core authority.
+
+PR #231 admits that proposal through the private widget path only when the
+disabled-by-default refinement control is explicitly enabled. The proposal is
+rendered separately and requires a dedicated adoption action; adoption still
+does not confirm geometry or run Core. Cache and stale guards bind the full
+canonical rotated-ellipse and payload identities. A narrow numeric envelope
+tolerance bridges widget display precision to server canonical precision
+without admitting changed metadata, primitive identity, or stale payloads.
+
+The exact-main controlled same-image desktop run is `LIVE_CHATGPT_AB_PASS`.
+The local desktop/mobile widget run is `LOCAL_UI_PASS`; a true mobile ChatGPT
+viewport remains unverified. The live path kept original/proposed geometry
+separate, required explicit adoption before confirmation, and made no Core call
+before confirmation. The Chrome file-URL permission is restored to disabled after the
+run, and the two named temporary DNS aliases return no authoritative records.
+
+PR #234 adds exactly three opt-in medians for one explicit canonical triangle.
+Each median carries triangle/vertex/opposite-side parent provenance and remains
+`sourceTruth=false`, `candidateEvidenceOnly=true`, and `coreAuthority=false`.
+No centroid, bisector, center, automatic enumeration, adoption, confirmation,
+or Core execution is introduced.
+
+PR #235 adds exactly three opt-in perpendicular-bisector constructions for the
+same explicit canonical triangle. Infinite support lines remain distinct from
+frame-clipped render segments; provenance, `sourceTruth=false`, no Core
+authority, and off-by-default controls are preserved.
+
+PR #236 closed the post-merge regression fixes for the perpendicular-bisector
+rail.
+
+PR #237 preserves unclamped/infinite perpendicular-bisector support-line
+geometry separately from clipped render geometry.
+
+PR #238 adds exactly three opt-in internal angle bisectors for that same
+explicit canonical triangle. Each bisector keeps stable parent provenance,
+remains `sourceTruth=false`, and introduces no Core authority, incenter,
+altitude, or center.
+
+The dedicated triangle construction gate later passed in a separate live run
+with 13 derived constructions total. PR #239 completed the altitude gate:
+one explicit canonical triangle now yields exactly three derived altitudes
+with the same triangle parent, `derived-construction` provenance,
+`sourceTruth=false`, and no Core authority. PR #240 then merged the bounded
+preparation diagnostic exposing `triangleRequestCount` and conditional
+prerequisites, while keeping derived families unavailable unless exactly one
+explicit request exists. Core PR #241 records a read-only centroid assessment
+only; no center is implemented. A future centroid must remain a separate
+derived overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
+`coreAuthority=false`, and fail-closed validation; it must never enter Core or
+be treated as observed geometry. Circumcenter, incenter, orthocenter, rhythm,
+perspective, physical rectification, and harmonic interpretation remain
+deferred. Post-PR240 private smoke is
+`LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no serving runtime
+target SHA is provable.
 
 ## Details
 
@@ -100,19 +236,58 @@ Adapters should map external shapes to structured inputs and report conversion l
   `norma.analyzeStructuredCompositionV1` MCP responses. This is an inspection
   surface only: direct engine output and `result.json` remain canonical truth,
   and viewer output remains derived display data.
-- R22 does not authorize execution, recomputation, source-truth creation,
+- PR #145 / R23, PR #146 / R24, and PR #147 / R25 continued this local
+  inspection/protection rail through onboarding, scenario regression, and static
+  safety guards.
+- PR #148 / R26 merged as a docs/test-only roadmap truth sync. It does not
+  authorize runtime changes.
+- PR #153 through PR #159 extended local/private real-usecase demo, inspection,
+  and CLI report boundary proof around explicit structured input and existing
+  report surfaces.
+- PR #160 / PR81 added the package-private accepted geometry to Core mapper.
+  PR #162 / PR82 added synthetic test-only proof that mapped accepted geometry
+  can reach Structured Analyze after explicit normalization, while unsupported
+  primitives stop at the mapper.
+- PR #165 / PR85 added the package-private shared-unit-surface normalizer.
+  PR #166 / PR86 preserved metric policy through that normalizer so the
+  synthetic shared surface and normalized output compositions remain coherent
+  for downstream Structured Analyze operation contexts.
+- PR #168 / PR88 through PR #178 / PR98 moved guided inspection package/API
+  readiness from blocked future language into a local, package-private proof
+  rail, approved and implemented package-root V1 exports, and defined a package
+  publication readiness gate: PR89 added the
+  local guided inspection demo, PR90 defined the readiness gate, PR91 added the
+  package-private artifact contract helper, PR92 wired the demo through it, PR93
+  synced the roadmap, PR94 added the package-private consumer proof, PR95
+  approved only the future package-root V1 API export contract for PR96, PR96
+  implemented those exports, PR97 proved local package-root consumer
+  compatibility, and PR98 defined the package publication readiness gate.
+- PR #179 / PR99 prepared the local `@norma/core` package tarball boundary and
+  proved local packed-tarball install/import. It kept `private: true`, version
+  `0.1.0`, and the minimal `files` allowlist
+  `dist/src/**/*.d.ts`, `dist/src/**/*.js`, and `README.md`; it did not
+  publish, tag, release, configure npm auth, set provenance, add release
+  workflow mechanics, change dependencies or lockfiles, or add package-level
+  `bin`.
+- PR #221 added the private personal visual-harmony widget/MCP foundation,
+  explicit confirmation path, rectangle Core mapping, and deterministic
+  image-plane guide measurements. PR #222 hardened hydration identity and
+  stale-payload behavior. PR #223 added an unintegrated shadow pixel-refinement
+  kernel. PR #224 synchronized documentation and guards only. PR #225 added
+  the disabled-by-default proposal/adoption integration. PR #226 added opt-in
+  support-line and format-diagonal constructions while preserving the
+  rectangle-only Core boundary. PR #227 added opt-in junction-angle
+  measurements without promoting their participants or results to Core input.
+  PR #228 added an explicit opt-in triangle construction with stable parent
+  provenance and deterministic identity, still outside the rectangle-only Core
+  boundary.
+- R22-R26, PR81-PR86, and PR88-PR99 do not authorize adapter/viewer/source-truth
+  execution, recomputation outside approved package-private test/demo paths,
   prompt/file/URL/media/CAD/provider input, hosted dashboard, public webapp,
-  SDK, API runtime, public package readiness, public app submission, remote MCP,
-  correction, recommendation, optimization, scoring, or inference.
-- PR #243 exact-main live acceptance closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6`.
-  It verified that the runtime can show the final triangle, three medians, and
-  centroid while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`,
-  and `coreAuthority=false`.
-- The centroid is implemented in the verified runtime, but other triangle
-  centers remain deferred and require separate contracts with explicit evidence.
-- `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1` is a held-out evaluation gate,
-  not a core boundary change; it must not be treated as permission to invent
-  new geometric rules.
+  SDK, API runtime, package publication, public app submission, remote MCP,
+  hosted MCP, ChatGPT connector runtime, OpenAI/provider calls, image/CAD/Figma
+  adapters, correction, recommendation, optimization, scoring, automatic family
+  selection, or inference.
 
 ## Sources
 
@@ -124,6 +299,14 @@ Adapters should map external shapes to structured inputs and report conversion l
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 - `wiki/outputs/2026-06-25-r6d-chatgpt-meta-connector-checkpoint.md`
 - `wiki/outputs/2026-06-29-r22-local-structured-analyze-inspection-checkpoint.md`
+- `wiki/outputs/2026-06-30-post-r25-roadmap-compression-checkpoint.md`
+- `wiki/outputs/2026-07-01-post-pr82-accepted-geometry-structured-analyze-bridge-checkpoint.md`
+- `wiki/outputs/2026-07-01-pr86-normalization-metric-policy-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr93-guided-inspection-package-api-checkpoint.md`
+- `wiki/outputs/2026-07-02-post-pr95-package-api-export-contract-checkpoint.md`
+- `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
+- `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
 
 ## Related
 
