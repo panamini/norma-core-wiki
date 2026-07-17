@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - architecture
   - adapters
@@ -27,6 +27,7 @@ sources:
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -147,9 +148,21 @@ remains `sourceTruth=false`, and introduces no Core authority, incenter,
 altitude, or center.
 
 The dedicated triangle construction gate later passed in a separate live run
-with 13 derived constructions total. Explicit triangle parents were preserved,
-constructions stayed `sourceTruth=false`, and the output remained outside Core
-authority.
+with 13 derived constructions total. PR #239 completed the altitude gate:
+one explicit canonical triangle now yields exactly three derived altitudes
+with the same triangle parent, `derived-construction` provenance,
+`sourceTruth=false`, and no Core authority. PR #240 then merged the bounded
+preparation diagnostic exposing `triangleRequestCount` and conditional
+prerequisites, while keeping derived families unavailable unless exactly one
+explicit request exists. Core PR #241 records a read-only centroid assessment
+only; no center is implemented. A future centroid must remain a separate
+derived overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
+`coreAuthority=false`, and fail-closed validation; it must never enter Core or
+be treated as observed geometry. Circumcenter, incenter, orthocenter, rhythm,
+perspective, physical rectification, and harmonic interpretation remain
+deferred. Post-PR240 private smoke is
+`LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no serving runtime
+target SHA is provable.
 
 ## Details
 

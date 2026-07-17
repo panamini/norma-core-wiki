@@ -3,10 +3,38 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 # Log
+
+## 2026-07-17 — post-PR240 truth closure
+- Recorded PR #240 merged at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb`, from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
+- Deterministic post-merge proof confirms `triangleRequestCount` for 0, 1, and 2 requests; the one-request fixture emits the conditional order `Prolongements -> Diagonales format -> Angles jonction -> Triangles -> famille dérivée`, and multiple requests keep derived families unavailable with `coreRun=false` before confirmation.
+- The active guide truth gap is closed in core PR #241; its read-only triangle-center assessment selects the centroid as the first safe candidate, with separate overlay, `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and fail-closed prerequisites. No center is implemented.
+- Private post-PR240 smoke status is `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`: the existing runtime is detached at pre-PR240 commit `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, and no target SHA can be proven. No provider, retry, tunnel, key, app, or public deployment was used.
+- Deferred limits remain: circumcenter, incenter, orthocenter, rhythm, perspective, physical rectification, and new harmonic reports.
+
+## 2026-07-17 — triangle-altitude pass
+- Recorded `LIVE_TRIANGLE_ALTITUDES_PASS` from the PR #239 live gate in ChatGPT.
+- One explicit canonical triangle yielded exactly 3 derived altitudes with the
+  same triangle parent, `derived-construction` provenance, `sourceTruth=false`,
+  and no Core authority.
+- The UI dependency order was `Prolongements -> Triangles -> Hauteurs -> one
+  explicit confirmation`. Core reported `HAUTEURS DÉRIVÉES / 3 droites`.
+- The result sha256 was `4864a51fd21c1c63f025dcb425ce10f7198c70abfddd59cf916d39fc010d4240`
+  and the plan-image sha256 was
+  `bc1dd792b717287a0050f2617dad5419655da1143524fc81ff16414c1c8e9096`.
+- The full constructions hash was not directly recoverable from the supplied
+  source facts and is intentionally omitted.
+- At this historical checkpoint, the next immediate application leaf was the
+  diagnostic/runbook exposing triangle request presence/count and missing
+  prerequisites; PR #240 has since completed it. Current routing is the
+  read-only triangle-center assessment in core PR #241, with centroid as the
+  first candidate only after assessment. Circumcenter, incenter, orthocenter,
+  rhythm, perspective, physical rectification, and harmonic interpretation
+  remain deferred. Real mobile ChatGPT and multiple live triangle-shape cases
+  remain unverified but do not invalidate the passed gate.
 
 ## 2026-07-16 — triangle-construction pass
 - Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live
