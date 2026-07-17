@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - architecture
   - adapters
@@ -27,6 +27,7 @@ sources:
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
 # Core / Interface / Adapter Boundary
@@ -147,9 +148,19 @@ remains `sourceTruth=false`, and introduces no Core authority, incenter,
 altitude, or center.
 
 The dedicated triangle construction gate later passed in a separate live run
-with 13 derived constructions total. Explicit triangle parents were preserved,
-constructions stayed `sourceTruth=false`, and the output remained outside Core
-authority.
+with 13 derived constructions total. PR #239 completed the altitude gate:
+one explicit canonical triangle now yields exactly three derived altitudes
+with the same triangle parent, `derived-construction` provenance,
+`sourceTruth=false`, and no Core authority. The observed UI order was
+`Prolongements -> Triangles -> Hauteurs -> one explicit confirmation`; Core
+reported `HAUTEURS DÉRIVÉES / 3 droites`. The next immediate application leaf
+is a small diagnostic/runbook PR exposing triangle request presence/count and
+missing prerequisites; after that comes read-only assessment of triangle
+centers. Centroid may be the first candidate only after that assessment.
+Circumcenter, incenter, orthocenter, rhythm, perspective, physical
+rectification, and harmonic interpretation remain deferred. Real mobile
+ChatGPT and multiple live triangle-shape cases remain unverified but do not
+invalidate the passed gate.
 
 ## Details
 

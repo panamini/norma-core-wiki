@@ -3,10 +3,30 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 # Log
+
+## 2026-07-17 — triangle-altitude pass
+- Recorded `LIVE_TRIANGLE_ALTITUDES_PASS` from the PR #239 live gate in ChatGPT.
+- One explicit canonical triangle yielded exactly 3 derived altitudes with the
+  same triangle parent, `derived-construction` provenance, `sourceTruth=false`,
+  and no Core authority.
+- The UI dependency order was `Prolongements -> Triangles -> Hauteurs -> one
+  explicit confirmation`. Core reported `HAUTEURS DÉRIVÉES / 3 droites`.
+- The result sha256 was `4864a51fd21c1c63f025dcb425ce10f7198c70abfddd59cf916d39fc010d4240`
+  and the plan-image sha256 was
+  `bc1dd792b717287a0050f2617dad5419655da1143524fc81ff16414c1c8e9096`.
+- The full constructions hash was not directly recoverable from the supplied
+  source facts and is intentionally omitted.
+- The next immediate application leaf is a small diagnostic/runbook PR exposing
+  triangle request presence/count and missing prerequisites; read-only
+  assessment of triangle centers follows, with centroid as the first candidate
+  only after assessment. Circumcenter, incenter, orthocenter, rhythm,
+  perspective, physical rectification, and harmonic interpretation remain
+  deferred. Real mobile ChatGPT and multiple live triangle-shape cases remain
+  unverified but do not invalidate the passed gate.
 
 ## 2026-07-16 — triangle-construction pass
 - Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live

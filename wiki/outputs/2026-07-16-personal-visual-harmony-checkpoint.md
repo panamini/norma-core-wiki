@@ -3,7 +3,7 @@ title: "Personal Visual Harmony Checkpoint"
 category: output
 status: current
 created: 2026-07-16
-updated: 2026-07-16
+updated: 2026-07-17
 type: runbook
 ---
 
@@ -49,8 +49,13 @@ live gate; it does not claim triangle proof.
 ## Recommendations
 - The dedicated live triangle construction gate later passed in a separate live
   run.
-- The next dependency is read-only assessment/contract for triangle altitudes.
-- Keep centers, rhythm, perspective, and harmonic interpretation deferred.
+- PR #239 later completed the triangle-altitude gate, so the next immediate
+  application leaf is a small diagnostic/runbook PR exposing triangle request
+  presence/count and missing prerequisites.
+- After that comes read-only assessment of triangle centers; centroid is the
+  first candidate only after assessment. Circumcenter, incenter, orthocenter,
+  rhythm, perspective, physical rectification, and harmonic interpretation
+  remain deferred.
 
 ## Verification
 - The live run used `Norma Visual Harmony — Personal Stable` in desktop ChatGPT
@@ -71,3 +76,4 @@ live gate; it does not claim triangle proof.
 - `wiki/overview.md`
 - `wiki/tech/core-interface-boundary.md`
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
+- `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`

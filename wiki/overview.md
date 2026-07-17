@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 # Overview
@@ -23,7 +23,8 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR6 proved private/dev ChatGPT Secure MCP Tunnel invocation through `norma.runMvpDemoV1`; the app was not published, the tunnel was stopped after testing, and deterministic output facts were preserved in a checkpoint output.
 - PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch; that R6D-to-R1 sequencing is now historical.
 - The latest personal visual-harmony checkpoint is the 2026-07-16 live desktop run on `golden-split-poster.png`; it recorded pixel-proposal evidence and did not exercise explicit triangles, medians, perpendicular bisectors, or internal angle bisectors.
-- The dedicated triangle construction gate later passed in a separate live run with 13 derived constructions total; the next dependency is read-only triangle-altitude assessment/contract.
+- The dedicated triangle construction gate later passed in a separate live run with 13 derived constructions total.
+- PR #239 completed the altitude gate: one explicit canonical triangle now yields exactly three derived altitudes with the same triangle parent, `derived-construction` provenance, `sourceTruth=false`, and no Core authority. The observed UI order was `Prolongements -> Triangles -> Hauteurs -> one explicit confirmation`; Core reported `HAUTEURS DÉRIVÉES / 3 droites`. The next immediate application leaf is a small diagnostic/runbook PR exposing triangle request presence/count and missing prerequisites; after that comes read-only assessment of triangle centers. Centroid may be the first candidate only after that assessment. Circumcenter, incenter, orthocenter, rhythm, perspective, physical rectification, and harmonic interpretation remain deferred. Real mobile ChatGPT and multiple live triangle-shape cases remain unverified but do not invalidate the passed gate.
 - PR #135 / R14 completed the local static report dashboard checkpoint for Structured Analyze report inspection.
 - PR #144 / R22 merged the local-only, static, read-only Structured Analyze inspection surface for existing result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
 - PR #145 / R23 added local inspection surface onboarding fixture and workflow polish.
@@ -132,7 +133,18 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   altitude, or center.
 - The triangle construction gate later passed in a separate live run with 13
   derived constructions total, explicit triangle parents, and no Core
-  authority.
+  authority. PR #239 completed the altitude gate with exactly one explicit
+  canonical triangle yielding exactly three derived altitudes, a shared
+  triangle parent, `derived-construction` provenance, `sourceTruth=false`, and
+  no Core authority. The observed UI order was `Prolongements -> Triangles ->
+  Hauteurs -> one explicit confirmation`; Core reported `HAUTEURS DÉRIVÉES / 3
+  droites`. The next immediate application leaf is a small diagnostic/runbook
+  PR exposing triangle request presence/count and missing prerequisites; after
+  that comes read-only assessment of triangle centers. Centroid may be the
+  first candidate only after that assessment. Circumcenter, incenter,
+  orthocenter, rhythm, perspective, physical rectification, and harmonic
+  interpretation remain deferred. Real mobile ChatGPT and multiple live
+  triangle-shape cases remain unverified but do not invalidate the passed gate.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
@@ -188,7 +200,16 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   extend the triangle-construction rail with perpendicular bisectors,
   regression fixes, unclamped support-line preservation, and opt-in internal
   angle bisectors. The dedicated triangle construction gate later passed in a
-  separate live run; the next dependency is read-only
-  triangle-altitude assessment/contract, while centers, rhythm, perspective,
-  and harmonic interpretation remain deferred.
+  separate live run, and PR #239 completed the altitude gate with exactly one
+  explicit canonical triangle yielding exactly three derived altitudes, a
+  shared triangle parent, `derived-construction` provenance, `sourceTruth=false`,
+  and no Core authority. The observed UI order was `Prolongements -> Triangles
+  -> Hauteurs -> one explicit confirmation`; Core reported `HAUTEURS DÉRIVÉES /
+  3 droites`. The next immediate application leaf is a small diagnostic/runbook
+  PR exposing triangle request presence/count and missing prerequisites; after
+  that comes read-only assessment of triangle centers. Centroid may be the
+  first candidate only after that assessment. Circumcenter, incenter,
+  orthocenter, rhythm, perspective, physical rectification, and harmonic
+  interpretation remain deferred. Real mobile ChatGPT and multiple live
+  triangle-shape cases remain unverified but do not invalidate the passed gate.
   Package publication remains a separate gate.

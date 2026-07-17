@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-16
+updated: 2026-07-17
 tags:
   - execution
   - roadmap
@@ -39,6 +39,7 @@ sources:
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
 # MVP PR Roadmap
@@ -47,9 +48,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #238 at
-`3be0086c456bf240e6214b9592450d7b0e26a990` with reviewed head
-`0d7743c6085497a9f8413725e9fffc03e525f262`.
+Norma Core `origin/main` is current through PR #239 at
+`652574fb435c20233658c0c681a8f06f56ef80d1` with reviewed head
+`b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -115,9 +116,19 @@ geometry separately from clipped render geometry. PR #238 adds exactly three
 opt-in internal angle bisectors with default-off controls, stable parent
 provenance, `sourceTruth=false`, no Core authority, and no incenter/altitude/center.
 The dedicated triangle construction gate later passed in a separate live run
-with 13 derived constructions total; the next dependency is read-only
-triangle-altitude assessment/contract, while centers, rhythm, perspective, and
-harmonic interpretation remain deferred.
+with 13 derived constructions total. PR #239 completed the altitude gate:
+one explicit canonical triangle now yields exactly three derived altitudes
+with the same triangle parent, `derived-construction` provenance,
+`sourceTruth=false`, and no Core authority. The observed UI order was
+`Prolongements -> Triangles -> Hauteurs -> one explicit confirmation`; Core
+reported `HAUTEURS DÉRIVÉES / 3 droites`. The next immediate application leaf
+is a small diagnostic/runbook PR exposing triangle request presence/count and
+missing prerequisites; after that comes read-only assessment of triangle
+centers. Centroid may be the first candidate only after that assessment.
+Circumcenter, incenter, orthocenter, rhythm, perspective, physical
+rectification, and harmonic interpretation remain deferred. Real mobile
+ChatGPT and multiple live triangle-shape cases remain unverified but do not
+invalidate the passed gate.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
