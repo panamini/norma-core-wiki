@@ -8,6 +8,13 @@ updated: 2026-07-17
 
 # Log
 
+## 2026-07-17 — personal-main live acceptance v6
+- Recorded `LIVE_ACCEPTANCE_PASS` for `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` after the exact-head merge of `norma-core` PR #243.
+- Reviewed head `9148a8af9c7c529983299d2fcf3889cdd423def9`; the merge commit and exact `origin/main` are `4cf8cd169a1c01fd64f654b1c6848061c590c7e0`.
+- The private exact-main install was byte-identical, build passed, the suite passed `1700/1700`, and `/healthz=live` plus `/readyz=ready` were observed.
+- Final widget: `CORE + PLAN IMAGE VÉRIFIÉS`; visible state is rectangle Core, `0` harmonic reports, `3` visual relations, derived triangle, `3` medians, and `1` centroid, with `candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`.
+- The canonical next gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`; no provider call, public deployment, secret/tunnel/app/profile/permission change, or second retry was used.
+
 ## 2026-07-17 — post-PR240 truth closure
 - Recorded PR #240 merged at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb`, from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
 - Deterministic post-merge proof confirms `triangleRequestCount` for 0, 1, and 2 requests; the one-request fixture emits the conditional order `Prolongements -> Diagonales format -> Angles jonction -> Triangles -> famille dérivée`, and multiple requests keep derived families unavailable with `coreRun=false` before confirmation.

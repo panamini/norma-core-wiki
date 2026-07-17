@@ -39,6 +39,7 @@ sources:
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md
   - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
@@ -48,9 +49,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #240 at
-`1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb` with reviewed head
-`e097e5434902bf883f88720ab12c2a3b2102ae8e`.
+Norma Core `origin/main` is current through PR #243 at
+`4cf8cd169a1c01fd64f654b1c6848061c590c7e0` with reviewed head
+`9148a8af9c7c529983299d2fcf3889cdd423def9`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -83,6 +84,13 @@ opt-in triangle-median construction layer at
 triangle produces exactly three vertex-to-opposite-side-midpoint segments with
 stable parent provenance, `sourceTruth=false`, no Core authority, and no
 centroid/bisector/center surface.
+
+PR #243 closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` on the exact
+main merge commit `4cf8cd169a1c01fd64f654b1c6848061c590c7e0` with a live PASS.
+The verified runtime shows the final triangle, three medians, and centroid
+while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and
+`coreAuthority=false`. The confirmation replay path is repaired, and this is a
+live truth closure, not a new Core geometry authority.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite

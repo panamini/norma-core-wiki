@@ -53,6 +53,7 @@ updated: 2026-07-17
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
@@ -73,6 +74,7 @@ updated: 2026-07-17
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` exact-main live acceptance PASS, final triangle/medians/centroid state, and held-out next gate
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` historical live desktop ChatGPT evidence and pixel-proposal checkpoint

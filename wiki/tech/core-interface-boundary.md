@@ -155,14 +155,17 @@ with the same triangle parent, `derived-construction` provenance,
 preparation diagnostic exposing `triangleRequestCount` and conditional
 prerequisites, while keeping derived families unavailable unless exactly one
 explicit request exists. Core PR #241 records a read-only centroid assessment
-only; no center is implemented. A future centroid must remain a separate
-derived overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
-`coreAuthority=false`, and fail-closed validation; it must never enter Core or
-be treated as observed geometry. Circumcenter, incenter, orthocenter, rhythm,
-perspective, physical rectification, and harmonic interpretation remain
-deferred. Post-PR240 private smoke is
-`LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no serving runtime
-target SHA is provable.
+only; no center is implemented. PR #243 closed
+`CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS on exact-main
+`4cf8cd169a1c01fd64f654b1c6848061c590c7e0`: the verified runtime shows the
+final triangle, three medians, and centroid while preserving
+`candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`.
+The centroid is implemented in the verified runtime, but other triangle
+centers remain deferred behind separate contracts and explicit evidence.
+`PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1` is a held-out evaluation gate, not
+a core boundary change; it must not be treated as permission to invent new
+geometric rules. Circumcenter, incenter, orthocenter, rhythm, perspective,
+physical rectification, and harmonic interpretation remain deferred.
 
 ## Details
 
