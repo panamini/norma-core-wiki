@@ -142,15 +142,15 @@ with the same triangle parent, `derived-construction` provenance,
 preparation diagnostic: it exposes `triangleRequestCount`, emits conditional
 `Prolongements -> Diagonales format (when required) -> Angles jonction (when
 required) -> Triangles` guidance, and keeps derived families unavailable unless
-exactly one explicit request exists. Core PR #241 records a read-only
-triangle-center assessment selecting centroid as the first safe candidate; no
-center is implemented. Its future boundary is separate overlay,
-`candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and
-fail-closed validation. Circumcenter, incenter, orthocenter, rhythm,
-perspective, physical rectification, and harmonic interpretation remain
-deferred. Post-PR240 private smoke is
+exactly one explicit request exists. At the historical PR #241 read-only
+assessment checkpoint, centroid was selected as the first safe candidate; no
+center was implemented yet, and the post-PR240 private smoke remained
 `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because the serving runtime
-target SHA is not provable.
+target SHA was not provable. PR #243 later closed both gaps: centroid is now a
+separate opt-in overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
+`coreAuthority=false`, and fail-closed validation, verified live on exact main.
+Circumcenter, incenter, orthocenter, rhythm, perspective, physical
+rectification, and harmonic interpretation remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
