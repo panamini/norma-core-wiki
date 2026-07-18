@@ -137,14 +137,16 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   canonical triangle yielding exactly three derived altitudes, a shared
   triangle parent, `derived-construction` provenance, `sourceTruth=false`, and
   no Core authority. PR #240 then merged the preparation diagnostic exposing
-  `triangleRequestCount` and conditional prerequisites. Core PR #241 records a
-  read-only centroid assessment only; no center is implemented. Its future
-  boundary requires `candidateEvidenceOnly=true`, `sourceTruth=false`,
-  `coreAuthority=false`, a separate overlay, and fail-closed validation.
-  Circumcenter, incenter, orthocenter, rhythm, perspective, physical
-  rectification, and harmonic interpretation remain deferred. The post-PR240
-  private smoke is `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no
-  verifiable target runtime SHA is available.
+  `triangleRequestCount` and conditional prerequisites. At the historical
+  PR #241 read-only assessment checkpoint, centroid was selected as the first
+  safe candidate; no center was implemented yet, and the post-PR240 private
+  smoke remained `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because no
+  verifiable target runtime SHA was available. PR #243 later closed both gaps:
+  centroid is now a separate opt-in overlay with
+  `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and
+  fail-closed validation, verified live on exact main. Circumcenter, incenter,
+  orthocenter, rhythm, perspective, physical rectification, and harmonic
+  interpretation remain deferred.
 - Exact-head evidence passes build, focused rotated-refinement and
   visual-harmony tests (297/297), historical changed-file guards, full suite
   (1672/1672), desktop and mobile local widget smoke, three remote checks,
@@ -194,9 +196,9 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - Current roadmap model is gate-based. Rotated-ellipse shadow refinement is
   complete locally through PR #231 with separate original/proposed geometry,
   fail-closed abstention, explicit adoption, and no Core authority. The
-  controlled local A/B is non-regressive; the active validation gate is the
-  same-image live ChatGPT A/B is now non-regressive, and PR #234 provides the
-  derived median-construction slice. PR #235, PR #236, PR #237, and PR #238
+  controlled local A/B and same-image live ChatGPT A/B are non-regressive, and
+  PR #234 provides the derived median-construction slice. PR #235, PR #236,
+  PR #237, and PR #238
   extend the triangle-construction rail with perpendicular bisectors,
   regression fixes, unclamped support-line preservation, and opt-in internal
   angle bisectors. The dedicated triangle construction gate later passed in a
@@ -208,10 +210,11 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
   3 droites`. At the time of this historical checkpoint, the next immediate
   application leaf was the diagnostic/runbook exposing triangle request
   presence/count and missing prerequisites; PR #240 has since completed it.
-  Current routing is the read-only triangle-center assessment in core PR #241;
-  centroid is the first safe candidate only after assessment. Circumcenter,
-  incenter, orthocenter, rhythm, perspective, physical rectification, and
-  harmonic interpretation remain deferred. Real mobile ChatGPT and multiple
-  live triangle-shape cases remain unverified but do not invalidate the passed
-  gate.
+  The later PR #243 live closure supersedes the historical PR #241 assessment,
+  and PR #244/#245 plus the declared-ratio live gate establish the current
+  personal stable MVP. Current routing is observation-led maintenance, not
+  automatic geometric expansion. Circumcenter, incenter, orthocenter, other
+  new centers, rhythm, perspective, physical rectification, and new harmonic
+  report families remain deferred. Real mobile ChatGPT remains unverified but
+  is not an active stability gate.
   Package publication remains a separate gate.

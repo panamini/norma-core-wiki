@@ -27,8 +27,8 @@ updated: 2026-07-18
 ## 2026-07-17 — post-PR240 truth closure
 - Recorded PR #240 merged at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb`, from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
 - Deterministic post-merge proof confirms `triangleRequestCount` for 0, 1, and 2 requests; the one-request fixture emits the conditional order `Prolongements -> Diagonales format -> Angles jonction -> Triangles -> famille dérivée`, and multiple requests keep derived families unavailable with `coreRun=false` before confirmation.
-- The active guide truth gap is closed in core PR #241; its read-only triangle-center assessment selects the centroid as the first safe candidate, with separate overlay, `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and fail-closed prerequisites. No center is implemented.
-- Private post-PR240 smoke status is `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`: the existing runtime is detached at pre-PR240 commit `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, and no target SHA can be proven. No provider, retry, tunnel, key, app, or public deployment was used.
+- At this historical checkpoint, core PR #241 closed the guide truth gap with a read-only triangle-center assessment selecting centroid as the first safe candidate; no center was implemented yet.
+- At the same checkpoint, private post-PR240 smoke status remained `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`: the runtime was detached at pre-PR240 commit `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, and no target SHA could be proven. PR #243 later implemented the separate non-authoritative centroid overlay and closed the exact-main live gate.
 - Deferred limits remain: circumcenter, incenter, orthocenter, rhythm, perspective, physical rectification, and new harmonic reports.
 
 ## 2026-07-17 — triangle-altitude pass
@@ -45,12 +45,12 @@ updated: 2026-07-18
   source facts and is intentionally omitted.
 - At this historical checkpoint, the next immediate application leaf was the
   diagnostic/runbook exposing triangle request presence/count and missing
-  prerequisites; PR #240 has since completed it. Current routing is the
-  read-only triangle-center assessment in core PR #241, with centroid as the
-  first candidate only after assessment. Circumcenter, incenter, orthocenter,
-  rhythm, perspective, physical rectification, and harmonic interpretation
-  remain deferred. Real mobile ChatGPT and multiple live triangle-shape cases
-  remain unverified but do not invalidate the passed gate.
+  prerequisites; PR #240 has since completed it. At this checkpoint, routing
+  moved to the read-only triangle-center assessment in core PR #241, with
+  centroid as the first candidate only after assessment. PR #243 later
+  superseded that assessment with its live-verified, separate non-authoritative
+  centroid overlay. Circumcenter, incenter, orthocenter, rhythm, perspective,
+  physical rectification, and harmonic interpretation remain deferred.
 
 ## 2026-07-16 — triangle-construction pass
 - Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live
