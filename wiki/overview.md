@@ -3,7 +3,7 @@ title: "Overview"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Overview
@@ -24,7 +24,7 @@ Raw inputs have been ingested into `raw/`, source summaries live in `wiki/source
 - PR113 / R6D proved current-main private ChatGPT connector compatibility for the six-tool MCP inventory after the `_meta` patch; that R6D-to-R1 sequencing is now historical.
 - The latest personal visual-harmony checkpoint is the 2026-07-16 live desktop run on `golden-split-poster.png`; it recorded pixel-proposal evidence and did not exercise explicit triangles, medians, perpendicular bisectors, or internal angle bisectors.
 - The dedicated triangle construction gate later passed in a separate live run with 13 derived constructions total.
-- PR #239 completed the altitude gate: one explicit canonical triangle now yields exactly three derived altitudes with the same triangle parent, `derived-construction` provenance, `sourceTruth=false`, and no Core authority. PR #240 then merged the preparation diagnostic exposing `triangleRequestCount` and the conditional prerequisite order; deterministic tests cover 0, 1, and 2 explicit requests, including derived-family unavailability for multiple requests and `coreRun=false` before confirmation. Core PR #241 records the read-only assessment selecting centroid as the first safe candidate; no center is implemented. PR #243 closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS on exact-main `4cf8cd169a1c01fd64f654b1c6848061c590c7e0`: the verified runtime shows the final triangle, three medians, and centroid while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`. Circumcenter, incenter, orthocenter, rhythm, perspective, physical rectification, and harmonic interpretation remain deferred. The next canonical gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`, not another immediate triangle-center changeset.
+- PR #239 completed the altitude gate; PR #240 added the bounded preparation diagnostic; and PR #243 closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`. The held-out architecture/trapezoid, poster/refinement, and ambiguous-negative matrix later passed without reproducing a Core bug. PR #244 then added deterministic opt-in reports between exactly two declared confirmed lengths at merge `0fec3e7d55eecbed41ec75f38660742c15ce19dc`; PR #245 integrated the private-widget UI at current exact main `b93dbb824617b5624803a4a847ee164b7b1d3bf7`. That exact runtime is byte-identical, passes build and suite `1707/1707`, reports `live`/`ready`, and the live ChatGPT gate preserved declared references through a quadrilateral edit, recovered from an incomplete toggle, and produced a separate `2/3` match with one confirmation/Core. The personal MVP is stable; further work is observation-led maintenance, not automatic geometric expansion. Circumcenter, incenter, orthocenter, other new centers, rhythms/repetitions, physical perspective/homography/rectification, and new harmonic-report families remain deferred.
 - PR #135 / R14 completed the local static report dashboard checkpoint for Structured Analyze report inspection.
 - PR #144 / R22 merged the local-only, static, read-only Structured Analyze inspection surface for existing result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
 - PR #145 / R23 added local inspection surface onboarding fixture and workflow polish.

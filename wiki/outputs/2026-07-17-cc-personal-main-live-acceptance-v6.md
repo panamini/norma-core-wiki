@@ -3,7 +3,7 @@ title: "CC-20260717 Personal Main Live Acceptance v6"
 category: output
 status: current
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-18
 type: runbook
 ---
 
@@ -73,20 +73,48 @@ Operational constraints preserved:
 - no secret, tunnel, app, profile, or permission change
 - no second retry
 
-## Next Gate
+## Postscript — 2026-07-18 personal MVP closure
 
-`PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1` is the canonical next gate.
+- Core PR #244: reviewed head
+  `303fd5145544596e153527db0869d7beeb27ad38`, merged as
+  `0fec3e7d55eecbed41ec75f38660742c15ce19dc`.
+- Private-widget UI PR #245: reviewed head
+  `c7f0be117704248a2078d333e6f403ca16c9346e`, merged as current exact main
+  `b93dbb824617b5624803a4a847ee164b7b1d3bf7`.
+- Stable private runtime: byte-identical exact-main install, build PASS, suite
+  `1707/1707`, `/healthz=live`, `/readyz=ready`, one bounded restart.
+- Rollback snapshot:
+  `/Users/pana/.local/share/norma-core-personal-runtime.rollback-20260718-pre-ui-b93dbb8`.
+- Held-out matrix: `LIVE_MATRIX_PASS` for architecture/trapezoid,
+  poster/refinement, and ambiguous negative; no Core bug reproduced.
+- Live declared-ratio conversation:
+  `https://chatgpt.com/c/6a5ac711-8864-83e9-a9e1-1a4aa797c10e`.
+- Incomplete ratio selection disabled confirmation with an explicit recovery
+  instruction; disabling the toggle immediately restored confirmation.
+- After selecting `Trapèze principal · côté 3` and
+  `Grande oblique · longueur du segment`, quadrilateral vertex 3 moved from
+  SVG `cx=137.5` to `142.5`; both declared identities persisted and
+  confirmation remained enabled.
+- Exactly one confirmation/Core produced a separate `2/3` report:
+  `406.787 px / 876.584 px`, dominant share `68.303%`, target `66.667%`,
+  delta `1.637 pt`, with no Core authority.
+- Hashes: result
+  `dd9d78591397e65e0c146d4643ec3d0b1dbd90e27f72486dcedaf53aaa18d554`;
+  plan image
+  `c012b665025adf768a0b6da40065f30fec8b4da3886d3711fd5f0f5a98660e28`;
+  declared ratio
+  `6f28d751aaa7b2787bf86013da38bd80b367bab8178518c5b1dd4b9013344ca4`.
 
-That matrix stays held out and must not be replaced by another immediate triangle-center
-changeset. It uses a small frozen corpus of 3-4 images, including a negative case,
-to measure held-out candidate coverage, superfluous candidates, pixel error before
-and after refinement, human correction/adoption, abstention, hydration/confirmation/Core
-reliability, and relation accuracy.
+## Current Gate
 
-After that matrix passes, the next implementation assessment can consider a bounded
-family of user-declared measurements on confirmed geometries. Segment lengths and
-quadrilateral sides/diagonals come first; ellipse major/minor axes are only a later
-atomic contract if the roadmap still supports it.
+The personal MVP is stable. The active gate is observation of real use:
+
+- fix only a reproduced bug or demonstrated user need;
+- keep geometric expansion stopped by default;
+- require a new bounded contract and fresh evidence before any expansion;
+- retain rhythms/repetitions, physical perspective/homography/rectification,
+  circumcenter/incenter/orthocenter and other new centers, and new
+  harmonic-report families as deferred nice-to-have work.
 
 ## Related
 

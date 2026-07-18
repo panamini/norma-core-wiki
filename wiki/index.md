@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Index
@@ -74,7 +74,7 @@ updated: 2026-07-17
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` exact-main live acceptance PASS, final triangle/medians/centroid state, and held-out next gate
+- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` historical v6 live PASS plus PR #244/#245, held-out matrix, runtime, and declared-ratio live closure
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` historical live desktop ChatGPT evidence and pixel-proposal checkpoint

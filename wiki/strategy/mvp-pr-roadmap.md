@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 tags:
   - execution
   - roadmap
@@ -49,9 +49,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #243 at
-`4cf8cd169a1c01fd64f654b1c6848061c590c7e0` with reviewed head
-`9148a8af9c7c529983299d2fcf3889cdd423def9`.
+Norma Core `origin/main` is current through PR #245 at
+`b93dbb824617b5624803a4a847ee164b7b1d3bf7` with reviewed head
+`c7f0be117704248a2078d333e6f403ca16c9346e`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -91,6 +91,17 @@ The verified runtime shows the final triangle, three medians, and centroid
 while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and
 `coreAuthority=false`. The confirmation replay path is repaired, and this is a
 live truth closure, not a new Core geometry authority.
+
+PR #244 added deterministic opt-in reports between exactly two declared
+confirmed lengths at merge `0fec3e7d55eecbed41ec75f38660742c15ce19dc`;
+the report remains separate and has no Core authority. PR #245 then integrated
+the final private-widget UI at current exact main
+`b93dbb824617b5624803a4a847ee164b7b1d3bf7`. The held-out matrix passed all
+three frozen cells without reproducing a Core bug. The exact-main runtime is
+byte-identical, passes build and suite `1707/1707`, and is `live`/`ready`.
+The live declared-ratio gate also passed: incomplete-toggle recovery remained
+usable, declared identities survived a quadrilateral edit, and one
+confirmation/Core produced a separate `2/3` match.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
@@ -270,7 +281,8 @@ inference.
 ## Différé / nice-to-have après stabilisation de Norma
 
 Ces éléments restent différés et ne bloquent pas le MVP stable.
-Ils ne doivent être repris qu'après réussite de la matrice d'acceptation live.
+La matrice d'acceptation live a réussi; ils ne doivent être repris qu'après un
+besoin réel observé, un nouveau contrat borné et une autorisation explicite.
 
 - Les rythmes et répétitions restent d'abord des mesures, puis une interprétation humaine.
 - La perspective physique, la rectification et l'homographie relèvent d'un contrat séparé, avec hypothèses et provenance explicites.
@@ -654,17 +666,20 @@ or artifact-derived source truth.
 - Keep it separate from implementation sequencing so the roadmap stays anchored
   on the current gate-based execution model.
 
-### Next canonical live gate
+### Current stability gate
 
-`PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`
+The personal MVP is stable after the held-out matrix and declared-ratio live
+PASS. The active gate is observation of real use.
 
-- Small held-out corpus: 3-4 images that were not used to design the last fixes.
-- Coverage: ellipse + large oblique + trapezoid/quadrilateral; poster/chevron refinement; architecture/design quadrilaterals; one ambiguous negative that must abstain.
-- Measure: missing/superfluous candidates, pixel error before and after refinement, human correction/adoption, abstention, hydration/confirmation/Core reliability, and relation accuracy.
-- Limit: one preparation and one confirmation/Core maximum per image.
-- Default: no code changes unless a bug is reproduced.
-- This gate replaces any other immediate triangle-center changeset.
-- After PASS, the next assessment may consider a bounded family of user-declared measurements on confirmed geometries.
+- No new geometry PR without a reproduced bug or demonstrated user need.
+- Prefer one surgical corrective PR; use zero PRs when documentation or user
+  guidance is sufficient.
+- Preserve deterministic identity, explicit confirmation, fail-closed
+  validation, and the separation between observed guides, candidate evidence,
+  derived constructions, declared reports, and Core authority.
+- Rhythms/repetitions, physical perspective/homography/rectification,
+  circumcenter/incenter/orthocenter and other new centers, and new
+  harmonic-report families remain deferred nice-to-have work.
 
 ## Sources
 

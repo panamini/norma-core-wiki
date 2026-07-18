@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 tags:
   - architecture
   - adapters
@@ -148,24 +148,28 @@ remains `sourceTruth=false`, and introduces no Core authority, incenter,
 altitude, or center.
 
 The dedicated triangle construction gate later passed in a separate live run
-with 13 derived constructions total. PR #239 completed the altitude gate:
-one explicit canonical triangle now yields exactly three derived altitudes
-with the same triangle parent, `derived-construction` provenance,
-`sourceTruth=false`, and no Core authority. PR #240 then merged the bounded
-preparation diagnostic exposing `triangleRequestCount` and conditional
-prerequisites, while keeping derived families unavailable unless exactly one
-explicit request exists. Core PR #241 records a read-only centroid assessment
-only; no center is implemented. PR #243 closed
-`CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS on exact-main
-`4cf8cd169a1c01fd64f654b1c6848061c590c7e0`: the verified runtime shows the
-final triangle, three medians, and centroid while preserving
-`candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`.
-The centroid is implemented in the verified runtime, but other triangle
-centers remain deferred behind separate contracts and explicit evidence.
-`PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1` is a held-out evaluation gate, not
-a core boundary change; it must not be treated as permission to invent new
-geometric rules. Circumcenter, incenter, orthocenter, rhythm, perspective,
-physical rectification, and harmonic interpretation remain deferred.
+with 13 derived constructions total. PR #239 completed the altitude gate, PR
+#240 added the bounded request diagnostic, and PR #243 closed
+`CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` with a live PASS while
+preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and
+`coreAuthority=false`. The centroid is implemented in the verified runtime,
+but it remains a separate derived overlay outside Core authority.
+
+The held-out architecture/trapezoid, poster/refinement, and ambiguous-negative
+matrix passed without reproducing a Core bug. PR #244 added an opt-in report
+between exactly two declared confirmed lengths. That report is deterministic
+and revalidated after edits, but remains separate from Core evaluation and
+cannot confer source truth, Core authority, or harmonic intent. PR #245
+integrated the bounded UI at current exact main
+`b93dbb824617b5624803a4a847ee164b7b1d3bf7`; its live gate proved
+incomplete-toggle recovery, stable declared identities after a quadrilateral
+edit, and one confirmation/Core producing a separate `2/3` match.
+
+The personal MVP is stable. Further geometry now requires a reproduced bug or
+demonstrated need plus a new bounded contract. Circumcenter, incenter,
+orthocenter and other new centers, rhythms/repetitions, physical
+perspective/homography/rectification, and new harmonic-report families remain
+deferred nice-to-have work.
 
 ## Details
 

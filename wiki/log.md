@@ -3,10 +3,19 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Log
+
+## 2026-07-18 — personal MVP stable closure
+- Recorded Core PR #244 from reviewed head `303fd5145544596e153527db0869d7beeb27ad38`, merged as `0fec3e7d55eecbed41ec75f38660742c15ce19dc`, adding deterministic opt-in reports between exactly two declared confirmed lengths without Core authority.
+- Recorded UI PR #245 from reviewed head `c7f0be117704248a2078d333e6f403ca16c9346e`, merged as current exact main `b93dbb824617b5624803a4a847ee164b7b1d3bf7`.
+- The stable private runtime is byte-identical to exact main; build and suite `1707/1707` pass, `/healthz=live`, `/readyz=ready`, and one bounded restart was used.
+- The held-out matrix passed for architecture/trapezoid, poster/refinement, and the ambiguous negative case; no Core bug was reproduced.
+- Live ChatGPT test `6a5ac711-8864-83e9-a9e1-1a4aa797c10e` proved incomplete-toggle recovery, stable declared identities after moving quadrilateral vertex 3 from SVG `cx=137.5` to `142.5`, and one confirmation/Core producing `2/3`: `406.787 px / 876.584 px`, dominant share `68.303%`, delta `1.637 pt`.
+- Result hashes: `dd9d78591397e65e0c146d4643ec3d0b1dbd90e27f72486dcedaf53aaa18d554`; plan image `c012b665025adf768a0b6da40065f30fec8b4da3886d3711fd5f0f5a98660e28`; declared ratio `6f28d751aaa7b2787bf86013da38bd80b367bab8178518c5b1dd4b9013344ca4`.
+- Declared the personal MVP stable. The next gate is real-use observation and reproduced-bug/need triage; geometric expansion stays stopped by default.
 
 ## 2026-07-17 — personal-main live acceptance v6
 - Recorded `LIVE_ACCEPTANCE_PASS` for `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` after the exact-head merge of `norma-core` PR #243.
