@@ -3,16 +3,32 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Log
 
+## 2026-07-18 — personal MVP stable closure
+- Recorded Core PR #244 from reviewed head `303fd5145544596e153527db0869d7beeb27ad38`, merged as `0fec3e7d55eecbed41ec75f38660742c15ce19dc`, adding deterministic opt-in reports between exactly two declared confirmed lengths without Core authority.
+- Recorded UI PR #245 from reviewed head `c7f0be117704248a2078d333e6f403ca16c9346e`, merged as current exact main `b93dbb824617b5624803a4a847ee164b7b1d3bf7`.
+- The stable private runtime is byte-identical to exact main; build and suite `1707/1707` pass, `/healthz=live`, `/readyz=ready`, and one bounded restart was used.
+- The held-out matrix passed for architecture/trapezoid, poster/refinement, and the ambiguous negative case; no Core bug was reproduced.
+- Live ChatGPT test `6a5ac711-8864-83e9-a9e1-1a4aa797c10e` proved incomplete-toggle recovery, stable declared identities after moving quadrilateral vertex 3 from SVG `cx=137.5` to `142.5`, and one confirmation/Core producing `2/3`: `406.787 px / 876.584 px`, dominant share `68.303%`, delta `1.637 pt`.
+- Result hashes: `dd9d78591397e65e0c146d4643ec3d0b1dbd90e27f72486dcedaf53aaa18d554`; plan image `c012b665025adf768a0b6da40065f30fec8b4da3886d3711fd5f0f5a98660e28`; declared ratio `6f28d751aaa7b2787bf86013da38bd80b367bab8178518c5b1dd4b9013344ca4`.
+- Declared the personal MVP stable. The next gate is real-use observation and reproduced-bug/need triage; geometric expansion stays stopped by default.
+
+## 2026-07-17 — personal-main live acceptance v6
+- Recorded `LIVE_ACCEPTANCE_PASS` for `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` after the exact-head merge of `norma-core` PR #243.
+- Reviewed head `9148a8af9c7c529983299d2fcf3889cdd423def9`; the merge commit and exact `origin/main` are `4cf8cd169a1c01fd64f654b1c6848061c590c7e0`.
+- The private exact-main install was byte-identical, build passed, the suite passed `1700/1700`, and `/healthz=live` plus `/readyz=ready` were observed.
+- Final widget: `CORE + PLAN IMAGE VÉRIFIÉS`; visible state is rectangle Core, `0` harmonic reports, `3` visual relations, derived triangle, `3` medians, and `1` centroid, with `candidateEvidenceOnly=true`, `sourceTruth=false`, and `coreAuthority=false`.
+- The canonical next gate is `PERSONAL-HELDOUT-LIVE-ACCEPTANCE-MATRIX-v1`; no provider call, public deployment, secret/tunnel/app/profile/permission change, or second retry was used.
+
 ## 2026-07-17 — post-PR240 truth closure
 - Recorded PR #240 merged at `1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb`, from reviewed head `e097e5434902bf883f88720ab12c2a3b2102ae8e`.
 - Deterministic post-merge proof confirms `triangleRequestCount` for 0, 1, and 2 requests; the one-request fixture emits the conditional order `Prolongements -> Diagonales format -> Angles jonction -> Triangles -> famille dérivée`, and multiple requests keep derived families unavailable with `coreRun=false` before confirmation.
-- The active guide truth gap is closed in core PR #241; its read-only triangle-center assessment selects the centroid as the first safe candidate, with separate overlay, `candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and fail-closed prerequisites. No center is implemented.
-- Private post-PR240 smoke status is `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`: the existing runtime is detached at pre-PR240 commit `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, and no target SHA can be proven. No provider, retry, tunnel, key, app, or public deployment was used.
+- At this historical checkpoint, core PR #241 closed the guide truth gap with a read-only triangle-center assessment selecting centroid as the first safe candidate; no center was implemented yet.
+- At the same checkpoint, private post-PR240 smoke status remained `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED`: the runtime was detached at pre-PR240 commit `b6352bd6d751cc25c6036c28b208f47b7dd0e0d8`, and no target SHA could be proven. PR #243 later implemented the separate non-authoritative centroid overlay and closed the exact-main live gate.
 - Deferred limits remain: circumcenter, incenter, orthocenter, rhythm, perspective, physical rectification, and new harmonic reports.
 
 ## 2026-07-17 — triangle-altitude pass
@@ -29,12 +45,12 @@ updated: 2026-07-17
   source facts and is intentionally omitted.
 - At this historical checkpoint, the next immediate application leaf was the
   diagnostic/runbook exposing triangle request presence/count and missing
-  prerequisites; PR #240 has since completed it. Current routing is the
-  read-only triangle-center assessment in core PR #241, with centroid as the
-  first candidate only after assessment. Circumcenter, incenter, orthocenter,
-  rhythm, perspective, physical rectification, and harmonic interpretation
-  remain deferred. Real mobile ChatGPT and multiple live triangle-shape cases
-  remain unverified but do not invalidate the passed gate.
+  prerequisites; PR #240 has since completed it. At this checkpoint, routing
+  moved to the read-only triangle-center assessment in core PR #241, with
+  centroid as the first candidate only after assessment. PR #243 later
+  superseded that assessment with its live-verified, separate non-authoritative
+  centroid overlay. Circumcenter, incenter, orthocenter, rhythm, perspective,
+  physical rectification, and harmonic interpretation remain deferred.
 
 ## 2026-07-16 — triangle-construction pass
 - Recorded `LIVE_TRIANGLE_CONSTRUCTIONS_PASS` from the separate triangle live

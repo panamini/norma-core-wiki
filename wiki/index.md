@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 # Index
@@ -53,6 +53,7 @@ updated: 2026-07-17
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
@@ -73,12 +74,13 @@ updated: 2026-07-17
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` historical v6 live PASS plus PR #244/#245, held-out matrix, runtime, and declared-ratio live closure
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency
 - `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md` historical live desktop ChatGPT evidence and pixel-proposal checkpoint
-- `wiki/strategy/mvp-pr-roadmap.md` PR #240 preparation diagnostic and triangle-center assessment routing
-- `wiki/tech/core-interface-boundary.md` PR #240 diagnostic contract, non-Core authority boundary, and blocked smoke status
-- `wiki/overview.md` PR #240 exact merge and post-PR240 truth closure
+- `wiki/strategy/mvp-pr-roadmap.md` PR #243–#245 live closure, declared-ratio report, stable personal MVP, and observation-led next gate
+- `wiki/tech/core-interface-boundary.md` current non-Core authority boundary, held-out/live evidence, and deferred expansion scope
+- `wiki/overview.md` current exact-main runtime, declared-ratio live closure, and stable personal MVP routing
 - `wiki/outputs/2026-07-03-post-pr99-package-tarball-local-install-checkpoint.md`
 - `wiki/strategy/mvp-pr-roadmap.md` post-PR99 package tarball local install and PR100 routing
 - `wiki/tech/core-interface-boundary.md` post-PR99 private package tarball boundary

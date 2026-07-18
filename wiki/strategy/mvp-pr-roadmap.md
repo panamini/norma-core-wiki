@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-17
+updated: 2026-07-18
 tags:
   - execution
   - roadmap
@@ -39,6 +39,7 @@ sources:
   - wiki/outputs/2026-07-15-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
+  - wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md
   - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
 ---
 
@@ -48,9 +49,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #240 at
-`1ecf1e4bc46c2292a688e5f0d06b7692e9a710fb` with reviewed head
-`e097e5434902bf883f88720ab12c2a3b2102ae8e`.
+Norma Core `origin/main` is current through PR #245 at
+`b93dbb824617b5624803a4a847ee164b7b1d3bf7` with reviewed head
+`c7f0be117704248a2078d333e6f403ca16c9346e`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -83,6 +84,24 @@ opt-in triangle-median construction layer at
 triangle produces exactly three vertex-to-opposite-side-midpoint segments with
 stable parent provenance, `sourceTruth=false`, no Core authority, and no
 centroid/bisector/center surface.
+
+PR #243 closed `CC-20260717-PERSONAL-MAIN-LIVE-ACCEPTANCE v6` on the exact
+main merge commit `4cf8cd169a1c01fd64f654b1c6848061c590c7e0` with a live PASS.
+The verified runtime shows the final triangle, three medians, and centroid
+while preserving `candidateEvidenceOnly=true`, `sourceTruth=false`, and
+`coreAuthority=false`. The confirmation replay path is repaired, and this is a
+live truth closure, not a new Core geometry authority.
+
+PR #244 added deterministic opt-in reports between exactly two declared
+confirmed lengths at merge `0fec3e7d55eecbed41ec75f38660742c15ce19dc`;
+the report remains separate and has no Core authority. PR #245 then integrated
+the final private-widget UI at current exact main
+`b93dbb824617b5624803a4a847ee164b7b1d3bf7`. The held-out matrix passed all
+three frozen cells without reproducing a Core bug. The exact-main runtime is
+byte-identical, passes build and suite `1707/1707`, and is `live`/`ready`.
+The live declared-ratio gate also passed: incomplete-toggle recovery remained
+usable, declared identities survived a quadrilateral edit, and one
+confirmation/Core produced a separate `2/3` match.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
@@ -123,15 +142,15 @@ with the same triangle parent, `derived-construction` provenance,
 preparation diagnostic: it exposes `triangleRequestCount`, emits conditional
 `Prolongements -> Diagonales format (when required) -> Angles jonction (when
 required) -> Triangles` guidance, and keeps derived families unavailable unless
-exactly one explicit request exists. Core PR #241 records a read-only
-triangle-center assessment selecting centroid as the first safe candidate; no
-center is implemented. Its future boundary is separate overlay,
-`candidateEvidenceOnly=true`, `sourceTruth=false`, `coreAuthority=false`, and
-fail-closed validation. Circumcenter, incenter, orthocenter, rhythm,
-perspective, physical rectification, and harmonic interpretation remain
-deferred. Post-PR240 private smoke is
+exactly one explicit request exists. At the historical PR #241 read-only
+assessment checkpoint, centroid was selected as the first safe candidate; no
+center was implemented yet, and the post-PR240 private smoke remained
 `LIVE_NOT_RUN / VERIFICATION_BLOCKED / BLOCKED` because the serving runtime
-target SHA is not provable.
+target SHA was not provable. PR #243 later closed both gaps: centroid is now a
+separate opt-in overlay with `candidateEvidenceOnly=true`, `sourceTruth=false`,
+`coreAuthority=false`, and fail-closed validation, verified live on exact main.
+Circumcenter, incenter, orthocenter, rhythm, perspective, physical
+rectification, and harmonic interpretation remain deferred.
 
 PR #165 / PR85 merged the package-private synthetic shared-unit-surface
 normalization helper. PR #166 / PR86 preserved metric policy through that helper
@@ -258,6 +277,19 @@ geometry reaches Core. It does not approve hosted MCP, public app submission,
 public package publishing, paid provider work, automatic recommendation,
 optimization, beauty scoring, physical-plane inference, or artistic-intent
 inference.
+
+## Différé / nice-to-have après stabilisation de Norma
+
+Ces éléments restent différés et ne bloquent pas le MVP stable.
+La matrice d'acceptation live a réussi; ils ne doivent être repris qu'après un
+besoin réel observé, un nouveau contrat borné et une autorisation explicite.
+
+- Les rythmes et répétitions restent d'abord des mesures, puis une interprétation humaine.
+- La perspective physique, la rectification et l'homographie relèvent d'un contrat séparé, avec hypothèses et provenance explicites.
+- Les nouveaux centres triangulaires `circoncentre`, `incentre` et `orthocentre` ne passent que via des contrats bornés et des preuves; aucune inférence automatique.
+- Les triangles automatiques non explicitement défendables restent différés.
+- Les nouveaux rapports harmoniques restent après le gate live tenu à l'écart.
+- La prochaine lecture doit conserver le vocabulaire et le schéma existants, sans diluer la séparation entre preuve offline, preuve runtime et preuve live.
 
 ## Details
 
@@ -633,6 +665,21 @@ or artifact-derived source truth.
 - PR71 should capture product vision, UX flows, integration architecture, and the post-MVP adapter family without broadening MVP core scope.
 - Keep it separate from implementation sequencing so the roadmap stays anchored
   on the current gate-based execution model.
+
+### Current stability gate
+
+The personal MVP is stable after the held-out matrix and declared-ratio live
+PASS. The active gate is observation of real use.
+
+- No new geometry PR without a reproduced bug or demonstrated user need.
+- Prefer one surgical corrective PR; use zero PRs when documentation or user
+  guidance is sufficient.
+- Preserve deterministic identity, explicit confirmation, fail-closed
+  validation, and the separation between observed guides, candidate evidence,
+  derived constructions, declared reports, and Core authority.
+- Rhythms/repetitions, physical perspective/homography/rectification,
+  circumcenter/incenter/orthocenter and other new centers, and new
+  harmonic-report families remain deferred nice-to-have work.
 
 ## Sources
 
