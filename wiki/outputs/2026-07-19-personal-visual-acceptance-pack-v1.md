@@ -45,9 +45,16 @@ Aggregate evidence:
 - semantically acceptable preparations: `6/6`
 - successful confirmations and Core runs: `5/6`
 - human geometry corrections: `0`
+- additional fresh isolated execution: `1` (Case 2, off-frame ellipse)
 - functional retries: `0`
 - reproducible Norma product-code defects: `0`
 - surface-blocked final confirmations: `1/6`
+
+The Case 2 fresh execution followed an earlier non-terminal surface attempt
+and used a fresh isolated conversation. It is recorded separately from the
+functional-retry total: no accepted case repeated a preparation,
+confirmation/Core call, provider call, or recovery action. Therefore the
+matrix has one fresh-run execution and zero functional retries.
 
 The Annunciation preparation contained every frozen required category and made
 no perspective, harmonic, or artistic-intent claim. Its confirmation remained

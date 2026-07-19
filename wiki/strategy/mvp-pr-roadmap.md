@@ -692,8 +692,10 @@ post-PR248 manual-correction live PASS, and the frozen Personal Visual
 Acceptance Pack v1. That pack produced semantically acceptable preparations
 for `6/6` cases, `5/6` bounded confirmation/Core successes, zero human geometry
 corrections, zero functional retries, and zero reproducible Norma product-code
-defects. The one non-terminal confirmation was a ChatGPT surface-completion
-block.
+defects. Case 2 used one additional fresh isolated execution after a
+non-terminal surface attempt; it is tracked separately because no accepted
+call or recovery action was repeated. The one non-terminal confirmation was a
+ChatGPT surface-completion block.
 
 - No new geometry PR without a reproduced bug or demonstrated user need.
 - Prefer one surgical corrective PR; use zero PRs when documentation or user

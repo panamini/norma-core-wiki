@@ -11,6 +11,7 @@ updated: 2026-07-19
 ## 2026-07-19 — visual acceptance pack and guided entry
 - Recorded Personal Visual Acceptance Pack v1 from a frozen four-synthetic/two-real-image matrix.
 - Recorded `6/6` semantically acceptable preparations, `5/6` bounded confirmation/Core successes, zero human geometry corrections, zero functional retries, and zero reproducible Norma product-code defects.
+- Clarified that Case 2 used one additional fresh isolated execution after a non-terminal surface attempt; it is tracked separately because no accepted preparation, confirmation/Core call, provider call, or recovery action was repeated.
 - Classified the remaining Annunciation confirmation as a non-terminal ChatGPT surface block, not a Norma defect.
 - Added `wiki/howto/personal-visual-harmony-quick-start.md` with one short default prompt, bounded goal presets, and the current two-length report workflow.
 - Routed the next observed product gate to guided analysis entry without changing Core, geometry, runtime, app behavior, or ratio packs.
