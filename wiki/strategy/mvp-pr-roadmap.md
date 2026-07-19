@@ -691,11 +691,10 @@ The personal MVP is stable after the held-out matrix, declared-ratio live PASS,
 post-PR248 manual-correction live PASS, and the frozen Personal Visual
 Acceptance Pack v1. That pack produced semantically acceptable preparations
 for `6/6` cases, `5/6` bounded confirmation/Core successes, zero human geometry
-corrections, zero functional retries of an accepted call in the same
-case/conversation, and zero reproducible Norma product-code defects. Case 2
-used one additional fresh isolated execution after a non-terminal surface
-attempt; it is explicitly not a retry because no accepted call or recovery
-action was repeated in the same conversation. The one non-terminal confirmation was a
+corrections, zero accepted-operation retries in the same case/conversation,
+and zero reproducible Norma product-code defects. Case 2 used one case-level
+fresh isolated execution after a non-terminal surface attempt; no accepted
+call or recovery action was repeated in that conversation. The one non-terminal confirmation was a
 ChatGPT surface-completion block.
 
 - No new geometry PR without a reproduced bug or demonstrated user need.

@@ -45,17 +45,17 @@ Aggregate evidence:
 - semantically acceptable preparations: `6/6`
 - successful confirmations and Core runs: `5/6`
 - human geometry corrections: `0`
-- additional fresh isolated execution (not a retry): `1` (Case 2, off-frame ellipse)
-- functional retries of an accepted call in the same case/conversation: `0`
+- case-level fresh isolated executions after a non-terminal surface: `1` (Case 2, off-frame ellipse)
+- accepted-operation retries in the same case/conversation: `0`
 - reproducible Norma product-code defects: `0`
 - surface-blocked final confirmations: `1/6`
 
 The Case 2 fresh isolated execution followed an earlier non-terminal surface
-attempt and used a new conversation. It is not a functional retry: the retry
-counter covers only a repeated preparation, confirmation/Core call, provider
-call, or recovery action for an accepted case in the same conversation. No
-such accepted call was repeated. Therefore the matrix has one explicitly
-non-retry fresh execution and zero functional retries.
+attempt and used a new conversation. The matrix therefore records one
+case-level fresh execution. The accepted-operation retry counter is narrower:
+it covers only a repeated preparation, confirmation/Core call, provider call,
+or recovery action for an accepted case in the same conversation. No such
+accepted operation was repeated, so that counter is zero.
 
 The Annunciation preparation contained every frozen required category and made
 no perspective, harmonic, or artistic-intent claim. Its confirmation remained
