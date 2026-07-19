@@ -8,6 +8,15 @@ updated: 2026-07-19
 
 # Log
 
+## 2026-07-19 — visual acceptance pack and guided entry
+- Recorded Personal Visual Acceptance Pack v1 from a frozen four-synthetic/two-real-image matrix.
+- Recorded `6/6` semantically acceptable preparations, `5/6` bounded confirmation/Core successes, zero human geometry corrections, zero accepted-operation retries in the same case/conversation, and zero reproducible Norma product-code defects.
+- Clarified that Case 2 used one case-level fresh isolated execution after a non-terminal surface attempt; no accepted preparation, confirmation/Core call, provider call, or recovery action was repeated in that conversation.
+- Classified the remaining Annunciation confirmation as a non-terminal ChatGPT surface block, not a Norma defect.
+- Added `wiki/howto/personal-visual-harmony-quick-start.md` with one short default prompt, bounded goal presets, and the current two-length report workflow.
+- Routed the next observed product gate to guided analysis entry without changing Core, geometry, runtime, app behavior, or ratio packs.
+- Kept authored `harmonic-triads` and `root-two-harmonics` families as explicit Structured Analyze examples pending a visible identifier/version/scope/`PackLock` selection contract.
+
 ## 2026-07-19 — post-PR248 live acceptance
 - Recorded PR #246 merged as `4cf17bfaddf5b5bfd8bb34ed8236b472d37945f4`, adding editable ellipse center/radius controls and responsive stacking.
 - Recorded PR #247 merged as `33bd38dfce9f39ffcc270cf14de33f080fb9e8db`, keeping off-frame ellipse radius controls reachable without claiming unseen raster evidence.
