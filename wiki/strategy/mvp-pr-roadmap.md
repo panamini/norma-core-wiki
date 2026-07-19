@@ -95,10 +95,10 @@ live truth closure, not a new Core geometry authority.
 PR #244 added deterministic opt-in reports between exactly two declared
 confirmed lengths at merge `0fec3e7d55eecbed41ec75f38660742c15ce19dc`;
 the report remains separate and has no Core authority. PR #245 then integrated
-the final private-widget UI at current exact main
+the final private-widget UI at the then-current exact main
 `b93dbb824617b5624803a4a847ee164b7b1d3bf7`. The held-out matrix passed all
-three frozen cells without reproducing a Core bug. The exact-main runtime is
-byte-identical, passes build and suite `1707/1707`, and is `live`/`ready`.
+three frozen cells without reproducing a Core bug. That historical runtime was
+byte-identical, passed build and suite `1707/1707`, and was `live`/`ready`.
 The live declared-ratio gate also passed: incomplete-toggle recovery remained
 usable, declared identities survived a quadrilateral edit, and one
 confirmation/Core produced a separate `2/3` match.

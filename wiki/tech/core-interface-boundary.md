@@ -160,7 +160,7 @@ matrix passed without reproducing a Core bug. PR #244 added an opt-in report
 between exactly two declared confirmed lengths. That report is deterministic
 and revalidated after edits, but remains separate from Core evaluation and
 cannot confer source truth, Core authority, or harmonic intent. PR #245
-integrated the bounded UI at current exact main
+integrated the bounded UI at the then-current exact main
 `b93dbb824617b5624803a4a847ee164b7b1d3bf7`; its live gate proved
 incomplete-toggle recovery, stable declared identities after a quadrilateral
 edit, and one confirmation/Core producing a separate `2/3` match.

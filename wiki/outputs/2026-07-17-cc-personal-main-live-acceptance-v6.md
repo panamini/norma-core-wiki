@@ -79,7 +79,7 @@ Operational constraints preserved:
   `303fd5145544596e153527db0869d7beeb27ad38`, merged as
   `0fec3e7d55eecbed41ec75f38660742c15ce19dc`.
 - Private-widget UI PR #245: reviewed head
-  `c7f0be117704248a2078d333e6f403ca16c9346e`, merged as current exact main
+  `c7f0be117704248a2078d333e6f403ca16c9346e`, merged as the then-current exact main
   `b93dbb824617b5624803a4a847ee164b7b1d3bf7`.
 - Stable private runtime: byte-identical exact-main install, build PASS, suite
   `1707/1707`, `/healthz=live`, `/readyz=ready`, one bounded restart.
