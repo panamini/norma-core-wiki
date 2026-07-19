@@ -3,7 +3,7 @@ title: "CC-20260717 Personal Main Live Acceptance v6"
 category: output
 status: current
 created: 2026-07-17
-updated: 2026-07-18
+updated: 2026-07-19
 type: runbook
 ---
 
@@ -115,6 +115,44 @@ The personal MVP is stable. The active gate is observation of real use:
 - retain rhythms/repetitions, physical perspective/homography/rectification,
   circumcenter/incenter/orthocenter and other new centers, and new
   harmonic-report families as deferred nice-to-have work.
+
+## Postscript — 2026-07-19 post-PR248 live acceptance
+
+- PR #246: editable ellipse center/radius controls and responsive widget
+  stacking, merged as `4cf17bfaddf5b5bfd8bb34ed8236b472d37945f4`.
+- PR #247: reachable off-frame ellipse radius proxies with bounded
+  mathematical geometry and no claim over unseen raster evidence, merged as
+  `33bd38dfce9f39ffcc270cf14de33f080fb9e8db`.
+- PR #248: exactly one removable pre-confirmation manual segment, reviewed at
+  `1badd2c99bb0eb4f941277f66bb3632f974a4669` and merged as exact main
+  `c406e1c0b20178b6d97299b466d6c35893873183`.
+- Status: `LIVE_ACCEPTANCE_PASS` for
+  `CC-20260719-PERSONAL-POST-PR248-LIVE-ACCEPTANCE v1`.
+- Build and suite: PASS, `1722/1722`.
+- Stable private runtime: byte-identical to exact main,
+  `/healthz=live`, `/readyz=ready`.
+- One visually omitted vertical guide was drawn manually. Its pixel proposal
+  remained separate, was adopted explicitly, then reverted to the original.
+- Deletion removed the segment, proposal overlay, and declared-length
+  references; reload preserved that deletion and restored the drawing control.
+- One recreated segment completed exactly one confirmation/Core without retry.
+  Result hash:
+  `7a630614d4f86cf15c5675559429d0bf4f0a9163e820c83e8c61de4482bb2359`;
+  plan-image hash:
+  `4c5532b70fb4693752f28928b3aa82f124e5fcc2c7d8b9df2a7d2af9b951f9f1`.
+- A same-file repréparation returned to `À CONFIRMER` with five fresh
+  primitives, no inherited manual segment, and no inherited completed Core
+  state.
+- Visual proposal is candidate discovery, not exhaustive detection. Pixel
+  refinement adjusts existing candidates only; the manual segment is the
+  bounded human correction path.
+- The declared two-length report remains opt-in and starts disabled on a fresh
+  repréparation. Exactly two confirmed lengths are required; an incomplete
+  selection disables confirmation with a reversible recovery path.
+- Real mobile ChatGPT viewport remains unverified. Local responsive and
+  off-frame ellipse regressions remain deterministic evidence only.
+- No direct provider API call, public deployment, secret, tunnel, app, profile,
+  or permission change occurred.
 
 ## Related
 

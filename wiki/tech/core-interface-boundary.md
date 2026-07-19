@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-18
+updated: 2026-07-19
 tags:
   - architecture
   - adapters
@@ -170,6 +170,16 @@ demonstrated need plus a new bounded contract. Circumcenter, incenter,
 orthocenter and other new centers, rhythms/repetitions, physical
 perspective/homography/rectification, and new harmonic-report families remain
 deferred nice-to-have work.
+
+PR #246 through PR #248 refine only the private review boundary. Editable
+ellipse handles, reachable off-frame radius proxies, and one manual segment do
+not create source truth or Core authority. A visual proposal may omit a
+defendable line or axis; pixel refinement can adjust only candidates already
+present. The manual segment is therefore an explicit human correction, kept
+separate until confirmation and revalidated by the server. Its post-PR248 live
+gate proved adopt/revert, deletion without stale overlays or measurement
+references, reload restoration, one bounded confirmation/Core, and fresh
+same-file repréparation without inherited state.
 
 ## Details
 

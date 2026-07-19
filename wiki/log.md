@@ -3,10 +3,21 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 # Log
+
+## 2026-07-19 — post-PR248 live acceptance
+- Recorded PR #246 merged as `4cf17bfaddf5b5bfd8bb34ed8236b472d37945f4`, adding editable ellipse center/radius controls and responsive stacking.
+- Recorded PR #247 merged as `33bd38dfce9f39ffcc270cf14de33f080fb9e8db`, keeping off-frame ellipse radius controls reachable without claiming unseen raster evidence.
+- Recorded PR #248 from reviewed head `1badd2c99bb0eb4f941277f66bb3632f974a4669`, merged as exact main `c406e1c0b20178b6d97299b466d6c35893873183`, adding one bounded pre-confirmation manual segment.
+- `CC-20260719-PERSONAL-POST-PR248-LIVE-ACCEPTANCE v1` passed: manual creation, separate pixel proposal, explicit adopt/revert, complete deletion, reload restoration, one confirmation/Core, and fresh same-file repréparation without inherited manual or completed state.
+- The byte-identical private runtime passes build and suite `1722/1722`, with `/healthz=live` and `/readyz=ready`.
+- Result hash: `7a630614d4f86cf15c5675559429d0bf4f0a9163e820c83e8c61de4482bb2359`; plan image: `4c5532b70fb4693752f28928b3aa82f124e5fcc2c7d8b9df2a7d2af9b951f9f1`.
+- Clarified that visual proposal is not exhaustive detection, pixel refinement does not discover new primitives, and the manual segment is the bounded human correction path.
+- Kept the declared two-length report disabled by default on fresh repréparation; exactly two confirmed lengths remain required.
+- Real mobile ChatGPT viewport remains unverified; geometric expansion stays stopped pending a reproduced bug or demonstrated need.
 
 ## 2026-07-18 — personal MVP stable closure
 - Recorded Core PR #244 from reviewed head `303fd5145544596e153527db0869d7beeb27ad38`, merged as `0fec3e7d55eecbed41ec75f38660742c15ce19dc`, adding deterministic opt-in reports between exactly two declared confirmed lengths without Core authority.
