@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-18
+updated: 2026-07-19
 tags:
   - execution
   - roadmap
@@ -49,9 +49,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #245 at
-`b93dbb824617b5624803a4a847ee164b7b1d3bf7` with reviewed head
-`c7f0be117704248a2078d333e6f403ca16c9346e`.
+Norma Core `origin/main` is current through PR #248 at
+`c406e1c0b20178b6d97299b466d6c35893873183` with reviewed head
+`1badd2c99bb0eb4f941277f66bb3632f974a4669`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -95,13 +95,31 @@ live truth closure, not a new Core geometry authority.
 PR #244 added deterministic opt-in reports between exactly two declared
 confirmed lengths at merge `0fec3e7d55eecbed41ec75f38660742c15ce19dc`;
 the report remains separate and has no Core authority. PR #245 then integrated
-the final private-widget UI at current exact main
+the final private-widget UI at the then-current exact main
 `b93dbb824617b5624803a4a847ee164b7b1d3bf7`. The held-out matrix passed all
-three frozen cells without reproducing a Core bug. The exact-main runtime is
-byte-identical, passes build and suite `1707/1707`, and is `live`/`ready`.
+three frozen cells without reproducing a Core bug. That historical runtime was
+byte-identical, passed build and suite `1707/1707`, and was `live`/`ready`.
 The live declared-ratio gate also passed: incomplete-toggle recovery remained
 usable, declared identities survived a quadrilateral edit, and one
 confirmation/Core produced a separate `2/3` match.
+
+PR #246 made ellipse candidates editable through center and radius handles and
+stacked the widget responsively. PR #247 preserved bounded mathematical
+ellipses that extend outside the raster while keeping radius controls reachable
+through image-edge proxies; unseen geometry remains unobserved and outside Core
+authority. PR #248 added exactly one pre-confirmation manual segment by drag or
+two-point click, with edit/delete support, optional existing support-line
+derivation, and server revalidation before confirmation.
+
+The post-PR248 live acceptance passed on exact main. A visually omitted
+vertical guide was added manually, received separate pixel-refinement evidence,
+was explicitly adopted then reverted, and was deleted with its overlays,
+measurement references, and proposal evidence. Reload preserved the deletion.
+One recreated segment then completed exactly one confirmation/Core, and a
+same-file repréparation returned to a clean `À CONFIRMER` state without
+inheriting the manual guide or completed Core state. Build and suite
+`1722/1722` pass; the private runtime is byte-identical and `live`/`ready`.
+This proves a bounded correction path, not exhaustive automatic detection.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
@@ -668,8 +686,9 @@ or artifact-derived source truth.
 
 ### Current stability gate
 
-The personal MVP is stable after the held-out matrix and declared-ratio live
-PASS. The active gate is observation of real use.
+The personal MVP is stable after the held-out matrix, declared-ratio live PASS,
+and post-PR248 manual-correction live PASS. The active gate is observation of
+real use.
 
 - No new geometry PR without a reproduced bug or demonstrated user need.
 - Prefer one surgical corrective PR; use zero PRs when documentation or user
@@ -677,6 +696,9 @@ PASS. The active gate is observation of real use.
 - Preserve deterministic identity, explicit confirmation, fail-closed
   validation, and the separation between observed guides, candidate evidence,
   derived constructions, declared reports, and Core authority.
+- Treat visual proposals as candidate discovery, not exhaustive detection.
+  Pixel refinement may refine only an existing candidate; use the single
+  manual segment for a demonstrated missed line or axis.
 - Rhythms/repetitions, physical perspective/homography/rectification,
   circumcenter/incenter/orthocenter and other new centers, and new
   harmonic-report families remain deferred nice-to-have work.
