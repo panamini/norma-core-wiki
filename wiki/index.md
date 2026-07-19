@@ -18,6 +18,9 @@ updated: 2026-07-19
 - `wiki/product/mvp-demo-brief.md`
 - `wiki/product/norma-product-vision.md`
 
+### How-to
+- `wiki/howto/personal-visual-harmony-quick-start.md`
+
 ### Tech
 - `wiki/tech/core-spec-v0-1.md`
 - `wiki/tech/core-interface-boundary.md`
@@ -53,6 +56,7 @@ updated: 2026-07-19
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md`
 - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
@@ -74,6 +78,10 @@ updated: 2026-07-19
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md` frozen six-case live matrix, no-corrective-PR verdict, and harmonic-pack boundary
+- `wiki/howto/personal-visual-harmony-quick-start.md` short default prompt, optional goal presets, and explicit two-length workflow
+- `wiki/product/norma-product-vision.md` guided-entry and explicit visible pack-selection requirements
+- `wiki/strategy/mvp-pr-roadmap.md` final acceptance evidence and guided analysis entry as the next observed product gate
 - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md` historical v6 live PASS plus PR #244–#248, held-out matrix, declared-ratio closure, and post-PR248 manual-correction live acceptance
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md` post-PR239/PR240 checkpoint, deterministic preparation proof, and honest post-PR240 smoke boundary
 - `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md` historical live triangle construction pass, 13 derived constructions, and the pre-PR239 next-altitude dependency

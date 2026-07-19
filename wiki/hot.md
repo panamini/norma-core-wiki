@@ -17,19 +17,18 @@ Active memory cache for agents. Keep this page under 500 words.
 - The declared-ratio live gate is PASS: a quadrilateral edit preserved both declared identities, incomplete-toggle recovery remained usable, and one confirmation/Core produced a separate `2/3` match without Core authority.
 - `CC-20260719-PERSONAL-POST-PR248-LIVE-ACCEPTANCE v1` is PASS: one omitted vertical guide was drawn manually, refined as separate pixel evidence, adopted and reverted, deleted without stale references, restored cleanly after reload, confirmed once through Core, and absent from a fresh same-file repréparation.
 - Visual proposal is not exhaustive detection. Pixel refinement adjusts existing candidates only; the manual segment is the bounded correction path for a missed line or axis.
+- Personal Visual Acceptance Pack v1 produced semantically acceptable preparations for `6/6` cases and `5/6` bounded confirmation/Core successes with zero human geometry corrections, zero functional retries, and zero reproducible Norma defects. The remaining case was blocked by a non-terminal ChatGPT surface response.
 - The personal MVP is stable. Observe real use and fix only reproduced bugs or demonstrated needs; stop geometric expansion by default.
+- The next observed product gate is guided analysis entry: one short default prompt or a few visible goal presets. Use the quick-start how-to now; do not add hidden prompt logic or automatic pack selection.
 - Rhythms/repetitions, physical perspective/homography/rectification, additional triangle centers, and new harmonic-report families remain deferred nice-to-have work.
-- The local static read-only viewer still inspects existing Structured Analyze result JSON and completed `norma.analyzeStructuredCompositionV1` MCP responses.
-- Direct engine output and `result.json` remain canonical truth; viewer output is derived inspection only.
 - Use `wiki/strategy/mvp-pr-roadmap.md`, `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`, `wiki/tech/core-interface-boundary.md`, and `wiki/overview.md` for current truth.
 
 ## Retrieval Map
 - Overview/index/log: `wiki/{overview,index,log}.md`
 - Roadmap: `wiki/strategy/mvp-pr-roadmap.md`
+- Quick start: `wiki/howto/personal-visual-harmony-quick-start.md`
+- Final visual acceptance pack: `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md`
 - Live acceptance checkpoint: `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
-- Triangle altitude checkpoint: `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
-- Triangle gate checkpoint: `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
-- Visual-harmony checkpoint: `wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md`
 - Authority boundary: `wiki/tech/core-interface-boundary.md`
 
 ## Guardrails
@@ -39,10 +38,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Extended `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
-  through PR #248 and the post-PR248 manual-segment live acceptance.
-- Updated roadmap, overview, index, log, and boundary to declare the personal
-  MVP stable and replace feature expansion with observation-led maintenance.
-- Kept `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
-  and `wiki/outputs/2026-07-16-triangle-constructions-live-gate-checkpoint.md`
-  as historical retrieval anchors.
+- Added the frozen Personal Visual Acceptance Pack v1 checkpoint and the
+  short-prompt quick start.
+- Routed the next observed need to guided entry while keeping automatic pack
+  selection and geometric expansion deferred.

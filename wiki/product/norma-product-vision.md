@@ -3,7 +3,7 @@ title: "Norma Product Vision"
 category: product
 status: planned
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-07-19
 tags:
   - vision
   - adapters
@@ -32,6 +32,21 @@ Norma is a family of adapters around a deterministic proportional core: the firs
 - AutoCAD read-only evaluation of selected geometry or viewports.
 - Future web, Figma, Illustrator, and batch QA adapters.
 
+## Personal ChatGPT UX requirement
+
+The stable personal slice must be usable from one short default prompt or a
+small set of visible goal presets. Users should not have to enumerate every
+supported primitive, remember dependency order, or guess how to request a
+harmonic comparison.
+
+- The prompt selects a workflow goal, never geometry or ratio truth.
+- The widget exposes candidates, editing, uncertainty, optional evidence, and
+  the explicit confirmation gate.
+- A ratio-pack choice must show its identifier, version, scope, and `PackLock`;
+  no prompt may silently select or infer a family.
+- Advanced families stay unavailable in the visual workflow until that
+  explicit selection contract and a bounded live gate exist.
+
 ## Non-goals
 
 - No silent core mutation from interfaces or overlays.
@@ -43,3 +58,4 @@ Norma is a family of adapters around a deterministic proportional core: the firs
 - `wiki/tech/core-interface-boundary.md`
 - `wiki/strategy/mvp-pr-roadmap.md`
 - `wiki/product/mvp-demo-brief.md`
+- `wiki/howto/personal-visual-harmony-quick-start.md`

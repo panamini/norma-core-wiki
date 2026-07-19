@@ -41,6 +41,7 @@ sources:
   - wiki/outputs/2026-07-16-personal-visual-harmony-checkpoint.md
   - wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md
   - wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md
+  - wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md
 ---
 
 # MVP PR Roadmap
@@ -687,8 +688,12 @@ or artifact-derived source truth.
 ### Current stability gate
 
 The personal MVP is stable after the held-out matrix, declared-ratio live PASS,
-and post-PR248 manual-correction live PASS. The active gate is observation of
-real use.
+post-PR248 manual-correction live PASS, and the frozen Personal Visual
+Acceptance Pack v1. That pack produced semantically acceptable preparations
+for `6/6` cases, `5/6` bounded confirmation/Core successes, zero human geometry
+corrections, zero functional retries, and zero reproducible Norma product-code
+defects. The one non-terminal confirmation was a ChatGPT surface-completion
+block.
 
 - No new geometry PR without a reproduced bug or demonstrated user need.
 - Prefer one surgical corrective PR; use zero PRs when documentation or user
@@ -702,6 +707,34 @@ real use.
 - Rhythms/repetitions, physical perspective/homography/rectification,
   circumcenter/incenter/orthocenter and other new centers, and new
   harmonic-report families remain deferred nice-to-have work.
+
+### Next observed product gate — guided analysis entry
+
+The matrix exposed one real product need: prompt and onboarding friction. The
+next candidate is one bounded UX change, not a Core or geometry expansion.
+
+- Offer one short default starter and a small set of visible goal presets such
+  as general analysis, circles/ellipses, lines/axes, and comparison of two
+  lengths.
+- Keep current deterministic preparation, editing, confirmation, and Core
+  behavior unchanged.
+- Put dependency order and incomplete-selection recovery in the widget rather
+  than requiring the user to memorize them.
+- Keep prompt text advisory: it may select a workflow goal but cannot silently
+  select geometry, a ratio family, or Core truth.
+- Treat `wiki/howto/personal-visual-harmony-quick-start.md` as the immediate
+  no-code fallback and validation script.
+
+Implementation is warranted only if starter prompts or equivalent app metadata
+can reduce typing without changing the current tool contract. Validate the
+short default prompt on the frozen acceptance pack before considering the gate
+complete.
+
+New harmonic-pack families are not the next gate. The existing
+`norma.harmonic-triads@0.1.0` and
+`norma.root-two-harmonics@0.1.0` examples remain explicit Structured Analyze
+inputs. A future visual pack selector requires a separate contract that shows
+pack identifier, version, scope, and `PackLock`, never automatic inference.
 
 ## Sources
 
