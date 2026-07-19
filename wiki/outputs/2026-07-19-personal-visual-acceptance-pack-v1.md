@@ -34,7 +34,7 @@ The real images, private screenshots, and ChatGPT artifacts are not committed.
 | Case | Final verdict |
 | --- | --- |
 | Frame, trapezoid, strong oblique | `LIVE_PASS` |
-| Off-frame ellipse, tangent, crossing | `LIVE_PASS_AFTER_FRESH_RUN` |
+| Off-frame ellipse, tangent, crossing | `LIVE_PASS_AFTER_FRESH_ISOLATED_EXECUTION` |
 | Clustered vertical axes | `LIVE_PASS` |
 | Low-contrast ambiguous negative | `LIVE_PASS_MANUAL_CONFIRMATION` |
 | HCB amphitheatre photograph | `LIVE_PASS` |
@@ -45,16 +45,17 @@ Aggregate evidence:
 - semantically acceptable preparations: `6/6`
 - successful confirmations and Core runs: `5/6`
 - human geometry corrections: `0`
-- additional fresh isolated execution: `1` (Case 2, off-frame ellipse)
-- functional retries: `0`
+- additional fresh isolated execution (not a retry): `1` (Case 2, off-frame ellipse)
+- functional retries of an accepted call in the same case/conversation: `0`
 - reproducible Norma product-code defects: `0`
 - surface-blocked final confirmations: `1/6`
 
-The Case 2 fresh execution followed an earlier non-terminal surface attempt
-and used a fresh isolated conversation. It is recorded separately from the
-functional-retry total: no accepted case repeated a preparation,
-confirmation/Core call, provider call, or recovery action. Therefore the
-matrix has one fresh-run execution and zero functional retries.
+The Case 2 fresh isolated execution followed an earlier non-terminal surface
+attempt and used a new conversation. It is not a functional retry: the retry
+counter covers only a repeated preparation, confirmation/Core call, provider
+call, or recovery action for an accepted case in the same conversation. No
+such accepted call was repeated. Therefore the matrix has one explicitly
+non-retry fresh execution and zero functional retries.
 
 The Annunciation preparation contained every frozen required category and made
 no perspective, harmonic, or artistic-intent claim. Its confirmation remained
