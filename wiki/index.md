@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 # Index
@@ -56,6 +56,7 @@ updated: 2026-07-19
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-20-guided-entry-live-closure.md`
 - `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md`
 - `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
 - `wiki/outputs/2026-07-17-post-pr239-triangle-altitudes-live-gate-checkpoint.md`
@@ -78,6 +79,7 @@ updated: 2026-07-19
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-20-guided-entry-live-closure.md` PR #249–#251, six-case matrix, corrective replay PASS, and exact-main runtime promotion
 - `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md` frozen six-case live matrix, no-corrective-PR verdict, and harmonic-pack boundary
 - `wiki/howto/personal-visual-harmony-quick-start.md` short default prompt, optional goal presets, and explicit two-length workflow
 - `wiki/product/norma-product-vision.md` guided-entry and explicit visible pack-selection requirements

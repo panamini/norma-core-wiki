@@ -50,9 +50,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #248 at
-`c406e1c0b20178b6d97299b466d6c35893873183` with reviewed head
-`1badd2c99bb0eb4f941277f66bb3632f974a4669`.
+Norma Core `origin/main` is current through PR #251 at
+`593b014052bc98e1065c2ce020f75f831f4a81d6`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -121,6 +120,25 @@ same-file repréparation returned to a clean `À CONFIRMER` state without
 inheriting the manual guide or completed Core state. Build and suite
 `1722/1722` pass; the private runtime is byte-identical and `live`/`ready`.
 This proves a bounded correction path, not exhaustive automatic detection.
+
+PR #249 added the guided analysis entry: the short request
+`Analyse cette image avec Norma` is sufficient to reach an editable preparation,
+and the widget exposes six plain-language goals without selecting hidden geometry,
+derived families, ratio packs, confirmation, or Core. PR #250 restored ChatGPT
+compatibility by representing fixed tuple-like inputs as supported fixed arrays.
+The first six-case preparation-only matrix then reproduced two fail-closed
+validation errors because proposed segment/axis envelopes disagreed with their
+own endpoints. PR #251 fixed that one trust-boundary defect by keeping finite,
+normalized, distinct endpoints authoritative and deriving the redundant envelope
+server-side. It did not relax geometry validation or Core authority.
+
+The exact-main corrective replay is `REPLAY_PASS`: all four previously non-PASS
+cells produced real hydrated `À CONFIRMER` widgets, including the six-axis
+cluster and low-contrast segment case, with zero retries, confirmations, or Core
+runs. Across the four replay cells there were 25 editable candidates. The
+persistent private runtime is byte-identical to exact main, reports
+`/healthz=live` and `/readyz=ready`, and passes the direct MCP smoke after one
+bounded restart.
 
 The PR #231 exact-head gate is green: build, focused rotated-refinement and
 visual-harmony tests (297/297), historical changed-file guards, full suite
@@ -710,10 +728,11 @@ ChatGPT surface-completion block.
   circumcenter/incenter/orthocenter and other new centers, and new
   harmonic-report families remain deferred nice-to-have work.
 
-### Next observed product gate — guided analysis entry
+### Completed observed product gate — guided analysis entry
 
-The matrix exposed one real product need: prompt and onboarding friction. The
-next candidate is one bounded UX change, not a Core or geometry expansion.
+The matrix exposed one real product need: prompt and onboarding friction. PR
+#249–#251 completed that bounded UX and compatibility rail without a Core or
+geometry expansion.
 
 - Offer one short default starter and a small set of visible goal presets such
   as general analysis, circles/ellipses, lines/axes, and comparison of two
@@ -727,10 +746,20 @@ next candidate is one bounded UX change, not a Core or geometry expansion.
 - Treat `wiki/howto/personal-visual-harmony-quick-start.md` as the immediate
   no-code fallback and validation script.
 
-Implementation is warranted only if starter prompts or equivalent app metadata
-can reduce typing without changing the current tool contract. Validate the
-short default prompt on the frozen acceptance pack before considering the gate
-complete.
+The frozen acceptance matrix and corrective replay validate the short default
+prompt. This gate is complete.
+
+### Next gate — observation-led maintenance
+
+- Do not create another roadmap PR merely to continue a ladder.
+- Collect real usage evidence from the stable private app.
+- Open one surgical corrective PR only for a reproduced product-code defect or
+  a demonstrated user need with a bounded acceptance case.
+- Prefer documentation or user guidance when no code change is required.
+- Keep the six frozen cases as a reusable regression corpus; expand it only when
+  a new observed failure class requires a held-out case.
+- Do not infer that one over-proposed but valid candidate set proves exhaustive
+  or optimal visual detection.
 
 New harmonic-pack families are not the next gate. The existing
 `norma.harmonic-triads@0.1.0` and

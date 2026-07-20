@@ -171,6 +171,14 @@ orthocenter and other new centers, rhythms/repetitions, physical
 perspective/homography/rectification, and new harmonic-report families remain
 deferred nice-to-have work.
 
+PR #249–#251 do not broaden Core ownership. Guided goals remain advisory;
+fixed-array compatibility is transport schema work; and segment/axis
+canonicalization derives only a redundant candidate envelope from the
+authoritative finite, normalized, distinct endpoints. Prepared candidates remain
+editable evidence until explicit confirmation. The corrective replay retained
+hidden derived families, disabled pixel and declared-ratio opt-ins, and zero
+automatic Core runs.
+
 PR #246 through PR #248 refine only the private review boundary. Editable
 ellipse handles, reachable off-frame radius proxies, and one manual segment do
 not create source truth or Core authority. A visual proposal may omit a
