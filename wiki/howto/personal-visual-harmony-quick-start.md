@@ -3,7 +3,7 @@ title: "Personal Visual Harmony Quick Start"
 category: howto
 status: current
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-20
 tags:
   - personal-visual-harmony
   - chatgpt
@@ -24,15 +24,21 @@ truth.
 
 Attach one image, select `Norma Visual Harmony — Personal Stable`, and send:
 
-> Analyse cette image avec Norma. Affiche une proposition éditable et attends
-> ma confirmation avant Norma Core.
+> Analyse cette image avec Norma
 
-This is the default prompt. The user does not need to list rectangles,
-quadrilaterals, segments, axes, ellipses, diagonals, or derived constructions.
+This is the live-accepted default prompt. The user does not need to list
+rectangles, quadrilaterals, segments, axes, ellipses, diagonals, or derived
+constructions. Preparation remains editable and stops at `À CONFIRMER`; it does
+not run Core automatically.
 
 ## Optional goal presets
 
 Use one of these only when the image or question has a clear focus.
+
+The prepared widget also exposes six visible goals: general geometry,
+frames/proportions, ellipses/lines, triangles/constructions, compare two
+lengths, and correct a missed guide. A goal changes guidance only; it does not
+silently select geometry, a derived family, or a ratio pack.
 
 ### Circles and ellipses
 

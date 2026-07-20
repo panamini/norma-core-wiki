@@ -3,7 +3,7 @@ title: "Norma Product Vision"
 category: product
 status: planned
 created: 2026-06-19
-updated: 2026-07-19
+updated: 2026-07-20
 tags:
   - vision
   - adapters
@@ -38,6 +38,10 @@ The stable personal slice must be usable from one short default prompt or a
 small set of visible goal presets. Users should not have to enumerate every
 supported primitive, remember dependency order, or guess how to request a
 harmonic comparison.
+
+This requirement is now live-accepted with `Analyse cette image avec Norma`.
+The six visible goals remain advisory and the prepared widget still requires
+human review and explicit confirmation before Core.
 
 - The prompt selects a workflow goal, never geometry or ratio truth.
 - The widget exposes candidates, editing, uncertainty, optional evidence, and
