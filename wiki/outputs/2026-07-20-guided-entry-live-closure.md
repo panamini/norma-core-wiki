@@ -42,8 +42,10 @@ existing ellipse and quadrilateral canonicalization boundary.
 
 ## Six-case preparation matrix
 
-The first exact-main run used six fresh conversations, one upload and the exact
-short request per case, with no retries, confirmations, or Core runs.
+The first run used the pre-correction exact main
+`0981331e77c218c67eb6a9fbfbdec7fe396d9945`, six fresh conversations, one
+upload and the exact short request per case, with no accepted-operation retry
+inside any case/conversation, confirmation, or Core run.
 
 - 2 cases produced usable prepared widgets.
 - 2 cases failed closed because segment/axis envelopes disagreed with endpoints.
@@ -63,8 +65,9 @@ The four prior non-PASS cells were replayed on exact main after PR #251:
 | Cartier-Bresson amphitheatre | PASS | 1 rectangle, 1 ellipse, 5 segments |
 | Leonardo Annunciation | PASS | 1 rectangle, 2 axes, 3 segments, 1 quadrilateral |
 
-Aggregate: 4 fresh conversations, 4 uploads, 4 accepted preparation messages,
-25 candidates, 0 retries, 0 confirmations, and 0 Core runs.
+Aggregate: 4 fresh case-level reruns, 4 conversations, 4 uploads, 4 accepted
+preparation messages, 25 candidates, 0 accepted-operation retries inside any
+rerun conversation, 0 confirmations, and 0 Core runs.
 
 Every widget remained `À CONFIRMER`, with editable geometry and the manual
 segment available. Six visible goals were present. Derived families remained

@@ -126,16 +126,18 @@ PR #249 added the guided analysis entry: the short request
 and the widget exposes six plain-language goals without selecting hidden geometry,
 derived families, ratio packs, confirmation, or Core. PR #250 restored ChatGPT
 compatibility by representing fixed tuple-like inputs as supported fixed arrays.
-The first six-case preparation-only matrix then reproduced two fail-closed
+The first six-case preparation-only matrix on pre-correction exact main
+`0981331e77c218c67eb6a9fbfbdec7fe396d9945` then reproduced two fail-closed
 validation errors because proposed segment/axis envelopes disagreed with their
 own endpoints. PR #251 fixed that one trust-boundary defect by keeping finite,
-normalized, distinct endpoints authoritative and deriving the redundant envelope
-server-side. It did not relax geometry validation or Core authority.
+normalized, distinct endpoints authoritative and deriving the redundant
+envelope server-side. It did not relax geometry validation or Core authority.
 
-The exact-main corrective replay is `REPLAY_PASS`: all four previously non-PASS
-cells produced real hydrated `À CONFIRMER` widgets, including the six-axis
-cluster and low-contrast segment case, with zero retries, confirmations, or Core
-runs. Across the four replay cells there were 25 editable candidates. The
+The exact-main corrective replay is `REPLAY_PASS`: four fresh case-level reruns
+of the previously non-PASS cells produced real hydrated `À CONFIRMER` widgets,
+including the six-axis cluster and low-contrast segment case, with zero
+accepted-operation retries inside any rerun conversation, confirmations, or
+Core runs. Across the four replay cells there were 25 editable candidates. The
 persistent private runtime is byte-identical to exact main, reports
 `/healthz=live` and `/readyz=ready`, and passes the direct MCP smoke after one
 bounded restart.

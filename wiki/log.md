@@ -11,9 +11,9 @@ updated: 2026-07-20
 ## 2026-07-20 — guided-entry live closure
 - Recorded PR #249 guided analysis entry, PR #250 ChatGPT fixed-array schema compatibility, and PR #251 line-envelope canonicalization.
 - Recorded exact Norma Core main `593b014052bc98e1065c2ce020f75f831f4a81d6`.
-- The first six-case preparation-only run produced 2 PASS, 2 fail-closed line-envelope validation errors, and 2 ChatGPT surface timeouts, with no confirmations or Core runs.
+- The first six-case preparation-only run on pre-correction exact main `0981331e77c218c67eb6a9fbfbdec7fe396d9945` produced 2 PASS, 2 fail-closed line-envelope validation errors, and 2 ChatGPT surface timeouts, with no confirmations or Core runs.
 - PR #251 preserved finite, normalized, distinct endpoints as authoritative and derived segment/axis envelopes server-side.
-- The exact-main replay passed all four prior non-PASS cells: 25 candidates, 4 exact short prompts, 0 retries, 0 confirmations, 0 Core runs, and no technical validation errors.
+- The exact-main replay passed four fresh case-level reruns of the prior non-PASS cells: 25 candidates, 4 exact short prompts, 0 accepted-operation retries inside any rerun conversation, 0 confirmations, 0 Core runs, and no technical validation errors.
 - C3 produced 1 rectangle and 6 axes; C4 produced 2 rectangles, 1 ellipse, and 1 segment; C5 produced 1 rectangle, 1 ellipse, and 5 segments; C6 produced 1 rectangle, 2 axes, 3 segments, and 1 quadrilateral.
 - Promoted exact main to the stable private runtime with the pre-existing rollback snapshot and one bounded restart. Launchd reports `runs=2`, `last exit=0`; `/healthz=live`, `/readyz=ready`; direct MCP smoke PASS.
 - Closed guided entry and routed the next gate to observation-led maintenance. No new geometry or harmonic-pack expansion is authorized by this closure.
