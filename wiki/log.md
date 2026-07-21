@@ -3,10 +3,17 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 # Log
+
+## 2026-07-21 — post-PR255 runtime promotion
+- Recorded PR #252 dense-label separation, PR #253 stable explicit two-length comparison, PR #254 correlated preparation-latency milestones, and PR #255 fail-safe CI push baselines.
+- Recorded exact Norma Core main `077671ed49e6807066e6138bec0b3556065bd725` and reviewed PR #255 head `9de8814763e1ebe7ebc03aa0ce676da04ac34029`.
+- Promoted the exact built main to the existing private runtime with a verified rollback snapshot and one launchd restart. Source/runtime checksum dry-run was empty across the exact tree; launchd is running with `runs=2`, `pid=81026`, `last exit=0`; health is `live`; readiness is `ready`; direct three-tool MCP smoke passed.
+- Opened one fresh ChatGPT conversation in `Moyenne` for distinct local image `DSC09546.jpeg`, but Chrome did not open the file chooser. The attempt accepted 0 images, 0 Norma preparations, 0 confirmations/Core runs, and made 0 provider API calls. Classified it as a browser surface block, not a Norma defect.
+- Kept geometry and harmonic packs frozen. The single next gate is one fresh `Moyenne` acceptance after enabling Chrome file-URL access.
 
 ## 2026-07-20 — guided-entry live closure
 - Recorded PR #249 guided analysis entry, PR #250 ChatGPT fixed-array schema compatibility, and PR #251 line-envelope canonicalization.

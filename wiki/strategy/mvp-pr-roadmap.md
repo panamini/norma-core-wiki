@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-21
 tags:
   - execution
   - roadmap
@@ -50,8 +50,8 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #251 at
-`593b014052bc98e1065c2ce020f75f831f4a81d6`.
+Norma Core `origin/main` is current through PR #255 at
+`077671ed49e6807066e6138bec0b3556065bd725`.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -752,6 +752,10 @@ The frozen acceptance matrix and corrective replay validate the short default
 prompt. This gate is complete.
 
 ### Next gate — observation-led maintenance
+
+The immediate bounded gate is one fresh `Moyenne` ChatGPT acceptance with
+`DSC09546.jpeg` and `Analyse cette image avec Norma` after Chrome file-URL
+access is enabled. Record one preparation and at most one confirmation/Core.
 
 - Do not create another roadmap PR merely to continue a ladder.
 - Collect real usage evidence from the stable private app.
