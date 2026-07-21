@@ -56,10 +56,13 @@ exhaustive detection.
 
 ## ChatGPT acceptance boundary
 
-After one documented Chrome recovery and a manual file attachment, one fresh
-conversation completed the bounded acceptance for distinct local image
-`DSC09546.jpeg`. The exact request was `Analyse cette image avec Norma`, the
-reasoning level was `Moyenne`, and `Pro` was not selected.
+After three failed automated Chrome chooser attempts across user-directed
+resumptions, one permission correction, one browser reconnection, and a manual
+file attachment, one fresh conversation completed the bounded acceptance for
+distinct local image `DSC09546.jpeg`. No product operation had been accepted
+before the manual attachment. The exact request was
+`Analyse cette image avec Norma`, the reasoning level was `Moyenne`, and `Pro`
+was not selected.
 
 - conversation:
   `https://chatgpt.com/c/6a5f846f-5de0-83e9-ad71-1ba9334a3ec0`;
@@ -82,6 +85,8 @@ reasoning level was `Moyenne`, and `Pro` was not selected.
 - confirmations/Core runs: 1/1 successful, approximately 7.1 seconds;
 - provider API calls: 0;
 - automatic retries: 0;
+- ChatGPT/Chrome surface recoveries: 2, both before any accepted Norma
+  operation;
 - result SHA-256:
   `39991ea9bf980752addf485483472687c61c81ddd9d50d2259767052c5ee297f`;
 - plan-image SHA-256:
