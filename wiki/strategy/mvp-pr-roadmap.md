@@ -753,9 +753,10 @@ prompt. This gate is complete.
 
 ### Next gate — observation-led maintenance
 
-The immediate bounded gate is one fresh `Moyenne` ChatGPT acceptance with
-`DSC09546.jpeg` and `Analyse cette image avec Norma` after Chrome file-URL
-access is enabled. Record one preparation and at most one confirmation/Core.
+The immediate bounded gate is one fresh non-spectacle `Moyenne` acceptance
+with exactly two human-selected visible lengths before one confirmation/Core.
+The gate measures whether the opt-in harmonic report adds concrete value; it
+does not authorize new geometry or harmonic packs.
 
 - Do not create another roadmap PR merely to continue a ladder.
 - Collect real usage evidence from the stable private app.

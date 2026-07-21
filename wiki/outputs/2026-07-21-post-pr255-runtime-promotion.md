@@ -56,27 +56,53 @@ exhaustive detection.
 
 ## ChatGPT acceptance boundary
 
-One fresh ChatGPT conversation was opened for a distinct local image,
-`DSC09546.jpeg`, and the reasoning level was changed from `Très élevée` to
-`Moyenne`; `Pro` was not selected. The Chrome extension did not open the file
-chooser. Therefore the evidence count is:
+After one documented Chrome recovery and a manual file attachment, one fresh
+conversation completed the bounded acceptance for distinct local image
+`DSC09546.jpeg`. The exact request was `Analyse cette image avec Norma`, the
+reasoning level was `Moyenne`, and `Pro` was not selected.
 
-- fresh conversations opened: 1;
-- images accepted by ChatGPT: 0;
-- Norma preparations accepted: 0;
-- confirmations/Core runs: 0;
+- conversation:
+  `https://chatgpt.com/c/6a5f846f-5de0-83e9-ad71-1ba9334a3ec0`;
+- fresh conversations with an accepted preparation: 1;
+- candidate families/count: 1 rectangle and 6 segments, 7 total;
+- missing candidates: several secondary or occluded batons remain unproposed,
+  consistent with the non-exhaustive visual boundary;
+- extra candidates: none clearly unsupported; the full-raster rectangle is the
+  explicit Core reference frame;
+- geometric precision: selected segment endpoints follow visible extents and
+  stop at occlusions or the raster edge instead of inferring hidden geometry;
+- editability: all six segment endpoints and the raster rectangle remained
+  editable before confirmation, with one manual-segment path available;
+- layout/comprehension: candidate labels were separated and readable, while
+  the persistent ChatGPT composer obscured part of the lower overlay at this
+  viewport; scrolling preserved access to the controls and candidate list;
+- human geometry edits: 0;
+- preparation visible at approximately 58.9 seconds; complete ChatGPT response
+  at approximately 81.4 seconds; latency class: slow but bounded;
+- confirmations/Core runs: 1/1 successful, approximately 7.1 seconds;
 - provider API calls: 0;
 - automatic retries: 0;
-- documented surface recoveries consumed: 1.
+- result SHA-256:
+  `39991ea9bf980752addf485483472687c61c81ddd9d50d2259767052c5ee297f`;
+- plan-image SHA-256:
+  `85fdba7ba6de5da7b5c10cf74d016d00bc1bce0d6936d40cabd0eece22073c78`.
 
-This is a Chrome/ChatGPT upload-surface block, not a reproduced Norma product
-defect. No candidate, latency, editability, usefulness, result hash, or report
-claim is available for this unaccepted case.
+The result is `PRODUCT_OBSERVATION_PARTIAL`: the editable overlay and six
+visible segment lengths are concretely useful for inspecting the dominant
+baton structure, and Core completed deterministically. The final report has 0
+declared ratio reports, 0 visual relations, 0 quadrilateral measurements, and
+0 derived constructions because the two-length report remained disabled. It
+therefore provides no new harmonic value. Surrounding ChatGPT prose continued
+to say `À CONFIRMER` after the widget reached `CORE VÉRIFIÉ`; this is a surface
+comprehension inconsistency, not a reproduced Core or Norma runtime defect.
+
+Proof classes: conversation/widget/result are live; exact-tree and direct-smoke
+checks are offline plus live runtime checks; artistic intent and exhaustive
+detection remain explicitly unclaimed.
 
 ## Recommendation
 
-Enable Chrome file-URL access for the ChatGPT extension, then execute exactly
-one fresh `Moyenne` conversation with `DSC09546.jpeg` and the exact request
-`Analyse cette image avec Norma`. Record one preparation and at most one
-confirmation/Core; do not add geometry or harmonic packs before that evidence.
-
+Run one fresh held-out, non-spectacle image in `Moyenne`, choose exactly two
+human-selected visible lengths before the single confirmation/Core, and decide
+whether the opt-in harmonic report adds concrete value. Do not add geometry or
+harmonic packs before that evidence.
