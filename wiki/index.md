@@ -80,7 +80,7 @@ updated: 2026-07-23
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-21-post-pr255-runtime-promotion.md` generated two-length live gate, measured synthetic-target drift, and post-preparation ChatGPT hydration block
+- `wiki/outputs/2026-07-21-post-pr255-runtime-promotion.md` completed synthetic and manually attached two-length observations, corrected delayed hydration, and froze the selectable-guide contract as the next gate
 - `wiki/outputs/2026-07-21-post-pr255-runtime-promotion.md` PR #252–#255, exact-main private-runtime proof, and the pre-upload Chrome surface block
 - `wiki/outputs/2026-07-20-guided-entry-live-closure.md` PR #249–#251, six-case matrix, corrective replay PASS, and exact-main runtime promotion
 - `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md` frozen six-case live matrix, no-corrective-PR verdict, and harmonic-pack boundary

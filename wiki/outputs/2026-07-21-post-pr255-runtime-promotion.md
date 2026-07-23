@@ -125,28 +125,88 @@ length ratio; the visible raster did not preserve that requested ground truth.
 - measured axes: approximately 475 px and 667 px, observed ratio `0.712`
   (`1:1.404`), not the requested `2:3` (`0.667`);
 - human geometry edits: 0; candidate editability could not be exercised because
-  the widget never hydrated;
+  the widget had not hydrated during the initial observation window;
 - preparation latency class: slow, with ChatGPT reporting 51 seconds of
   reasoning before the prepared result;
-- confirmations/Core runs: 0; the blank widget remained loading for more than
-  two additional minutes, so no two-length selection or confirmation was
-  possible;
+- the blank widget remained loading for more than two additional minutes, but
+  later hydrated without a resend or product retry;
+- confirmations/Core runs: 1/1 successful after that delayed hydration; the
+  two-length report was not selected before confirmation and remained disabled
+  afterward;
 - provider API calls: 0; automatic product retries: 0;
 - browser-control reconnections: 1 passive tab reclaim after the observer timed
   out; no page reload, resend, or ChatGPT recovery action;
-- hashes/identities: no product result or plan-image hash was available because
-  confirmation did not occur.
+- result SHA-256:
+  `79b6af8a09070c34a7882d7f31a4db874857042e104bf73f04bf1b8311c4bb3c`;
+- plan-image SHA-256:
+  `4f0d2c759ba72e1ce0854223a32c2e6c9cf689bbb92a30093059ed6ec3127eda`;
+- final widget: `CORE VÉRIFIÉ`, 7 geometric reports and 0 visual relations.
 
 This case is live evidence with an inferred synthetic-design target. It is
 `PRODUCT_OBSERVATION_PARTIAL`: the preparation text and measured primitive
 inventory are useful and correctly expose that the generated raster missed its
-requested ratio, but the opt-in harmonic report itself remains unproven. The
-non-hydrating blank iframe is classified as a ChatGPT surface failure after an
-accepted preparation, not as a reproduced Norma product-code or Core defect.
+requested ratio, but no human-declared two-length report was produced. The
+initial blank iframe is a delayed ChatGPT-surface hydration event, not a terminal
+Norma product-code or Core failure. Surrounding prose remained stale at
+`À CONFIRMER` after the widget reached `CORE VÉRIFIÉ`.
+
+## Manually attached non-synthetic gate
+
+One fresh `Moyenne` conversation used the user-provided image
+`composition_en_rouge_bleu_et_137350.webp` and the exact request
+`Analyse cette image avec Norma`.
+
+- conversation:
+  `https://chatgpt.com/c/6a618039-7a30-83e9-a839-965ed5e10ad9`;
+- image identity: fresh manually attached geometric composition, raster
+  860 x 854 px;
+- accepted preparations: 1;
+- candidate families/count: 6 rectangles and 2 axes, 8 total;
+- missing candidates: the small yellow lower-left field and the small white
+  lower field;
+- extra candidates: none clearly unsupported;
+- geometric precision: the proposed major fields and the horizontal and
+  vertical separator axes followed visible boundaries; slight pictorial
+  irregularity remained explicit;
+- editability: all eight candidates were exposed before confirmation;
+- layout/comprehension: candidates, goals, and controls were readable, although
+  the persistent ChatGPT composer obscured part of the lower widget at the
+  observed viewport;
+- human geometry edits: 0, because the two major axes were defensible and the
+  omitted small fields could not be repaired honestly with the single
+  manual-segment correction path;
+- preparation: ChatGPT reported 57 seconds of reasoning; candidates were
+  observed at approximately 71.0 seconds wall time; latency class: slow but
+  bounded;
+- the `Comparer 2 longueurs` goal exposed no selectable length and the report
+  control remained disabled despite two confirmed visible axes;
+- confirmations/Core runs: 1/1 successful, observed within approximately
+  12.6 seconds;
+- final widget: `CORE VÉRIFIÉ`, 3 geometric reports and 0 visual relations;
+- detected reports: `2/3` for the left vertical white field height
+  (66.5 %, 0.167 pt from target), `φ minor` for the central upper white field
+  width (37.8 %, 0.397 pt), and `2/3` for that field's right-edge position
+  (66.2 %, 0.467 pt);
+- result SHA-256:
+  `8650eacf2e0021db6681118024a8de078f7fa48974519394cc55f8c1a17bc40d`;
+- plan-image SHA-256:
+  `4b763efe1ad8a452dbe8a20be73d093be8c5bf5dc84cd3402758485e1abe2d89`;
+- provider API calls: 0; automatic product retries: 0; human corrections: 0.
+
+This live case is `PRODUCT_OBSERVATION_PARTIAL`. The three deterministic
+rectangle reports give concrete compositional measurements, so the result is
+partially useful. It does not prove the opt-in two-length value because the
+selection surface was unavailable. Surrounding ChatGPT prose again remained
+stale at `À CONFIRMER` after the widget reached `CORE VÉRIFIÉ`; this is a
+reproduced surface-comprehension inconsistency, not a Core failure.
 
 ## Recommendation
 
-Run one fresh manually attached, non-synthetic, non-spectacle image in
-`Moyenne`, choose exactly two human-selected visible lengths before the single
-confirmation/Core, and decide whether the opt-in harmonic report adds concrete
-value. Do not add geometry or harmonic packs before that evidence.
+Stop the observation gate at `PRODUCT_OBSERVATION_PARTIAL`. Two independent
+real-image cases exposed enough segment or axis guides for a human comparison
+but left the two-length report disabled, while the synthetic case proves the
+control can receive selectable axes. A code change is justified only as one
+narrow candidate changeset: make already-confirmed visible segment and axis
+guides available to the opt-in two-length selectors, preserving explicit human
+choice, exactly two lengths, no automatic confirmation, and no new geometry or
+harmonic pack. Freeze that contract in focused tests before implementation.

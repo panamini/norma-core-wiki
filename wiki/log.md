@@ -8,14 +8,16 @@ updated: 2026-07-23
 
 # Log
 
-## 2026-07-23 — generated two-length observation
+## 2026-07-23 — two-length observation gate
 - Used one fresh `Moyenne` ChatGPT conversation to generate a square synthetic image with two visible horizontal bars, then sent the exact request `Analyse cette image avec Norma`.
 - Accepted one preparation with 5 primitives: 1 raster rectangle, 2 bar-envelope rectangles, and 2 segment axes. No intended bar was missed and no unsupported candidate was identified.
 - Recorded approximately 51.9 seconds for image generation and 51 seconds of reported preparation reasoning. The measured axes were about 475 px and 667 px (`0.712`, or `1:1.404`), so the generated raster did not preserve the requested `2:3` target.
-- The widget remained blank and loading for more than two additional minutes after the accepted preparation. No edit, two-length selection, confirmation/Core run, result hash, provider API call, or automatic product retry occurred.
+- The widget remained blank and loading for more than two additional minutes after the accepted preparation, then later hydrated without a resend or product retry and reached `CORE VÉRIFIÉ`. Result SHA-256 is `79b6af8a09070c34a7882d7f31a4db874857042e104bf73f04bf1b8311c4bb3c`; plan-image SHA-256 is `4f0d2c759ba72e1ce0854223a32c2e6c9cf689bbb92a30093059ed6ec3127eda`.
 - One observer timeout required a passive browser-control reconnection; the page was not reloaded and no ChatGPT or product action was repeated.
-- Classified the outcome as `PRODUCT_OBSERVATION_PARTIAL` and the terminal failure as a ChatGPT-surface hydration block, not a reproduced Norma product-code/Core defect. No code or harmonic-pack change is justified.
-- Routed exactly one next gate: one fresh manually attached, non-synthetic, non-spectacle `Moyenne` image with exactly two human-selected visible lengths before one confirmation/Core.
+- Completed one fresh manually attached `Moyenne` case on `composition_en_rouge_bleu_et_137350.webp` in conversation `https://chatgpt.com/c/6a618039-7a30-83e9-a839-965ed5e10ad9`: 6 rectangles and 2 axes, 0 human corrections, candidates observed in about 71.0 s, and one successful Core confirmation observed within about 12.6 s.
+- Recorded two missed small fields, no unsupported extra candidate, and an unavailable two-length selector despite two visible axes. Core returned 3 geometric reports and 0 visual relations. Result SHA-256 is `8650eacf2e0021db6681118024a8de078f7fa48974519394cc55f8c1a17bc40d`; plan-image SHA-256 is `4b763efe1ad8a452dbe8a20be73d093be8c5bf5dc84cd3402758485e1abe2d89`.
+- Classified the gate as `PRODUCT_OBSERVATION_PARTIAL`: the deterministic rectangle reports are concretely useful, but the requested human two-length comparison remains unproven. Stale surrounding `À CONFIRMER` prose recurred after the widget reached `CORE VÉRIFIÉ`; it remains a surface-comprehension inconsistency, not a Core failure.
+- Routed exactly one next gate: freeze focused tests for a candidate changeset exposing already-confirmed visible segment and axis guides to exactly two explicit human-selected lengths. No implementation, geometry expansion, or harmonic-pack expansion is authorized by this observation.
 
 ## 2026-07-21 — post-PR255 runtime promotion
 - Recorded PR #252 dense-label separation, PR #253 stable explicit two-length comparison, PR #254 correlated preparation-latency milestones, and PR #255 fail-safe CI push baselines.

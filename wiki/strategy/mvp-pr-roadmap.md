@@ -756,16 +756,23 @@ prompt. This gate is complete.
 The first fresh non-spectacle `Moyenne` attempt used a generated two-bar image.
 Norma accepted one 5-primitive preparation and measured its axes at about
 475 px and 667 px (`0.712`), proving that the generated raster did not preserve
-the requested `2:3` target. The widget then remained blank for more than two
-minutes, so the report, confirmation, and Core were not exercised. This is a
-ChatGPT surface block after accepted preparation, not a reproduced product-code
-defect.
+the requested `2:3` target. The widget remained blank for more than two minutes
+during the initial observation, then hydrated without a resend and reached
+Core. No human two-length report was selected.
 
-The immediate bounded gate is now one fresh manually attached, non-synthetic,
-non-spectacle `Moyenne` image with exactly two human-selected visible lengths
-before one confirmation/Core. It measures whether the existing opt-in harmonic
-report adds concrete value; it does not authorize new geometry or harmonic
-packs.
+The subsequent fresh manually attached 860 x 854 geometric composition prepared
+6 rectangles and 2 axes in about 71 seconds and completed Core in about
+12.6 seconds. Its three rectangle reports were concrete and partially useful,
+but the two-length control exposed no selectable input despite the two confirmed
+visible axes. The earlier spectacle case had likewise exposed six visible
+segments while leaving that report disabled. The observation gate therefore
+stops at `PRODUCT_OBSERVATION_PARTIAL`.
+
+Exactly one next gate is justified: freeze focused contract tests for a narrow
+candidate changeset that makes already-confirmed visible segment and axis guides
+available to the opt-in selectors. The contract must preserve explicit human
+choice, exactly two lengths, no automatic confirmation/Core run, and no new
+geometry or harmonic pack. Do not implement until that contract is reviewed.
 
 - Do not create another roadmap PR merely to continue a ladder.
 - Collect real usage evidence from the stable private app.
