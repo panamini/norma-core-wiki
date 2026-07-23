@@ -3,10 +3,29 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-20
+updated: 2026-07-23
 ---
 
 # Log
+
+## 2026-07-23 — two-length observation gate
+- Used one fresh `Moyenne` ChatGPT conversation to generate a square synthetic image with two visible horizontal bars, then sent the exact request `Analyse cette image avec Norma`.
+- Accepted one preparation with 5 primitives: 1 raster rectangle, 2 bar-envelope rectangles, and 2 segment axes. No intended bar was missed and no unsupported candidate was identified.
+- Recorded approximately 51.9 seconds for image generation and 51 seconds of reported preparation reasoning. The measured axes were about 475 px and 667 px (`0.712`, or `1:1.404`), so the generated raster did not preserve the requested `2:3` target.
+- The widget remained blank and loading for more than two additional minutes after the accepted preparation, then later hydrated without a resend or product retry and reached `CORE VÉRIFIÉ`. Result SHA-256 is `79b6af8a09070c34a7882d7f31a4db874857042e104bf73f04bf1b8311c4bb3c`; plan-image SHA-256 is `4f0d2c759ba72e1ce0854223a32c2e6c9cf689bbb92a30093059ed6ec3127eda`.
+- One observer timeout required a passive browser-control reconnection; the page was not reloaded and no ChatGPT or product action was repeated.
+- Completed one fresh manually attached `Moyenne` case on `composition_en_rouge_bleu_et_137350.webp` in conversation `https://chatgpt.com/c/6a618039-7a30-83e9-a839-965ed5e10ad9`: 6 rectangles and 2 axes, 0 human corrections, candidates observed in about 71.0 s, and one successful Core confirmation observed within about 12.6 s.
+- Recorded two missed small fields, no unsupported extra candidate, and an unavailable two-length selector despite two visible axes. Core returned 3 geometric reports and 0 visual relations. Result SHA-256 is `8650eacf2e0021db6681118024a8de078f7fa48974519394cc55f8c1a17bc40d`; plan-image SHA-256 is `4b763efe1ad8a452dbe8a20be73d093be8c5bf5dc84cd3402758485e1abe2d89`.
+- Classified the gate as `PRODUCT_OBSERVATION_PARTIAL`: the deterministic rectangle reports are concretely useful, but the requested human two-length comparison remains unproven. Stale surrounding `À CONFIRMER` prose recurred after the widget reached `CORE VÉRIFIÉ`; it remains a surface-comprehension inconsistency, not a Core failure.
+- Routed exactly one next gate: freeze focused tests for a candidate changeset exposing already-confirmed visible segment and axis guides to exactly two explicit human-selected lengths. No implementation, geometry expansion, or harmonic-pack expansion is authorized by this observation.
+
+## 2026-07-21 — post-PR255 runtime promotion
+- Recorded PR #252 dense-label separation, PR #253 stable explicit two-length comparison, PR #254 correlated preparation-latency milestones, and PR #255 fail-safe CI push baselines.
+- Recorded exact Norma Core main `077671ed49e6807066e6138bec0b3556065bd725` and reviewed PR #255 head `9de8814763e1ebe7ebc03aa0ce676da04ac34029`.
+- Promoted the exact built main to the existing private runtime with a verified rollback snapshot and one launchd restart. Source/runtime checksum dry-run was empty across the exact tree; launchd is running with `runs=2`, `pid=81026`, `last exit=0`; health is `live`; readiness is `ready`; direct three-tool MCP smoke passed.
+- Completed one fresh `Moyenne` ChatGPT conversation for distinct local image `DSC09546.jpeg` after three failed automated chooser attempts, two pre-product surface recoveries, and one manual attachment: 1 rectangle plus 6 editable segments, preparation visible in about 58.9 s, 0 human geometry edits, and one successful confirmation/Core in about 7.1 s. Result SHA-256 is `39991ea9bf980752addf485483472687c61c81ddd9d50d2259767052c5ee297f`; plan-image SHA-256 is `85fdba7ba6de5da7b5c10cf74d016d00bc1bce0d6936d40cabd0eece22073c78`.
+- Classified usefulness as partial: the dominant baton guides and lengths are concrete, but the disabled two-length report yielded 0 harmonic reports and 0 visual relations. The surrounding ChatGPT prose remained stale at `À CONFIRMER` after the widget reached `CORE VÉRIFIÉ`; no Core/runtime defect was reproduced.
+- Kept geometry and harmonic packs frozen. The single next gate is one fresh non-spectacle image with exactly two human-selected visible lengths before one confirmation/Core.
 
 ## 2026-07-20 — guided-entry live closure
 - Recorded PR #249 guided analysis entry, PR #250 ChatGPT fixed-array schema compatibility, and PR #251 line-envelope canonicalization.
