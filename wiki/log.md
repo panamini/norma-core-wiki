@@ -3,10 +3,30 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-20
+updated: 2026-07-23
 ---
 
 # Log
+
+## 2026-07-23 — post-PR256 two-length observation gate
+- Recorded merged Core PR #256: reviewed head
+  `6afdb36982ccb3ac7986fbff5e1d1da405decd13`, exact `origin/main`
+  `93096299523d3ad376f7650b32fa4a5d3a98389b`.
+- Recorded byte-identical private-runtime promotion with rollback snapshot,
+  exactly one authorized launchd restart, and direct local MCP
+  initialize/tools-list smoke PASS.
+- Recorded three fresh ChatGPT two-length preparations/confirmations after
+  reload verification, with zero provider API calls and zero retry, plus the
+  resolved phi-minor/50% card distinction.
+- Two read-only code audits and 103 targeted tests found no active calculation
+  defect; no code changeset is justified. Verdict remains
+  `observation-partial`, with artistic usefulness, latency p50/p95, mobile
+  proof, sustained use, and commercial/public readiness unproven.
+- Next dependency is explicit authorization for the existing Auth0/Render
+  private-beta program; no benchmark, new geometry, harmonic-pack expansion,
+  public deployment, or provider work comes before that decision.
+- Added `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md` and
+  refreshed roadmap, boundary, overview, index, and hot cache.
 
 ## 2026-07-20 — guided-entry live closure
 - Recorded PR #249 guided analysis entry, PR #250 ChatGPT fixed-array schema compatibility, and PR #251 line-envelope canonicalization.

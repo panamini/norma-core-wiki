@@ -165,6 +165,14 @@ integrated the bounded UI at the then-current exact main
 incomplete-toggle recovery, stable declared identities after a quadrilateral
 edit, and one confirmation/Core producing a separate `2/3` match.
 
+PR #256 exposes confirmed axes in the opt-in two-length report. The report
+remains a derived image-plane comparison outside Core authority: the private
+stable runtime was promoted byte-identically from merged main, direct local MCP
+initialize/tools-list smoke passed, and three fresh ChatGPT conversations
+completed the declared gate after reload verification. The detailed live,
+offline, historical, and unproven classifications are recorded in
+`wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`.
+
 The personal MVP is stable. Further geometry now requires a reproduced bug or
 demonstrated need plus a new bounded contract. Circumcenter, incenter,
 orthocenter and other new centers, rhythms/repetitions, physical
