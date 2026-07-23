@@ -50,8 +50,9 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through PR #251 at
-`593b014052bc98e1065c2ce020f75f831f4a81d6`.
+Norma Core `origin/main` is current through merged PR #256 at
+`93096299523d3ad376f7650b32fa4a5d3a98389b` (reviewed head
+`6afdb36982ccb3ac7986fbff5e1d1da405decd13`).
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -132,6 +133,24 @@ validation errors because proposed segment/axis envelopes disagreed with their
 own endpoints. PR #251 fixed that one trust-boundary defect by keeping finite,
 normalized, distinct endpoints authoritative and deriving the redundant
 envelope server-side. It did not relax geometry validation or Core authority.
+
+PR #256 exposed the confirmed axes in the opt-in two-length report while
+keeping the report separate from Core evaluation. The private stable runtime
+was promoted byte-identically from the merged content with a rollback snapshot
+and exactly one authorized launchd restart; direct local MCP initialize and
+tools-list smoke passed. Three fresh ChatGPT conversations completed the
+declared gate after preparation and reload verification, with zero provider API
+calls and zero retry. Detailed measurements and proof classes are recorded in
+`wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`.
+
+The gate is `observation-partial`: declared geometric comparisons are
+concretely useful in the current private flow, but artistic usefulness, latency
+p50/p95, mobile proof, sustained use, and commercial/public readiness remain
+unproven. Two read-only code audits and 103 targeted tests found no active
+calculation defect, so no code changeset is justified. The next dependency is
+an explicit authorization decision for the existing Auth0/Render private-beta
+program; no benchmark, new geometry, harmonic-pack expansion, public
+deployment, or provider work comes before that decision.
 
 The exact-main corrective replay is `REPLAY_PASS`: four fresh case-level reruns
 of the previously non-PASS cells produced real hydrated `À CONFIRMER` widgets,
