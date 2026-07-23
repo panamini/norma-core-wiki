@@ -3,10 +3,18 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-21
+updated: 2026-07-23
 ---
 
 # Log
+
+## 2026-07-23 — generated two-length observation
+- Used one fresh `Moyenne` ChatGPT conversation to generate a square synthetic image with two visible horizontal bars, then sent the exact request `Analyse cette image avec Norma`.
+- Accepted one preparation with 5 primitives: 1 raster rectangle, 2 bar-envelope rectangles, and 2 segment axes. No intended bar was missed and no unsupported candidate was identified.
+- Recorded approximately 51.9 seconds for image generation and 51 seconds of reported preparation reasoning. The measured axes were about 475 px and 667 px (`0.712`, or `1:1.404`), so the generated raster did not preserve the requested `2:3` target.
+- The widget remained blank and loading for more than two additional minutes after the accepted preparation. No edit, two-length selection, confirmation/Core run, result hash, provider API call, or automatic product retry occurred.
+- Classified the outcome as `PRODUCT_OBSERVATION_PARTIAL` and the terminal failure as a ChatGPT-surface hydration block, not a reproduced Norma product-code/Core defect. No code or harmonic-pack change is justified.
+- Routed exactly one next gate: one fresh manually attached, non-synthetic, non-spectacle `Moyenne` image with exactly two human-selected visible lengths before one confirmation/Core.
 
 ## 2026-07-21 — post-PR255 runtime promotion
 - Recorded PR #252 dense-label separation, PR #253 stable explicit two-length comparison, PR #254 correlated preparation-latency milestones, and PR #255 fail-safe CI push baselines.

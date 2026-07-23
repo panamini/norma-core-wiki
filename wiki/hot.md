@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-21
+updated: 2026-07-23
 ---
 
 # Hot Cache
@@ -13,7 +13,10 @@ Active memory cache for agents. Keep this page under 500 words.
 ## Current Focus
 - Latest merged Norma Core state is PR #255 at `077671ed49e6807066e6138bec0b3556065bd725`. PR #252 separated dense overlay labels, PR #253 stabilized explicit two-length comparison, PR #254 added correlated latency milestones, and PR #255 hardened CI push baselines without changing product behavior.
 - The stable private runtime matches that exact built main; launchd completed one bounded restart (`runs=2`, `last exit=0`), `/healthz=live`, `/readyz=ready`, and direct MCP smoke passes with three tools.
-- The post-promotion `Moyenne` acceptance is `PRODUCT_OBSERVATION_PARTIAL`: 1 rectangle plus 6 editable segments prepared in about 58.9 s, one Core confirmation passed in about 7.1 s, and 0 declared reports/relations were produced because the two-length report stayed disabled.
+- The post-promotion `Moyenne` acceptance is `PRODUCT_OBSERVATION_PARTIAL`: 7 editable candidates prepared in about 58.9 s and one Core confirmation passed in about 7.1 s, but the disabled two-length report produced no harmonic value.
+- Generated two-bar `Moyenne`: 5 primitives in 51 s, axes 475/667 px
+  (`0.712`), not `2:3`; blank widget over two minutes, surface-blocked before
+  confirmation, harmonic value unproven.
 - `CC-20260719-PERSONAL-POST-PR248-LIVE-ACCEPTANCE v1` is PASS: one omitted vertical guide was drawn manually, refined as separate pixel evidence, adopted and reverted, deleted without stale references, restored cleanly after reload, confirmed once through Core, and absent from a fresh same-file repréparation.
 - Visual proposal is not exhaustive detection. Pixel refinement adjusts existing candidates only; the manual segment is the bounded correction path for a missed line or axis.
 - Personal Visual Acceptance Pack v1 produced semantically acceptable preparations for `6/6` cases and `5/6` bounded confirmation/Core successes with zero human geometry corrections and zero accepted-operation retries in the same case/conversation. Case 2 used one case-level fresh isolated execution after a non-terminal surface attempt; no accepted call or recovery action was repeated in that conversation. The remaining case was blocked by a non-terminal ChatGPT surface response.
@@ -39,6 +42,6 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Recorded PR #252–#255 and the exact-main stable-runtime promotion.
-- Routed one fresh non-spectacle, human-selected two-length acceptance;
-  automatic pack selection and geometric expansion remain deferred.
+- Recorded the generated two-length gate and ChatGPT hydration block.
+- Next: one manually attached non-synthetic two-length acceptance; expansion
+  remains deferred.

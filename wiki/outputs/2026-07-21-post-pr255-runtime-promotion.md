@@ -3,7 +3,7 @@ title: "Post-PR255 Runtime Promotion"
 category: output
 status: current
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-23
 tags:
   - personal-visual-harmony
   - runtime
@@ -105,9 +105,46 @@ Proof classes: conversation/widget/result are live; exact-tree and direct-smoke
 checks are offline plus live runtime checks; artistic intent and exhaustive
 detection remain explicitly unclaimed.
 
+## Generated two-length gate
+
+One fresh `Moyenne` conversation generated a square synthetic raster with
+exactly two visible horizontal bars, then received the exact request
+`Analyse cette image avec Norma`. The generation prompt asked for a `2:3`
+length ratio; the visible raster did not preserve that requested ground truth.
+
+- conversation:
+  `https://chatgpt.com/c/6a6159dd-9a40-83e9-90d1-a3fc234f965a`;
+- image identity: fresh ChatGPT-generated synthetic image, 1254 x 1254 px;
+- generation latency: approximately 51.9 seconds;
+- accepted preparations: 1;
+- candidate families/count: 1 raster rectangle, 2 bar-envelope rectangles,
+  and 2 segment axes, 5 total;
+- missing candidates: none among the two intended visible bars;
+- extra candidates: none unsupported; the frame and bar envelopes are distinct
+  measurable references;
+- measured axes: approximately 475 px and 667 px, observed ratio `0.712`
+  (`1:1.404`), not the requested `2:3` (`0.667`);
+- human geometry edits: 0; candidate editability could not be exercised because
+  the widget never hydrated;
+- preparation latency class: slow, with ChatGPT reporting 51 seconds of
+  reasoning before the prepared result;
+- confirmations/Core runs: 0; the blank widget remained loading for more than
+  two additional minutes, so no two-length selection or confirmation was
+  possible;
+- provider API calls: 0; automatic product retries: 0;
+- hashes/identities: no product result or plan-image hash was available because
+  confirmation did not occur.
+
+This case is live evidence with an inferred synthetic-design target. It is
+`PRODUCT_OBSERVATION_PARTIAL`: the preparation text and measured primitive
+inventory are useful and correctly expose that the generated raster missed its
+requested ratio, but the opt-in harmonic report itself remains unproven. The
+non-hydrating blank iframe is classified as a ChatGPT surface failure after an
+accepted preparation, not as a reproduced Norma product-code or Core defect.
+
 ## Recommendation
 
-Run one fresh held-out, non-spectacle image in `Moyenne`, choose exactly two
-human-selected visible lengths before the single confirmation/Core, and decide
-whether the opt-in harmonic report adds concrete value. Do not add geometry or
-harmonic packs before that evidence.
+Run one fresh manually attached, non-synthetic, non-spectacle image in
+`Moyenne`, choose exactly two human-selected visible lengths before the single
+confirmation/Core, and decide whether the opt-in harmonic report adds concrete
+value. Do not add geometry or harmonic packs before that evidence.

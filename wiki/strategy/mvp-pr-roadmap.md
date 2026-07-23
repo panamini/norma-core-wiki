@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-21
+updated: 2026-07-23
 tags:
   - execution
   - roadmap
@@ -753,10 +753,19 @@ prompt. This gate is complete.
 
 ### Next gate — observation-led maintenance
 
-The immediate bounded gate is one fresh non-spectacle `Moyenne` acceptance
-with exactly two human-selected visible lengths before one confirmation/Core.
-The gate measures whether the opt-in harmonic report adds concrete value; it
-does not authorize new geometry or harmonic packs.
+The first fresh non-spectacle `Moyenne` attempt used a generated two-bar image.
+Norma accepted one 5-primitive preparation and measured its axes at about
+475 px and 667 px (`0.712`), proving that the generated raster did not preserve
+the requested `2:3` target. The widget then remained blank for more than two
+minutes, so the report, confirmation, and Core were not exercised. This is a
+ChatGPT surface block after accepted preparation, not a reproduced product-code
+defect.
+
+The immediate bounded gate is now one fresh manually attached, non-synthetic,
+non-spectacle `Moyenne` image with exactly two human-selected visible lengths
+before one confirmation/Core. It measures whether the existing opt-in harmonic
+report adds concrete value; it does not authorize new geometry or harmonic
+packs.
 
 - Do not create another roadmap PR merely to continue a ladder.
 - Collect real usage evidence from the stable private app.
