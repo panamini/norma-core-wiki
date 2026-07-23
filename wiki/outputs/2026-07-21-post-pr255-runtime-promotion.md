@@ -132,6 +132,8 @@ length ratio; the visible raster did not preserve that requested ground truth.
   two additional minutes, so no two-length selection or confirmation was
   possible;
 - provider API calls: 0; automatic product retries: 0;
+- browser-control reconnections: 1 passive tab reclaim after the observer timed
+  out; no page reload, resend, or ChatGPT recovery action;
 - hashes/identities: no product result or plan-image hash was available because
   confirmation did not occur.
 
