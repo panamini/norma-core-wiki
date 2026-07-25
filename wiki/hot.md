@@ -3,7 +3,7 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 # Hot Cache
@@ -11,7 +11,8 @@ updated: 2026-07-23
 Active memory cache for agents. Keep this page under 500 words.
 
 ## Current Focus
-- Latest merged Norma Core state is PR #256 at `93096299523d3ad376f7650b32fa4a5d3a98389b` (reviewed head `6afdb36982ccb3ac7986fbff5e1d1da405decd13`); it exposes confirmed axes in the opt-in two-length report while remaining outside Core authority.
+- Latest merged Norma Core state is PR #268 at `678134b59db146b1ad8a2c8f3344df52f16ce642`; PR #259-#268 established provider-neutral OAuth/Scalekit remote MCP auth, remote visual sandbox hardening, provider-neutral authorization-data boundaries, the PostgreSQL transaction adapter, and safe authorization transaction closeout.
+- Current strongest status is a proven local PostgreSQL contract with live Supabase RLS still deferred. Railway remains the control-plane target, Supabase PostgreSQL/RLS is the probable data target, Scalekit is the first sandbox, Auth0 remains the fallback, Core stays local/offline, and GPU/package/geometry expansion stays deferred.
 - The private stable runtime was promoted byte-identically from merged content with a rollback snapshot and exactly one authorized launchd restart; direct MCP initialize/tools-list smoke passed.
 - Three fresh ChatGPT preparations/confirmations passed after reload with zero provider API calls and zero retry. The declared comparisons were 50.175% vs 50% (delta 0.175 pt), 63.258% vs 61.803% (delta 1.454 pt), and 67.846% vs 66.667% (delta 1.18 pt); the phi-minor/50% discrepancy was a separate Core card, not a gate failure.
 - `CC-20260719-PERSONAL-POST-PR248-LIVE-ACCEPTANCE v1` is PASS: one omitted vertical guide was drawn manually, refined as separate pixel evidence, adopted and reverted, deleted without stale references, restored cleanly after reload, confirmed once through Core, and absent from a fresh same-file repréparation.
@@ -37,7 +38,7 @@ Active memory cache for agents. Keep this page under 500 words.
 - Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
 ## Latest update
-- Recorded PR #256, the three fresh two-length gates, the exact-main stable-runtime
-  promotion, and the bounded observation-partial verdict.
-- Routed the next dependency to explicit Auth0/Render private-beta authorization;
-  automatic benchmark, provider, and geometric expansion remain deferred.
+- Recorded PR #268 and the PR #259-#268 auth/sandbox chain, plus the current
+  local PostgreSQL contract with live Supabase RLS still deferred.
+- Routed the current control-plane and data-target split to Railway and
+  Supabase, with Scalekit first and Auth0 fallback.

@@ -3,10 +3,27 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 # Log
+
+## 2026-07-25 — post-PR268 auth and sandbox sync
+- Recorded Norma Core `origin/main` at merged PR #268
+  `678134b59db146b1ad8a2c8f3344df52f16ce642`.
+- Synced the canonical wiki from the stale PR #258 sandbox baseline through
+  PR #259-#268: provider-neutral OAuth resource auth, Scalekit scope and
+  issuer compatibility, root protected-resource discovery, composite
+  audiences, remote visual sandbox hardening, provider-neutral
+  authorization-data boundary proof, PostgreSQL authorization transaction
+  adapter, and safe transaction closeout.
+- Current strongest status is a proven local PostgreSQL contract with live
+  Supabase RLS still deferred. Railway remains the control-plane target,
+  Supabase PostgreSQL/RLS is the probable data target, Scalekit is the first
+  sandbox, Auth0 remains the fallback, Core stays local/offline, and
+  GPU/package/geometry expansion stays deferred.
+- Updated `wiki/overview.md`, `wiki/strategy/mvp-pr-roadmap.md`,
+  `wiki/tech/core-interface-boundary.md`, `wiki/index.md`, and `wiki/hot.md`.
 
 ## 2026-07-23 — post-PR256 two-length observation gate
 - Recorded merged Core PR #256: reviewed head

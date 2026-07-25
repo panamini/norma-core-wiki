@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 # Index
@@ -80,6 +80,7 @@ updated: 2026-07-23
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/overview.md`, `wiki/strategy/mvp-pr-roadmap.md`, and `wiki/tech/core-interface-boundary.md` now reflect the PR #258 -> #268 auth/sandbox chain, with PR #268 current on `origin/main`
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md` records
   the post-PR256 two-length live gate, bounded proof classes, and the explicit
   Auth0/Render private-beta authorization dependency
