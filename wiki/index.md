@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 # Index
@@ -28,6 +28,9 @@ updated: 2026-07-23
 
 ### Strategy
 - `wiki/strategy/mvp-pr-roadmap.md`
+
+### Tech
+- `wiki/tech/compute-topology-optional-gpu-escape-hatch.md`
 
 ### Meta
 - `wiki/meta/pr0-governance-checklist.md`
@@ -56,6 +59,7 @@ updated: 2026-07-23
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`
 - `wiki/outputs/2026-07-20-guided-entry-live-closure.md`
 - `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md`
@@ -80,9 +84,12 @@ updated: 2026-07-23
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md` records the merged Railway/Supabase sandbox hardening, live TLS/RLS proof, protected Scalekit business-call proof, cleanup, and the intentionally closed production gate pending native OAuth/MCP transport evidence
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md` records
-  the post-PR256 two-length live gate, bounded proof classes, and the explicit
-  Auth0/Render private-beta authorization dependency
+  the post-PR256 two-length live gate, bounded proof classes, and the historical
+  Auth0/Render private-beta dependency; the active target gate is Railway+Supabase
+  with Scalekit first sandbox, Auth0 fallback, conditional WorkOS, and the
+  provider-neutral RLS boundary frozen by merged PR258
 - `wiki/outputs/2026-07-20-guided-entry-live-closure.md` PR #249–#251, six-case matrix, corrective replay PASS, and exact-main runtime promotion
 - `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md` frozen six-case live matrix, no-corrective-PR verdict, and harmonic-pack boundary
 - `wiki/howto/personal-visual-harmony-quick-start.md` short default prompt, optional goal presets, and explicit two-length workflow

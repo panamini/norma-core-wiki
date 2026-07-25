@@ -3,10 +3,42 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-23
+updated: 2026-07-24
 ---
 
 # Log
+
+## 2026-07-24 — Railway/Supabase target and compute topology truth-sync
+- Recorded `ROADMAP_DRIFT`: the prior Auth0/Render decision boundary is
+  historical/current implementation context; the locked target is
+  Railway+Supabase.
+- Added the proposed compute-topology ADR with Tier 0 local/on-device, Tier 1
+  Railway CPU, and Tier 2 optional external GPU.
+- No code, runtime, API, schema, test, migration, benchmark execution, cloud
+  resource, Render/Auth0 configuration, or external infrastructure changed.
+
+## 2026-07-24 — OAuth/MCP shortlist and next-PR routing
+- Recorded merged Core PR #257 at
+  `6783cb371b3ed29779e75e50018005cd17d0ebc5` and the new status
+  `SHORTLISTED_PENDING_SANDBOX`.
+- Auth0 is the first sandbox because it matches the exact contract and current
+  baseline; Scalekit is the greenfield challenger; WorkOS is conditional on
+  written scope/JWT/Supabase-RLS confirmation.
+- Added the prerequisite RLS boundary decision: direct MCP JWT acceptance by
+  Supabase versus Railway as the authorized PostgreSQL boundary.
+- Routed the next candidate to PR258: RLS boundary contract and Auth0 sandbox
+  qualification preparation. No production provider, migration, or resource
+  creation was authorized by this documentation update.
+
+## 2026-07-24 — Scalekit-first qualification gate
+- Recorded merged PR #258 at
+  `d6b3e6f8726a2dc3c2a476be6207e22339ccb9ca`.
+- Scalekit is now the first sandbox candidate for the simplest ChatGPT → MCP
+  path; Auth0 is the fallback and must run the same exact contract after a
+  blocking Scalekit failure. No production provider is locked.
+- The provider-neutral Railway → Supabase/PostgreSQL-RLS boundary, tenant
+  isolation, and adapter rollback rules are documented; the next action is an
+  isolated sandbox qualification with no production resource or migration.
 
 ## 2026-07-23 — post-PR256 two-length observation gate
 - Recorded merged Core PR #256: reviewed head
@@ -499,3 +531,20 @@ updated: 2026-07-23
     - `wiki/sources/2026-06-11-source-11.md`
   - copied staged `GLOSSARY_CORE.md`, `MVP_GUARDRAILS.md`, `PR_REVIEW_CHECKLIST.md`, `SPEC_FREEZE.md` to `raw/`
   - deleted ingested documents from `rawinput/` except `rawinput/README.md`
+## 2026-07-25
+- Added `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`.
+- Synced `wiki/overview.md`, `wiki/index.md`, `wiki/hot.md`, and
+  `wiki/strategy/mvp-pr-roadmap.md` with the merged PR #272 Railway/Supabase
+  sandbox hardening and disposable live proof.
+- Recorded the exact boundary: the MCP business call is live and valid, while
+  production readiness remains closed because the connector does not expose
+  the remaining native OAuth/MCP transport evidence.
+### 2026-07-26 — Native MCP sandbox transport smoke completed
+
+The live Railway sandbox was exercised with a separate MCP SDK client using
+OAuth/PKCE and ephemeral in-memory credentials. Sanitized evidence recorded
+`initialize`, `tools/list`, `resources/list`, and `resources/read` PASS, with
+four tools and one `ui://widget/norma-personal-visual-harmony-v1.html`
+resource returning `text/html;profile=mcp-app`. No token or secret was
+persisted. The production gate remains CLOSED pending refresh/revocation and
+independently sanitized token-verification evidence for the full matrix.

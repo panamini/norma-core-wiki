@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-25
 tags:
   - execution
   - roadmap
@@ -50,9 +50,11 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through merged PR #256 at
-`93096299523d3ad376f7650b32fa4a5d3a98389b` (reviewed head
-`6afdb36982ccb3ac7986fbff5e1d1da405decd13`).
+Norma Core `origin/main` is current through merged PR #258 at
+`d6b3e6f8726a2dc3c2a476be6207e22339ccb9ca`. PR #258 published the
+provider-neutral RLS boundary and Scalekit-first MCP sandbox contract; PR #257
+added the performance truth harness; PR #256 remains the latest visual-harmony
+product gate.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -147,10 +149,38 @@ The gate is `observation-partial`: declared geometric comparisons are
 concretely useful in the current private flow, but artistic usefulness, latency
 p50/p95, mobile proof, sustained use, and commercial/public readiness remain
 unproven. Two read-only code audits and 103 targeted tests found no active
-calculation defect, so no code changeset is justified. The next dependency is
-an explicit authorization decision for the existing Auth0/Render private-beta
-program; no benchmark, new geometry, harmonic-pack expansion, public
-deployment, or provider work comes before that decision.
+calculation defect, so no geometry changeset is justified.
+
+The Railway/Supabase gate remains `SHORTLISTED_PENDING_SANDBOX`: Railway remains
+the target for MCP, API, orchestration, and CPU; Supabase PostgreSQL/RLS remains
+the probable data target; no OAuth/MCP provider is recommended for production.
+Scalekit is now the first sandbox candidate for the simplest ChatGPT → MCP path.
+Auth0 is the fallback and must run the same exact contract if Scalekit fails a
+blocking criterion. WorkOS remains conditional on written confirmation of the
+custom scope, its presence in the MCP JWT, and Supabase RLS compatibility.
+
+PR258 is merged and freezes the provider-neutral Railway → Supabase/RLS boundary,
+the nine-criterion sandbox contract, tenant isolation, and rollback rules. The
+follow-up sandbox hardening is merged in PR #272. Its disposable Railway
+deployment passed readiness, application-path Supabase TLS, tenant RLS
+allow/deny, missing-context deny, rollback isolation, pool reset, cleanup, and
+one protected Scalekit business call. The qualification checkpoint is recorded
+in `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`.
+The native OAuth/MCP transport smoke is now complete and passes. The gate
+remains closed until refresh/revocation and independently sanitized
+token-verification evidence complete the qualification matrix; no production
+resource, migration, or provider lock comes before that decision. Pausing here
+is valid.
+No new geometry, harmonic-pack expansion, public deployment, or automatic
+benchmark expansion comes before this gate.
+
+The target compute topology is documented in
+`wiki/tech/compute-topology-optional-gpu-escape-hatch.md`: Tier 0 is local or
+on-device Core execution, Tier 1 is Railway CPU, and Tier 2 is an optional
+provider-neutral external GPU. Core must remain runnable offline by Studio,
+Camera, and adapters/plugins. A GPU is forbidden until a real workload
+benchmark demonstrates need; the active benchmark budget remains ten total
+executions and this update consumes none.
 
 The exact-main corrective replay is `REPLAY_PASS`: four fresh case-level reruns
 of the previously non-PASS cells produced real hydrated `À CONFIRMER` widgets,
