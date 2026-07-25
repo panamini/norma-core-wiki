@@ -166,9 +166,11 @@ deployment passed readiness, application-path Supabase TLS, tenant RLS
 allow/deny, missing-context deny, rollback isolation, pool reset, cleanup, and
 one protected Scalekit business call. The qualification checkpoint is recorded
 in `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`.
-The gate remains closed until the remaining native OAuth/MCP transport evidence
-is captured; no production resource, migration, or provider lock comes before
-that decision. Pausing here is valid.
+The native OAuth/MCP transport smoke is now complete and passes. The gate
+remains closed until refresh/revocation and independently sanitized
+token-verification evidence complete the qualification matrix; no production
+resource, migration, or provider lock comes before that decision. Pausing here
+is valid.
 No new geometry, harmonic-pack expansion, public deployment, or automatic
 benchmark expansion comes before this gate.
 

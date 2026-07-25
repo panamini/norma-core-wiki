@@ -539,3 +539,12 @@ updated: 2026-07-24
 - Recorded the exact boundary: the MCP business call is live and valid, while
   production readiness remains closed because the connector does not expose
   the remaining native OAuth/MCP transport evidence.
+### 2026-07-26 — Native MCP sandbox transport smoke completed
+
+The live Railway sandbox was exercised with a separate MCP SDK client using
+OAuth/PKCE and ephemeral in-memory credentials. Sanitized evidence recorded
+`initialize`, `tools/list`, `resources/list`, and `resources/read` PASS, with
+four tools and one `ui://widget/norma-personal-visual-harmony-v1.html`
+resource returning `text/html;profile=mcp-app`. No token or secret was
+persisted. The production gate remains CLOSED pending refresh/revocation and
+independently sanitized token-verification evidence for the full matrix.

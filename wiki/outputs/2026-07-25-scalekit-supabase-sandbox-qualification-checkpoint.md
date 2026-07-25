@@ -37,15 +37,19 @@ or database contents.
 - The already-authorized Scalekit connector executed a protected
   `norma.analyzeStructuredCompositionV1` call and returned a valid result with
   no blocking errors.
+- A separate MCP SDK client completed OAuth authorization with PKCE using
+  ephemeral in-memory credentials, then passed `initialize`, `tools/list`,
+  `resources/list`, and `resources/read`. The live server exposed four tools
+  and one `ui://widget/norma-personal-visual-harmony-v1.html` resource; the
+  resource read returned `text/html;profile=mcp-app`.
 
 ## Gate status
 
-`productionReadiness: CLOSED` remains intentional. The ChatGPT connector
-surface does not expose raw `initialize`, `resources/list`, or `resources/read`
-transport evidence, and the complete consent/refresh/revocation and exact
-resource-audience records are not independently captured in the repository.
-The MCP business call is live and functional, but missing qualification
-records must not be represented as a production pass.
+Native MCP transport smoke is now PASS. `productionReadiness: CLOSED` remains
+intentional because the complete consent/refresh/revocation and independently
+sanitized token-verification records are not yet captured, so the full
+nine-criterion matrix must not be represented as a production pass. The MCP
+business call and native transport smoke are live and functional.
 
 ## Operator reference
 
@@ -82,10 +86,10 @@ database row, or credential belongs in this page.
 ## Next decision
 
 No further code PR is justified for this checkpoint. Either pause here, or
-collect the remaining sanitized native OAuth/MCP transport evidence with an
-authorized operator/client, then review the nine-criterion matrix before any
-production-readiness decision. Auth0 remains fallback-only after a blocking
-Scalekit failure.
+separately complete the remaining refresh/revocation and token-verification
+evidence with an authorized operator/client, then review the nine-criterion
+matrix before any production-readiness decision. Auth0 remains fallback-only
+after a blocking Scalekit failure.
 
 ## Sources
 
