@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-25
 tags:
   - architecture
   - adapters
@@ -38,6 +38,18 @@ Defines strict ownership for what computes, what calls, and what displays.
 
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
+
+The current auth and control-plane path is provider-neutral and still outside
+Core authority. PR #258 established the RLS boundary and Scalekit-first MCP
+sandbox qualification with Auth0 fallback. PR #259-#265 added provider-neutral
+OAuth resource auth, Scalekit scope and issuer compatibility, protected
+resource discovery, composite audiences, and the remote visual sandbox. PR
+#266 proved the provider-neutral authorization-data boundary. PR #267 added
+the PostgreSQL authorization transaction adapter, and PR #268 closed
+PostgreSQL authorization transactions safely. Railway remains the control-
+plane target, Supabase PostgreSQL/RLS is the probable data target, and the
+strongest current status is a local PostgreSQL contract proof with live
+Supabase RLS still deferred.
 
 Accepted geometry remains explicit structured input after acceptance. The
 current accepted-geometry mapper and shared-unit-surface normalizer are

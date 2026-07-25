@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-25
 tags:
   - execution
   - roadmap
@@ -50,9 +50,25 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through merged PR #256 at
-`93096299523d3ad376f7650b32fa4a5d3a98389b` (reviewed head
-`6afdb36982ccb3ac7986fbff5e1d1da405decd13`).
+Norma Core `origin/main` is current through merged PR #268 at
+`678134b59db146b1ad8a2c8f3344df52f16ce642`.
+
+PR #258 was the stale baseline: it defined the RLS boundary and
+Scalekit-first MCP sandbox qualification with Auth0 fallback. PR #259 added
+provider-neutral OAuth resource auth. PR #260 mapped the Scalekit scope alias
+at the auth boundary. PR #261 declared the remote tool OAuth scheme. PR #262
+added root protected resource discovery. PR #263 preserved the Scalekit issuer
+claim. PR #264 accepted Scalekit composite audiences. PR #265 hardened visual
+sandbox sessions and exposed the remote visual sandbox. PR #266 proved the
+provider-neutral authorization-data boundary. PR #267 added the PostgreSQL
+authorization transaction adapter. PR #268 closed PostgreSQL authorization
+transactions safely.
+
+The strongest current status is a proven local PostgreSQL contract with live
+Supabase RLS still deferred. Railway remains the control-plane target,
+Supabase PostgreSQL/RLS is the probable data target, Scalekit is the first
+sandbox, Auth0 remains the fallback, Core stays local/offline, and
+GPU/package/geometry expansion stays deferred.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
