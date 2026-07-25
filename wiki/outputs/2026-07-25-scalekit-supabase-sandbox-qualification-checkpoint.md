@@ -47,6 +47,38 @@ resource-audience records are not independently captured in the repository.
 The MCP business call is live and functional, but missing qualification
 records must not be represented as a production pass.
 
+## Operator reference
+
+These identifiers and URLs are non-secret routing information for the
+disposable sandbox:
+
+- Railway project: `2666fa64-e58d-4599-8bda-8e30eee7b504`
+- Railway service: `294010ef-0f2b-4189-897e-9bdf716175f8`
+- Railway environment: `be59114e-b0fb-4e57-a60a-11277df94cc0`
+- Active deployment: `e0da5150-44cf-4226-9ab7-edfef2f0d186`
+- Public service: `https://norma-core-remote-mcp-beta-production.up.railway.app`
+- MCP endpoint: `https://norma-core-remote-mcp-beta-production.up.railway.app/mcp`
+- Protected-resource metadata:
+  `https://norma-core-remote-mcp-beta-production.up.railway.app/.well-known/oauth-protected-resource/mcp`
+- Scalekit authorization-server metadata:
+  `https://twoweeks.scalekit.dev/resources/res_135600270506722306/.well-known/oauth-authorization-server`
+- Scalekit JWKS: `https://twoweeks.scalekit.dev/keys`
+- Supabase sandbox project: `bxjfhqtbosdbnpjihfwe`
+
+To rerun the safe repository check, from `norma-core` run:
+
+```bash
+node bin/norma-core-sandbox-qualification.mjs
+```
+
+This is dry-run/provider-free. A live qualification operator must then use
+the already-authorized Scalekit client, verify the metadata endpoints, run the
+same nine-criterion matrix, capture only sanitized evidence references, and
+clean up the disposable fixture. The Railway secrets
+`NORMA_MCP_AUTHZ_DATABASE_URL` and `NORMA_MCP_POSTGRES_CA` stay only in the
+Railway secret store. No account email, account name, token, claim, prompt,
+database row, or credential belongs in this page.
+
 ## Next decision
 
 No further code PR is justified for this checkpoint. Either pause here, or
