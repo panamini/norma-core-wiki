@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-25
+updated: 2026-07-26
 ---
 
 # Index
@@ -84,7 +84,7 @@ updated: 2026-07-25
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
-- `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md` records merged PR #273, Railway/Supabase sandbox hardening, native OAuth/MCP transport, immediate same-token `200 → 401 → 200` revocation proof, cleanup, and the intentionally closed production gate pending remaining consent/refresh matrix review
+- `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md` records exact merged `main@f84a71c`, Railway deployment `8fa03f94`, Railway/Supabase sandbox hardening, native OAuth/MCP transport, immediate same-token `200 → 401 → 200` revocation proof, verified database cleanup, the remaining preliminary Inspector DCR cleanup, and the intentionally closed production gate pending consent/refresh matrix review
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md` records
   the post-PR256 two-length live gate, bounded proof classes, and the historical
   Auth0/Render private-beta dependency; the active target gate is Railway+Supabase

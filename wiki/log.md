@@ -560,3 +560,19 @@ pre-auth admission/deadline controls, and fail-closed effective privilege/RLS
 policy checks. No token, code, claim value, credential, prompt, email, or
 database row content was persisted. Production readiness remains CLOSED
 pending the remaining consent/refresh evidence plus complete matrix review.
+
+### 2026-07-26 — Exact merged-main revocation proof revalidated
+
+Railway deployment `8fa03f94-595c-49fb-82e3-121aa2808ab0` was confirmed on
+merged `norma-core` `main@f84a71cb9e1d592eeadbc749cdb1f48e796d556b`.
+An existing public MCP Inspector client and ephemeral localhost server-side
+PKCE exchange reproduced the exact same-token `200 → 401 → 200` sequence
+around the durable HMAC cutoff. The proof row was removed and absence verified;
+the SQL editor and helper were cleared. No token, code, claim value, email,
+credential, prompt, or database content was persisted. The successful helper
+path reused an existing public client, but a preliminary fresh Inspector
+attempt performed DCR before its CORS failure. Exact cleanup of that disposable
+client remains unverified because the Porphyre OAuth session cannot access the
+Scalekit admin workspace. Updated the sandbox checkpoint, overview, index, and
+hot cache; production readiness remains `CLOSED` pending that cleanup,
+consent/refresh evidence, and complete matrix review.

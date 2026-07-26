@@ -57,6 +57,17 @@ or database contents.
 - The exact same in-memory token passed the sequence `200 → 401 → 200`: accepted
   before the wildcard cutoff, denied immediately after it, and accepted after
   the proof row was deleted. Cleanup was independently verified.
+- The merged implementation was revalidated on exact `main`
+  `f84a71cb9e1d592eeadbc749cdb1f48e796d556b` in Railway deployment
+  `8fa03f94-595c-49fb-82e3-121aa2808ab0`. The disposable Supabase fixture and
+  existing public MCP Inspector client produced the same `200 → 401 → 200`
+  sequence, with boolean cutoff/cleanup confirmation. MCP Inspector v1.0.0
+  completed consent but its browser token exchange hit a CORS `Failed to
+  fetch`; an ephemeral localhost server-side PKCE exchange completed the smoke
+  without changing Norma. That successful path reused an existing client. A
+  preliminary fresh Inspector attempt performed DCR before failing, and exact
+  cleanup of that disposable client is not yet verified because the Porphyre
+  OAuth session does not have access to the Scalekit admin workspace.
 
 ## Gate status
 
@@ -73,7 +84,7 @@ disposable sandbox:
 - Railway project: `2666fa64-e58d-4599-8bda-8e30eee7b504`
 - Railway service: `294010ef-0f2b-4189-897e-9bdf716175f8`
 - Railway environment: `be59114e-b0fb-4e57-a60a-11277df94cc0`
-- Active deployment: `e0da5150-44cf-4226-9ab7-edfef2f0d186`
+- Active deployment: `8fa03f94-595c-49fb-82e3-121aa2808ab0`
 - Public service: `https://norma-core-remote-mcp-beta-production.up.railway.app`
 - MCP endpoint: `https://norma-core-remote-mcp-beta-production.up.railway.app/mcp`
 - Protected-resource metadata:
@@ -108,7 +119,8 @@ remains fallback-only after a blocking Scalekit failure.
 
 ## Sources
 
-- `norma-core` PR #272, PR #273, and merged `main`.
+- `norma-core` PR #272, PR #273, PR #274, and merged
+  `main@f84a71cb9e1d592eeadbc749cdb1f48e796d556b`.
 - `docs/runbooks/sandbox-qualification-launch-gates.md`.
 - `docs/runbooks/oauth-immediate-revocation-sandbox.md`.
 - `docs/decisions/2026-07-24-railway-supabase-oauth-provider-qualification.md`.
