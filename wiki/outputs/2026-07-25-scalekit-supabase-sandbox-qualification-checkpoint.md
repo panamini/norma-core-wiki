@@ -65,16 +65,32 @@ or database contents.
   completed consent but its browser token exchange hit a CORS `Failed to
   fetch`; an ephemeral localhost server-side PKCE exchange completed the smoke
   without changing Norma. That successful path reused an existing client. A
-  preliminary fresh Inspector attempt performed DCR before failing, and exact
-  cleanup of that disposable client is not yet verified because the Porphyre
-  OAuth session does not have access to the Scalekit admin workspace.
+  preliminary fresh Inspector attempt performed DCR before failing. In the
+  Porphyre Scalekit admin session, that disposable client
+  `m2m_135764625936417794` was deleted; Scalekit reported success and an exact
+  row lookup returned count `0`. The retained proof client
+  `m2m_135764768945341192` was not touched. No secret, token, claim, email,
+  prompt, or database contents were persisted.
 
 ## Gate status
 
-Native MCP transport and immediate same-token revocation are PASS.
-`productionReadiness: CLOSED` remains intentional until the remaining
-consent/refresh evidence and full nine-criterion matrix are reviewed. This
-checkpoint is not a production authorization.
+Native MCP transport and immediate same-token revocation are PASS. The
+immediate-revocation sandbox rail is `CLOSED/DONE`: the disposable DCR client
+was deleted and its exact absence was verified. `productionReadiness: CLOSED`
+remains intentionally separate until the remaining consent/refresh evidence
+and full nine-criterion matrix are reviewed. This checkpoint is not a
+production authorization.
+
+## Retest policy
+
+Do not rerun the full OAuth/RLS matrix for pack additions, performance
+optimization, or UI/UX changes. Run only the narrow affected tests for those
+changes. Reopen auth/RLS qualification only when one of these boundaries
+changes: authentication/OAuth/JWT/scope/audience/issuer/subject/tenant
+mapping; PostgreSQL/RLS/schema/pool reset; Railway deployment/config/runtime
+entrypoint; or provider metadata/registration behavior. Future full
+production-launch consent/refresh qualification remains a separate decision
+and is not a blocker for this completed sandbox rail.
 
 ## Operator reference
 
