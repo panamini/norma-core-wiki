@@ -3,7 +3,7 @@ title: "Scalekit and Supabase Sandbox Qualification Checkpoint"
 category: output
 status: current
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-07-26
 tags:
   - sandbox
   - scalekit
@@ -42,14 +42,27 @@ or database contents.
   `resources/list`, and `resources/read`. The live server exposed four tools
   and one `ui://widget/norma-personal-visual-harmony-v1.html` resource; the
   resource read returned `text/html;profile=mcp-app`.
+- PR #273 candidate code `7a27cb1` added a provider-neutral durable revocation
+  cutoff registry. The final PR head also includes the token-free operator
+  runbook.
+- Scalekit public-DCR tokens passed local RS256/JWKS, exact issuer, exact MCP
+  audience, scope, subject, `iat`, expiry, and `oid` tenant checks. The
+  provider-specific confidential-client introspection path was disabled
+  explicitly because it did not accept this public-DCR token and is not the
+  documented Scalekit MCP validation path.
+- The Railway database role was confirmed least-privileged. Its exact schema
+  `USAGE`, table `SELECT`, and RLS policy were corrected without exposing the
+  role name or connection material.
+- The exact same in-memory token passed the sequence `200 → 401 → 200`: accepted
+  before the wildcard cutoff, denied immediately after it, and accepted after
+  the proof row was deleted. Cleanup was independently verified.
 
 ## Gate status
 
-Native MCP transport smoke is now PASS. `productionReadiness: CLOSED` remains
-intentional because the complete consent/refresh/revocation and independently
-sanitized token-verification records are not yet captured, so the full
-nine-criterion matrix must not be represented as a production pass. The MCP
-business call and native transport smoke are live and functional.
+Native MCP transport and immediate same-token revocation are PASS.
+`productionReadiness: CLOSED` remains intentional until PR #273 is merged and
+the remaining consent/refresh evidence and full nine-criterion matrix are
+reviewed. This checkpoint is not a production authorization.
 
 ## Operator reference
 
@@ -83,16 +96,19 @@ clean up the disposable fixture. The Railway secrets
 Railway secret store. No account email, account name, token, claim, prompt,
 database row, or credential belongs in this page.
 
+For the token-free immediate-revocation procedure, use
+`docs/runbooks/oauth-immediate-revocation-sandbox.md` in `norma-core`.
+
 ## Next decision
 
-No further code PR is justified for this checkpoint. Either pause here, or
-separately complete the remaining refresh/revocation and token-verification
-evidence with an authorized operator/client, then review the nine-criterion
-matrix before any production-readiness decision. Auth0 remains fallback-only
-after a blocking Scalekit failure.
+Merge PR #273 only after its exact-head CI and review gates pass. Then complete
+or revalidate the remaining consent/refresh evidence and review the complete
+nine-criterion matrix before any production-readiness decision. Auth0 remains
+fallback-only after a blocking Scalekit failure.
 
 ## Sources
 
 - `norma-core` PR #272 and merged `main`.
 - `docs/runbooks/sandbox-qualification-launch-gates.md`.
+- `docs/runbooks/oauth-immediate-revocation-sandbox.md`.
 - `docs/decisions/2026-07-24-railway-supabase-oauth-provider-qualification.md`.
