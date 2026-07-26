@@ -571,8 +571,22 @@ around the durable HMAC cutoff. The proof row was removed and absence verified;
 the SQL editor and helper were cleared. No token, code, claim value, email,
 credential, prompt, or database content was persisted. The successful helper
 path reused an existing public client, but a preliminary fresh Inspector
-attempt performed DCR before its CORS failure. Exact cleanup of that disposable
-client remains unverified because the Porphyre OAuth session cannot access the
-Scalekit admin workspace. Updated the sandbox checkpoint, overview, index, and
-hot cache; production readiness remains `CLOSED` pending that cleanup,
-consent/refresh evidence, and complete matrix review.
+attempt performed DCR before its CORS failure. At the later 2026-07-26 admin
+follow-up, that disposable client was deleted and exact absence was verified;
+the retained proof client was untouched. Updated the sandbox checkpoint, overview, index, and
+hot cache; production consent/refresh evidence and complete matrix review
+remain separate from the now-completed sandbox rail.
+
+### 2026-07-26 — Immediate-revocation sandbox rail closed
+
+The preliminary disposable Scalekit MCP Inspector DCR client
+`m2m_135764625936417794` was deleted in the Porphyre admin session; Scalekit
+reported success and an exact row lookup returned count `0`. Retained proof
+client `m2m_135764768945341192` was untouched. No secret, token, claim, email,
+prompt, or database contents were persisted. The immediate-revocation sandbox
+rail is now `CLOSED/DONE`. Future full production-launch consent/refresh
+qualification remains separate and is not a blocker for this rail. Pack
+additions, performance optimization, and UI/UX changes require only narrow
+affected tests; reopen full auth/RLS qualification only for auth/OAuth/JWT,
+PostgreSQL/RLS/schema/pool reset, Railway runtime, or provider
+metadata/registration changes.
