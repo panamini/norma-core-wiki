@@ -551,11 +551,12 @@ independently sanitized token-verification evidence for the full matrix.
 
 ### 2026-07-26 — Immediate same-token revocation live-proven
 
-PR #273 candidate code added the durable provider-neutral revocation cutoff
-rail. The exact same in-memory public-DCR token passed `200 → 401 → 200`
-around a wildcard HMAC cutoff and verified cleanup. The Railway database role
-remained least-privileged; its exact table grant and RLS policy were aligned
-without exposing role or connection material. No token, code, claim value,
-credential, prompt, email, or database row content was persisted. Production
-readiness remains CLOSED pending PR #273 merge and the remaining
-consent/refresh evidence plus complete matrix review.
+PR #273 merged at `8037ddd211d71891a8f0f66cfa761091595f8684` after
+exact-head CI, security review, and Railway gates. The hardened live candidate
+passed the exact same in-memory public-DCR token through `200 → 401 → 200`
+around a wildcard HMAC cutoff and verified cleanup. The final implementation
+uses one provider-neutral PostgreSQL revocation rail, a dedicated HMAC key,
+pre-auth admission/deadline controls, and fail-closed effective privilege/RLS
+policy checks. No token, code, claim value, credential, prompt, email, or
+database row content was persisted. Production readiness remains CLOSED
+pending the remaining consent/refresh evidence plus complete matrix review.

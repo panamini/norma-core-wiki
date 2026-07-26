@@ -42,9 +42,10 @@ or database contents.
   `resources/list`, and `resources/read`. The live server exposed four tools
   and one `ui://widget/norma-personal-visual-harmony-v1.html` resource; the
   resource read returned `text/html;profile=mcp-app`.
-- PR #273 candidate code `7a27cb1` added a provider-neutral durable revocation
-  cutoff registry. The final PR head also includes the token-free operator
-  runbook.
+- PR #273 merged at `8037ddd211d71891a8f0f66cfa761091595f8684`.
+  Its hardened live candidate `5460e38` added the provider-neutral durable
+  revocation cutoff registry; final reviewed head `1f2f570` additionally fails
+  closed on missing or drifted PostgreSQL RLS policy and effective privileges.
 - Scalekit public-DCR tokens passed local RS256/JWKS, exact issuer, exact MCP
   audience, scope, subject, `iat`, expiry, and `oid` tenant checks. The
   provider-specific confidential-client introspection path was disabled
@@ -60,9 +61,9 @@ or database contents.
 ## Gate status
 
 Native MCP transport and immediate same-token revocation are PASS.
-`productionReadiness: CLOSED` remains intentional until PR #273 is merged and
-the remaining consent/refresh evidence and full nine-criterion matrix are
-reviewed. This checkpoint is not a production authorization.
+`productionReadiness: CLOSED` remains intentional until the remaining
+consent/refresh evidence and full nine-criterion matrix are reviewed. This
+checkpoint is not a production authorization.
 
 ## Operator reference
 
@@ -101,14 +102,13 @@ For the token-free immediate-revocation procedure, use
 
 ## Next decision
 
-Merge PR #273 only after its exact-head CI and review gates pass. Then complete
-or revalidate the remaining consent/refresh evidence and review the complete
-nine-criterion matrix before any production-readiness decision. Auth0 remains
-fallback-only after a blocking Scalekit failure.
+Complete or revalidate the remaining consent/refresh evidence and review the
+complete nine-criterion matrix before any production-readiness decision. Auth0
+remains fallback-only after a blocking Scalekit failure.
 
 ## Sources
 
-- `norma-core` PR #272 and merged `main`.
+- `norma-core` PR #272, PR #273, and merged `main`.
 - `docs/runbooks/sandbox-qualification-launch-gates.md`.
 - `docs/runbooks/oauth-immediate-revocation-sandbox.md`.
 - `docs/decisions/2026-07-24-railway-supabase-oauth-provider-qualification.md`.
