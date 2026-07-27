@@ -3,10 +3,25 @@ title: "Log"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-24
+updated: 2026-07-27
 ---
 
 # Log
+
+## 2026-07-27 — final five-gate operational closeout
+- Recorded Norma Core PR #278 as merged from reviewed head
+  `5fede8839a4bb77e91bbdd0c10706b4cc307b096` to current `origin/main`
+  `6a135de308df05e4fce674f214655e731245c89e`.
+- Preserved the evidence chronology: Railway content-identity and `/readyz`,
+  fresh v5 ChatGPT `prepare → single confirm → completed → reload` PASS, and
+  provider-free `4/4` performance belong to pre-mobile exact main
+  `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`. No deployment of the PR #278
+  mobile change is claimed.
+- Recorded the security technical sandbox gate as `9/9 PASS`, including the
+  bounded refresh lifecycle. `productionReadiness` remains `CLOSED` because
+  no exact human approval block was recorded.
+- Added `wiki/outputs/2026-07-27-five-gate-operational-closeout.md` and refreshed
+  the roadmap, boundary, overview, index, and hot cache.
 
 ## 2026-07-24 — Railway/Supabase target and compute topology truth-sync
 - Recorded `ROADMAP_DRIFT`: the prior Auth0/Render decision boundary is

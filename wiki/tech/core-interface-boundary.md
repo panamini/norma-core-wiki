@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-19
+updated: 2026-07-27
 tags:
   - architecture
   - adapters
@@ -38,6 +38,20 @@ Defines strict ownership for what computes, what calls, and what displays.
 
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
+
+The current merged Core main is PR #278 at
+`6a135de308df05e4fce674f214655e731245c89e`, from reviewed head
+`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The relevant pre-mobile proof
+anchor is exact main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`. Fresh v5
+ChatGPT proof on that pre-mobile main revalidated
+`prepare → single confirm → completed → reload` as `PASS`.
+
+The provider-free performance run on that pre-mobile main passed `4/4`: Core
+approximately `18–20 ms`, stdio approximately `109 ms`, and authenticated HTTP
+approximately `175 ms`. A 90-second-class delay is therefore an external/widget
+candidate, not a Core timing finding. Railway content-identity and `/readyz`
+evidence are bound to the pre-mobile main; no mobile deployment is inferred
+from PR #278's merge.
 
 Accepted geometry remains explicit structured input after acceptance. The
 current accepted-geometry mapper and shared-unit-surface normalizer are
