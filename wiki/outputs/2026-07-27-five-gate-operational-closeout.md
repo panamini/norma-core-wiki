@@ -10,7 +10,7 @@ tags:
   - performance
   - railway
   - sandbox
-type: checkpoint
+type: other
 ---
 
 # Five-Gate Operational Closeout
