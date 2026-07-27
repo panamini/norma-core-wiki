@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-26
+updated: 2026-07-27
 ---
 
 # Index
@@ -59,6 +59,7 @@ updated: 2026-07-26
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`
 - `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`
 - `wiki/outputs/2026-07-20-guided-entry-live-closure.md`
@@ -84,6 +85,13 @@ updated: 2026-07-26
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/outputs/2026-07-27-five-gate-operational-closeout.md` records PR #278
+  reviewed head `5fede8839a4bb77e91bbdd0c10706b4cc307b096` and merge/current
+  `origin/main` `6a135de308df05e4fce674f214655e731245c89e`, while keeping the
+  Railway, v5 ChatGPT, and provider-free performance evidence bound to
+  pre-mobile main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; it records the
+  `9/9 PASS` security technical gate, bounded refresh lifecycle, and
+  `productionReadiness: CLOSED` without claiming mobile deployment
 - `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md` records exact merged `main@f84a71c`, Railway deployment `8fa03f94`, Railway/Supabase sandbox hardening, native OAuth/MCP transport, immediate same-token `200 → 401 → 200` revocation proof, verified database cleanup, deleted preliminary Inspector DCR client with exact absence (`count 0`), the retained proof client left untouched, and the separate production gate pending consent/refresh matrix review; pack/performance/UI changes use narrow retests unless an auth/RLS boundary changes
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md` records
   the post-PR256 two-length live gate, bounded proof classes, and the historical

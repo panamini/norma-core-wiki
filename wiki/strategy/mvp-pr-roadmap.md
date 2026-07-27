@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-25
+updated: 2026-07-27
 tags:
   - execution
   - roadmap
@@ -50,11 +50,14 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current through merged PR #258 at
-`d6b3e6f8726a2dc3c2a476be6207e22339ccb9ca`. PR #258 published the
-provider-neutral RLS boundary and Scalekit-first MCP sandbox contract; PR #257
-added the performance truth harness; PR #256 remains the latest visual-harmony
-product gate.
+Norma Core `origin/main` is current after PR #278 merged at
+`6a135de308df05e4fce674f214655e731245c89e` from reviewed head
+`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The final pre-mobile
+qualification evidence is anchored to exact main
+`59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; Railway was verified against that
+tree only, and no deployment of the PR #278 mobile change is claimed.
+PR #258 published the provider-neutral RLS boundary and Scalekit-first MCP
+sandbox contract; PR #257 added the performance truth harness.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -146,31 +149,31 @@ calls and zero retry. Detailed measurements and proof classes are recorded in
 `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`.
 
 The gate is `observation-partial`: declared geometric comparisons are
-concretely useful in the current private flow, but artistic usefulness, latency
-p50/p95, mobile proof, sustained use, and commercial/public readiness remain
-unproven. Two read-only code audits and 103 targeted tests found no active
-calculation defect, so no geometry changeset is justified.
+concretely useful in the current private flow, while artistic usefulness,
+mobile proof, sustained use, and commercial/public readiness remain unproven.
+Fresh v5 ChatGPT proof on pre-mobile exact main revalidated
+`prepare → single confirm → completed → reload` as `PASS`. Provider-free main
+performance passed `4/4`: Core approximately `18–20 ms`, stdio approximately
+`109 ms`, and authenticated HTTP approximately `175 ms`. A 90-second-class
+delay is classified as an external/widget candidate, not a Core timing
+finding.
 
-The Railway/Supabase gate remains `SHORTLISTED_PENDING_SANDBOX`: Railway remains
-the target for MCP, API, orchestration, and CPU; Supabase PostgreSQL/RLS remains
-the probable data target; no OAuth/MCP provider is recommended for production.
-Scalekit is now the first sandbox candidate for the simplest ChatGPT → MCP path.
-Auth0 is the fallback and must run the same exact contract if Scalekit fails a
-blocking criterion. WorkOS remains conditional on written confirmation of the
-custom scope, its presence in the MCP JWT, and Supabase RLS compatibility.
+The Railway/Supabase boundary remains provider-neutral: Railway remains the
+target for MCP, API, orchestration, and CPU, while Supabase PostgreSQL/RLS
+remains the probable data target. No production provider lock or production
+approval is implied by the technical sandbox result. Scalekit remains the
+qualified sandbox path under the provider-neutral contract; Auth0 and WorkOS
+remain separate provider decisions.
 
 PR258 is merged and freezes the provider-neutral Railway → Supabase/RLS boundary,
 the nine-criterion sandbox contract, tenant isolation, and rollback rules. The
-follow-up sandbox hardening is merged in PR #272. Its disposable Railway
-deployment passed readiness, application-path Supabase TLS, tenant RLS
-allow/deny, missing-context deny, rollback isolation, pool reset, cleanup, and
-one protected Scalekit business call. The qualification checkpoint is recorded
-in `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`.
-The native OAuth/MCP transport smoke is now complete and passes. The gate
-remains closed until refresh/revocation and independently sanitized
-token-verification evidence complete the qualification matrix; no production
-resource, migration, or provider lock comes before that decision. Pausing here
-is valid.
+follow-up sandbox hardening is merged in PR #272. The security technical gate
+is now `9/9 PASS`, including the bounded refresh lifecycle. The qualification
+evidence remains bound to pre-mobile exact main `59c59da`; the Railway deployed
+tree was content-identical to that main and `/readyz` was OK. This does not
+claim that the PR #278 mobile change is deployed. `productionReadiness` remains
+`CLOSED` because no exact human approval block was recorded. The full closeout
+is recorded in `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`.
 No new geometry, harmonic-pack expansion, public deployment, or automatic
 benchmark expansion comes before this gate.
 
