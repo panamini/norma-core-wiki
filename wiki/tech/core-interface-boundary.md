@@ -40,9 +40,10 @@ Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
 
 The current merged Core main is
-`de1c11efc42bd409ecde19550061186d90ab5df6` after PR #281–#287 added the
+`ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4` after PR #281–#287 added the
 optional SAM 3 Modal perception boundary and repaired the ChatGPT widget
-resource/remount path. The relevant pre-mobile qualification anchor remains
+resource/remount path, then PR #288 completed two-length selector consistency.
+The relevant pre-mobile qualification anchor remains
 exact main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; later code does not
 retroactively move that evidence. Fresh v5 ChatGPT proof on the pre-mobile main
 revalidated `prepare → single confirm → completed → reload` as `PASS`.

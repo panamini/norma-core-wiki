@@ -36,8 +36,9 @@ production provider lock.
   `83b0dc3c919f763e89f5250d95048b0fa8621752`.
 - PR #282 merged the Modal runtime dependency packaging fix at
   `328f09d3689dcdef88448b54458d7da61a3f094e`.
-- The current repository main after the widget compatibility sequence is
-  `de1c11efc42bd409ecde19550061186d90ab5df6`.
+- The current repository main after the widget compatibility sequence and the
+  PR #288 two-length selector fix is
+  `ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4`.
 - The provider implementation supports interactive point/box prompts and
   bounded text prompts. The current widget exposes only the interactive path:
   it derives a point or box from an existing selected candidate.
@@ -155,4 +156,3 @@ that the current ChatGPT review UI can hydrate and remain editable. It does not
 yet prove a successful live SAM receipt, person detection, model quality,
 Railway-to-Modal latency, GPU cold-start distribution, or production
 readiness.
-

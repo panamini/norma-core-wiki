@@ -13,7 +13,7 @@ Active memory cache for agents. Keep this page under 500 words.
 ## Current focus
 
 - Norma Core `origin/main` is
-  `de1c11efc42bd409ecde19550061186d90ab5df6`. PR #281–#282 added the
+  `ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4`. PR #281–#282 added the
   optional authenticated SAM 3 Modal sandbox boundary; PR #283–#287 repaired
   ChatGPT widget resource metadata, cache/MIME compatibility, stale aliases,
   and app-only remount behavior.
@@ -28,11 +28,11 @@ Active memory cache for agents. Keep this page under 500 words.
   ellipse, axis, and segments after the resource fixes. No SAM receipt, mask,
   provider timing, or cost was captured, so live SAM quality/latency remains
   unproven.
-- P0 is the observed absence of an expected checked axis from the optional
-  two-length selector. P1 is one bounded semantic SAM target field or target
-  chips. P2 is clearer manual-segment and A/B comparison affordance. Manual
-  rectangles, harmonic grids, surface highlights, and new ratio families stay
-  deferred.
+- PR #288 completed P0: selected axes, segments, and quadrilateral lengths now
+  remain available in the optional two-length selector after the live recheck.
+  P1 is one bounded semantic SAM target field or target chips. P2 is clearer
+  manual-segment and A/B comparison affordance. Manual rectangles, harmonic
+  grids, surface highlights, and new ratio families stay deferred.
 - Historical security sandbox qualification remains `9/9 PASS`; production
   readiness remains separate and closed. Changes limited to packs, performance,
   or UI use narrow affected tests unless auth/OAuth/JWT, PostgreSQL/RLS,

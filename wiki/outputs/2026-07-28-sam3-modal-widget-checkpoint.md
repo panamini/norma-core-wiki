@@ -31,8 +31,10 @@ app-only remount behavior.
 
 ## Result
 
-Current repository main is
-`de1c11efc42bd409ecde19550061186d90ab5df6`.
+The initial observation was made with repository main
+`de1c11efc42bd409ecde19550061186d90ab5df6`. PR #288 later merged the
+two-length selector correction at
+`ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4`.
 
 Fresh operator-visible ChatGPT evidence on 2026-07-28 showed:
 
@@ -47,9 +49,9 @@ claim an independently captured final result for that exact latest turn.
 
 ## Open observations
 
-- The two-length dropdown did not visibly offer the expected confirmed axis in
-  the operator flow. Active code claims axes are eligible, so this is an open
-  UI/runtime finding rather than a proven Core or ratio defect.
+- The initial operator flow did not visibly offer the expected confirmed axis
+  in the two-length dropdown. PR #288 corrected the merge path and completed a
+  live recheck for selected axes, segments, and quadrilateral lengths.
 - The person visible in the image was not proposed. The current widget SAM
   action uses an interactive point/box derived from an existing candidate and
   exposes no semantic text target.
@@ -60,9 +62,8 @@ claim an independently captured final result for that exact latest turn.
 ## Decisions
 
 1. Freeze the PR #281–#287 implementation and widget recovery rail.
-2. Treat the missing axis/dropdown behavior as the first surgical application
-   follow-up.
-3. After that correction, consider one bounded semantic SAM target field using
+2. Treat the missing axis/dropdown behavior as closed by PR #288.
+3. Consider one bounded semantic SAM target field using
    the already-supported text-prompt provider contract.
 4. Keep manual rectangles, harmonic grids, surface highlights, and additional
    ratio visualizations as later product slices.
@@ -75,4 +76,3 @@ claim an independently captured final result for that exact latest turn.
 - **User-reported:** confirmation on the latest fresh image.
 - **Not yet proven:** successful live SAM receipt, semantic person detection,
   SAM quality/latency/cost, and production readiness.
-

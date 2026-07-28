@@ -69,8 +69,9 @@ not listed by the current contract. Enable the report before opening the two
 selectors. If an expected checked axis or segment is absent, do not invent a
 replacement: disable the optional report, continue the ordinary confirmation
 flow if appropriate, and record the UI finding. A 2026-07-28 operator
-observation found one such missing-axis case; the corrective product gate is
-still open.
+observation found one such missing-axis case. PR #288 corrected the merge path
+and the live recheck passed for selected axes, segments, and quadrilateral
+lengths.
 
 ## Optional SAM 3 proposal
 

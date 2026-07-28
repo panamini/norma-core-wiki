@@ -619,3 +619,15 @@ metadata/registration changes.
   bounded semantic SAM target second, interaction clarity third.
 - Preserved the proof boundary: no SAM receipt, mask, provider timing, or
   production-readiness claim was captured by the latest observation.
+
+## 2026-07-28 — Two-length selector P0 closed
+
+- PR #288 merged from exact head
+  `fb8d3eb8d2dec00b9324ae486b53da527e9efba2` at
+  `ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4`.
+- Exact-head `verify`, Semgrep CE, and Semgrep Cloud passed; Codex review
+  reported no major issue and GitHub reported a clean merge state.
+- The live recheck closed the missing-axis selector observation for selected
+  axes, segments, and quadrilateral lengths.
+- No deployment occurred. The semantic SAM target remains the next bounded
+  product gate, and live SAM inference evidence remains separate.

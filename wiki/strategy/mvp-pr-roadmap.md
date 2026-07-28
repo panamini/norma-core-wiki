@@ -51,9 +51,10 @@ Execution plan to keep implementation focused and avoid MVP drift.
 ## Current state
 
 Norma Core `origin/main` is
-`de1c11efc42bd409ecde19550061186d90ab5df6` after PR #281–#282 added the
-optional authenticated SAM 3 Modal perception boundary and PR #283–#287
-repaired the ChatGPT resource/remount path. The final pre-mobile qualification
+`ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4` after PR #281–#282 added the
+optional authenticated SAM 3 Modal perception boundary, PR #283–#287 repaired
+the ChatGPT resource/remount path, and PR #288 completed the two-length selector
+consistency fix after a live recheck. The final pre-mobile qualification
 evidence remains anchored to exact main
 `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; later merges do not
 retroactively move that evidence.
@@ -818,10 +819,9 @@ prompt. This gate is complete.
 
 Current dependency order:
 
-1. **P0 — two-length selector consistency.** Reproduce and surgically correct
-   the operator-observed case where a checked axis was absent from the available
-   length references, while preserving exact two-reference validation and
-   reload/edit state.
+1. **P0 — two-length selector consistency: complete in PR #288.** Selected
+   axes, segments, and quadrilateral lengths remain available while preserving
+   exact two-reference validation and reload/edit state.
 2. **P1 — explicit semantic SAM target.** Expose one bounded target field or a
    few target chips over the existing text-prompt provider contract so a user
    can request a person, arch, window, or similar omitted subject. One action
@@ -831,8 +831,9 @@ Current dependency order:
    feedback.
 
 Manual rectangle creation, harmonic grids, surface highlights, new ratio
-families, and automatic aesthetic interpretation remain deferred. Only P0 is
-authorized as the immediate application-code PR by this roadmap sync.
+families, and automatic aesthetic interpretation remain deferred. P1 is now the
+next bounded product gate; this roadmap sync does not itself authorize a
+provider call or deployment.
 
 New harmonic-pack families are not the next gate. The existing
 `norma.harmonic-triads@0.1.0` and

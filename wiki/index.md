@@ -92,8 +92,9 @@ updated: 2026-07-28
   pinned model/runtime contract, fail-closed behavior, rollback, prompt paths,
   and the explicit no-live-receipt evidence limit
 - `wiki/outputs/2026-07-28-sam3-modal-widget-checkpoint.md` records merged PR
-  #281–#287, fresh editable-widget recovery, the open two-length missing-axis
-  observation, and semantic-target follow-up without claiming live SAM quality
+  #281–#287, fresh editable-widget recovery, the original two-length
+  missing-axis observation, its PR #288 closure, and semantic-target follow-up
+  without claiming live SAM quality
 - `wiki/outputs/2026-07-27-five-gate-operational-closeout.md` records PR #278
   reviewed head `5fede8839a4bb77e91bbdd0c10706b4cc307b096` and merge/current
   `origin/main` `6a135de308df05e4fce674f214655e731245c89e`, while keeping the
