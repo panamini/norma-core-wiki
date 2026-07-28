@@ -3,7 +3,7 @@ title: "Personal Visual Harmony Quick Start"
 category: howto
 status: current
 created: 2026-07-19
-updated: 2026-07-20
+updated: 2026-07-28
 tags:
   - personal-visual-harmony
   - chatgpt
@@ -62,6 +62,30 @@ After preparation, enable the two-length report in the widget and select
 exactly two available confirmed lengths. An incomplete selection intentionally
 disables confirmation; disable the report or complete both selections to
 recover.
+
+Eligible references are checked segments, checked axes, and the sides or
+diagonals of checked quadrilaterals. Rectangles and ellipses are intentionally
+not listed by the current contract. Enable the report before opening the two
+selectors. If an expected checked axis or segment is absent, do not invent a
+replacement: disable the optional report, continue the ordinary confirmation
+flow if appropriate, and record the UI finding. A 2026-07-28 operator
+observation found one such missing-axis case. PR #288 corrected the merge path
+and the live recheck passed for selected axes, segments, and quadrilateral
+lengths.
+
+## Optional SAM 3 proposal
+
+The private sandbox can optionally ask the authenticated SAM 3 Modal provider
+for one mask proposal. The current widget path starts from an existing selected
+candidate and derives an interactive point or box prompt. The mask is converted
+deterministically into editable candidate geometry and still requires explicit
+human confirmation.
+
+The provider contract also supports a bounded text target, but the current
+widget does not expose a free-text field. A person or other omitted semantic
+subject therefore will not be discovered merely because SAM 3 is configured.
+Do not claim a SAM result unless the widget returns a provider receipt and a
+candidate mask for that action.
 
 ## Verify before Core
 

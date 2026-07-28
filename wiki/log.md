@@ -605,3 +605,29 @@ additions, performance optimization, and UI/UX changes require only narrow
 affected tests; reopen full auth/RLS qualification only for auth/OAuth/JWT,
 PostgreSQL/RLS/schema/pool reset, Railway runtime, or provider
 metadata/registration changes.
+
+## 2026-07-28 — SAM 3 Modal pipeline and roadmap sync
+
+- Added `wiki/tech/sam3-modal-perception-pipeline.md` with the merged
+  PR #281–#282 provider contract, Railway/Modal boundaries, secret-name-only
+  configuration, safety rules, prompt paths, rollback, and evidence limits.
+- Added `wiki/outputs/2026-07-28-sam3-modal-widget-checkpoint.md` for the
+  PR #283–#287 widget recovery and fresh operator-visible editable flow.
+- Updated overview, roadmap, quick start, compute topology, interface boundary,
+  index, and hot cache routing.
+- Recorded the next dependency order: two-length selector consistency first,
+  bounded semantic SAM target second, interaction clarity third.
+- Preserved the proof boundary: no SAM receipt, mask, provider timing, or
+  production-readiness claim was captured by the latest observation.
+
+## 2026-07-28 — Two-length selector P0 closed
+
+- PR #288 merged from exact head
+  `fb8d3eb8d2dec00b9324ae486b53da527e9efba2` at
+  `ea12c967bbd7c3acfd8401e5d75dd6f59e8d07e4`.
+- Exact-head `verify`, Semgrep CE, and Semgrep Cloud passed; Codex review
+  reported no major issue and GitHub reported a clean merge state.
+- The live recheck closed the missing-axis selector observation for selected
+  axes, segments, and quadrilateral lengths.
+- No deployment occurred. The semantic SAM target remains the next bounded
+  product gate, and live SAM inference evidence remains separate.
