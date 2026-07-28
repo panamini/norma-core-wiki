@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-28
 ---
 
 # Index
@@ -25,6 +25,7 @@ updated: 2026-07-27
 - `wiki/tech/core-spec-v0-1.md`
 - `wiki/tech/core-interface-boundary.md`
 - `wiki/tech/norma-orchestrator.md`
+- `wiki/tech/sam3-modal-perception-pipeline.md`
 
 ### Strategy
 - `wiki/strategy/mvp-pr-roadmap.md`
@@ -59,6 +60,7 @@ updated: 2026-07-27
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-28-sam3-modal-widget-checkpoint.md`
 - `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`
 - `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`
@@ -85,6 +87,13 @@ updated: 2026-07-27
 - `wiki/outputs/2026-06-24-post-pr6-chatgpt-secure-mcp-tunnel-checkpoint.md`
 
 ## Recent Additions
+- `wiki/tech/sam3-modal-perception-pipeline.md` documents the optional
+  Railway-to-Modal SAM 3 candidate boundary, exact sandbox configuration names,
+  pinned model/runtime contract, fail-closed behavior, rollback, prompt paths,
+  and the explicit no-live-receipt evidence limit
+- `wiki/outputs/2026-07-28-sam3-modal-widget-checkpoint.md` records merged PR
+  #281–#287, fresh editable-widget recovery, the open two-length missing-axis
+  observation, and semantic-target follow-up without claiming live SAM quality
 - `wiki/outputs/2026-07-27-five-gate-operational-closeout.md` records PR #278
   reviewed head `5fede8839a4bb77e91bbdd0c10706b4cc307b096` and merge/current
   `origin/main` `6a135de308df05e4fce674f214655e731245c89e`, while keeping the

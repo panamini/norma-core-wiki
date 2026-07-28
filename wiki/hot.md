@@ -3,39 +3,61 @@ title: "Hot Cache"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-28
 ---
 
 # Hot Cache
 
 Active memory cache for agents. Keep this page under 500 words.
 
-## Current Focus
-- Latest merged Norma Core state is PR #278 at `6a135de308df05e4fce674f214655e731245c89e`, from reviewed head `5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The pre-mobile qualification anchor is `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`.
-- The private stable runtime, guided entry, manual-primitive workflow, and Personal Visual Acceptance Pack remain live-accepted. The pack produced acceptable preparations for `6/6` cases and bounded confirmation/Core success for `5/6`; the remaining failure was a ChatGPT surface block, not a reproduced Core defect.
-- Verdict remains `observation-partial`: declared geometric comparisons are useful in the private flow, while artistic usefulness, mobile proof, sustained use, and commercial/public readiness remain unproven. Fresh v5 ChatGPT proof on pre-mobile main passed `prepare → single confirm → completed → reload`; provider-free performance passed `4/4` at approximately `18–20 ms` Core, `109 ms` stdio, and `175 ms` authenticated HTTP. A 90-second-class delay is an external/widget candidate, not a Core timing finding.
-- Railway evidence is bound to pre-mobile main `59c59da`: its deployed tree was content-identical and `/readyz` was OK. Security technical sandbox status is `9/9 PASS`, including bounded refresh lifecycle. `productionReadiness` remains `CLOSED` because no exact human approval block was recorded. PR #278 mobile deployment is not claimed.
-- Use `wiki/strategy/mvp-pr-roadmap.md`, `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`, `wiki/tech/core-interface-boundary.md`, and `wiki/overview.md` for current truth.
+## Current focus
 
-## Retrieval Map
-- Overview/index/log: `wiki/{overview,index,log}.md`
+- Norma Core `origin/main` is
+  `de1c11efc42bd409ecde19550061186d90ab5df6`. PR #281–#282 added the
+  optional authenticated SAM 3 Modal sandbox boundary; PR #283–#287 repaired
+  ChatGPT widget resource metadata, cache/MIME compatibility, stale aliases,
+  and app-only remount behavior.
+- SAM 3 is candidate perception only. In the implemented sandbox contract,
+  Railway is the control plane and the Modal adapter is configured for one
+  bounded L4 inference; deterministic code converts a returned mask to editable
+  geometry, and explicit human confirmation remains mandatory before Core.
+  Current Modal deployment and live inference remain unverified. The widget
+  exposes interactive point/box prompts; the provider contract also supports
+  bounded text prompts, but no semantic target field is exposed yet.
+- Fresh 2026-07-28 ChatGPT evidence showed an editable widget with rectangles,
+  ellipse, axis, and segments after the resource fixes. No SAM receipt, mask,
+  provider timing, or cost was captured, so live SAM quality/latency remains
+  unproven.
+- P0 is the observed absence of an expected checked axis from the optional
+  two-length selector. P1 is one bounded semantic SAM target field or target
+  chips. P2 is clearer manual-segment and A/B comparison affordance. Manual
+  rectangles, harmonic grids, surface highlights, and new ratio families stay
+  deferred.
+- Historical security sandbox qualification remains `9/9 PASS`; production
+  readiness remains separate and closed. Changes limited to packs, performance,
+  or UI use narrow affected tests unless auth/OAuth/JWT, PostgreSQL/RLS,
+  Railway runtime, or provider registration changes.
+
+## Retrieval map
+
+- Overview: `wiki/overview.md`
+- Index: `wiki/index.md`
+- Log: `wiki/log.md`
 - Roadmap: `wiki/strategy/mvp-pr-roadmap.md`
 - Quick start: `wiki/howto/personal-visual-harmony-quick-start.md`
-- Final visual acceptance pack: `wiki/outputs/2026-07-19-personal-visual-acceptance-pack-v1.md`
-- Live acceptance checkpoint: `wiki/outputs/2026-07-17-cc-personal-main-live-acceptance-v6.md`
-- Guided-entry closure: `wiki/outputs/2026-07-20-guided-entry-live-closure.md`
-- Two-length gate: `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`
+- SAM 3 pipeline: `wiki/tech/sam3-modal-perception-pipeline.md`
+- Latest widget checkpoint:
+  `wiki/outputs/2026-07-28-sam3-modal-widget-checkpoint.md`
 - Authority boundary: `wiki/tech/core-interface-boundary.md`
+- Security checkpoint:
+  `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`
 
 ## Guardrails
-- This page is a cache, not canonical truth.
-- Update durable pages first; update this page only to keep near-term retrieval cheap.
-- For orchestrator usage, trust code, tests, CI, durable wiki pages, and explicit user direction over generated run evidence.
-- Transport/integration PRs must not modify core geometry, measurement, evaluation, packs, ratios, or deterministic output rules.
 
-## Latest update
-- Recorded PR #278 merge/current main, the pre-mobile proof anchor, and the
-  explicit no-mobile-deployment boundary.
-- Recorded fresh v5 ChatGPT reload revalidation, provider-free `4/4` performance,
-  the `9/9 PASS` security technical sandbox gate, and `productionReadiness:
-  CLOSED` pending an exact human approval block.
+- This page is a cache, not canonical truth; trust current code/tests and
+  durable pages first.
+- SAM masks and automatic proposals never become source truth or Core authority.
+- Never store provider tokens, signed URLs, raw prompts, images, or response
+  bodies in Git, the wiki, tickets, or logs.
+- Transport/integration PRs must not modify Core geometry, evaluation, ratios,
+  packs, or deterministic output rules.

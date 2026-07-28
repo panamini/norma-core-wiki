@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-28
 tags:
   - execution
   - roadmap
@@ -50,12 +50,13 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current after PR #278 merged at
-`6a135de308df05e4fce674f214655e731245c89e` from reviewed head
-`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The final pre-mobile
-qualification evidence is anchored to exact main
-`59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; Railway was verified against that
-tree only, and no deployment of the PR #278 mobile change is claimed.
+Norma Core `origin/main` is
+`de1c11efc42bd409ecde19550061186d90ab5df6` after PR #281–#282 added the
+optional authenticated SAM 3 Modal perception boundary and PR #283–#287
+repaired the ChatGPT resource/remount path. The final pre-mobile qualification
+evidence remains anchored to exact main
+`59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; later merges do not
+retroactively move that evidence.
 PR #258 published the provider-neutral RLS boundary and Scalekit-first MCP
 sandbox contract; PR #257 added the performance truth harness.
 
@@ -814,6 +815,24 @@ prompt. This gate is complete.
   a new observed failure class requires a held-out case.
 - Do not infer that one over-proposed but valid candidate set proves exhaustive
   or optimal visual detection.
+
+Current dependency order:
+
+1. **P0 — two-length selector consistency.** Reproduce and surgically correct
+   the operator-observed case where a checked axis was absent from the available
+   length references, while preserving exact two-reference validation and
+   reload/edit state.
+2. **P1 — explicit semantic SAM target.** Expose one bounded target field or a
+   few target chips over the existing text-prompt provider contract so a user
+   can request a person, arch, window, or similar omitted subject. One action
+   still means one inference, one editable candidate, and separate confirmation.
+3. **P2 — interaction clarity.** Make manual-segment drawing and the A/B
+   two-length overlay visually self-explanatory, including cursor and empty-state
+   feedback.
+
+Manual rectangle creation, harmonic grids, surface highlights, new ratio
+families, and automatic aesthetic interpretation remain deferred. Only P0 is
+authorized as the immediate application-code PR by this roadmap sync.
 
 New harmonic-pack families are not the next gate. The existing
 `norma.harmonic-triads@0.1.0` and

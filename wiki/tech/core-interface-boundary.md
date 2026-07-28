@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-28
 tags:
   - architecture
   - adapters
@@ -39,12 +39,13 @@ Defines strict ownership for what computes, what calls, and what displays.
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
 
-The current merged Core main is PR #278 at
-`6a135de308df05e4fce674f214655e731245c89e`, from reviewed head
-`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The relevant pre-mobile proof
-anchor is exact main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`. Fresh v5
-ChatGPT proof on that pre-mobile main revalidated
-`prepare → single confirm → completed → reload` as `PASS`.
+The current merged Core main is
+`de1c11efc42bd409ecde19550061186d90ab5df6` after PR #281–#287 added the
+optional SAM 3 Modal perception boundary and repaired the ChatGPT widget
+resource/remount path. The relevant pre-mobile qualification anchor remains
+exact main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; later code does not
+retroactively move that evidence. Fresh v5 ChatGPT proof on the pre-mobile main
+revalidated `prepare → single confirm → completed → reload` as `PASS`.
 
 The provider-free performance run on that pre-mobile main passed `4/4`: Core
 approximately `18–20 ms`, stdio approximately `109 ms`, and authenticated HTTP
@@ -72,10 +73,19 @@ built JavaScript, and `README.md` `files` allowlist.
 
 The personal visual-harmony adapter preserves the same ownership split. The
 widget owns the exact hydrated ChatGPT image and typed candidate overlay; the
-server intentionally does not download image bytes. Core receives only the
-final explicitly selected and confirmed structured geometry. Rectangle Core
-results and deterministic quadrilateral or ellipse/supporting-line image-plane
-measurements remain distinct result families.
+default server path intentionally does not download image bytes. The optional
+SAM 3 perception action may send one bounded, identity-bound image to the
+authenticated sandbox provider, but its mask and extracted primitive remain
+candidate evidence. Core receives only the final explicitly selected and
+confirmed structured geometry. Rectangle Core results and deterministic
+quadrilateral or ellipse/supporting-line image-plane measurements remain
+distinct result families.
+
+PR #281 added that authenticated provider-neutral perception boundary and the
+custom Modal Server; PR #282 fixed its packaged runtime dependencies. The
+provider is process-memory-only, bounded, fail-closed, and exactly-once for
+inference. It cannot confirm geometry or run Core. The complete current path is
+documented in `wiki/tech/sam3-modal-perception-pipeline.md`.
 
 PR #225 integrates PR #223's package-private pixel-refinement kernel as bounded
 shadow evidence. Original and proposed geometry remain separate, refinement is
@@ -240,8 +250,13 @@ Adapters should map external shapes to structured inputs and report conversion l
 ### Perception provider split
 
 - Normalize every visual or exact-geometry input into a structured observation before it reaches core.
-- OpenAI Vision is the fastest first provider for image perception.
-- Norma Vision is the later precision path for camera and repeatability.
+- ChatGPT automatic candidates remain the default private-app proposal path.
+- SAM 3 on Modal is the current optional sandbox perception provider for one
+  explicitly requested candidate mask.
+- The provider contract supports interactive point/box and bounded text
+  prompts; the current widget exposes only the interactive path.
+- Future Norma Vision or on-device perception remains a replaceable precision
+  path for camera and repeatability.
 - CAD adapters can supply exact geometry without perception loss.
 - Core must never depend on which provider was used.
 
