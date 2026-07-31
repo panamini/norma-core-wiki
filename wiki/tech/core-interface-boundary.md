@@ -3,7 +3,7 @@ title: "Core / Interface / Adapter Boundary"
 category: tech
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-31
 tags:
   - architecture
   - adapters
@@ -39,12 +39,12 @@ Defines strict ownership for what computes, what calls, and what displays.
 Core logic is authoritative and deterministic.
 Interfaces and adapters can call, transform, or render outputs, but they must not define geometric rules.
 
-The current merged Core main is PR #278 at
-`6a135de308df05e4fce674f214655e731245c89e`, from reviewed head
-`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The relevant pre-mobile proof
-anchor is exact main `59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`. Fresh v5
-ChatGPT proof on that pre-mobile main revalidated
-`prepare → single confirm → completed → reload` as `PASS`.
+The current merged main includes PR #299 at merge
+`c0cc5183664648a11da8775abe8cd1a49ce91a51`, from reviewed head
+`bbc6c6201bbf890a1662bcb59baaf24534407472`. PR #299 adds no Core authority,
+provider dependency, MCP contract change, or package export. The preceding
+PR #291–#298 Web Lab and spatial-measurement sequence is summarized in
+`wiki/outputs/2026-07-31-post-pr299-local-cv-truth-sync.md`.
 
 The provider-free performance run on that pre-mobile main passed `4/4`: Core
 approximately `18–20 ms`, stdio approximately `109 ms`, and authenticated HTTP
@@ -57,6 +57,22 @@ Accepted geometry remains explicit structured input after acceptance. The
 current accepted-geometry mapper and shared-unit-surface normalizer are
 package-private and deterministic; they are not providers, perception layers,
 public exports, package APIs, or source-truth shortcuts.
+
+### Browser-local CV candidate boundary
+
+The Web Lab local-CV detector is an interface-side candidate source. It uses
+bounded browser raster/worker state and never sends image bytes or crops to the
+server. A `browser-local-cv` proposal is editable and deselectable, unchecked by
+default, and separate from manual authoring. Its source image/session, worker
+run and raster, candidate identity, original/reviewed geometry, user edits,
+selection, receipt, and export identities remain linked; stale, tampered,
+mismatched, timed-out, or failed runs fail closed.
+
+MCP/ChatGPT and local CV are complementary candidate sources. Local CV does
+not replace MCP/ChatGPT and does not require disabling GPT, VLM, or SAM. Core
+receives only explicitly selected, reviewed, and confirmed structured geometry;
+there is no direct image-to-Core path. Manual-only sessions remain free of
+local-CV fields, and the stable MCP path remains unchanged.
 
 Guided inspection remains structural and truth-bounded. PR94 proved local
 package-private consumption of the guided inspection demo envelope. PR95

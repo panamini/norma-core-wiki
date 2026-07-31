@@ -3,7 +3,7 @@ title: "Index"
 category: overview
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-31
 ---
 
 # Index
@@ -59,6 +59,7 @@ updated: 2026-07-27
 - `wiki/sources/2026-06-23-norma-core-pr-execution-map-v1.md`
 
 ## Outputs
+- `wiki/outputs/2026-07-31-post-pr299-local-cv-truth-sync.md`
 - `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`
 - `wiki/outputs/2026-07-25-scalekit-supabase-sandbox-qualification-checkpoint.md`
 - `wiki/outputs/2026-07-23-post-pr256-two-length-observation-gate.md`

@@ -605,3 +605,18 @@ additions, performance optimization, and UI/UX changes require only narrow
 affected tests; reopen full auth/RLS qualification only for auth/OAuth/JWT,
 PostgreSQL/RLS/schema/pool reset, Railway runtime, or provider
 metadata/registration changes.
+
+### 2026-07-31 — PR291–PR299 Web Lab and local-CV truth sync
+
+- Recorded the exact merged PR291–PR299 sequence through PR #299 merge
+  `c0cc5183664648a11da8775abe8cd1a49ce91a51` from reviewed head
+  `bbc6c6201bbf890a1662bcb59baaf24534407472`.
+- Recorded the browser-local CV boundary: no image bytes/crops leave the
+  browser, proposals are editable and unchecked by default, provenance remains
+  linked through receipt/export, and Core stays behind explicit confirmation.
+- Recorded the product decision that local CV complements MCP/ChatGPT and does
+  not replace or disable GPT, VLM, or SAM.
+- Recorded post-merge qualification honestly: one stale exact-string assertion
+  is isolated in open PR #300; the multi-image real-user matrix remains pending.
+- Updated `wiki/strategy/mvp-pr-roadmap.md`, `wiki/tech/core-interface-boundary.md`,
+  `wiki/overview.md`, `wiki/index.md`, and `wiki/hot.md`.

@@ -3,7 +3,7 @@ title: "MVP PR Roadmap"
 category: strategy
 status: current
 created: 2026-06-11
-updated: 2026-07-27
+updated: 2026-07-31
 tags:
   - execution
   - roadmap
@@ -50,14 +50,26 @@ Execution plan to keep implementation focused and avoid MVP drift.
 
 ## Current state
 
-Norma Core `origin/main` is current after PR #278 merged at
-`6a135de308df05e4fce674f214655e731245c89e` from reviewed head
-`5fede8839a4bb77e91bbdd0c10706b4cc307b096`. The final pre-mobile
-qualification evidence is anchored to exact main
-`59c59da2d0bcb0bfa822d3a7d4e87b0cf4e064bf`; Railway was verified against that
-tree only, and no deployment of the PR #278 mobile change is claimed.
-PR #258 published the provider-neutral RLS boundary and Scalekit-first MCP
-sandbox contract; PR #257 added the performance truth harness.
+Norma Core `origin/main` is current through PR #299, merged at
+`c0cc5183664648a11da8775abe8cd1a49ce91a51` from reviewed head
+`bbc6c6201bbf890a1662bcb59baaf24534407472`. PRs #291–#299 completed the
+measurable visual-review UX, private Web Lab, manual authoring/editing,
+receipt-safe results, linked-session recovery, declared spatial measurements,
+guided spatial picking, and browser-local CV candidate rail. The exact merge
+sequence and boundary evidence are recorded in
+`wiki/outputs/2026-07-31-post-pr299-local-cv-truth-sync.md`.
+
+The local-CV rail is complementary to MCP/ChatGPT, not a replacement and not
+a reason to disable GPT, VLM, or SAM. It is a browser-local, provider-free
+candidate source: proposals are editable and unchecked by default, provenance
+is carried through review and export, and Core remains behind explicit user
+confirmation. Manual-only sessions and the stable MCP path remain unchanged.
+
+The first post-merge rendered qualification reproduced one stale exact-string
+assertion, not a runtime or Core defect. The one-line test correction is isolated
+in open PR #300 and must not be described as merged until GitHub confirms it.
+The broader multi-image real-user matrix is still unverified because the repo
+contains only one licit image fixture. No accuracy claim is made.
 
 PR #221 merged the private personal ChatGPT visual-harmony foundation. PR #222
 hardened exact-file hydration and stale-payload safety. PR #223 added the
@@ -176,6 +188,23 @@ claim that the PR #278 mobile change is deployed. `productionReadiness` remains
 is recorded in `wiki/outputs/2026-07-27-five-gate-operational-closeout.md`.
 No new geometry, harmonic-pack expansion, public deployment, or automatic
 benchmark expansion comes before this gate.
+
+### Post-PR299 routing
+
+The immediate next gate is a separately recorded live validation on exact
+merged main using multiple authorized real images: frame and line candidates,
+editing and deselection, two-frame measurement, explicit confirmation, receipt,
+and export. PR #300 is a focused test-only correction for the reproduced stale
+status assertion; it is open and is not part of the PR #299 merge.
+
+PR10 is conditional on that observation, not an automatic ladder step. If the
+picker proves insufficient, a bounded candidate-only rail may retain two
+semantic objects and measure their image-plane boxes, centers, corners,
+dimensions, or distances. It must preserve explicit confirmation, source/session
+provenance, no Core/ratio/scoring changes, and no provider dependency. An
+optional PR11 may add object-oriented UX presets only if the live picker proves
+too technical. On-device SAM remains a separate speed/weight/privacy benchmark
+decision.
 
 The target compute topology is documented in
 `wiki/tech/compute-topology-optional-gpu-escape-hatch.md`: Tier 0 is local or
